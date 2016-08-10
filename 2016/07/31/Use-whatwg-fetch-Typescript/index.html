@@ -1,0 +1,525 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Use whatwg-fetch Typescript | QToolKit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jim">
+    
+
+    <meta name="keywords" content="whatwg-fetch,Typescript">
+    <meta name="description" content="说来惭愧，最近才知道的whatwg-fetch的这个标准，firefox和chrome已经支持它了，github实现了相应的polyfill，typings里也有相应的定义，所以决定在qtk里直接使用，而不是再去包装XMLHttpRequest。
+安装JS包12cnpm install es6-promise --savecnpm install whatwg-fetch --save
+安装typ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use whatwg-fetch Typescript">
+<meta property="og:url" content="https://qtoolkit.github.io/2016/07/31/Use-whatwg-fetch-Typescript/index.html">
+<meta property="og:site_name" content="QToolKit">
+<meta property="og:description" content="说来惭愧，最近才知道的whatwg-fetch的这个标准，firefox和chrome已经支持它了，github实现了相应的polyfill，typings里也有相应的定义，所以决定在qtk里直接使用，而不是再去包装XMLHttpRequest。
+安装JS包12cnpm install es6-promise --savecnpm install whatwg-fetch --save
+安装typ">
+<meta property="og:updated_time" content="2016-08-10T13:50:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Use whatwg-fetch Typescript">
+<meta name="twitter:description" content="说来惭愧，最近才知道的whatwg-fetch的这个标准，firefox和chrome已经支持它了，github实现了相应的polyfill，typings里也有相应的定义，所以决定在qtk里直接使用，而不是再去包装XMLHttpRequest。
+安装JS包12cnpm install es6-promise --savecnpm install whatwg-fetch --save
+安装typ">
+
+    
+    <link rel="alternative" href="/atom.xml" title="QToolKit" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="QToolKit" title="QToolKit"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="QToolKit">QToolKit</a></h1>
+				<h2 class="blog-motto">An GUI ToolKit for desktop &amp; mobile applcations based on HTML5 Canvas.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/2016/07/24/about/">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:qtoolkit.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/07/31/Use-whatwg-fetch-Typescript/" title="Use whatwg-fetch Typescript" itemprop="url">Use whatwg-fetch Typescript</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
+		
+  <p class="article-time">
+    <time datetime="2016-07-31T04:16:18.000Z" itemprop="datePublished"> Published 2016-07-31</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装JS包"><span class="toc-number">1.</span> <span class="toc-text">安装JS包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装typings"><span class="toc-number">2.</span> <span class="toc-text">安装typings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引入相应的包"><span class="toc-number">3.</span> <span class="toc-text">引入相应的包</span></a></li></ol>
+		
+		</div>
+		
+		<p>说来惭愧，最近才知道的<a href="https://fetch.spec.whatwg.org/" target="_blank" rel="external">whatwg-fetch</a>的这个标准，firefox和chrome已经支持它了，github实现了相应的<a href="https://github.com/github/fetch.git" target="_blank" rel="external">polyfill</a>，typings里也有相应的定义，所以决定在<a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">qtk</a>里直接使用，而不是再去包装XMLHttpRequest。</p>
+<h4 id="安装JS包"><a href="#安装JS包" class="headerlink" title="安装JS包"></a>安装JS包</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cnpm install es6-promise --save</div><div class="line">cnpm install whatwg-fetch --save</div></pre></td></tr></table></figure>
+<h4 id="安装typings"><a href="#安装typings" class="headerlink" title="安装typings"></a>安装typings</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">typings install dt~es6-promise --save --global</div><div class="line">typings install dt~whatwg-fetch --save --global</div></pre></td></tr></table></figure>
+<h4 id="引入相应的包"><a href="#引入相应的包" class="headerlink" title="引入相应的包"></a>引入相应的包</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import Promise = require(&quot;es6-promise&quot;);</div><div class="line">import fetch = require(&quot;whatwg-fetch&quot;);</div></pre></td></tr></table></figure>
+<p>却奇怪的是出现错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">error TS2307: Cannot find module &apos;whatwg-fetch&apos;.</div></pre></td></tr></table></figure></p>
+<p>查了一些资料才知道，这种polyfill，只是修改了一些全局的状态，并没有导出什么东西的包，应该用下面的方式导入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &apos;whatwg-fetch&apos;;</div></pre></td></tr></table></figure>
+<p>还是typescript不熟悉啊，得花点时间系统的学习一下。</p>
+<p>参考：<a href="https://www.typescriptlang.org/docs/handbook/modules.html#import-a-module-for-side-effects-only" target="_blank" rel="external">https://www.typescriptlang.org/docs/handbook/modules.html</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Typescript/">Typescript</a><a href="/tags/whatwg-fetch/">whatwg-fetch</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://qtoolkit.github.io/2016/07/31/Use-whatwg-fetch-Typescript/" data-title="Use whatwg-fetch Typescript | QToolKit" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/08/06/Javascript-Test-Framework/" title="Javascript Test Framework">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Javascript Test Framework</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/07/24/about/"  title="About QToolKit">
+ <strong>下一篇：</strong><br/> 
+ <span>About QToolKit
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装JS包"><span class="toc-number">1.</span> <span class="toc-text">安装JS包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装typings"><span class="toc-number">2.</span> <span class="toc-text">安装typings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引入相应的包"><span class="toc-number">3.</span> <span class="toc-text">引入相应的包</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="qtoolkit" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/学习笔记/" title="学习笔记">学习笔记<sup>2</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Assets/" title="Assets">Assets<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Test/" title="Test">Test<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Karma/" title="Karma">Karma<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Mocha/" title="Mocha">Mocha<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Typescript/" title="Typescript">Typescript<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/whatwg-fetch/" title="whatwg-fetch">whatwg-fetch<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> QToolKit <br/>
+			An GUI ToolKit for desktop &amp; mobile applcations based on HTML5 Canvas.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/xianjimli" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/qtoolkit" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="Jim">Jim</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
