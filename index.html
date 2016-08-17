@@ -57,7 +57,7 @@
 					
 						<li><a href="/archives">Archives</a></li>
 					
-						<li><a href="/2016/07/24/about/">About</a></li>
+						<li><a href="/2016/07/31/about/">About</a></li>
 					
 					<li>
  					
@@ -74,6 +74,86 @@
     </header>
     <div id="container">
       <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/08/16/Image-Tile/" title="Image Tile" itemprop="url">Image Tile</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
+		
+  <p class="article-time">
+    <time datetime="2016-08-16T04:19:04.000Z" itemprop="datePublished"> Published 2016-08-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p><a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>中的ImageTile表示一个图块，它可以是一整张图片，也可以是图片中的一块区域。x和y表示图块的位置，w和h表示图块的宽度和高度。</p>
+<p>ImageTile的主要功能有两个：</p>
+<h4 id="加载指定URL的图片。"><a href="#加载指定URL的图片。" class="headerlink" title="加载指定URL的图片。"></a>加载指定URL的图片。</h4><p>URL通常包括两个部分，用#分隔，前面部分是大图的信息，后面是图块的信息，如果没有#，则表示整张图片。目前支持4种格式的URL：</p>
+<p>1.普通图片URL。此时ImageTile表示整张图片。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/image.png</div></pre></td></tr></table></figure>
+<p>2.普通图片URL+’#’+x{x}y{y}w{w}h{h}，它表示指定位置(xy)和大小(wh)的子图。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/image.png#x10y10w100h100</div></pre></td></tr></table></figure>
+<p>3.普通图片URL+’#’+r{行数}c{列数}i{索引}，它表示把图片分成指定行数和列数等大小的图块，取其中第i块，i的取值范围为0到r*c。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/image.png#r3c3i0</div></pre></td></tr></table></figure>
+<p>4.JSON文件URL+’#’+小图的名称，它表示TexturePacker生成的JSON Hash格式文件中的一个小图。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://www.example.com/images.json#0.png</div></pre></td></tr></table></figure>
+<h4 id="将图块绘制在指定的HTML5-Canvas上。"><a href="#将图块绘制在指定的HTML5-Canvas上。" class="headerlink" title="将图块绘制在指定的HTML5 Canvas上。"></a>将图块绘制在指定的HTML5 Canvas上。</h4><p>ImageTile实现了多种绘制的方式，使用时指定绘制方式和目标区域的位置和大小，目前支持的绘制方式有：</p>
+<p>1.缺省方式，将图块填满指定的区域。</p>
+<p>2.居中方式，将图块按原大小绘制到指定区域的中间。</p>
+<p>3.自动方式，将图块缩放显示到指定区域，保持图片的宽高不变。</p>
+<p>4.特殊九宫格方式，将图块分成等大小的九块，按九宫格的方式显示。</p>
+<p>5.水平三宫格方式，将图块按水平方向分成等大小的三块，左右两块分别显示在目标区域的左右两边，中间的一块缩放显示在目标区域的中间剩余部分。</p>
+<p>6.垂直三宫格方式，将图块按垂直方向分成等大小的三块，上下两块分别显示在目标区域的上下两边，中间的一块缩放显示在目标区域的中间剩余部分。</p>
+<p>7.水平平铺。水平方向平铺显示，垂直方向拉伸，如果想保证垂直方向不拉伸，请指定图块同样的高度。</p>
+<p>8.垂直平铺。垂直方向平铺显示，水平方向拉伸，如果想保水平方向不拉伸，请指定图块同样的宽度。</p>
+<p>9.平铺。水平和垂直方向均平铺显示。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/QToolKit/">QToolKit</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/ImageTile/">ImageTile</a><a href="/tags/QToolKit/">QToolKit</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
 
    
     
@@ -119,7 +199,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Assets/">Assets</a><a href="/tags/QToolKit/">QToolKit</a>
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/Assets/">Assets</a>
   </div>
 
 </div>
@@ -297,6 +377,74 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2016/07/31/about/" title="About QToolKit" itemprop="url">About QToolKit</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
+		
+  <p class="article-time">
+    <time datetime="2016-07-31T13:01:41.000Z" itemprop="datePublished"> Published 2016-07-31</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>QTK 是一套基于HTML5 Canvas实现的应用程序框架，和其它HTML5的框架相比，它并不适合开发网页，而是专注于应用程序开发。</p>
+<p>QTK主要特色如下：</p>
+<p>1.<strong>基于HTML5 Canvas实现</strong>。可以实现任何Native风格的控件，HTML5 Canvas使用硬件加速，轻松实现60FPS的动画。</p>
+<p>2.<strong>高效率，低功耗</strong>。JS代码针对V8优化，执行效率高。在界面有变化时才重新绘制，支持脏矩形，只绘制变化的部分，让计算开销降到最低。</p>
+<p>3.<strong>用QTK本身开发的IDE</strong>。支持在线版本和本地版本，让开发变得更简单。</p>
+<p>4.<strong>即可以开发移动应用程序，又可以开发桌面应用程序</strong>。QTK内部抽象出两者的不同，在运行时自动安装相应的策略。</p>
+<p>5.<strong>与传统HTML5控件良好互通</strong>。可以在QTK中使用HTML5元素，也可以在HTML5的控件中使用QTK。我们还计划支持React和WebComponent的编程方式。</p>
+<p>6.<strong>完整的测试程序</strong>。QTK使用Karma + Mocha对所以组件进行测试，通过不断完善测试程序，让你没有后顾之忧。</p>
+<p>7.<strong>完整的文档和示例</strong>。确保已经实现的控件，对使用者都是友好的，你可以无障碍的使用它们，请告诉我们任何让你产生挫折的地方，一定会得到优先解决。在开发的过程中我们也会在博客中写出QTK内部实现原理，以及做出某些决策的原因。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/QToolKit/">QToolKit</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/About/">About</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2016/07/31/Use-whatwg-fetch-Typescript/" title="Use whatwg-fetch Typescript" itemprop="url">Use whatwg-fetch Typescript</a>
   </h1>
   <p class="article-author">By
@@ -359,55 +507,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/07/24/about/" title="About QToolKit" itemprop="url">About QToolKit</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
-		
-  <p class="article-time">
-    <time datetime="2016-07-24T04:01:41.000Z" itemprop="datePublished"> Published 2016-07-24</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
 </div>
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
@@ -432,7 +531,7 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
+			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>3</sup></a></li>
 		  
 		
 		  
@@ -449,6 +548,14 @@
 		<ul class="clearfix">
 		
 			
+				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ImageTile/" title="ImageTile">ImageTile<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Test/" title="Test">Test<sup>1</sup></a></li>
 			
 		
@@ -461,6 +568,10 @@
 			
 		
 			
+				<li><a href="/tags/Assets/" title="Assets">Assets<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Typescript/" title="Typescript">Typescript<sup>1</sup></a></li>
 			
 		
@@ -469,11 +580,7 @@
 			
 		
 			
-				<li><a href="/tags/Assets/" title="Assets">Assets<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
+				<li><a href="/tags/About/" title="About">About<sup>1</sup></a></li>
 			
 		
 		</ul>
