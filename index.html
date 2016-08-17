@@ -81,6 +81,72 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2016/08/17/Main-Loop/" title="Main Loop" itemprop="url">Main Loop</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
+		
+  <p class="article-time">
+    <time datetime="2016-08-17T10:37:10.000Z" itemprop="datePublished"> Published 2016-08-17</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p><a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>中的Main Loop主要是管理QTK的渲染循环，与直接调用用requestAnimationFrame相比，它有下列好处：</p>
+<p>1.多次请求重绘没有副作用。在QTK中每个控件的属性有变化时都需要重绘，控件并不需要知道别的控件有没有请求重绘，只管自己有变化时请求重绘就行了，这样势必出现重复请求重绘，MainLoop只在第一次请求重绘时才调用requestAnimationFrame，重复的请求只是增加一下计数。</p>
+<p>2.把绘制分成绘制前，绘制和绘制后多个阶段。动画可以在绘制前这个阶段执行，这样参数的变化就能在本次绘制中体现出来，而一些不太重要的事情可以放到绘制后执行。</p>
+<p>3.节省能源，绿色环保。控件有变化时请求重绘，没有变化时不需要重绘，只在有执行动画时才跑到最大帧率，而不是像游戏一样一直保持60FPS。</p>
+<p>4.注册的回调函数会一直执行，直到注销为止。</p>
+<p>使用方法如下（javascript）:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function draw(evt) &#123;</div><div class="line">	if(quit) &#123;</div><div class="line">		qtk.MainLoop.off(qtk.MainLoop.DRAW, draw);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">qtk.MainLoop.on(qtk.MainLoop.DRAW, draw);</div></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/QToolKit/">QToolKit</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/MainLoop/">MainLoop</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2016/08/16/Image-Tile/" title="Image Tile" itemprop="url">Image Tile</a>
   </h1>
   <p class="article-author">By
@@ -133,7 +199,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/ImageTile/">ImageTile</a><a href="/tags/QToolKit/">QToolKit</a>
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/ImageTile/">ImageTile</a>
   </div>
 
 </div>
@@ -174,7 +240,7 @@
 </header>
     <div class="article-content">
         
-        <p>QTK Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。</p>
+        <p><a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>中的Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。</p>
 <p>1.加载指定的资源。加载指定URL的资源，返回一个Promise。如果资源已经加载，就直接从缓存中获取，如果没有加载，就从网络获取，并放入到缓存中。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var asset = qtk.Assets.loadJSON(&quot;http://localhost:9876/base/www/not_exist.txt&quot;)</div><div class="line">    .then(json =&gt; &#123;</div><div class="line"></div><div class="line">     &#125;, err =&gt; &#123;</div><div class="line"></div><div class="line">     &#125;);</div></pre></td></tr></table></figure>
 <p>2.预先加载资源。通常在APP启动时，预先加载某些资源。把这些资源放到一个分组中，分组中每加载完成一个资源，就会触发加载进度事件，界面可以根据加载进度事件更新进度条，整个分组加载完成后才启动APP。</p>
@@ -199,7 +265,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/Assets/">Assets</a>
+  <span></span> <a href="/tags/Assets/">Assets</a><a href="/tags/QToolKit/">QToolKit</a>
   </div>
 
 </div>
@@ -445,7 +511,7 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/31/Use-whatwg-fetch-Typescript/" title="Use whatwg-fetch Typescript" itemprop="url">Use whatwg-fetch Typescript</a>
+      <a href="/2016/07/31/Use-whatwg-fetch-Typescript/" title="Use whatwg-fetch In Typescript" itemprop="url">Use whatwg-fetch In Typescript</a>
   </h1>
   <p class="article-author">By
        
@@ -531,7 +597,7 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>3</sup></a></li>
+			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>4</sup></a></li>
 		  
 		
 		  
@@ -548,11 +614,7 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/ImageTile/" title="ImageTile">ImageTile<sup>1</sup></a></li>
+				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>4</sup></a></li>
 			
 		
 			
@@ -572,15 +634,23 @@
 			
 		
 			
+				<li><a href="/tags/MainLoop/" title="MainLoop">MainLoop<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ImageTile/" title="ImageTile">ImageTile<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/About/" title="About">About<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Typescript/" title="Typescript">Typescript<sup>1</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/whatwg-fetch/" title="whatwg-fetch">whatwg-fetch<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/About/" title="About">About<sup>1</sup></a></li>
 			
 		
 		</ul>
