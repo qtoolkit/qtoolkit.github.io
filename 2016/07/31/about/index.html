@@ -4,29 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Assets Manager | QToolKit</title>
+    <title>About QToolKit | QToolKit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jim">
     
 
-    <meta name="keywords" content="Assets,QToolKit">
-    <meta name="description" content="QTK中的Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。
-1.加载指定的资源。加载指定URL的资源，返回一个Promise。如果资源已经加载，就直接从缓存中获取，如果没有加载，就从网络获取，并放入到缓存中。
-123456var asset = qtk.Assets.loadJSON(&amp;quot;http://localhost:9876/base/www/not">
+    <meta name="keywords" content="About,QToolKit">
+    <meta name="description" content="QTK 是一套基于HTML5 Canvas实现的应用程序框架，和其它HTML5的框架相比，它并不适合开发网页，而是专注于应用程序开发。
+QTK主要特色如下：
+1.基于HTML5 Canvas实现。可以实现任何Native风格的控件，HTML5 Canvas使用硬件加速，轻松实现60FPS的动画。
+2.高效率，低功耗。JS代码针对V8优化，执行效率高。在界面有变化时才重新绘制，支持脏矩形，只绘制变化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Assets Manager">
-<meta property="og:url" content="https://qtoolkit.github.io/2016/08/07/Assets-Manager/index.html">
+<meta property="og:title" content="About QToolKit">
+<meta property="og:url" content="https://qtoolkit.github.io/2016/07/31/about/index.html">
 <meta property="og:site_name" content="QToolKit">
-<meta property="og:description" content="QTK中的Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。
-1.加载指定的资源。加载指定URL的资源，返回一个Promise。如果资源已经加载，就直接从缓存中获取，如果没有加载，就从网络获取，并放入到缓存中。
-123456var asset = qtk.Assets.loadJSON(&amp;quot;http://localhost:9876/base/www/not">
-<meta property="og:updated_time" content="2016-08-17T10:39:00.000Z">
+<meta property="og:description" content="QTK 是一套基于HTML5 Canvas实现的应用程序框架，和其它HTML5的框架相比，它并不适合开发网页，而是专注于应用程序开发。
+QTK主要特色如下：
+1.基于HTML5 Canvas实现。可以实现任何Native风格的控件，HTML5 Canvas使用硬件加速，轻松实现60FPS的动画。
+2.高效率，低功耗。JS代码针对V8优化，执行效率高。在界面有变化时才重新绘制，支持脏矩形，只绘制变化">
+<meta property="og:updated_time" content="2016-08-17T04:53:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Assets Manager">
-<meta name="twitter:description" content="QTK中的Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。
-1.加载指定的资源。加载指定URL的资源，返回一个Promise。如果资源已经加载，就直接从缓存中获取，如果没有加载，就从网络获取，并放入到缓存中。
-123456var asset = qtk.Assets.loadJSON(&amp;quot;http://localhost:9876/base/www/not">
+<meta name="twitter:title" content="About QToolKit">
+<meta name="twitter:description" content="QTK 是一套基于HTML5 Canvas实现的应用程序框架，和其它HTML5的框架相比，它并不适合开发网页，而是专注于应用程序开发。
+QTK主要特色如下：
+1.基于HTML5 Canvas实现。可以实现任何Native风格的控件，HTML5 Canvas使用硬件加速，轻松实现60FPS的动画。
+2.高效率，低功耗。JS代码针对V8优化，执行效率高。在界面有变化时才重新绘制，支持脏矩形，只绘制变化">
 
     
     <link rel="alternative" href="/atom.xml" title="QToolKit" type="application/atom+xml">
@@ -86,14 +89,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/08/07/Assets-Manager/" title="Assets Manager" itemprop="url">Assets Manager</a>
+      <a href="/2016/07/31/about/" title="About QToolKit" itemprop="url">About QToolKit</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
 		
   <p class="article-time">
-    <time datetime="2016-08-07T13:19:47.000Z" itemprop="datePublished"> Published 2016-08-07</time>
+    <time datetime="2016-07-31T13:01:41.000Z" itemprop="datePublished"> Published 2016-07-31</time>
     
   </p>
 </header>
@@ -106,13 +109,15 @@
 		
 		</div>
 		
-		<p><a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>中的Assets主要是对APP使用的资源进行管理，资源包括图片、声音、字体和其它数据。</p>
-<p>1.加载指定的资源。加载指定URL的资源，返回一个Promise。如果资源已经加载，就直接从缓存中获取，如果没有加载，就从网络获取，并放入到缓存中。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var asset = qtk.Assets.loadJSON(&quot;http://localhost:9876/base/www/not_exist.txt&quot;)</div><div class="line">    .then(json =&gt; &#123;</div><div class="line"></div><div class="line">     &#125;, err =&gt; &#123;</div><div class="line"></div><div class="line">     &#125;);</div></pre></td></tr></table></figure>
-<p>2.预先加载资源。通常在APP启动时，预先加载某些资源。把这些资源放到一个分组中，分组中每加载完成一个资源，就会触发加载进度事件，界面可以根据加载进度事件更新进度条，整个分组加载完成后才启动APP。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var items = [</div><div class="line">            &#123;type:qtk.Assets.TEXT, src:&quot;http://localhost:9876/base/www/test.txt&quot;&#125;,</div><div class="line">            &#123;type:qtk.Assets.JSON, src:&quot;http://localhost:9876/base/www/test.json&quot;&#125;,</div><div class="line">            &#123;type:qtk.Assets.IMAGE, src:&quot;http://localhost:9876/base/www/test.jpg&quot;&#125;,</div><div class="line">            &#123;type:qtk.Assets.BLOB, src:&quot;http://localhost:9876/base/www/test.blob&quot;&#125;</div><div class="line">];</div><div class="line">var assets = new qtk.Assets.Group(items);</div><div class="line">assets.onProgress(function(info) &#123;</div><div class="line">    if(info.total === info.loaded &amp;&amp; info.loaded === items.length) &#123;</div><div class="line">         done();</div><div class="line">    &#125;</div><div class="line">    console.log(JSON.stringify(info));</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>3.清除缓存中的资源。一些资源在不需要时，可以从缓存中清除，以释放内存。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">qtk.Assets.clear(&quot;http://localhost:9876/base/www/test.jpg&quot;);</div></pre></td></tr></table></figure>
+		<p>QTK 是一套基于HTML5 Canvas实现的应用程序框架，和其它HTML5的框架相比，它并不适合开发网页，而是专注于应用程序开发。</p>
+<p>QTK主要特色如下：</p>
+<p>1.<strong>基于HTML5 Canvas实现</strong>。可以实现任何Native风格的控件，HTML5 Canvas使用硬件加速，轻松实现60FPS的动画。</p>
+<p>2.<strong>高效率，低功耗</strong>。JS代码针对V8优化，执行效率高。在界面有变化时才重新绘制，支持脏矩形，只绘制变化的部分，让计算开销降到最低。</p>
+<p>3.<strong>用QTK本身开发的IDE</strong>。支持在线版本和本地版本，让开发变得更简单。</p>
+<p>4.<strong>即可以开发移动应用程序，又可以开发桌面应用程序</strong>。QTK内部抽象出两者的不同，在运行时自动安装相应的策略。</p>
+<p>5.<strong>与传统HTML5控件良好互通</strong>。可以在QTK中使用HTML5元素，也可以在HTML5的控件中使用QTK。我们还计划支持React和WebComponent的编程方式。</p>
+<p>6.<strong>完整的测试程序</strong>。QTK使用Karma + Mocha对所以组件进行测试，通过不断完善测试程序，让你没有后顾之忧。</p>
+<p>7.<strong>完整的文档和示例</strong>。确保已经实现的控件，对使用者都是友好的，你可以无障碍的使用它们，请告诉我们任何让你产生挫折的地方，一定会得到优先解决。在开发的过程中我们也会在博客中写出QTK内部实现原理，以及做出某些决策的原因。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -126,7 +131,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Assets/">Assets</a><a href="/tags/QToolKit/">QToolKit</a>
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/About/">About</a>
   </div>
 
 </div>
@@ -135,7 +140,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://qtoolkit.github.io/2016/08/07/Assets-Manager/" data-title="Assets Manager | QToolKit" data-tsina="null" class="share clearfix">
+	  <div data-url="https://qtoolkit.github.io/2016/07/31/about/" data-title="About QToolKit | QToolKit" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -149,18 +154,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/08/16/Image-Tile/" title="Image Tile">
+ <a href="/2016/08/05/hello-world/" title="Hello Hexo">
   <strong>上一篇：</strong><br/>
   <span>
-  Image Tile</span>
+  Hello Hexo</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2016/08/06/Javascript-Test-Framework/"  title="Javascript Test Framework">
+<a href="/2016/07/31/Use-whatwg-fetch-Typescript/"  title="Use whatwg-fetch In Typescript">
  <strong>下一篇：</strong><br/> 
- <span>Javascript Test Framework
+ <span>Use whatwg-fetch In Typescript
 </span>
 </a>
 </div>

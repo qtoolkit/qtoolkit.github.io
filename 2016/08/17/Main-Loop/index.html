@@ -4,23 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>About QToolKit | QToolKit</title>
+    <title>Main Loop | QToolKit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jim">
     
 
-    
-    <meta name="description" content="An GUI ToolKit for desktop &amp; mobile applcations based on HTML5 Canvas.">
+    <meta name="keywords" content="MainLoop,QToolKit">
+    <meta name="description" content="QTK中的Main Loop主要是管理QTK的渲染循环，与直接调用用requestAnimationFrame相比，它有下列好处：
+1.多次请求重绘没有副作用。在QTK中每个控件的属性有变化时都需要重绘，控件并不需要知道别的控件有没有请求重绘，只管自己有变化时请求重绘就行了，这样势必出现重复请求重绘，MainLoop只在第一次请求重绘时才调用requestAnimationFrame，重复的请求只">
 <meta property="og:type" content="article">
-<meta property="og:title" content="About QToolKit">
-<meta property="og:url" content="https://qtoolkit.github.io/2016/07/24/about/index.html">
+<meta property="og:title" content="Main Loop">
+<meta property="og:url" content="https://qtoolkit.github.io/2016/08/17/Main-Loop/index.html">
 <meta property="og:site_name" content="QToolKit">
-<meta property="og:description" content="An GUI ToolKit for desktop &amp; mobile applcations based on HTML5 Canvas.">
-<meta property="og:updated_time" content="2016-08-10T13:50:21.000Z">
+<meta property="og:description" content="QTK中的Main Loop主要是管理QTK的渲染循环，与直接调用用requestAnimationFrame相比，它有下列好处：
+1.多次请求重绘没有副作用。在QTK中每个控件的属性有变化时都需要重绘，控件并不需要知道别的控件有没有请求重绘，只管自己有变化时请求重绘就行了，这样势必出现重复请求重绘，MainLoop只在第一次请求重绘时才调用requestAnimationFrame，重复的请求只">
+<meta property="og:updated_time" content="2016-08-17T11:11:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About QToolKit">
-<meta name="twitter:description" content="An GUI ToolKit for desktop &amp; mobile applcations based on HTML5 Canvas.">
+<meta name="twitter:title" content="Main Loop">
+<meta name="twitter:description" content="QTK中的Main Loop主要是管理QTK的渲染循环，与直接调用用requestAnimationFrame相比，它有下列好处：
+1.多次请求重绘没有副作用。在QTK中每个控件的属性有变化时都需要重绘，控件并不需要知道别的控件有没有请求重绘，只管自己有变化时请求重绘就行了，这样势必出现重复请求重绘，MainLoop只在第一次请求重绘时才调用requestAnimationFrame，重复的请求只">
 
     
     <link rel="alternative" href="/atom.xml" title="QToolKit" type="application/atom+xml">
@@ -58,7 +61,7 @@
 					
 						<li><a href="/archives">Archives</a></li>
 					
-						<li><a href="/2016/07/24/about/">About</a></li>
+						<li><a href="/2016/07/31/about/">About</a></li>
 					
 					<li>
  					
@@ -80,14 +83,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/24/about/" title="About QToolKit" itemprop="url">About QToolKit</a>
+      <a href="/2016/08/17/Main-Loop/" title="Main Loop" itemprop="url">Main Loop</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
 		
   <p class="article-time">
-    <time datetime="2016-07-24T04:01:41.000Z" itemprop="datePublished"> Published 2016-07-24</time>
+    <time datetime="2016-08-17T10:37:10.000Z" itemprop="datePublished"> Published 2016-08-17</time>
     
   </p>
 </header>
@@ -100,11 +103,28 @@
 		
 		</div>
 		
-		  
+		<p><a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>中的Main Loop主要是管理QTK的渲染循环，与直接调用用requestAnimationFrame相比，它有下列好处：</p>
+<p>1.多次请求重绘没有副作用。在QTK中每个控件的属性有变化时都需要重绘，控件并不需要知道别的控件有没有请求重绘，只管自己有变化时请求重绘就行了，这样势必出现重复请求重绘，MainLoop只在第一次请求重绘时才调用requestAnimationFrame，重复的请求只是增加一下计数。</p>
+<p>2.把绘制分成绘制前，绘制和绘制后多个阶段。动画可以在绘制前这个阶段执行，这样参数的变化就能在本次绘制中体现出来，而一些不太重要的事情可以放到绘制后执行。</p>
+<p>3.节省能源，绿色环保。控件有变化时请求重绘，没有变化时不需要重绘，只在有执行动画时才跑到最大帧率，而不是像游戏一样一直保持60FPS。</p>
+<p>4.注册的回调函数会一直执行，直到注销为止。</p>
+<p>使用方法如下（javascript）:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function draw(evt) &#123;</div><div class="line">	if(quit) &#123;</div><div class="line">		qtk.MainLoop.off(qtk.MainLoop.DRAW, draw);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">qtk.MainLoop.on(qtk.MainLoop.DRAW, draw);</div></pre></td></tr></table></figure>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/QToolKit/">QToolKit</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/QToolKit/">QToolKit</a><a href="/tags/MainLoop/">MainLoop</a>
+  </div>
 
 </div>
 
@@ -112,7 +132,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://qtoolkit.github.io/2016/07/24/about/" data-title="About QToolKit | QToolKit" data-tsina="null" class="share clearfix">
+	  <div data-url="https://qtoolkit.github.io/2016/08/17/Main-Loop/" data-title="Main Loop | QToolKit" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -125,14 +145,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/31/Use-whatwg-fetch-Typescript/" title="Use whatwg-fetch Typescript">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Use whatwg-fetch Typescript</span>
+
+<div class="next">
+<a href="/2016/08/16/Image-Tile/"  title="Image Tile">
+ <strong>下一篇：</strong><br/> 
+ <span>Image Tile
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -168,7 +188,7 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
+			<li><a href="/categories/QToolKit/" title="QToolKit">QToolKit<sup>4</sup></a></li>
 		  
 		
 		  
@@ -185,6 +205,10 @@
 		<ul class="clearfix">
 		
 			
+				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>4</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Test/" title="Test">Test<sup>1</sup></a></li>
 			
 		
@@ -197,19 +221,27 @@
 			
 		
 			
+				<li><a href="/tags/Assets/" title="Assets">Assets<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/MainLoop/" title="MainLoop">MainLoop<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ImageTile/" title="ImageTile">ImageTile<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/About/" title="About">About<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Typescript/" title="Typescript">Typescript<sup>1</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/whatwg-fetch/" title="whatwg-fetch">whatwg-fetch<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Assets/" title="Assets">Assets<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/QToolKit/" title="QToolKit">QToolKit<sup>1</sup></a></li>
 			
 		
 		</ul>
