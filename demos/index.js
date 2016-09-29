@@ -50,149 +50,171 @@ var qtk =
 	exports.Point = point_1.Point;
 	var rect_1 = __webpack_require__(2);
 	exports.Rect = rect_1.Rect;
-	var consts_1 = __webpack_require__(3);
+	var Assets = __webpack_require__(3);
+	exports.Assets = Assets;
+	var main_loop_1 = __webpack_require__(10);
+	exports.MainLoop = main_loop_1.MainLoop;
+	var matrix_1 = __webpack_require__(11);
+	exports.Matrix = matrix_1.Matrix;
+	var matrix_stack_1 = __webpack_require__(12);
+	exports.MatrixStack = matrix_stack_1.MatrixStack;
+	var image_1 = __webpack_require__(13);
+	exports.Image = image_1.Image;
+	var group_1 = __webpack_require__(80);
+	exports.Group = group_1.Group;
+	var edit_1 = __webpack_require__(81);
+	exports.Edit = edit_1.Edit;
+	var page_1 = __webpack_require__(85);
+	exports.Page = page_1.Page;
+	var pages_1 = __webpack_require__(86);
+	exports.Pages = pages_1.Pages;
+	var button_1 = __webpack_require__(87);
+	exports.Button = button_1.Button;
+	var tab_page_1 = __webpack_require__(88);
+	exports.TabPage = tab_page_1.TabPage;
+	var tab_button_1 = __webpack_require__(89);
+	exports.TabButton = tab_button_1.TabButton;
+	var tab_control_1 = __webpack_require__(93);
+	exports.TabControl = tab_control_1.TabControl;
+	var image_tile_1 = __webpack_require__(15);
+	exports.ImageDrawType = image_tile_1.ImageDrawType;
+	exports.ImageTile = image_tile_1.ImageTile;
+	var consts_1 = __webpack_require__(90);
 	exports.Direction = consts_1.Direction;
 	exports.Align = consts_1.Align;
 	exports.AlignH = consts_1.AlignH;
 	exports.AlignV = consts_1.AlignV;
 	exports.Orientation = consts_1.Orientation;
-	var Assets = __webpack_require__(4);
-	exports.Assets = Assets;
-	var image_tile_1 = __webpack_require__(13);
-	exports.ImageDrawType = image_tile_1.ImageDrawType;
-	exports.ImageTile = image_tile_1.ImageTile;
-	var main_loop_1 = __webpack_require__(16);
-	exports.MainLoop = main_loop_1.MainLoop;
-	var matrix_1 = __webpack_require__(17);
-	exports.Matrix = matrix_1.Matrix;
-	var matrix_stack_1 = __webpack_require__(18);
-	exports.MatrixStack = matrix_stack_1.MatrixStack;
-	var image_1 = __webpack_require__(19);
-	exports.Image = image_1.Image;
-	var group_1 = __webpack_require__(85);
-	exports.Group = group_1.Group;
-	var edit_1 = __webpack_require__(86);
-	exports.Edit = edit_1.Edit;
-	var page_1 = __webpack_require__(90);
-	exports.Page = page_1.Page;
-	var pages_1 = __webpack_require__(91);
-	exports.Pages = pages_1.Pages;
-	var button_1 = __webpack_require__(92);
-	exports.Button = button_1.Button;
-	var tab_page_1 = __webpack_require__(93);
-	exports.TabPage = tab_page_1.TabPage;
-	var tab_button_1 = __webpack_require__(94);
-	exports.TabButton = tab_button_1.TabButton;
-	var tab_control_1 = __webpack_require__(97);
-	exports.TabControl = tab_control_1.TabControl;
-	var message_box_1 = __webpack_require__(99);
+	var message_box_1 = __webpack_require__(95);
+	exports.ButtonOption = message_box_1.ButtonOption;
+	exports.ButtonsOptions = message_box_1.ButtonsOptions;
+	exports.TitleOptions = message_box_1.TitleOptions;
 	exports.MessageBox = message_box_1.MessageBox;
-	var tab_button_group_1 = __webpack_require__(98);
+	var tab_button_group_1 = __webpack_require__(94);
 	exports.TabButtonGroup = tab_button_group_1.TabButtonGroup;
-	var rich_text_1 = __webpack_require__(119);
+	var rich_text_1 = __webpack_require__(115);
 	exports.RichText = rich_text_1.RichText;
-	var rich_text_edit_1 = __webpack_require__(120);
+	var rich_text_edit_1 = __webpack_require__(116);
 	exports.RichTextEdit = rich_text_edit_1.RichTextEdit;
-	var label_1 = __webpack_require__(87);
+	var label_1 = __webpack_require__(82);
 	exports.Label = label_1.Label;
-	var slider_1 = __webpack_require__(121);
+	var slider_1 = __webpack_require__(117);
 	exports.Slider = slider_1.Slider;
-	var switch_1 = __webpack_require__(122);
+	var switch_1 = __webpack_require__(118);
 	exports.Switch = switch_1.Switch;
-	var combo_box_1 = __webpack_require__(123);
+	var combo_box_1 = __webpack_require__(119);
 	exports.ComboBox = combo_box_1.ComboBox;
-	var check_button_1 = __webpack_require__(96);
+	exports.ComboBoxEditable = combo_box_1.ComboBoxEditable;
+	var check_button_1 = __webpack_require__(92);
 	exports.CheckButton = check_button_1.CheckButton;
-	var menu_1 = __webpack_require__(124);
+	var menu_1 = __webpack_require__(120);
 	exports.Menu = menu_1.Menu;
 	exports.MenuItem = menu_1.MenuItem;
-	var menu_bar_1 = __webpack_require__(125);
+	var menu_bar_1 = __webpack_require__(121);
 	exports.MenuBar = menu_bar_1.MenuBar;
 	exports.MenuBarItem = menu_bar_1.MenuBarItem;
-	var color_tile_1 = __webpack_require__(126);
+	var color_tile_1 = __webpack_require__(122);
 	exports.ColorTile = color_tile_1.ColorTile;
 	exports.ColorLine = color_tile_1.ColorLine;
-	var radio_button_1 = __webpack_require__(95);
+	var radio_button_1 = __webpack_require__(91);
 	exports.RadioButton = radio_button_1.RadioButton;
-	var progress_bar_1 = __webpack_require__(108);
+	var progress_bar_1 = __webpack_require__(104);
 	exports.ProgressBarType = progress_bar_1.ProgressBarType;
 	exports.ProgressBar = progress_bar_1.ProgressBar;
-	var dialog_1 = __webpack_require__(100);
+	var dialog_1 = __webpack_require__(96);
 	exports.Dialog = dialog_1.Dialog;
-	var tree_item_1 = __webpack_require__(127);
+	var tree_item_1 = __webpack_require__(123);
 	exports.TreeItem = tree_item_1.TreeItem;
-	var tree_view_1 = __webpack_require__(128);
+	var tree_view_1 = __webpack_require__(124);
 	exports.TreeView = tree_view_1.TreeView;
-	var tree_item_data_1 = __webpack_require__(129);
+	var tree_item_data_1 = __webpack_require__(125);
 	exports.TreeItemData = tree_item_data_1.TreeItemData;
-	var list_item_1 = __webpack_require__(114);
+	var list_item_1 = __webpack_require__(110);
 	exports.ListItem = list_item_1.ListItem;
 	exports.ListItemStyle = list_item_1.ListItemStyle;
-	var grid_view_1 = __webpack_require__(130);
+	var grid_view_1 = __webpack_require__(126);
 	exports.GridView = grid_view_1.GridView;
-	var list_view_1 = __webpack_require__(102);
+	var list_view_1 = __webpack_require__(98);
 	exports.ListView = list_view_1.ListView;
-	var window_normal_1 = __webpack_require__(131);
+	var window_normal_1 = __webpack_require__(127);
 	exports.WindowNormal = window_normal_1.WindowNormal;
-	var widget_1 = __webpack_require__(21);
+	var widget_1 = __webpack_require__(16);
 	exports.Widget = widget_1.Widget;
 	exports.WidgetState = widget_1.WidgetState;
 	exports.WidgetMode = widget_1.WidgetMode;
 	exports.HitTestResult = widget_1.HitTestResult;
-	var scroll_view_1 = __webpack_require__(103);
+	var scroll_view_1 = __webpack_require__(99);
 	exports.ScrollerBarVisibility = scroll_view_1.ScrollerBarVisibility;
 	exports.ScrollBarStyle = scroll_view_1.ScrollBarStyle;
 	exports.ScrollView = scroll_view_1.ScrollView;
-	var style_1 = __webpack_require__(20);
+	var style_1 = __webpack_require__(14);
 	exports.Style = style_1.Style;
-	var widget_factory_1 = __webpack_require__(82);
+	var widget_factory_1 = __webpack_require__(77);
 	exports.WidgetFactory = widget_factory_1.WidgetFactory;
-	var theme_manager_1 = __webpack_require__(112);
+	var theme_manager_1 = __webpack_require__(108);
 	exports.ThemeManager = theme_manager_1.ThemeManager;
-	var Events = __webpack_require__(15);
+	var Events = __webpack_require__(7);
 	exports.Events = Events;
-	var canvas_1 = __webpack_require__(22);
+	var canvas_1 = __webpack_require__(17);
 	exports.Canvas = canvas_1.Canvas;
-	var draggable_1 = __webpack_require__(132);
+	var draggable_1 = __webpack_require__(128);
 	exports.Draggable = draggable_1.Draggable;
-	var droppable_1 = __webpack_require__(133);
+	var droppable_1 = __webpack_require__(129);
 	exports.Droppable = droppable_1.Droppable;
-	var movable_1 = __webpack_require__(134);
+	var movable_1 = __webpack_require__(130);
 	exports.Movable = movable_1.Movable;
-	var resizable_1 = __webpack_require__(135);
+	var resizable_1 = __webpack_require__(131);
 	exports.Resizable = resizable_1.Resizable;
-	var emitter_1 = __webpack_require__(14);
+	var emitter_1 = __webpack_require__(8);
 	exports.Emitter = emitter_1.Emitter;
-	var view_port_1 = __webpack_require__(111);
+	var view_port_1 = __webpack_require__(107);
 	exports.ViewPort = view_port_1.ViewPort;
-	var deviceInfo = __webpack_require__(113);
+	var deviceInfo = __webpack_require__(109);
 	exports.deviceInfo = deviceInfo;
-	var inputEventAdapter = __webpack_require__(24);
+	var inputEventAdapter = __webpack_require__(19);
 	exports.inputEventAdapter = inputEventAdapter;
-	var application_1 = __webpack_require__(109);
+	var application_1 = __webpack_require__(105);
 	exports.Application = application_1.Application;
-	var Services = __webpack_require__(110);
+	var Services = __webpack_require__(106);
 	exports.Services = Services;
-	var key_event_1 = __webpack_require__(25);
+	var key_event_1 = __webpack_require__(20);
 	exports.KeyEvent = key_event_1.KeyEvent;
-	var linear_layouter_1 = __webpack_require__(116);
+	var graphics_1 = __webpack_require__(23);
+	exports.RoundType = graphics_1.RoundType;
+	exports.Graphics = graphics_1.Graphics;
+	var linear_layouter_1 = __webpack_require__(112);
 	exports.LinearLayouter = linear_layouter_1.LinearLayouter;
 	exports.LinearLayouterParam = linear_layouter_1.LinearLayouterParam;
-	var dock_layouter_1 = __webpack_require__(115);
+	var dock_layouter_1 = __webpack_require__(111);
 	exports.DockLayouter = dock_layouter_1.DockLayouter;
 	exports.DockLayouterParam = dock_layouter_1.DockLayouterParam;
-	var grid_layouter_1 = __webpack_require__(117);
+	var grid_layouter_1 = __webpack_require__(113);
 	exports.GridLayouter = grid_layouter_1.GridLayouter;
 	exports.GridLayouterParam = grid_layouter_1.GridLayouterParam;
-	var list_layouter_1 = __webpack_require__(107);
+	var list_layouter_1 = __webpack_require__(103);
 	exports.ListLayouter = list_layouter_1.ListLayouter;
 	exports.ListLayouterParam = list_layouter_1.ListLayouterParam;
-	var simple_layouter_1 = __webpack_require__(118);
+	var simple_layouter_1 = __webpack_require__(114);
 	exports.SimpleLayouter = simple_layouter_1.SimpleLayouter;
 	exports.SimpleLayouterParam = simple_layouter_1.SimpleLayouterParam;
+	var title_edit_1 = __webpack_require__(132);
+	exports.TitleEdit = title_edit_1.TitleEdit;
+	var title_choosable_edit_1 = __webpack_require__(134);
+	exports.TitleChoosableEdit = title_choosable_edit_1.TitleChoosableEdit;
+	var title_text_area_1 = __webpack_require__(136);
+	exports.TitleTextArea = title_text_area_1.TitleTextArea;
+	var choosable_edit_1 = __webpack_require__(135);
+	exports.ChoosableEdit = choosable_edit_1.ChoosableEdit;
+	var title_slider_1 = __webpack_require__(137);
+	exports.TitleSlider = title_slider_1.TitleSlider;
+	var title_combo_box_1 = __webpack_require__(138);
+	exports.TitleComboBox = title_combo_box_1.TitleComboBox;
+	exports.TitleComboBoxEditable = title_combo_box_1.TitleComboBoxEditable;
 	/// <reference path="../typings/globals/tween.js/index.d.ts"/>
-	var TWEEN = __webpack_require__(26);
+	var TWEEN = __webpack_require__(21);
 	exports.TWEEN = TWEEN;
+	var recyclable_creator_1 = __webpack_require__(79);
+	exports.RecyclableCreator = recyclable_creator_1.RecyclableCreator;
 
 
 /***/ },
@@ -284,92 +306,21 @@ var qtk =
 
 /***/ },
 /* 3 */
-/***/ function(module, exports) {
-
-	"use strict";
-	(function (Orientation) {
-	    Orientation[Orientation["V"] = 1] = "V";
-	    Orientation[Orientation["VERTICAL"] = 1] = "VERTICAL";
-	    Orientation[Orientation["H"] = 2] = "H";
-	    Orientation[Orientation["HORIZONTAL"] = 2] = "HORIZONTAL";
-	})(exports.Orientation || (exports.Orientation = {}));
-	var Orientation = exports.Orientation;
-	;
-	(function (Direction) {
-	    Direction[Direction["W"] = 1] = "W";
-	    Direction[Direction["WEST"] = 1] = "WEST";
-	    Direction[Direction["E"] = 2] = "E";
-	    Direction[Direction["EAST"] = 2] = "EAST";
-	    Direction[Direction["N"] = 3] = "N";
-	    Direction[Direction["NORTH"] = 3] = "NORTH";
-	    Direction[Direction["S"] = 4] = "S";
-	    Direction[Direction["SOUTH"] = 4] = "SOUTH";
-	    Direction[Direction["L"] = 1] = "L";
-	    Direction[Direction["LEFT"] = 1] = "LEFT";
-	    Direction[Direction["R"] = 2] = "R";
-	    Direction[Direction["RIGHT"] = 2] = "RIGHT";
-	    Direction[Direction["T"] = 3] = "T";
-	    Direction[Direction["TOP"] = 3] = "TOP";
-	    Direction[Direction["B"] = 4] = "B";
-	    Direction[Direction["BOTTOM"] = 4] = "BOTTOM";
-	})(exports.Direction || (exports.Direction = {}));
-	var Direction = exports.Direction;
-	;
-	(function (AlignH) {
-	    AlignH[AlignH["L"] = 1] = "L";
-	    AlignH[AlignH["LEFT"] = 1] = "LEFT";
-	    AlignH[AlignH["C"] = 2] = "C";
-	    AlignH[AlignH["CENTER"] = 2] = "CENTER";
-	    AlignH[AlignH["R"] = 3] = "R";
-	    AlignH[AlignH["RIGHT"] = 3] = "RIGHT";
-	})(exports.AlignH || (exports.AlignH = {}));
-	var AlignH = exports.AlignH;
-	;
-	(function (AlignV) {
-	    AlignV[AlignV["T"] = 1] = "T";
-	    AlignV[AlignV["TOP"] = 1] = "TOP";
-	    AlignV[AlignV["M"] = 2] = "M";
-	    AlignV[AlignV["MIDDLE"] = 2] = "MIDDLE";
-	    AlignV[AlignV["B"] = 3] = "B";
-	    AlignV[AlignV["BOTTOM"] = 3] = "BOTTOM";
-	})(exports.AlignV || (exports.AlignV = {}));
-	var AlignV = exports.AlignV;
-	;
-	(function (Align) {
-	    Align[Align["L"] = 1] = "L";
-	    Align[Align["LEFT"] = 1] = "LEFT";
-	    Align[Align["C"] = 2] = "C";
-	    Align[Align["CENTER"] = 2] = "CENTER";
-	    Align[Align["R"] = 3] = "R";
-	    Align[Align["RIGHT"] = 3] = "RIGHT";
-	    Align[Align["T"] = 1] = "T";
-	    Align[Align["TOP"] = 1] = "TOP";
-	    Align[Align["M"] = 2] = "M";
-	    Align[Align["MIDDLE"] = 2] = "MIDDLE";
-	    Align[Align["B"] = 3] = "B";
-	    Align[Align["BOTTOM"] = 3] = "BOTTOM";
-	})(exports.Align || (exports.Align = {}));
-	var Align = exports.Align;
-	;
-
-
-/***/ },
-/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/// <reference path="../typings/globals/es6-promise/index.d.ts"/>
 	/// <reference path="../typings/globals/node/index.d.ts"/>
 	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
+	/// <reference path="../typings/globals/whatwg-fetch/index.d.ts"/>
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	__webpack_require__(5);
-	var path = __webpack_require__(6);
-	var es6_promise_1 = __webpack_require__(8);
-	var EventEmitter = __webpack_require__(12);
+	__webpack_require__(4);
+	var path = __webpack_require__(5);
+	var Events = __webpack_require__(7);
+	var emitter_1 = __webpack_require__(8);
 	exports.AUDIO = "audio";
 	exports.IMAGE = "image";
 	exports.BLOB = "blob";
@@ -382,7 +333,7 @@ var qtk =
 	    if (!item) {
 	        item = fetch(url).then(function ok(response) {
 	            if (response.status !== 200) {
-	                return es6_promise_1.Promise.reject(null);
+	                return Promise.reject(null);
 	            }
 	            if (type === exports.JSON) {
 	                return response.json();
@@ -435,7 +386,7 @@ var qtk =
 	function loadImage(url) {
 	    var item = assetsCache[url];
 	    if (!item) {
-	        item = new es6_promise_1.Promise(function (resolve, reject) {
+	        item = new Promise(function (resolve, reject) {
 	            var image = new Image();
 	            image.onload = function () {
 	                resolve(image);
@@ -456,7 +407,7 @@ var qtk =
 	 * @returns Promise
 	 */
 	function loadScript(url) {
-	    var item = new es6_promise_1.Promise(function (resolve, reject) {
+	    var item = new Promise(function (resolve, reject) {
 	        var node = document.head ? document.head : document.body;
 	        var script = document.createElement("script");
 	        script.onload = function () {
@@ -479,7 +430,7 @@ var qtk =
 	function loadAudio(url) {
 	    var item = assetsCache[url];
 	    if (!item) {
-	        item = new es6_promise_1.Promise(function (resolve, reject) {
+	        item = new Promise(function (resolve, reject) {
 	            var audio = new Audio();
 	            audio.onload = function () {
 	                resolve(audio);
@@ -534,7 +485,8 @@ var qtk =
 	        _super.call(this);
 	        this.event = {
 	            total: 0,
-	            loaded: 0
+	            loaded: 0,
+	            type: Events.PROGRESS
 	        };
 	        var i = 0;
 	        var n = items.length;
@@ -547,12 +499,12 @@ var qtk =
 	     * Register of a progress callback function
 	     */
 	    Group.prototype.onProgress = function (callback) {
-	        this.on(Group.EVENT_PROGRESS, callback);
+	        this.on(Events.PROGRESS, callback);
 	    };
 	    Group.prototype.addLoaded = function () {
 	        this.loaded++;
 	        this.event.loaded = this.loaded;
-	        this.emit(Group.EVENT_PROGRESS, this.event);
+	        this.dispatchEvent(this.event);
 	    };
 	    Group.prototype.loadOne = function (item) {
 	        var src = item.src;
@@ -572,14 +524,13 @@ var qtk =
 	            loadText(src).then(addLoaded, addLoaded);
 	        }
 	    };
-	    Group.EVENT_PROGRESS = "progress";
 	    return Group;
-	}(EventEmitter));
+	}(emitter_1.Emitter));
 	exports.Group = Group;
 
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -1018,7 +969,7 @@ var qtk =
 
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -1246,10 +1197,10 @@ var qtk =
 	    }
 	;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -1415,1836 +1366,7 @@ var qtk =
 
 
 /***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
-	 * @overview es6-promise - a tiny implementation of Promises/A+.
-	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
-	 * @license   Licensed under MIT license
-	 *            See https://raw.githubusercontent.com/jakearchibald/es6-promise/master/LICENSE
-	 * @version   3.2.1
-	 */
-
-	(function() {
-	    "use strict";
-	    function lib$es6$promise$utils$$objectOrFunction(x) {
-	      return typeof x === 'function' || (typeof x === 'object' && x !== null);
-	    }
-
-	    function lib$es6$promise$utils$$isFunction(x) {
-	      return typeof x === 'function';
-	    }
-
-	    function lib$es6$promise$utils$$isMaybeThenable(x) {
-	      return typeof x === 'object' && x !== null;
-	    }
-
-	    var lib$es6$promise$utils$$_isArray;
-	    if (!Array.isArray) {
-	      lib$es6$promise$utils$$_isArray = function (x) {
-	        return Object.prototype.toString.call(x) === '[object Array]';
-	      };
-	    } else {
-	      lib$es6$promise$utils$$_isArray = Array.isArray;
-	    }
-
-	    var lib$es6$promise$utils$$isArray = lib$es6$promise$utils$$_isArray;
-	    var lib$es6$promise$asap$$len = 0;
-	    var lib$es6$promise$asap$$vertxNext;
-	    var lib$es6$promise$asap$$customSchedulerFn;
-
-	    var lib$es6$promise$asap$$asap = function asap(callback, arg) {
-	      lib$es6$promise$asap$$queue[lib$es6$promise$asap$$len] = callback;
-	      lib$es6$promise$asap$$queue[lib$es6$promise$asap$$len + 1] = arg;
-	      lib$es6$promise$asap$$len += 2;
-	      if (lib$es6$promise$asap$$len === 2) {
-	        // If len is 2, that means that we need to schedule an async flush.
-	        // If additional callbacks are queued before the queue is flushed, they
-	        // will be processed by this flush that we are scheduling.
-	        if (lib$es6$promise$asap$$customSchedulerFn) {
-	          lib$es6$promise$asap$$customSchedulerFn(lib$es6$promise$asap$$flush);
-	        } else {
-	          lib$es6$promise$asap$$scheduleFlush();
-	        }
-	      }
-	    }
-
-	    function lib$es6$promise$asap$$setScheduler(scheduleFn) {
-	      lib$es6$promise$asap$$customSchedulerFn = scheduleFn;
-	    }
-
-	    function lib$es6$promise$asap$$setAsap(asapFn) {
-	      lib$es6$promise$asap$$asap = asapFn;
-	    }
-
-	    var lib$es6$promise$asap$$browserWindow = (typeof window !== 'undefined') ? window : undefined;
-	    var lib$es6$promise$asap$$browserGlobal = lib$es6$promise$asap$$browserWindow || {};
-	    var lib$es6$promise$asap$$BrowserMutationObserver = lib$es6$promise$asap$$browserGlobal.MutationObserver || lib$es6$promise$asap$$browserGlobal.WebKitMutationObserver;
-	    var lib$es6$promise$asap$$isNode = typeof self === 'undefined' && typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
-
-	    // test for web worker but not in IE10
-	    var lib$es6$promise$asap$$isWorker = typeof Uint8ClampedArray !== 'undefined' &&
-	      typeof importScripts !== 'undefined' &&
-	      typeof MessageChannel !== 'undefined';
-
-	    // node
-	    function lib$es6$promise$asap$$useNextTick() {
-	      // node version 0.10.x displays a deprecation warning when nextTick is used recursively
-	      // see https://github.com/cujojs/when/issues/410 for details
-	      return function() {
-	        process.nextTick(lib$es6$promise$asap$$flush);
-	      };
-	    }
-
-	    // vertx
-	    function lib$es6$promise$asap$$useVertxTimer() {
-	      return function() {
-	        lib$es6$promise$asap$$vertxNext(lib$es6$promise$asap$$flush);
-	      };
-	    }
-
-	    function lib$es6$promise$asap$$useMutationObserver() {
-	      var iterations = 0;
-	      var observer = new lib$es6$promise$asap$$BrowserMutationObserver(lib$es6$promise$asap$$flush);
-	      var node = document.createTextNode('');
-	      observer.observe(node, { characterData: true });
-
-	      return function() {
-	        node.data = (iterations = ++iterations % 2);
-	      };
-	    }
-
-	    // web worker
-	    function lib$es6$promise$asap$$useMessageChannel() {
-	      var channel = new MessageChannel();
-	      channel.port1.onmessage = lib$es6$promise$asap$$flush;
-	      return function () {
-	        channel.port2.postMessage(0);
-	      };
-	    }
-
-	    function lib$es6$promise$asap$$useSetTimeout() {
-	      return function() {
-	        setTimeout(lib$es6$promise$asap$$flush, 1);
-	      };
-	    }
-
-	    var lib$es6$promise$asap$$queue = new Array(1000);
-	    function lib$es6$promise$asap$$flush() {
-	      for (var i = 0; i < lib$es6$promise$asap$$len; i+=2) {
-	        var callback = lib$es6$promise$asap$$queue[i];
-	        var arg = lib$es6$promise$asap$$queue[i+1];
-
-	        callback(arg);
-
-	        lib$es6$promise$asap$$queue[i] = undefined;
-	        lib$es6$promise$asap$$queue[i+1] = undefined;
-	      }
-
-	      lib$es6$promise$asap$$len = 0;
-	    }
-
-	    function lib$es6$promise$asap$$attemptVertx() {
-	      try {
-	        var r = require;
-	        var vertx = __webpack_require__(10);
-	        lib$es6$promise$asap$$vertxNext = vertx.runOnLoop || vertx.runOnContext;
-	        return lib$es6$promise$asap$$useVertxTimer();
-	      } catch(e) {
-	        return lib$es6$promise$asap$$useSetTimeout();
-	      }
-	    }
-
-	    var lib$es6$promise$asap$$scheduleFlush;
-	    // Decide what async method to use to triggering processing of queued callbacks:
-	    if (lib$es6$promise$asap$$isNode) {
-	      lib$es6$promise$asap$$scheduleFlush = lib$es6$promise$asap$$useNextTick();
-	    } else if (lib$es6$promise$asap$$BrowserMutationObserver) {
-	      lib$es6$promise$asap$$scheduleFlush = lib$es6$promise$asap$$useMutationObserver();
-	    } else if (lib$es6$promise$asap$$isWorker) {
-	      lib$es6$promise$asap$$scheduleFlush = lib$es6$promise$asap$$useMessageChannel();
-	    } else if (lib$es6$promise$asap$$browserWindow === undefined && "function" === 'function') {
-	      lib$es6$promise$asap$$scheduleFlush = lib$es6$promise$asap$$attemptVertx();
-	    } else {
-	      lib$es6$promise$asap$$scheduleFlush = lib$es6$promise$asap$$useSetTimeout();
-	    }
-	    function lib$es6$promise$then$$then(onFulfillment, onRejection) {
-	      var parent = this;
-
-	      var child = new this.constructor(lib$es6$promise$$internal$$noop);
-
-	      if (child[lib$es6$promise$$internal$$PROMISE_ID] === undefined) {
-	        lib$es6$promise$$internal$$makePromise(child);
-	      }
-
-	      var state = parent._state;
-
-	      if (state) {
-	        var callback = arguments[state - 1];
-	        lib$es6$promise$asap$$asap(function(){
-	          lib$es6$promise$$internal$$invokeCallback(state, child, callback, parent._result);
-	        });
-	      } else {
-	        lib$es6$promise$$internal$$subscribe(parent, child, onFulfillment, onRejection);
-	      }
-
-	      return child;
-	    }
-	    var lib$es6$promise$then$$default = lib$es6$promise$then$$then;
-	    function lib$es6$promise$promise$resolve$$resolve(object) {
-	      /*jshint validthis:true */
-	      var Constructor = this;
-
-	      if (object && typeof object === 'object' && object.constructor === Constructor) {
-	        return object;
-	      }
-
-	      var promise = new Constructor(lib$es6$promise$$internal$$noop);
-	      lib$es6$promise$$internal$$resolve(promise, object);
-	      return promise;
-	    }
-	    var lib$es6$promise$promise$resolve$$default = lib$es6$promise$promise$resolve$$resolve;
-	    var lib$es6$promise$$internal$$PROMISE_ID = Math.random().toString(36).substring(16);
-
-	    function lib$es6$promise$$internal$$noop() {}
-
-	    var lib$es6$promise$$internal$$PENDING   = void 0;
-	    var lib$es6$promise$$internal$$FULFILLED = 1;
-	    var lib$es6$promise$$internal$$REJECTED  = 2;
-
-	    var lib$es6$promise$$internal$$GET_THEN_ERROR = new lib$es6$promise$$internal$$ErrorObject();
-
-	    function lib$es6$promise$$internal$$selfFulfillment() {
-	      return new TypeError("You cannot resolve a promise with itself");
-	    }
-
-	    function lib$es6$promise$$internal$$cannotReturnOwn() {
-	      return new TypeError('A promises callback cannot return that same promise.');
-	    }
-
-	    function lib$es6$promise$$internal$$getThen(promise) {
-	      try {
-	        return promise.then;
-	      } catch(error) {
-	        lib$es6$promise$$internal$$GET_THEN_ERROR.error = error;
-	        return lib$es6$promise$$internal$$GET_THEN_ERROR;
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$tryThen(then, value, fulfillmentHandler, rejectionHandler) {
-	      try {
-	        then.call(value, fulfillmentHandler, rejectionHandler);
-	      } catch(e) {
-	        return e;
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$handleForeignThenable(promise, thenable, then) {
-	       lib$es6$promise$asap$$asap(function(promise) {
-	        var sealed = false;
-	        var error = lib$es6$promise$$internal$$tryThen(then, thenable, function(value) {
-	          if (sealed) { return; }
-	          sealed = true;
-	          if (thenable !== value) {
-	            lib$es6$promise$$internal$$resolve(promise, value);
-	          } else {
-	            lib$es6$promise$$internal$$fulfill(promise, value);
-	          }
-	        }, function(reason) {
-	          if (sealed) { return; }
-	          sealed = true;
-
-	          lib$es6$promise$$internal$$reject(promise, reason);
-	        }, 'Settle: ' + (promise._label || ' unknown promise'));
-
-	        if (!sealed && error) {
-	          sealed = true;
-	          lib$es6$promise$$internal$$reject(promise, error);
-	        }
-	      }, promise);
-	    }
-
-	    function lib$es6$promise$$internal$$handleOwnThenable(promise, thenable) {
-	      if (thenable._state === lib$es6$promise$$internal$$FULFILLED) {
-	        lib$es6$promise$$internal$$fulfill(promise, thenable._result);
-	      } else if (thenable._state === lib$es6$promise$$internal$$REJECTED) {
-	        lib$es6$promise$$internal$$reject(promise, thenable._result);
-	      } else {
-	        lib$es6$promise$$internal$$subscribe(thenable, undefined, function(value) {
-	          lib$es6$promise$$internal$$resolve(promise, value);
-	        }, function(reason) {
-	          lib$es6$promise$$internal$$reject(promise, reason);
-	        });
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$handleMaybeThenable(promise, maybeThenable, then) {
-	      if (maybeThenable.constructor === promise.constructor &&
-	          then === lib$es6$promise$then$$default &&
-	          constructor.resolve === lib$es6$promise$promise$resolve$$default) {
-	        lib$es6$promise$$internal$$handleOwnThenable(promise, maybeThenable);
-	      } else {
-	        if (then === lib$es6$promise$$internal$$GET_THEN_ERROR) {
-	          lib$es6$promise$$internal$$reject(promise, lib$es6$promise$$internal$$GET_THEN_ERROR.error);
-	        } else if (then === undefined) {
-	          lib$es6$promise$$internal$$fulfill(promise, maybeThenable);
-	        } else if (lib$es6$promise$utils$$isFunction(then)) {
-	          lib$es6$promise$$internal$$handleForeignThenable(promise, maybeThenable, then);
-	        } else {
-	          lib$es6$promise$$internal$$fulfill(promise, maybeThenable);
-	        }
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$resolve(promise, value) {
-	      if (promise === value) {
-	        lib$es6$promise$$internal$$reject(promise, lib$es6$promise$$internal$$selfFulfillment());
-	      } else if (lib$es6$promise$utils$$objectOrFunction(value)) {
-	        lib$es6$promise$$internal$$handleMaybeThenable(promise, value, lib$es6$promise$$internal$$getThen(value));
-	      } else {
-	        lib$es6$promise$$internal$$fulfill(promise, value);
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$publishRejection(promise) {
-	      if (promise._onerror) {
-	        promise._onerror(promise._result);
-	      }
-
-	      lib$es6$promise$$internal$$publish(promise);
-	    }
-
-	    function lib$es6$promise$$internal$$fulfill(promise, value) {
-	      if (promise._state !== lib$es6$promise$$internal$$PENDING) { return; }
-
-	      promise._result = value;
-	      promise._state = lib$es6$promise$$internal$$FULFILLED;
-
-	      if (promise._subscribers.length !== 0) {
-	        lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publish, promise);
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$reject(promise, reason) {
-	      if (promise._state !== lib$es6$promise$$internal$$PENDING) { return; }
-	      promise._state = lib$es6$promise$$internal$$REJECTED;
-	      promise._result = reason;
-
-	      lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publishRejection, promise);
-	    }
-
-	    function lib$es6$promise$$internal$$subscribe(parent, child, onFulfillment, onRejection) {
-	      var subscribers = parent._subscribers;
-	      var length = subscribers.length;
-
-	      parent._onerror = null;
-
-	      subscribers[length] = child;
-	      subscribers[length + lib$es6$promise$$internal$$FULFILLED] = onFulfillment;
-	      subscribers[length + lib$es6$promise$$internal$$REJECTED]  = onRejection;
-
-	      if (length === 0 && parent._state) {
-	        lib$es6$promise$asap$$asap(lib$es6$promise$$internal$$publish, parent);
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$publish(promise) {
-	      var subscribers = promise._subscribers;
-	      var settled = promise._state;
-
-	      if (subscribers.length === 0) { return; }
-
-	      var child, callback, detail = promise._result;
-
-	      for (var i = 0; i < subscribers.length; i += 3) {
-	        child = subscribers[i];
-	        callback = subscribers[i + settled];
-
-	        if (child) {
-	          lib$es6$promise$$internal$$invokeCallback(settled, child, callback, detail);
-	        } else {
-	          callback(detail);
-	        }
-	      }
-
-	      promise._subscribers.length = 0;
-	    }
-
-	    function lib$es6$promise$$internal$$ErrorObject() {
-	      this.error = null;
-	    }
-
-	    var lib$es6$promise$$internal$$TRY_CATCH_ERROR = new lib$es6$promise$$internal$$ErrorObject();
-
-	    function lib$es6$promise$$internal$$tryCatch(callback, detail) {
-	      try {
-	        return callback(detail);
-	      } catch(e) {
-	        lib$es6$promise$$internal$$TRY_CATCH_ERROR.error = e;
-	        return lib$es6$promise$$internal$$TRY_CATCH_ERROR;
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$invokeCallback(settled, promise, callback, detail) {
-	      var hasCallback = lib$es6$promise$utils$$isFunction(callback),
-	          value, error, succeeded, failed;
-
-	      if (hasCallback) {
-	        value = lib$es6$promise$$internal$$tryCatch(callback, detail);
-
-	        if (value === lib$es6$promise$$internal$$TRY_CATCH_ERROR) {
-	          failed = true;
-	          error = value.error;
-	          value = null;
-	        } else {
-	          succeeded = true;
-	        }
-
-	        if (promise === value) {
-	          lib$es6$promise$$internal$$reject(promise, lib$es6$promise$$internal$$cannotReturnOwn());
-	          return;
-	        }
-
-	      } else {
-	        value = detail;
-	        succeeded = true;
-	      }
-
-	      if (promise._state !== lib$es6$promise$$internal$$PENDING) {
-	        // noop
-	      } else if (hasCallback && succeeded) {
-	        lib$es6$promise$$internal$$resolve(promise, value);
-	      } else if (failed) {
-	        lib$es6$promise$$internal$$reject(promise, error);
-	      } else if (settled === lib$es6$promise$$internal$$FULFILLED) {
-	        lib$es6$promise$$internal$$fulfill(promise, value);
-	      } else if (settled === lib$es6$promise$$internal$$REJECTED) {
-	        lib$es6$promise$$internal$$reject(promise, value);
-	      }
-	    }
-
-	    function lib$es6$promise$$internal$$initializePromise(promise, resolver) {
-	      try {
-	        resolver(function resolvePromise(value){
-	          lib$es6$promise$$internal$$resolve(promise, value);
-	        }, function rejectPromise(reason) {
-	          lib$es6$promise$$internal$$reject(promise, reason);
-	        });
-	      } catch(e) {
-	        lib$es6$promise$$internal$$reject(promise, e);
-	      }
-	    }
-
-	    var lib$es6$promise$$internal$$id = 0;
-	    function lib$es6$promise$$internal$$nextId() {
-	      return lib$es6$promise$$internal$$id++;
-	    }
-
-	    function lib$es6$promise$$internal$$makePromise(promise) {
-	      promise[lib$es6$promise$$internal$$PROMISE_ID] = lib$es6$promise$$internal$$id++;
-	      promise._state = undefined;
-	      promise._result = undefined;
-	      promise._subscribers = [];
-	    }
-
-	    function lib$es6$promise$promise$all$$all(entries) {
-	      return new lib$es6$promise$enumerator$$default(this, entries).promise;
-	    }
-	    var lib$es6$promise$promise$all$$default = lib$es6$promise$promise$all$$all;
-	    function lib$es6$promise$promise$race$$race(entries) {
-	      /*jshint validthis:true */
-	      var Constructor = this;
-
-	      if (!lib$es6$promise$utils$$isArray(entries)) {
-	        return new Constructor(function(resolve, reject) {
-	          reject(new TypeError('You must pass an array to race.'));
-	        });
-	      } else {
-	        return new Constructor(function(resolve, reject) {
-	          var length = entries.length;
-	          for (var i = 0; i < length; i++) {
-	            Constructor.resolve(entries[i]).then(resolve, reject);
-	          }
-	        });
-	      }
-	    }
-	    var lib$es6$promise$promise$race$$default = lib$es6$promise$promise$race$$race;
-	    function lib$es6$promise$promise$reject$$reject(reason) {
-	      /*jshint validthis:true */
-	      var Constructor = this;
-	      var promise = new Constructor(lib$es6$promise$$internal$$noop);
-	      lib$es6$promise$$internal$$reject(promise, reason);
-	      return promise;
-	    }
-	    var lib$es6$promise$promise$reject$$default = lib$es6$promise$promise$reject$$reject;
-
-
-	    function lib$es6$promise$promise$$needsResolver() {
-	      throw new TypeError('You must pass a resolver function as the first argument to the promise constructor');
-	    }
-
-	    function lib$es6$promise$promise$$needsNew() {
-	      throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
-	    }
-
-	    var lib$es6$promise$promise$$default = lib$es6$promise$promise$$Promise;
-	    /**
-	      Promise objects represent the eventual result of an asynchronous operation. The
-	      primary way of interacting with a promise is through its `then` method, which
-	      registers callbacks to receive either a promise's eventual value or the reason
-	      why the promise cannot be fulfilled.
-
-	      Terminology
-	      -----------
-
-	      - `promise` is an object or function with a `then` method whose behavior conforms to this specification.
-	      - `thenable` is an object or function that defines a `then` method.
-	      - `value` is any legal JavaScript value (including undefined, a thenable, or a promise).
-	      - `exception` is a value that is thrown using the throw statement.
-	      - `reason` is a value that indicates why a promise was rejected.
-	      - `settled` the final resting state of a promise, fulfilled or rejected.
-
-	      A promise can be in one of three states: pending, fulfilled, or rejected.
-
-	      Promises that are fulfilled have a fulfillment value and are in the fulfilled
-	      state.  Promises that are rejected have a rejection reason and are in the
-	      rejected state.  A fulfillment value is never a thenable.
-
-	      Promises can also be said to *resolve* a value.  If this value is also a
-	      promise, then the original promise's settled state will match the value's
-	      settled state.  So a promise that *resolves* a promise that rejects will
-	      itself reject, and a promise that *resolves* a promise that fulfills will
-	      itself fulfill.
-
-
-	      Basic Usage:
-	      ------------
-
-	      ```js
-	      var promise = new Promise(function(resolve, reject) {
-	        // on success
-	        resolve(value);
-
-	        // on failure
-	        reject(reason);
-	      });
-
-	      promise.then(function(value) {
-	        // on fulfillment
-	      }, function(reason) {
-	        // on rejection
-	      });
-	      ```
-
-	      Advanced Usage:
-	      ---------------
-
-	      Promises shine when abstracting away asynchronous interactions such as
-	      `XMLHttpRequest`s.
-
-	      ```js
-	      function getJSON(url) {
-	        return new Promise(function(resolve, reject){
-	          var xhr = new XMLHttpRequest();
-
-	          xhr.open('GET', url);
-	          xhr.onreadystatechange = handler;
-	          xhr.responseType = 'json';
-	          xhr.setRequestHeader('Accept', 'application/json');
-	          xhr.send();
-
-	          function handler() {
-	            if (this.readyState === this.DONE) {
-	              if (this.status === 200) {
-	                resolve(this.response);
-	              } else {
-	                reject(new Error('getJSON: `' + url + '` failed with status: [' + this.status + ']'));
-	              }
-	            }
-	          };
-	        });
-	      }
-
-	      getJSON('/posts.json').then(function(json) {
-	        // on fulfillment
-	      }, function(reason) {
-	        // on rejection
-	      });
-	      ```
-
-	      Unlike callbacks, promises are great composable primitives.
-
-	      ```js
-	      Promise.all([
-	        getJSON('/posts'),
-	        getJSON('/comments')
-	      ]).then(function(values){
-	        values[0] // => postsJSON
-	        values[1] // => commentsJSON
-
-	        return values;
-	      });
-	      ```
-
-	      @class Promise
-	      @param {function} resolver
-	      Useful for tooling.
-	      @constructor
-	    */
-	    function lib$es6$promise$promise$$Promise(resolver) {
-	      this[lib$es6$promise$$internal$$PROMISE_ID] = lib$es6$promise$$internal$$nextId();
-	      this._result = this._state = undefined;
-	      this._subscribers = [];
-
-	      if (lib$es6$promise$$internal$$noop !== resolver) {
-	        typeof resolver !== 'function' && lib$es6$promise$promise$$needsResolver();
-	        this instanceof lib$es6$promise$promise$$Promise ? lib$es6$promise$$internal$$initializePromise(this, resolver) : lib$es6$promise$promise$$needsNew();
-	      }
-	    }
-
-	    lib$es6$promise$promise$$Promise.all = lib$es6$promise$promise$all$$default;
-	    lib$es6$promise$promise$$Promise.race = lib$es6$promise$promise$race$$default;
-	    lib$es6$promise$promise$$Promise.resolve = lib$es6$promise$promise$resolve$$default;
-	    lib$es6$promise$promise$$Promise.reject = lib$es6$promise$promise$reject$$default;
-	    lib$es6$promise$promise$$Promise._setScheduler = lib$es6$promise$asap$$setScheduler;
-	    lib$es6$promise$promise$$Promise._setAsap = lib$es6$promise$asap$$setAsap;
-	    lib$es6$promise$promise$$Promise._asap = lib$es6$promise$asap$$asap;
-
-	    lib$es6$promise$promise$$Promise.prototype = {
-	      constructor: lib$es6$promise$promise$$Promise,
-
-	    /**
-	      The primary way of interacting with a promise is through its `then` method,
-	      which registers callbacks to receive either a promise's eventual value or the
-	      reason why the promise cannot be fulfilled.
-
-	      ```js
-	      findUser().then(function(user){
-	        // user is available
-	      }, function(reason){
-	        // user is unavailable, and you are given the reason why
-	      });
-	      ```
-
-	      Chaining
-	      --------
-
-	      The return value of `then` is itself a promise.  This second, 'downstream'
-	      promise is resolved with the return value of the first promise's fulfillment
-	      or rejection handler, or rejected if the handler throws an exception.
-
-	      ```js
-	      findUser().then(function (user) {
-	        return user.name;
-	      }, function (reason) {
-	        return 'default name';
-	      }).then(function (userName) {
-	        // If `findUser` fulfilled, `userName` will be the user's name, otherwise it
-	        // will be `'default name'`
-	      });
-
-	      findUser().then(function (user) {
-	        throw new Error('Found user, but still unhappy');
-	      }, function (reason) {
-	        throw new Error('`findUser` rejected and we're unhappy');
-	      }).then(function (value) {
-	        // never reached
-	      }, function (reason) {
-	        // if `findUser` fulfilled, `reason` will be 'Found user, but still unhappy'.
-	        // If `findUser` rejected, `reason` will be '`findUser` rejected and we're unhappy'.
-	      });
-	      ```
-	      If the downstream promise does not specify a rejection handler, rejection reasons will be propagated further downstream.
-
-	      ```js
-	      findUser().then(function (user) {
-	        throw new PedagogicalException('Upstream error');
-	      }).then(function (value) {
-	        // never reached
-	      }).then(function (value) {
-	        // never reached
-	      }, function (reason) {
-	        // The `PedgagocialException` is propagated all the way down to here
-	      });
-	      ```
-
-	      Assimilation
-	      ------------
-
-	      Sometimes the value you want to propagate to a downstream promise can only be
-	      retrieved asynchronously. This can be achieved by returning a promise in the
-	      fulfillment or rejection handler. The downstream promise will then be pending
-	      until the returned promise is settled. This is called *assimilation*.
-
-	      ```js
-	      findUser().then(function (user) {
-	        return findCommentsByAuthor(user);
-	      }).then(function (comments) {
-	        // The user's comments are now available
-	      });
-	      ```
-
-	      If the assimliated promise rejects, then the downstream promise will also reject.
-
-	      ```js
-	      findUser().then(function (user) {
-	        return findCommentsByAuthor(user);
-	      }).then(function (comments) {
-	        // If `findCommentsByAuthor` fulfills, we'll have the value here
-	      }, function (reason) {
-	        // If `findCommentsByAuthor` rejects, we'll have the reason here
-	      });
-	      ```
-
-	      Simple Example
-	      --------------
-
-	      Synchronous Example
-
-	      ```javascript
-	      var result;
-
-	      try {
-	        result = findResult();
-	        // success
-	      } catch(reason) {
-	        // failure
-	      }
-	      ```
-
-	      Errback Example
-
-	      ```js
-	      findResult(function(result, err){
-	        if (err) {
-	          // failure
-	        } else {
-	          // success
-	        }
-	      });
-	      ```
-
-	      Promise Example;
-
-	      ```javascript
-	      findResult().then(function(result){
-	        // success
-	      }, function(reason){
-	        // failure
-	      });
-	      ```
-
-	      Advanced Example
-	      --------------
-
-	      Synchronous Example
-
-	      ```javascript
-	      var author, books;
-
-	      try {
-	        author = findAuthor();
-	        books  = findBooksByAuthor(author);
-	        // success
-	      } catch(reason) {
-	        // failure
-	      }
-	      ```
-
-	      Errback Example
-
-	      ```js
-
-	      function foundBooks(books) {
-
-	      }
-
-	      function failure(reason) {
-
-	      }
-
-	      findAuthor(function(author, err){
-	        if (err) {
-	          failure(err);
-	          // failure
-	        } else {
-	          try {
-	            findBoooksByAuthor(author, function(books, err) {
-	              if (err) {
-	                failure(err);
-	              } else {
-	                try {
-	                  foundBooks(books);
-	                } catch(reason) {
-	                  failure(reason);
-	                }
-	              }
-	            });
-	          } catch(error) {
-	            failure(err);
-	          }
-	          // success
-	        }
-	      });
-	      ```
-
-	      Promise Example;
-
-	      ```javascript
-	      findAuthor().
-	        then(findBooksByAuthor).
-	        then(function(books){
-	          // found books
-	      }).catch(function(reason){
-	        // something went wrong
-	      });
-	      ```
-
-	      @method then
-	      @param {Function} onFulfilled
-	      @param {Function} onRejected
-	      Useful for tooling.
-	      @return {Promise}
-	    */
-	      then: lib$es6$promise$then$$default,
-
-	    /**
-	      `catch` is simply sugar for `then(undefined, onRejection)` which makes it the same
-	      as the catch block of a try/catch statement.
-
-	      ```js
-	      function findAuthor(){
-	        throw new Error('couldn't find that author');
-	      }
-
-	      // synchronous
-	      try {
-	        findAuthor();
-	      } catch(reason) {
-	        // something went wrong
-	      }
-
-	      // async with promises
-	      findAuthor().catch(function(reason){
-	        // something went wrong
-	      });
-	      ```
-
-	      @method catch
-	      @param {Function} onRejection
-	      Useful for tooling.
-	      @return {Promise}
-	    */
-	      'catch': function(onRejection) {
-	        return this.then(null, onRejection);
-	      }
-	    };
-	    var lib$es6$promise$enumerator$$default = lib$es6$promise$enumerator$$Enumerator;
-	    function lib$es6$promise$enumerator$$Enumerator(Constructor, input) {
-	      this._instanceConstructor = Constructor;
-	      this.promise = new Constructor(lib$es6$promise$$internal$$noop);
-
-	      if (!this.promise[lib$es6$promise$$internal$$PROMISE_ID]) {
-	        lib$es6$promise$$internal$$makePromise(this.promise);
-	      }
-
-	      if (lib$es6$promise$utils$$isArray(input)) {
-	        this._input     = input;
-	        this.length     = input.length;
-	        this._remaining = input.length;
-
-	        this._result = new Array(this.length);
-
-	        if (this.length === 0) {
-	          lib$es6$promise$$internal$$fulfill(this.promise, this._result);
-	        } else {
-	          this.length = this.length || 0;
-	          this._enumerate();
-	          if (this._remaining === 0) {
-	            lib$es6$promise$$internal$$fulfill(this.promise, this._result);
-	          }
-	        }
-	      } else {
-	        lib$es6$promise$$internal$$reject(this.promise, lib$es6$promise$enumerator$$validationError());
-	      }
-	    }
-
-	    function lib$es6$promise$enumerator$$validationError() {
-	      return new Error('Array Methods must be provided an Array');
-	    }
-
-	    lib$es6$promise$enumerator$$Enumerator.prototype._enumerate = function() {
-	      var length  = this.length;
-	      var input   = this._input;
-
-	      for (var i = 0; this._state === lib$es6$promise$$internal$$PENDING && i < length; i++) {
-	        this._eachEntry(input[i], i);
-	      }
-	    };
-
-	    lib$es6$promise$enumerator$$Enumerator.prototype._eachEntry = function(entry, i) {
-	      var c = this._instanceConstructor;
-	      var resolve = c.resolve;
-
-	      if (resolve === lib$es6$promise$promise$resolve$$default) {
-	        var then = lib$es6$promise$$internal$$getThen(entry);
-
-	        if (then === lib$es6$promise$then$$default &&
-	            entry._state !== lib$es6$promise$$internal$$PENDING) {
-	          this._settledAt(entry._state, i, entry._result);
-	        } else if (typeof then !== 'function') {
-	          this._remaining--;
-	          this._result[i] = entry;
-	        } else if (c === lib$es6$promise$promise$$default) {
-	          var promise = new c(lib$es6$promise$$internal$$noop);
-	          lib$es6$promise$$internal$$handleMaybeThenable(promise, entry, then);
-	          this._willSettleAt(promise, i);
-	        } else {
-	          this._willSettleAt(new c(function(resolve) { resolve(entry); }), i);
-	        }
-	      } else {
-	        this._willSettleAt(resolve(entry), i);
-	      }
-	    };
-
-	    lib$es6$promise$enumerator$$Enumerator.prototype._settledAt = function(state, i, value) {
-	      var promise = this.promise;
-
-	      if (promise._state === lib$es6$promise$$internal$$PENDING) {
-	        this._remaining--;
-
-	        if (state === lib$es6$promise$$internal$$REJECTED) {
-	          lib$es6$promise$$internal$$reject(promise, value);
-	        } else {
-	          this._result[i] = value;
-	        }
-	      }
-
-	      if (this._remaining === 0) {
-	        lib$es6$promise$$internal$$fulfill(promise, this._result);
-	      }
-	    };
-
-	    lib$es6$promise$enumerator$$Enumerator.prototype._willSettleAt = function(promise, i) {
-	      var enumerator = this;
-
-	      lib$es6$promise$$internal$$subscribe(promise, undefined, function(value) {
-	        enumerator._settledAt(lib$es6$promise$$internal$$FULFILLED, i, value);
-	      }, function(reason) {
-	        enumerator._settledAt(lib$es6$promise$$internal$$REJECTED, i, reason);
-	      });
-	    };
-	    function lib$es6$promise$polyfill$$polyfill() {
-	      var local;
-
-	      if (typeof global !== 'undefined') {
-	          local = global;
-	      } else if (typeof self !== 'undefined') {
-	          local = self;
-	      } else {
-	          try {
-	              local = Function('return this')();
-	          } catch (e) {
-	              throw new Error('polyfill failed because global object is unavailable in this environment');
-	          }
-	      }
-
-	      var P = local.Promise;
-
-	      if (P && Object.prototype.toString.call(P.resolve()) === '[object Promise]' && !P.cast) {
-	        return;
-	      }
-
-	      local.Promise = lib$es6$promise$promise$$default;
-	    }
-	    var lib$es6$promise$polyfill$$default = lib$es6$promise$polyfill$$polyfill;
-
-	    var lib$es6$promise$umd$$ES6Promise = {
-	      'Promise': lib$es6$promise$promise$$default,
-	      'polyfill': lib$es6$promise$polyfill$$default
-	    };
-
-	    /* global define:true module:true window: true */
-	    if ("function" === 'function' && __webpack_require__(11)['amd']) {
-	      !(__WEBPACK_AMD_DEFINE_RESULT__ = function() { return lib$es6$promise$umd$$ES6Promise; }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	    } else if (typeof module !== 'undefined' && module['exports']) {
-	      module['exports'] = lib$es6$promise$umd$$ES6Promise;
-	    } else if (typeof this !== 'undefined') {
-	      this['ES6Promise'] = lib$es6$promise$umd$$ES6Promise;
-	    }
-
-	    lib$es6$promise$polyfill$$default();
-	}).call(this);
-
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), (function() { return this; }()), __webpack_require__(9)(module)))
-
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
-
-	module.exports = function(module) {
-		if(!module.webpackPolyfill) {
-			module.deprecate = function() {};
-			module.paths = [];
-			// module.parent = undefined by default
-			module.children = [];
-			module.webpackPolyfill = 1;
-		}
-		return module;
-	}
-
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	/* (ignored) */
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	module.exports = function() { throw new Error("define cannot be used indirect"); };
-
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var has = Object.prototype.hasOwnProperty;
-
-	//
-	// We store our EE objects in a plain object whose properties are event names.
-	// If `Object.create(null)` is not supported we prefix the event names with a
-	// `~` to make sure that the built-in object properties are not overridden or
-	// used as an attack vector.
-	// We also assume that `Object.create(null)` is available when the event name
-	// is an ES6 Symbol.
-	//
-	var prefix = typeof Object.create !== 'function' ? '~' : false;
-
-	/**
-	 * Representation of a single EventEmitter function.
-	 *
-	 * @param {Function} fn Event handler to be called.
-	 * @param {Mixed} context Context for function execution.
-	 * @param {Boolean} [once=false] Only emit once
-	 * @api private
-	 */
-	function EE(fn, context, once) {
-	  this.fn = fn;
-	  this.context = context;
-	  this.once = once || false;
-	}
-
-	/**
-	 * Minimal EventEmitter interface that is molded against the Node.js
-	 * EventEmitter interface.
-	 *
-	 * @constructor
-	 * @api public
-	 */
-	function EventEmitter() { /* Nothing to set */ }
-
-	/**
-	 * Hold the assigned EventEmitters by name.
-	 *
-	 * @type {Object}
-	 * @private
-	 */
-	EventEmitter.prototype._events = undefined;
-
-	/**
-	 * Return an array listing the events for which the emitter has registered
-	 * listeners.
-	 *
-	 * @returns {Array}
-	 * @api public
-	 */
-	EventEmitter.prototype.eventNames = function eventNames() {
-	  var events = this._events
-	    , names = []
-	    , name;
-
-	  if (!events) return names;
-
-	  for (name in events) {
-	    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
-	  }
-
-	  if (Object.getOwnPropertySymbols) {
-	    return names.concat(Object.getOwnPropertySymbols(events));
-	  }
-
-	  return names;
-	};
-
-	/**
-	 * Return a list of assigned event listeners.
-	 *
-	 * @param {String} event The events that should be listed.
-	 * @param {Boolean} exists We only need to know if there are listeners.
-	 * @returns {Array|Boolean}
-	 * @api public
-	 */
-	EventEmitter.prototype.listeners = function listeners(event, exists) {
-	  var evt = prefix ? prefix + event : event
-	    , available = this._events && this._events[evt];
-
-	  if (exists) return !!available;
-	  if (!available) return [];
-	  if (available.fn) return [available.fn];
-
-	  for (var i = 0, l = available.length, ee = new Array(l); i < l; i++) {
-	    ee[i] = available[i].fn;
-	  }
-
-	  return ee;
-	};
-
-	/**
-	 * Emit an event to all registered event listeners.
-	 *
-	 * @param {String} event The name of the event.
-	 * @returns {Boolean} Indication if we've emitted an event.
-	 * @api public
-	 */
-	EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
-	  var evt = prefix ? prefix + event : event;
-
-	  if (!this._events || !this._events[evt]) return false;
-
-	  var listeners = this._events[evt]
-	    , len = arguments.length
-	    , args
-	    , i;
-
-	  if ('function' === typeof listeners.fn) {
-	    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
-
-	    switch (len) {
-	      case 1: return listeners.fn.call(listeners.context), true;
-	      case 2: return listeners.fn.call(listeners.context, a1), true;
-	      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
-	      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
-	      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
-	      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
-	    }
-
-	    for (i = 1, args = new Array(len -1); i < len; i++) {
-	      args[i - 1] = arguments[i];
-	    }
-
-	    listeners.fn.apply(listeners.context, args);
-	  } else {
-	    var length = listeners.length
-	      , j;
-
-	    for (i = 0; i < length; i++) {
-	      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
-
-	      switch (len) {
-	        case 1: listeners[i].fn.call(listeners[i].context); break;
-	        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
-	        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
-	        default:
-	          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
-	            args[j - 1] = arguments[j];
-	          }
-
-	          listeners[i].fn.apply(listeners[i].context, args);
-	      }
-	    }
-	  }
-
-	  return true;
-	};
-
-	/**
-	 * Register a new EventListener for the given event.
-	 *
-	 * @param {String} event Name of the event.
-	 * @param {Function} fn Callback function.
-	 * @param {Mixed} [context=this] The context of the function.
-	 * @api public
-	 */
-	EventEmitter.prototype.on = function on(event, fn, context) {
-	  var listener = new EE(fn, context || this)
-	    , evt = prefix ? prefix + event : event;
-
-	  if (!this._events) this._events = prefix ? {} : Object.create(null);
-	  if (!this._events[evt]) this._events[evt] = listener;
-	  else {
-	    if (!this._events[evt].fn) this._events[evt].push(listener);
-	    else this._events[evt] = [
-	      this._events[evt], listener
-	    ];
-	  }
-
-	  return this;
-	};
-
-	/**
-	 * Add an EventListener that's only called once.
-	 *
-	 * @param {String} event Name of the event.
-	 * @param {Function} fn Callback function.
-	 * @param {Mixed} [context=this] The context of the function.
-	 * @api public
-	 */
-	EventEmitter.prototype.once = function once(event, fn, context) {
-	  var listener = new EE(fn, context || this, true)
-	    , evt = prefix ? prefix + event : event;
-
-	  if (!this._events) this._events = prefix ? {} : Object.create(null);
-	  if (!this._events[evt]) this._events[evt] = listener;
-	  else {
-	    if (!this._events[evt].fn) this._events[evt].push(listener);
-	    else this._events[evt] = [
-	      this._events[evt], listener
-	    ];
-	  }
-
-	  return this;
-	};
-
-	/**
-	 * Remove event listeners.
-	 *
-	 * @param {String} event The event we want to remove.
-	 * @param {Function} fn The listener that we need to find.
-	 * @param {Mixed} context Only remove listeners matching this context.
-	 * @param {Boolean} once Only remove once listeners.
-	 * @api public
-	 */
-	EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
-	  var evt = prefix ? prefix + event : event;
-
-	  if (!this._events || !this._events[evt]) return this;
-
-	  var listeners = this._events[evt]
-	    , events = [];
-
-	  if (fn) {
-	    if (listeners.fn) {
-	      if (
-	           listeners.fn !== fn
-	        || (once && !listeners.once)
-	        || (context && listeners.context !== context)
-	      ) {
-	        events.push(listeners);
-	      }
-	    } else {
-	      for (var i = 0, length = listeners.length; i < length; i++) {
-	        if (
-	             listeners[i].fn !== fn
-	          || (once && !listeners[i].once)
-	          || (context && listeners[i].context !== context)
-	        ) {
-	          events.push(listeners[i]);
-	        }
-	      }
-	    }
-	  }
-
-	  //
-	  // Reset the array, or remove it completely if we have no more listeners.
-	  //
-	  if (events.length) {
-	    this._events[evt] = events.length === 1 ? events[0] : events;
-	  } else {
-	    delete this._events[evt];
-	  }
-
-	  return this;
-	};
-
-	/**
-	 * Remove all listeners or only the listeners for the specified event.
-	 *
-	 * @param {String} event The event want to remove all listeners for.
-	 * @api public
-	 */
-	EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
-	  if (!this._events) return this;
-
-	  if (event) delete this._events[prefix ? prefix + event : event];
-	  else this._events = prefix ? {} : Object.create(null);
-
-	  return this;
-	};
-
-	//
-	// Alias methods names because people roll like that.
-	//
-	EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
-	EventEmitter.prototype.addListener = EventEmitter.prototype.on;
-
-	//
-	// This function doesn't apply anymore.
-	//
-	EventEmitter.prototype.setMaxListeners = function setMaxListeners() {
-	  return this;
-	};
-
-	//
-	// Expose the prefix.
-	//
-	EventEmitter.prefixed = prefix;
-
-	//
-	// Expose the module.
-	//
-	if (true) {
-	  module.exports = EventEmitter;
-	}
-
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/// <reference path="../typings/globals/es6-promise/index.d.ts"/>
-	/// <reference path="../typings/globals/node/index.d.ts"/>
-	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	__webpack_require__(5);
-	var path = __webpack_require__(6);
-	var emitter_1 = __webpack_require__(14);
-	var Assets = __webpack_require__(4);
-	var Events = __webpack_require__(15);
-	(function (ImageDrawType) {
-	    /**
-	     * 画在填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["DEFAULT"] = 1] = "DEFAULT";
-	    /**
-	     * 按1比1大小画在指定的矩形区域的中间。
-	     */
-	    ImageDrawType[ImageDrawType["CENTER"] = 2] = "CENTER";
-	    /**
-	     * 把图分成3行3列等大小的区域，按9宫格的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["PATCH9"] = 3] = "PATCH9";
-	    /**
-	     * 把图分成3行1列等大小的区域，按3宫格的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["PATCH3_V"] = 4] = "PATCH3_V";
-	    /**
-	     * 把图分成1行1列等大小的区域，按3宫格的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["PATCH3_H"] = 5] = "PATCH3_H";
-	    /**
-	     * 按平铺的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["TILE"] = 6] = "TILE";
-	    /**
-	     * 按垂直平铺的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["TILE_V"] = 7] = "TILE_V";
-	    /**
-	     * 按水平平铺的方式填满指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["TILE_H"] = 8] = "TILE_H";
-	    /**
-	     * 保持比例缩放到指定的矩形区域。
-	     */
-	    ImageDrawType[ImageDrawType["AUTO"] = 9] = "AUTO";
-	    /**
-	     * ICON
-	     */
-	    ImageDrawType[ImageDrawType["ICON"] = 10] = "ICON";
-	})(exports.ImageDrawType || (exports.ImageDrawType = {}));
-	var ImageDrawType = exports.ImageDrawType;
-	/**
-	 * 把多个小的图片合并成一张大图，不但可以减少网路请求和GPU的调用次数，还可以提高内存的利用率。
-	 * ImageTile用来表示大图中的一张小图，QTK中支持下面几种方式：
-	 *
-	 * 0.普通图片。如果URL中没有#，则表示一张普通图片，它的位置为(0,0)，大小为图片的整个大小。
-	 *
-	 * 1.指定子图的位置和大小，#之前的部分是大图的URL，后面是子图的位置和大小信息。
-	 *  字母x后紧跟x坐标，字母y后紧跟y坐标，字母w后紧跟宽度，字母h后紧跟高度。
-	 *  下面的URL表示图片demo.png中位置为(100,200)，大小为(300,400)的子图。
-	 *
-	 * ```
-	 * https://qtoolkit.github.io/demo.png#x100y200w300h400
-	 * ```
-	 *
-	 * 2.指定图片的行列数以及小图的序数，#之前的部分是大图的URL，后面是行数、列数和序数。
-	 *  字母r紧跟行数，字母c后紧跟列数，字母i后紧跟序数。
-	 *
-	 *  下面的URL表示图片demo.png分成3行3列，序数为0的子图。
-	 *
-	 * ```
-	 * https://qtoolkit.github.io/demo.png#r3c3i0
-	 * ```
-	 *
-	 * 3.用TexturePacker打包的JSON Hash格式。#之前部分是JSON的URL，后面是子图的名称。如：
-	 *
-	 * ```
-	 * https://qtoolkit.github.io/demo.json#demo.png
-	 * ```
-	 *
-	 *
-	 */
-	var ImageTile = (function (_super) {
-	    __extends(ImageTile, _super);
-	    function ImageTile(src) {
-	        _super.call(this);
-	        this.x = 0;
-	        this.y = 0;
-	        this.w = 0;
-	        this.h = 0;
-	        this._id = 0;
-	        this.img = null;
-	        this.src = src;
-	        if (src) {
-	            this.create(src);
-	        }
-	    }
-	    ImageTile.prototype.toJson = function () {
-	        return this.src;
-	    };
-	    ImageTile.prototype.create = function (src) {
-	        var index = src.indexOf('#');
-	        if (index < 0) {
-	            this.createNormal(src);
-	        }
-	        else {
-	            var base = src.substr(0, index);
-	            var ext = src.substr(index + 1);
-	            if (ext[0] === 'x') {
-	                this.createXYWH(base, ext);
-	            }
-	            else if (ext[0] === 'r') {
-	                this.createRowColIndex(base, ext);
-	            }
-	            else {
-	                this.createTexturePacker(base, ext);
-	            }
-	        }
-	    };
-	    ImageTile.prototype.init = function (img, x, y, w, h) {
-	        this.x = x;
-	        this.y = y;
-	        this.w = w;
-	        this.h = h;
-	        this.img = img;
-	        if (ImageTile.onImageLoaded) {
-	            ImageTile.onImageLoaded(this);
-	        }
-	        this.dispatchEventAsync({ type: Events.LOAD, detail: this });
-	    };
-	    Object.defineProperty(ImageTile.prototype, "complete", {
-	        get: function () {
-	            return this.img && this.img.width;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(ImageTile.prototype, "id", {
-	        get: function () {
-	            return this._id;
-	        },
-	        set: function (id) {
-	            this._id = id;
-	            if (this.img) {
-	                this.img.imgID = id;
-	            }
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    ImageTile.prototype.createNormal = function (src) {
-	        var _this = this;
-	        Assets.loadImage(src).then(function (img) {
-	            _this.init(img, 0, 0, img.width, img.height);
-	        }).catch(function (err) {
-	            _this.init(null, 0, 0, 0, 0);
-	        });
-	    };
-	    ImageTile.prototype.createXYWH = function (base, meta) {
-	        var _this = this;
-	        var xywh = meta.match(/x([0-9]+)y([0-9]+)w([0-9]+)h([0-9]+)/i);
-	        var x = parseInt(xywh[1]);
-	        var y = parseInt(xywh[2]);
-	        var w = parseInt(xywh[3]);
-	        var h = parseInt(xywh[4]);
-	        Assets.loadImage(base).then(function (img) {
-	            _this.init(img, x, y, w, h);
-	        }).catch(function (err) {
-	            _this.init(null, 0, 0, 0, 0);
-	        });
-	    };
-	    ImageTile.prototype.createRowColIndex = function (base, meta) {
-	        var _this = this;
-	        var rowcolIndex = meta.match(/r([0-9]+)c([0-9]+)i([0-9]+)/i);
-	        var rows = parseInt(rowcolIndex[1]);
-	        var cols = parseInt(rowcolIndex[2]);
-	        var index = parseInt(rowcolIndex[3]);
-	        Assets.loadImage(base).then(function (img) {
-	            var w = img.width / cols;
-	            var h = img.height / rows;
-	            var r = (index / cols) >> 0;
-	            var c = index % cols;
-	            var x = c * w;
-	            var y = r * h;
-	            _this.init(img, x, y, w, h);
-	        }).catch(function (err) {
-	            _this.init(null, 0, 0, 0, 0);
-	        });
-	    };
-	    ImageTile.prototype.createTexturePacker = function (jsonURL, name) {
-	        var _this = this;
-	        Assets.loadJSON(jsonURL).then(function (json) {
-	            var info = json.frames[name];
-	            var imgSRC = path.dirname(jsonURL) + "/" + (json.file || json.meta.image);
-	            Assets.loadImage(imgSRC).then(function (img) {
-	                var rect = info.frame || info;
-	                var x = rect.x;
-	                var y = rect.y;
-	                var w = rect.w;
-	                var h = rect.h;
-	                if (!info.trimmed && !info.rotate) {
-	                    _this.init(img, x, y, w, h);
-	                }
-	                else {
-	                    console.log("Not support trimmed mode or rotated mode");
-	                    _this.init(null, 0, 0, 0, 0);
-	                }
-	            }).catch(function (err) {
-	                _this.init(null, 0, 0, 0, 0);
-	            });
-	        }).catch(function (err) {
-	            _this.init(null, 0, 0, 0, 0);
-	        });
-	    };
-	    ImageTile.prototype.drawDefault = function (ctx, dx, dy, dw, dh) {
-	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, dx, dy, dw, dh);
-	    };
-	    ImageTile.prototype.drawIcon = function (ctx, dx, dy, dw, dh) {
-	        var cx = dx + (dw >> 1);
-	        var cy = dy + (dh >> 1);
-	        var x = dx + ((dw - this.w) >> 1);
-	        var y = dy + ((dh - this.h) >> 1);
-	        ctx.save();
-	        ctx.translate(cx, cy);
-	        ctx.scale(ImageTile.scale, ImageTile.scale);
-	        ctx.translate(-cx, -cy);
-	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, this.w, this.h);
-	        ctx.restore();
-	    };
-	    ImageTile.prototype.drawCenter = function (ctx, dx, dy, dw, dh) {
-	        var x = dx + ((dw - this.w) >> 1);
-	        var y = dy + ((dh - this.h) >> 1);
-	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, this.w, this.h);
-	    };
-	    ImageTile.prototype.drawAuto = function (ctx, dx, dy, dw, dh) {
-	        var x = dx;
-	        var y = dy;
-	        var w = 0;
-	        var h = 0;
-	        var scaleX = dw / this.w;
-	        var scaleY = dh / this.h;
-	        if (scaleX >= scaleY) {
-	            h = dh;
-	            w = scaleY * this.w;
-	            x += ((dw - w) >> 1);
-	        }
-	        else {
-	            w = dw;
-	            h = scaleX * this.h;
-	            y += ((dh - h) >> 1);
-	        }
-	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, w, h);
-	    };
-	    ImageTile.prototype.draw3PatchH = function (ctx, dx, dy, dw, dh) {
-	        var w = Math.min(dw >> 1, (this.w / 3) >> 0);
-	        ctx.drawImage(this.img, this.x, this.y, w, this.h, dx, dy, w, dh);
-	        ctx.drawImage(this.img, this.x + this.w - w, this.y, w, this.h, dx + dw - w, dy, w, dh);
-	        var cw = dw - w - w;
-	        if (cw > 0) {
-	            ctx.drawImage(this.img, this.x + w, this.y, w, this.h, dx + w, dy, cw, dh);
-	        }
-	    };
-	    ImageTile.prototype.draw9Patch = function (ctx, dx, dy, dw, dh) {
-	        var w = Math.min(dw >> 1, (this.w / 3) >> 0);
-	        var h = Math.min(dh >> 1, (this.h / 3) >> 0);
-	        var cw = dw - w - w;
-	        var ch = dh - h - h;
-	        var rightSX = this.x + this.w - w;
-	        var rightDX = dx + dw - w;
-	        var bottomSY = this.y + this.h - h;
-	        var bottomDY = dy + dh - h;
-	        ctx.drawImage(this.img, this.x, this.y, w, h, dx, dy, w, h);
-	        ctx.drawImage(this.img, rightSX, this.y, w, h, rightDX, dy, w, h);
-	        if (cw > 0) {
-	            ctx.drawImage(this.img, this.x + w, this.y, w, h, dx + w, dy, cw, h);
-	        }
-	        ctx.drawImage(this.img, this.x, this.y + h, w, h, dx, dy + h, w, ch);
-	        ctx.drawImage(this.img, rightSX, this.y + h, w, h, rightDX, dy + h, w, ch);
-	        if (cw > 0 && ch > 0) {
-	            ctx.drawImage(this.img, this.x + w, this.y + h, w, h, dx + w, dy + h, cw, ch);
-	        }
-	        ctx.drawImage(this.img, this.x, bottomSY, w, h, dx, bottomDY, w, h);
-	        ctx.drawImage(this.img, rightSX, bottomSY, w, h, rightDX, bottomDY, w, h);
-	        if (cw > 0) {
-	            ctx.drawImage(this.img, this.x + w, bottomSY, w, h, dx + w, bottomDY, cw, h);
-	        }
-	    };
-	    ImageTile.prototype.draw3PatchV = function (ctx, dx, dy, dw, dh) {
-	        var h = Math.min(dh >> 1, (this.h / 3) >> 0);
-	        ctx.drawImage(this.img, this.x, this.y, this.w, h, dx, dy, dw, h);
-	        ctx.drawImage(this.img, this.x, this.y + this.h - h, this.w, h, dx, dy + dh - h, dw, h);
-	        var ch = dh - h - h;
-	        if (ch > 0) {
-	            ctx.drawImage(this.img, this.x, this.y + h, this.w, h, dx, dy + h, dw, ch);
-	        }
-	    };
-	    ImageTile.prototype.drawTileH = function (ctx, dx, dy, dw, dh) {
-	        var x = dx;
-	        var w = 0;
-	        var remainW = dw;
-	        while (remainW > 0) {
-	            w = Math.min(this.w, remainW);
-	            ctx.drawImage(this.img, this.x, this.y, w, this.h, x, dy, w, dh);
-	            x += w;
-	            remainW -= w;
-	        }
-	    };
-	    ImageTile.prototype.drawTileV = function (ctx, dx, dy, dw, dh) {
-	        var y = dy;
-	        var h = 0;
-	        var remainH = dh;
-	        while (remainH > 0) {
-	            h = Math.min(this.h, remainH);
-	            ctx.drawImage(this.img, this.x, this.y, this.w, h, dx, y, dw, h);
-	            y += h;
-	            remainH -= h;
-	        }
-	    };
-	    ImageTile.prototype.drawTile = function (ctx, dx, dy, dw, dh) {
-	        var x = dx;
-	        var y = dy;
-	        var w = 0;
-	        var h = 0;
-	        var remainW = dw;
-	        var remainH = dh;
-	        while (remainH > 0) {
-	            h = Math.min(this.h, remainH);
-	            while (remainW > 0) {
-	                w = Math.min(this.w, remainW);
-	                ctx.drawImage(this.img, this.x, this.y, w, h, x, y, w, h);
-	                x += w;
-	                remainW -= w;
-	            }
-	            x = 0;
-	            remainW = dw;
-	            y += h;
-	            remainH -= h;
-	        }
-	    };
-	    ImageTile.prototype.draw = function (ctx, type, dx, dy, dw, dh) {
-	        if (ctx && this.complete) {
-	            if (type === ImageDrawType.CENTER) {
-	                this.drawCenter(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.AUTO) {
-	                this.drawAuto(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.PATCH3_H) {
-	                this.draw3PatchH(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.PATCH3_V) {
-	                this.draw3PatchV(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.PATCH9) {
-	                this.draw9Patch(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.TILE_H) {
-	                this.drawTileH(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.TILE_V) {
-	                this.drawTileV(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.TILE) {
-	                this.drawTile(ctx, dx, dy, dw, dh);
-	            }
-	            else if (type === ImageDrawType.ICON) {
-	                this.drawIcon(ctx, dx, dy, dw, dh);
-	            }
-	            else {
-	                this.drawDefault(ctx, dx, dy, dw, dh);
-	            }
-	        }
-	    };
-	    ImageTile.init = function (density, scale, onImageLoaded) {
-	        ImageTile.scale = scale;
-	        ImageTile.density = density;
-	        ImageTile.onImageLoaded = onImageLoaded;
-	    };
-	    ImageTile.fixURL = function (src) {
-	        var ret = src.replace("@density", "x" + ImageTile.density);
-	        return ret;
-	    };
-	    ImageTile.create = function (_src, onDone) {
-	        var src = ImageTile.fixURL(_src);
-	        var it = ImageTile.cache[src];
-	        if (!it) {
-	            it = new ImageTile(src);
-	            ImageTile.cache[src] = it;
-	        }
-	        if (onDone) {
-	            if (it.complete) {
-	                setTimeout(onDone, 0);
-	            }
-	            else {
-	                it.once(Events.LOAD, onDone);
-	            }
-	        }
-	        return it;
-	    };
-	    ImageTile.scale = 1;
-	    ImageTile.density = 1;
-	    ImageTile.cache = {};
-	    return ImageTile;
-	}(emitter_1.Emitter));
-	exports.ImageTile = ImageTile;
-	;
-
-
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var EventEmitter = __webpack_require__(12);
-	var EmitterImpl = (function (_super) {
-	    __extends(EmitterImpl, _super);
-	    function EmitterImpl() {
-	        _super.call(this);
-	    }
-	    return EmitterImpl;
-	}(EventEmitter));
-	function toCaptureEventName(name) {
-	    return name + ".capture";
-	}
-	/**
-	 * 事件分发器。
-	 */
-	var Emitter = (function () {
-	    function Emitter() {
-	        this.emitter = new EmitterImpl();
-	    }
-	    /***
-	     * 注册事件处理函数。
-	     * @param type 事件的名称。
-	     * @param callback 回调函数。
-	     * @param useCapture 是否注册为capture阶段的处理函数。
-	     */
-	    Emitter.prototype.on = function (type, callback, useCapture) {
-	        this.addEventListener(type, callback, useCapture);
-	    };
-	    /***
-	     * 注册事件处理函数(只执行一次)。
-	     * @param type 事件的名称。
-	     * @param callback 回调函数。
-	     * @param useCapture 是否注册为capture阶段的处理函数。
-	     */
-	    Emitter.prototype.once = function (type, callback) {
-	        this.emitter.once(type, callback, this);
-	    };
-	    /***
-	     * 注消事件处理函数。
-	     * @param type 事件的名称。
-	     * @param callback 回调函数。
-	     * @param useCapture 是否注消capture阶段的处理函数。
-	     */
-	    Emitter.prototype.off = function (type, callback, useCapture) {
-	        this.removeEventListener(type, callback, useCapture);
-	    };
-	    /***
-	     * 注册事件处理函数。
-	     * @param type 事件的名称。
-	     * @param callback 回调函数。
-	     * @param useCapture 是否注册为capture阶段的处理函数。
-	     */
-	    Emitter.prototype.addEventListener = function (type, callback, useCapture) {
-	        if (useCapture) {
-	            this.emitter.addListener(toCaptureEventName(type), callback, this);
-	        }
-	        else {
-	            this.emitter.addListener(type, callback, this);
-	        }
-	    };
-	    /***
-	     * 注消事件处理函数。
-	     * @param type 事件的名称。
-	     * @param callback 回调函数。
-	     * @param useCapture 是否注消capture阶段的处理函数。
-	     */
-	    Emitter.prototype.removeEventListener = function (type, callback, useCapture) {
-	        if (useCapture) {
-	            this.emitter.removeListener(toCaptureEventName(type), callback, this);
-	        }
-	        else {
-	            this.emitter.removeListener(type, callback, this);
-	        }
-	    };
-	    /***
-	     * 分发异步事件。
-	     * @param evt 事件。
-	     * @param useCapture 是否触发capture阶段的处理函数。
-	     */
-	    Emitter.prototype.dispatchEventAsync = function (evt, useCapture) {
-	        var _this = this;
-	        setTimeout(function (e) {
-	            _this.dispatchEvent(evt, useCapture);
-	        }, 0);
-	    };
-	    /***
-	     * 分发事件。
-	     * @param evt 事件。
-	     * @param useCapture 是否触发capture阶段的处理函数。
-	     */
-	    Emitter.prototype.dispatchEvent = function (evt, useCapture) {
-	        if (evt.propagationStopped) {
-	            console.log("evt.propagationStopped = true;");
-	            return;
-	        }
-	        var emitter = this.emitter;
-	        if (useCapture) {
-	            emitter.emit(toCaptureEventName(evt.type), evt);
-	        }
-	        else {
-	            emitter.emit(evt.type, evt);
-	        }
-	    };
-	    Emitter.prototype.removeAllListeners = function (event) {
-	        this.emitter.removeAllListeners(event);
-	    };
-	    return Emitter;
-	}());
-	exports.Emitter = Emitter;
-
-
-/***/ },
-/* 15 */
+/* 7 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3270,6 +1392,7 @@ var qtk =
 	exports.CLICK = "qtk-click";
 	exports.DBLCLICK = "qtk-dblclick";
 	exports.CHANGE = "change";
+	exports.PROGRESS = "progress";
 	exports.CHANGING = "changing";
 	exports.PROP_CHANGE = "prop-change";
 	exports.DISPOSE = "dispose";
@@ -3279,6 +1402,7 @@ var qtk =
 	exports.HIDE = "hide";
 	exports.MOVE = "move";
 	exports.MOVING = "moving";
+	exports.CHOOSE = "choose";
 	exports.OPEN = "open";
 	exports.INIT = "init";
 	exports.FOCUS = "focus";
@@ -3602,7 +1726,423 @@ var qtk =
 
 
 /***/ },
-/* 16 */
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var EventEmitter = __webpack_require__(9);
+	var EmitterImpl = (function (_super) {
+	    __extends(EmitterImpl, _super);
+	    function EmitterImpl() {
+	        _super.call(this);
+	    }
+	    return EmitterImpl;
+	}(EventEmitter));
+	function toCaptureEventName(name) {
+	    return name + ".capture";
+	}
+	/**
+	 * 事件分发器。
+	 */
+	var Emitter = (function () {
+	    function Emitter() {
+	        this.emitter = new EmitterImpl();
+	    }
+	    /***
+	     * 注册事件处理函数。
+	     * @param type 事件的名称。
+	     * @param callback 回调函数。
+	     * @param useCapture 是否注册为capture阶段的处理函数。
+	     */
+	    Emitter.prototype.on = function (type, callback, useCapture) {
+	        this.addEventListener(type, callback, useCapture);
+	    };
+	    /***
+	     * 注册事件处理函数(只执行一次)。
+	     * @param type 事件的名称。
+	     * @param callback 回调函数。
+	     * @param useCapture 是否注册为capture阶段的处理函数。
+	     */
+	    Emitter.prototype.once = function (type, callback) {
+	        this.emitter.once(type, callback, this);
+	    };
+	    /***
+	     * 注消事件处理函数。
+	     * @param type 事件的名称。
+	     * @param callback 回调函数。
+	     * @param useCapture 是否注消capture阶段的处理函数。
+	     */
+	    Emitter.prototype.off = function (type, callback, useCapture) {
+	        this.removeEventListener(type, callback, useCapture);
+	    };
+	    /***
+	     * 注册事件处理函数。
+	     * @param type 事件的名称。
+	     * @param callback 回调函数。
+	     * @param useCapture 是否注册为capture阶段的处理函数。
+	     */
+	    Emitter.prototype.addEventListener = function (type, callback, useCapture) {
+	        if (useCapture) {
+	            this.emitter.addListener(toCaptureEventName(type), callback, this);
+	        }
+	        else {
+	            this.emitter.addListener(type, callback, this);
+	        }
+	    };
+	    /***
+	     * 注消事件处理函数。
+	     * @param type 事件的名称。
+	     * @param callback 回调函数。
+	     * @param useCapture 是否注消capture阶段的处理函数。
+	     */
+	    Emitter.prototype.removeEventListener = function (type, callback, useCapture) {
+	        if (useCapture) {
+	            this.emitter.removeListener(toCaptureEventName(type), callback, this);
+	        }
+	        else {
+	            this.emitter.removeListener(type, callback, this);
+	        }
+	    };
+	    /***
+	     * 分发异步事件。
+	     * @param evt 事件。
+	     * @param useCapture 是否触发capture阶段的处理函数。
+	     */
+	    Emitter.prototype.dispatchEventAsync = function (evt, useCapture) {
+	        var _this = this;
+	        setTimeout(function (e) {
+	            _this.dispatchEvent(evt, useCapture);
+	        }, 0);
+	    };
+	    /***
+	     * 分发事件。
+	     * @param evt 事件。
+	     * @param useCapture 是否触发capture阶段的处理函数。
+	     */
+	    Emitter.prototype.dispatchEvent = function (evt, useCapture) {
+	        if (evt.propagationStopped) {
+	            console.log("evt.propagationStopped = true;");
+	            return;
+	        }
+	        var emitter = this.emitter;
+	        if (useCapture) {
+	            emitter.emit(toCaptureEventName(evt.type), evt);
+	        }
+	        else {
+	            emitter.emit(evt.type, evt);
+	        }
+	    };
+	    Emitter.prototype.removeAllListeners = function (event) {
+	        this.emitter.removeAllListeners(event);
+	    };
+	    return Emitter;
+	}());
+	exports.Emitter = Emitter;
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var has = Object.prototype.hasOwnProperty;
+
+	//
+	// We store our EE objects in a plain object whose properties are event names.
+	// If `Object.create(null)` is not supported we prefix the event names with a
+	// `~` to make sure that the built-in object properties are not overridden or
+	// used as an attack vector.
+	// We also assume that `Object.create(null)` is available when the event name
+	// is an ES6 Symbol.
+	//
+	var prefix = typeof Object.create !== 'function' ? '~' : false;
+
+	/**
+	 * Representation of a single EventEmitter function.
+	 *
+	 * @param {Function} fn Event handler to be called.
+	 * @param {Mixed} context Context for function execution.
+	 * @param {Boolean} [once=false] Only emit once
+	 * @api private
+	 */
+	function EE(fn, context, once) {
+	  this.fn = fn;
+	  this.context = context;
+	  this.once = once || false;
+	}
+
+	/**
+	 * Minimal EventEmitter interface that is molded against the Node.js
+	 * EventEmitter interface.
+	 *
+	 * @constructor
+	 * @api public
+	 */
+	function EventEmitter() { /* Nothing to set */ }
+
+	/**
+	 * Hold the assigned EventEmitters by name.
+	 *
+	 * @type {Object}
+	 * @private
+	 */
+	EventEmitter.prototype._events = undefined;
+
+	/**
+	 * Return an array listing the events for which the emitter has registered
+	 * listeners.
+	 *
+	 * @returns {Array}
+	 * @api public
+	 */
+	EventEmitter.prototype.eventNames = function eventNames() {
+	  var events = this._events
+	    , names = []
+	    , name;
+
+	  if (!events) return names;
+
+	  for (name in events) {
+	    if (has.call(events, name)) names.push(prefix ? name.slice(1) : name);
+	  }
+
+	  if (Object.getOwnPropertySymbols) {
+	    return names.concat(Object.getOwnPropertySymbols(events));
+	  }
+
+	  return names;
+	};
+
+	/**
+	 * Return a list of assigned event listeners.
+	 *
+	 * @param {String} event The events that should be listed.
+	 * @param {Boolean} exists We only need to know if there are listeners.
+	 * @returns {Array|Boolean}
+	 * @api public
+	 */
+	EventEmitter.prototype.listeners = function listeners(event, exists) {
+	  var evt = prefix ? prefix + event : event
+	    , available = this._events && this._events[evt];
+
+	  if (exists) return !!available;
+	  if (!available) return [];
+	  if (available.fn) return [available.fn];
+
+	  for (var i = 0, l = available.length, ee = new Array(l); i < l; i++) {
+	    ee[i] = available[i].fn;
+	  }
+
+	  return ee;
+	};
+
+	/**
+	 * Emit an event to all registered event listeners.
+	 *
+	 * @param {String} event The name of the event.
+	 * @returns {Boolean} Indication if we've emitted an event.
+	 * @api public
+	 */
+	EventEmitter.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
+	  var evt = prefix ? prefix + event : event;
+
+	  if (!this._events || !this._events[evt]) return false;
+
+	  var listeners = this._events[evt]
+	    , len = arguments.length
+	    , args
+	    , i;
+
+	  if ('function' === typeof listeners.fn) {
+	    if (listeners.once) this.removeListener(event, listeners.fn, undefined, true);
+
+	    switch (len) {
+	      case 1: return listeners.fn.call(listeners.context), true;
+	      case 2: return listeners.fn.call(listeners.context, a1), true;
+	      case 3: return listeners.fn.call(listeners.context, a1, a2), true;
+	      case 4: return listeners.fn.call(listeners.context, a1, a2, a3), true;
+	      case 5: return listeners.fn.call(listeners.context, a1, a2, a3, a4), true;
+	      case 6: return listeners.fn.call(listeners.context, a1, a2, a3, a4, a5), true;
+	    }
+
+	    for (i = 1, args = new Array(len -1); i < len; i++) {
+	      args[i - 1] = arguments[i];
+	    }
+
+	    listeners.fn.apply(listeners.context, args);
+	  } else {
+	    var length = listeners.length
+	      , j;
+
+	    for (i = 0; i < length; i++) {
+	      if (listeners[i].once) this.removeListener(event, listeners[i].fn, undefined, true);
+
+	      switch (len) {
+	        case 1: listeners[i].fn.call(listeners[i].context); break;
+	        case 2: listeners[i].fn.call(listeners[i].context, a1); break;
+	        case 3: listeners[i].fn.call(listeners[i].context, a1, a2); break;
+	        default:
+	          if (!args) for (j = 1, args = new Array(len -1); j < len; j++) {
+	            args[j - 1] = arguments[j];
+	          }
+
+	          listeners[i].fn.apply(listeners[i].context, args);
+	      }
+	    }
+	  }
+
+	  return true;
+	};
+
+	/**
+	 * Register a new EventListener for the given event.
+	 *
+	 * @param {String} event Name of the event.
+	 * @param {Function} fn Callback function.
+	 * @param {Mixed} [context=this] The context of the function.
+	 * @api public
+	 */
+	EventEmitter.prototype.on = function on(event, fn, context) {
+	  var listener = new EE(fn, context || this)
+	    , evt = prefix ? prefix + event : event;
+
+	  if (!this._events) this._events = prefix ? {} : Object.create(null);
+	  if (!this._events[evt]) this._events[evt] = listener;
+	  else {
+	    if (!this._events[evt].fn) this._events[evt].push(listener);
+	    else this._events[evt] = [
+	      this._events[evt], listener
+	    ];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Add an EventListener that's only called once.
+	 *
+	 * @param {String} event Name of the event.
+	 * @param {Function} fn Callback function.
+	 * @param {Mixed} [context=this] The context of the function.
+	 * @api public
+	 */
+	EventEmitter.prototype.once = function once(event, fn, context) {
+	  var listener = new EE(fn, context || this, true)
+	    , evt = prefix ? prefix + event : event;
+
+	  if (!this._events) this._events = prefix ? {} : Object.create(null);
+	  if (!this._events[evt]) this._events[evt] = listener;
+	  else {
+	    if (!this._events[evt].fn) this._events[evt].push(listener);
+	    else this._events[evt] = [
+	      this._events[evt], listener
+	    ];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Remove event listeners.
+	 *
+	 * @param {String} event The event we want to remove.
+	 * @param {Function} fn The listener that we need to find.
+	 * @param {Mixed} context Only remove listeners matching this context.
+	 * @param {Boolean} once Only remove once listeners.
+	 * @api public
+	 */
+	EventEmitter.prototype.removeListener = function removeListener(event, fn, context, once) {
+	  var evt = prefix ? prefix + event : event;
+
+	  if (!this._events || !this._events[evt]) return this;
+
+	  var listeners = this._events[evt]
+	    , events = [];
+
+	  if (fn) {
+	    if (listeners.fn) {
+	      if (
+	           listeners.fn !== fn
+	        || (once && !listeners.once)
+	        || (context && listeners.context !== context)
+	      ) {
+	        events.push(listeners);
+	      }
+	    } else {
+	      for (var i = 0, length = listeners.length; i < length; i++) {
+	        if (
+	             listeners[i].fn !== fn
+	          || (once && !listeners[i].once)
+	          || (context && listeners[i].context !== context)
+	        ) {
+	          events.push(listeners[i]);
+	        }
+	      }
+	    }
+	  }
+
+	  //
+	  // Reset the array, or remove it completely if we have no more listeners.
+	  //
+	  if (events.length) {
+	    this._events[evt] = events.length === 1 ? events[0] : events;
+	  } else {
+	    delete this._events[evt];
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Remove all listeners or only the listeners for the specified event.
+	 *
+	 * @param {String} event The event want to remove all listeners for.
+	 * @api public
+	 */
+	EventEmitter.prototype.removeAllListeners = function removeAllListeners(event) {
+	  if (!this._events) return this;
+
+	  if (event) delete this._events[prefix ? prefix + event : event];
+	  else this._events = prefix ? {} : Object.create(null);
+
+	  return this;
+	};
+
+	//
+	// Alias methods names because people roll like that.
+	//
+	EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
+	EventEmitter.prototype.addListener = EventEmitter.prototype.on;
+
+	//
+	// This function doesn't apply anymore.
+	//
+	EventEmitter.prototype.setMaxListeners = function setMaxListeners() {
+	  return this;
+	};
+
+	//
+	// Expose the prefix.
+	//
+	EventEmitter.prefixed = prefix;
+
+	//
+	// Expose the module.
+	//
+	if (true) {
+	  module.exports = EventEmitter;
+	}
+
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3611,8 +2151,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var emitter_1 = __webpack_require__(14);
+	var Events = __webpack_require__(7);
+	var emitter_1 = __webpack_require__(8);
 	/**
 	 * 负责渲染UI的主循环。为了省电，只有在调用requestRedraw之后，才会触发下一次渲染循环。
 	 * 每个渲染循环分为三个阶段：
@@ -3663,7 +2203,7 @@ var qtk =
 
 
 /***/ },
-/* 17 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3794,11 +2334,11 @@ var qtk =
 
 
 /***/ },
-/* 18 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var matrix_1 = __webpack_require__(17);
+	var matrix_1 = __webpack_require__(11);
 	var MatrixStack = (function () {
 	    function MatrixStack() {
 	        this.stack = [];
@@ -3852,7 +2392,7 @@ var qtk =
 
 
 /***/ },
-/* 19 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3861,11 +2401,11 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var style_1 = __webpack_require__(20);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var style_1 = __webpack_require__(14);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
 	/**
 	 * 图片控件。
 	 */
@@ -3912,19 +2452,17 @@ var qtk =
 	        this._style = style;
 	        return this;
 	    };
-	    Image.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Image.prototype.onReset = function () {
 	        this._style = style_1.Style.create();
 	        this._style.fontSize = 12;
 	        this._style.textColor = "Black";
 	        this.drawType = image_tile_1.ImageDrawType.DEFAULT;
-	        return this;
 	    };
 	    Image.prototype.getStyle = function () {
 	        return this._style;
 	    };
 	    Image.create = function (options) {
-	        return Image.recycleBin.create().reset(Image.TYPE).set(options);
+	        return Image.recycleBin.create().reset(Image.TYPE, options);
 	    };
 	    Image.TYPE = "image";
 	    Image.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Image(); });
@@ -3936,7 +2474,7 @@ var qtk =
 
 
 /***/ },
-/* 20 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
@@ -3946,9 +2484,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var emitter_1 = __webpack_require__(14);
-	var Events = __webpack_require__(15);
-	var image_tile_1 = __webpack_require__(13);
+	var emitter_1 = __webpack_require__(8);
+	var Events = __webpack_require__(7);
+	var image_tile_1 = __webpack_require__(15);
 	/**
 	 * Style用来控制Widget的外观效果，如背景和字体等等。
 	 */
@@ -4444,7 +2982,424 @@ var qtk =
 
 
 /***/ },
-/* 21 */
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/// <reference path="../typings/globals/node/index.d.ts"/>
+	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	__webpack_require__(4);
+	var path = __webpack_require__(5);
+	var emitter_1 = __webpack_require__(8);
+	var Assets = __webpack_require__(3);
+	var Events = __webpack_require__(7);
+	(function (ImageDrawType) {
+	    /**
+	     * 画在填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["DEFAULT"] = 1] = "DEFAULT";
+	    /**
+	     * 按1比1大小画在指定的矩形区域的中间。
+	     */
+	    ImageDrawType[ImageDrawType["CENTER"] = 2] = "CENTER";
+	    /**
+	     * 把图分成3行3列等大小的区域，按9宫格的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["PATCH9"] = 3] = "PATCH9";
+	    /**
+	     * 把图分成3行1列等大小的区域，按3宫格的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["PATCH3_V"] = 4] = "PATCH3_V";
+	    /**
+	     * 把图分成1行1列等大小的区域，按3宫格的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["PATCH3_H"] = 5] = "PATCH3_H";
+	    /**
+	     * 按平铺的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["TILE"] = 6] = "TILE";
+	    /**
+	     * 按垂直平铺的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["TILE_V"] = 7] = "TILE_V";
+	    /**
+	     * 按水平平铺的方式填满指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["TILE_H"] = 8] = "TILE_H";
+	    /**
+	     * 保持比例缩放到指定的矩形区域。
+	     */
+	    ImageDrawType[ImageDrawType["AUTO"] = 9] = "AUTO";
+	    /**
+	     * ICON
+	     */
+	    ImageDrawType[ImageDrawType["ICON"] = 10] = "ICON";
+	})(exports.ImageDrawType || (exports.ImageDrawType = {}));
+	var ImageDrawType = exports.ImageDrawType;
+	/**
+	 * 把多个小的图片合并成一张大图，不但可以减少网路请求和GPU的调用次数，还可以提高内存的利用率。
+	 * ImageTile用来表示大图中的一张小图，QTK中支持下面几种方式：
+	 *
+	 * 0.普通图片。如果URL中没有#，则表示一张普通图片，它的位置为(0,0)，大小为图片的整个大小。
+	 *
+	 * 1.指定子图的位置和大小，#之前的部分是大图的URL，后面是子图的位置和大小信息。
+	 *  字母x后紧跟x坐标，字母y后紧跟y坐标，字母w后紧跟宽度，字母h后紧跟高度。
+	 *  下面的URL表示图片demo.png中位置为(100,200)，大小为(300,400)的子图。
+	 *
+	 * ```
+	 * https://qtoolkit.github.io/demo.png#x100y200w300h400
+	 * ```
+	 *
+	 * 2.指定图片的行列数以及小图的序数，#之前的部分是大图的URL，后面是行数、列数和序数。
+	 *  字母r紧跟行数，字母c后紧跟列数，字母i后紧跟序数。
+	 *
+	 *  下面的URL表示图片demo.png分成3行3列，序数为0的子图。
+	 *
+	 * ```
+	 * https://qtoolkit.github.io/demo.png#r3c3i0
+	 * ```
+	 *
+	 * 3.用TexturePacker打包的JSON Hash格式。#之前部分是JSON的URL，后面是子图的名称。如：
+	 *
+	 * ```
+	 * https://qtoolkit.github.io/demo.json#demo.png
+	 * ```
+	 *
+	 *
+	 */
+	var ImageTile = (function (_super) {
+	    __extends(ImageTile, _super);
+	    function ImageTile(src) {
+	        _super.call(this);
+	        this.x = 0;
+	        this.y = 0;
+	        this.w = 0;
+	        this.h = 0;
+	        this._id = 0;
+	        this.img = null;
+	        this.src = src;
+	        if (src) {
+	            this.create(src);
+	        }
+	    }
+	    ImageTile.prototype.toJson = function () {
+	        return this.src;
+	    };
+	    ImageTile.prototype.create = function (src) {
+	        var index = src.indexOf('#');
+	        if (index < 0) {
+	            this.createNormal(src);
+	        }
+	        else {
+	            var base = src.substr(0, index);
+	            var ext = src.substr(index + 1);
+	            if (ext[0] === 'x') {
+	                this.createXYWH(base, ext);
+	            }
+	            else if (ext[0] === 'r') {
+	                this.createRowColIndex(base, ext);
+	            }
+	            else {
+	                this.createTexturePacker(base, ext);
+	            }
+	        }
+	    };
+	    ImageTile.prototype.init = function (img, x, y, w, h) {
+	        this.x = x;
+	        this.y = y;
+	        this.w = w;
+	        this.h = h;
+	        this.img = img;
+	        if (ImageTile.onImageLoaded) {
+	            ImageTile.onImageLoaded(this);
+	        }
+	        this.dispatchEventAsync({ type: Events.LOAD, detail: this });
+	    };
+	    Object.defineProperty(ImageTile.prototype, "complete", {
+	        get: function () {
+	            return this.img && this.img.width;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(ImageTile.prototype, "id", {
+	        get: function () {
+	            return this._id;
+	        },
+	        set: function (id) {
+	            this._id = id;
+	            if (this.img) {
+	                this.img.imgID = id;
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ImageTile.prototype.createNormal = function (src) {
+	        var _this = this;
+	        Assets.loadImage(src).then(function (img) {
+	            _this.init(img, 0, 0, img.width, img.height);
+	        }).catch(function (err) {
+	            _this.init(null, 0, 0, 0, 0);
+	        });
+	    };
+	    ImageTile.prototype.createXYWH = function (base, meta) {
+	        var _this = this;
+	        var xywh = meta.match(/x([0-9]+)y([0-9]+)w([0-9]+)h([0-9]+)/i);
+	        var x = parseInt(xywh[1]);
+	        var y = parseInt(xywh[2]);
+	        var w = parseInt(xywh[3]);
+	        var h = parseInt(xywh[4]);
+	        Assets.loadImage(base).then(function (img) {
+	            _this.init(img, x, y, w, h);
+	        }).catch(function (err) {
+	            _this.init(null, 0, 0, 0, 0);
+	        });
+	    };
+	    ImageTile.prototype.createRowColIndex = function (base, meta) {
+	        var _this = this;
+	        var rowcolIndex = meta.match(/r([0-9]+)c([0-9]+)i([0-9]+)/i);
+	        var rows = parseInt(rowcolIndex[1]);
+	        var cols = parseInt(rowcolIndex[2]);
+	        var index = parseInt(rowcolIndex[3]);
+	        Assets.loadImage(base).then(function (img) {
+	            var w = img.width / cols;
+	            var h = img.height / rows;
+	            var r = (index / cols) >> 0;
+	            var c = index % cols;
+	            var x = c * w;
+	            var y = r * h;
+	            _this.init(img, x, y, w, h);
+	        }).catch(function (err) {
+	            _this.init(null, 0, 0, 0, 0);
+	        });
+	    };
+	    ImageTile.prototype.createTexturePacker = function (jsonURL, name) {
+	        var _this = this;
+	        Assets.loadJSON(jsonURL).then(function (json) {
+	            var info = json.frames[name];
+	            var imgSRC = path.dirname(jsonURL) + "/" + (json.file || json.meta.image);
+	            Assets.loadImage(imgSRC).then(function (img) {
+	                var rect = info.frame || info;
+	                var x = rect.x;
+	                var y = rect.y;
+	                var w = rect.w;
+	                var h = rect.h;
+	                if (!info.trimmed && !info.rotate) {
+	                    _this.init(img, x, y, w, h);
+	                }
+	                else {
+	                    console.log("Not support trimmed mode or rotated mode");
+	                    _this.init(null, 0, 0, 0, 0);
+	                }
+	            }).catch(function (err) {
+	                _this.init(null, 0, 0, 0, 0);
+	            });
+	        }).catch(function (err) {
+	            _this.init(null, 0, 0, 0, 0);
+	        });
+	    };
+	    ImageTile.prototype.drawDefault = function (ctx, dx, dy, dw, dh) {
+	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, dx, dy, dw, dh);
+	    };
+	    ImageTile.prototype.drawIcon = function (ctx, dx, dy, dw, dh) {
+	        var cx = dx + (dw >> 1);
+	        var cy = dy + (dh >> 1);
+	        var x = dx + ((dw - this.w) >> 1);
+	        var y = dy + ((dh - this.h) >> 1);
+	        ctx.save();
+	        ctx.translate(cx, cy);
+	        ctx.scale(ImageTile.scale, ImageTile.scale);
+	        ctx.translate(-cx, -cy);
+	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, this.w, this.h);
+	        ctx.restore();
+	    };
+	    ImageTile.prototype.drawCenter = function (ctx, dx, dy, dw, dh) {
+	        var x = dx + ((dw - this.w) >> 1);
+	        var y = dy + ((dh - this.h) >> 1);
+	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, this.w, this.h);
+	    };
+	    ImageTile.prototype.drawAuto = function (ctx, dx, dy, dw, dh) {
+	        var x = dx;
+	        var y = dy;
+	        var w = 0;
+	        var h = 0;
+	        var scaleX = dw / this.w;
+	        var scaleY = dh / this.h;
+	        if (scaleX >= scaleY) {
+	            h = dh;
+	            w = scaleY * this.w;
+	            x += ((dw - w) >> 1);
+	        }
+	        else {
+	            w = dw;
+	            h = scaleX * this.h;
+	            y += ((dh - h) >> 1);
+	        }
+	        ctx.drawImage(this.img, this.x, this.y, this.w, this.h, x, y, w, h);
+	    };
+	    ImageTile.prototype.draw3PatchH = function (ctx, dx, dy, dw, dh) {
+	        var w = Math.min(dw >> 1, (this.w / 3) >> 0);
+	        ctx.drawImage(this.img, this.x, this.y, w, this.h, dx, dy, w, dh);
+	        ctx.drawImage(this.img, this.x + this.w - w, this.y, w, this.h, dx + dw - w, dy, w, dh);
+	        var cw = dw - w - w;
+	        if (cw > 0) {
+	            ctx.drawImage(this.img, this.x + w, this.y, w, this.h, dx + w, dy, cw, dh);
+	        }
+	    };
+	    ImageTile.prototype.draw9Patch = function (ctx, dx, dy, dw, dh) {
+	        var w = Math.min(dw >> 1, (this.w / 3) >> 0);
+	        var h = Math.min(dh >> 1, (this.h / 3) >> 0);
+	        var cw = dw - w - w;
+	        var ch = dh - h - h;
+	        var rightSX = this.x + this.w - w;
+	        var rightDX = dx + dw - w;
+	        var bottomSY = this.y + this.h - h;
+	        var bottomDY = dy + dh - h;
+	        ctx.drawImage(this.img, this.x, this.y, w, h, dx, dy, w, h);
+	        ctx.drawImage(this.img, rightSX, this.y, w, h, rightDX, dy, w, h);
+	        if (cw > 0) {
+	            ctx.drawImage(this.img, this.x + w, this.y, w, h, dx + w, dy, cw, h);
+	        }
+	        ctx.drawImage(this.img, this.x, this.y + h, w, h, dx, dy + h, w, ch);
+	        ctx.drawImage(this.img, rightSX, this.y + h, w, h, rightDX, dy + h, w, ch);
+	        if (cw > 0 && ch > 0) {
+	            ctx.drawImage(this.img, this.x + w, this.y + h, w, h, dx + w, dy + h, cw, ch);
+	        }
+	        ctx.drawImage(this.img, this.x, bottomSY, w, h, dx, bottomDY, w, h);
+	        ctx.drawImage(this.img, rightSX, bottomSY, w, h, rightDX, bottomDY, w, h);
+	        if (cw > 0) {
+	            ctx.drawImage(this.img, this.x + w, bottomSY, w, h, dx + w, bottomDY, cw, h);
+	        }
+	    };
+	    ImageTile.prototype.draw3PatchV = function (ctx, dx, dy, dw, dh) {
+	        var h = Math.min(dh >> 1, (this.h / 3) >> 0);
+	        ctx.drawImage(this.img, this.x, this.y, this.w, h, dx, dy, dw, h);
+	        ctx.drawImage(this.img, this.x, this.y + this.h - h, this.w, h, dx, dy + dh - h, dw, h);
+	        var ch = dh - h - h;
+	        if (ch > 0) {
+	            ctx.drawImage(this.img, this.x, this.y + h, this.w, h, dx, dy + h, dw, ch);
+	        }
+	    };
+	    ImageTile.prototype.drawTileH = function (ctx, dx, dy, dw, dh) {
+	        var x = dx;
+	        var w = 0;
+	        var remainW = dw;
+	        while (remainW > 0) {
+	            w = Math.min(this.w, remainW);
+	            ctx.drawImage(this.img, this.x, this.y, w, this.h, x, dy, w, dh);
+	            x += w;
+	            remainW -= w;
+	        }
+	    };
+	    ImageTile.prototype.drawTileV = function (ctx, dx, dy, dw, dh) {
+	        var y = dy;
+	        var h = 0;
+	        var remainH = dh;
+	        while (remainH > 0) {
+	            h = Math.min(this.h, remainH);
+	            ctx.drawImage(this.img, this.x, this.y, this.w, h, dx, y, dw, h);
+	            y += h;
+	            remainH -= h;
+	        }
+	    };
+	    ImageTile.prototype.drawTile = function (ctx, dx, dy, dw, dh) {
+	        var x = dx;
+	        var y = dy;
+	        var w = 0;
+	        var h = 0;
+	        var remainW = dw;
+	        var remainH = dh;
+	        while (remainH > 0) {
+	            h = Math.min(this.h, remainH);
+	            while (remainW > 0) {
+	                w = Math.min(this.w, remainW);
+	                ctx.drawImage(this.img, this.x, this.y, w, h, x, y, w, h);
+	                x += w;
+	                remainW -= w;
+	            }
+	            x = 0;
+	            remainW = dw;
+	            y += h;
+	            remainH -= h;
+	        }
+	    };
+	    ImageTile.prototype.draw = function (ctx, type, dx, dy, dw, dh) {
+	        if (ctx && this.complete) {
+	            if (type === ImageDrawType.CENTER) {
+	                this.drawCenter(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.AUTO) {
+	                this.drawAuto(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.PATCH3_H) {
+	                this.draw3PatchH(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.PATCH3_V) {
+	                this.draw3PatchV(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.PATCH9) {
+	                this.draw9Patch(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.TILE_H) {
+	                this.drawTileH(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.TILE_V) {
+	                this.drawTileV(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.TILE) {
+	                this.drawTile(ctx, dx, dy, dw, dh);
+	            }
+	            else if (type === ImageDrawType.ICON) {
+	                this.drawIcon(ctx, dx, dy, dw, dh);
+	            }
+	            else {
+	                this.drawDefault(ctx, dx, dy, dw, dh);
+	            }
+	        }
+	    };
+	    ImageTile.init = function (density, scale, onImageLoaded) {
+	        ImageTile.scale = scale;
+	        ImageTile.density = density;
+	        ImageTile.onImageLoaded = onImageLoaded;
+	    };
+	    ImageTile.fixURL = function (src) {
+	        var ret = src.replace("@density", "x" + ImageTile.density);
+	        return ret;
+	    };
+	    ImageTile.create = function (_src, onDone) {
+	        var src = ImageTile.fixURL(_src);
+	        var it = ImageTile.cache[src];
+	        if (!it) {
+	            it = new ImageTile(src);
+	            ImageTile.cache[src] = it;
+	        }
+	        if (onDone) {
+	            if (it.complete) {
+	                setTimeout(onDone, 0);
+	            }
+	            else {
+	                it.once(Events.LOAD, onDone);
+	            }
+	        }
+	        return it;
+	    };
+	    ImageTile.scale = 1;
+	    ImageTile.density = 1;
+	    ImageTile.cache = {};
+	    return ImageTile;
+	}(emitter_1.Emitter));
+	exports.ImageTile = ImageTile;
+	;
+
+
+/***/ },
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/// <reference path="../../typings/globals/tween.js/index.d.ts"/>
@@ -4456,17 +3411,18 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var style_1 = __webpack_require__(20);
-	var canvas_1 = __webpack_require__(22);
-	var TWEEN = __webpack_require__(26);
-	var emitter_1 = __webpack_require__(14);
-	var utils_1 = __webpack_require__(27);
-	var Events = __webpack_require__(15);
-	var matrix_stack_1 = __webpack_require__(18);
-	var graphics_1 = __webpack_require__(28);
-	var dirty_rect_context_1 = __webpack_require__(79);
-	var layouter_1 = __webpack_require__(80);
-	var behavior_1 = __webpack_require__(81);
+	var style_1 = __webpack_require__(14);
+	var canvas_1 = __webpack_require__(17);
+	var TWEEN = __webpack_require__(21);
+	var emitter_1 = __webpack_require__(8);
+	var utils_1 = __webpack_require__(22);
+	var Events = __webpack_require__(7);
+	var image_tile_1 = __webpack_require__(15);
+	var matrix_stack_1 = __webpack_require__(12);
+	var graphics_1 = __webpack_require__(23);
+	var dirty_rect_context_1 = __webpack_require__(74);
+	var layouter_1 = __webpack_require__(75);
+	var behavior_1 = __webpack_require__(76);
 	/**
 	 * Widget是所有控件的基类。
 	 */
@@ -4474,10 +3430,39 @@ var qtk =
 	    __extends(Widget, _super);
 	    function Widget(type) {
 	        _super.call(this);
+	        ///////////////////////////////////////////
+	        this.layoutRect = rect_1.Rect.create(0, 0, 0, 0);
 	        this.eChangeEvent = Events.ChangeEvent.create();
 	        this.ePropChangeEvent = Events.PropChangeEvent.create();
 	        this.type = type;
 	    }
+	    /**
+	     * 同时设置多个属性。
+	     */
+	    Widget.prototype.set = function (props) {
+	        if (props) {
+	            for (var key in props) {
+	                this[key] = props[key];
+	            }
+	        }
+	        return this;
+	    };
+	    /**
+	     * 同时获取多个属性。
+	     */
+	    Widget.prototype.get = function (props) {
+	        if (props) {
+	            for (var key in props) {
+	                props[key] = this[key];
+	            }
+	        }
+	        return props;
+	    };
+	    /**
+	     * 把全局的坐标转换成相对于当前控件左上角的坐标。
+	     * @param p 全局坐标。
+	     * @returns 相对于当前控件左上角的坐标。
+	     */
 	    Widget.prototype.toLocalPoint = function (p) {
 	        p.x -= this.x;
 	        p.y -= this.y;
@@ -4489,6 +3474,11 @@ var qtk =
 	        }
 	        return p;
 	    };
+	    /**
+	     * 把Pointer事件的坐标转换成相对于当前控件左上角的坐标。
+	     * @param p Pointer事件的坐标。
+	     * @returns 相对于当前控件左上角的坐标。
+	     */
 	    Widget.prototype.eventPointToLocal = function (p) {
 	        if (this._canvas) {
 	            return p;
@@ -4506,6 +3496,11 @@ var qtk =
 	        }
 	        return p;
 	    };
+	    /**
+	     * 把相对于当前控件左上角的坐标转换成全局坐标。
+	     * @param p 相对于当前控件左上角的坐标。
+	     * @returns 全局坐标。
+	     */
 	    Widget.prototype.toGlobalPoint = function (p) {
 	        p.x += this.x;
 	        p.y += this.y;
@@ -4517,6 +3512,11 @@ var qtk =
 	        }
 	        return p;
 	    };
+	    /**
+	     * 把相对于当前控件左上角的坐标转换成屏幕上的坐标。
+	     * @param p 相对于当前控件左上角的坐标。
+	     * @returns 屏幕上的坐标。
+	     */
 	    Widget.prototype.toViewPoint = function (p) {
 	        p.x += this.x;
 	        p.y += this.y;
@@ -4535,11 +3535,14 @@ var qtk =
 	        return p;
 	    };
 	    Widget.prototype.onInit = function () {
+	        this._inited = true;
 	        if (!this.app && this.parent) {
 	            this.app = this.parent.app;
 	        }
-	        this._inited = true;
 	    };
+	    /**
+	     * 初始化。在窗口打开后，对窗口上所有控件调用，或者在窗口打开后，对新创建的控件调用。
+	     */
 	    Widget.prototype.init = function () {
 	        this.onInit();
 	        this.children.forEach(function (child) {
@@ -4550,31 +3553,23 @@ var qtk =
 	    Widget.prototype.onDeinit = function () {
 	        this._inited = false;
 	    };
+	    /**
+	     * ~初始化。在窗口关闭后，对窗口上所有控件调用，或者对被移出的控件调用。
+	     */
 	    Widget.prototype.deinit = function () {
-	        this.onDeinit();
 	        this.children.forEach(function (child) {
 	            child.deinit();
 	        });
+	        this.onDeinit();
 	    };
+	    /**
+	     * 分发一个事件到当前控件及其子控件。
+	     */
 	    Widget.prototype.dispatchEventToAll = function (evt) {
 	        this.dispatchEvent(evt);
 	        this.children.forEach(function (child) {
 	            child.dispatchEvent(evt);
 	        });
-	    };
-	    Widget.prototype.set = function (props) {
-	        if (props) {
-	            for (var key in props) {
-	                this[key] = props[key];
-	            }
-	        }
-	        return this;
-	    };
-	    Widget.prototype.get = function (props) {
-	        for (var key in props) {
-	            props[key] = this[key];
-	        }
-	        return props;
 	    };
 	    /**
 	     * 测试点是否落在当前控件中。
@@ -4588,7 +3583,7 @@ var qtk =
 	    };
 	    Widget.prototype.doHitTest = function (x, y, r, ctx) {
 	        var m = ctx.invert();
-	        if (m || true) {
+	        if (m) {
 	            var p = m.transformPoint(x, y);
 	            if (p.x >= r.x && p.x <= (r.x + r.w) && p.y >= r.y && p.y <= (r.y + r.h)) {
 	                return HitTestResult.MM;
@@ -4600,16 +3595,15 @@ var qtk =
 	        return this.hitTest(x, y, ctx);
 	    };
 	    Widget.prototype.dispatchPointerDown = function (evt, ctx) {
-	        var detail = evt;
 	        if (!this._enable || !this._sensitive) {
 	            return;
 	        }
 	        ctx.save();
 	        this.applyTransform(ctx);
-	        var hitTestResult = this.selfHitTest(detail.x, detail.y, ctx);
+	        var hitTestResult = this.selfHitTest(evt.x, evt.y, ctx);
 	        if (hitTestResult) {
 	            this.dispatchEvent(evt, true);
-	            this.target = this.findEventTargetChild(detail.x, detail.y, ctx);
+	            this.target = this.findEventTargetChild(evt.x, evt.y, ctx);
 	            if (this.target) {
 	                this.target.dispatchPointerDown(evt, ctx);
 	            }
@@ -4641,12 +3635,11 @@ var qtk =
 	    Widget.prototype.dispatchPointerMoveToUnder = function (evt, ctx) {
 	        ctx.save();
 	        this.applyTransform(ctx);
-	        var detail = evt;
-	        var hitTestResult = this.selfHitTest(detail.x, detail.y, ctx);
+	        var hitTestResult = this.selfHitTest(evt.x, evt.y, ctx);
 	        if (hitTestResult) {
 	            this.dispatchEvent(evt, true);
 	            var _lastOverWidget = this._lastOverWidget;
-	            var overWidget = this.findEventTargetChild(detail.x, detail.y, ctx);
+	            var overWidget = this.findEventTargetChild(evt.x, evt.y, ctx);
 	            if (_lastOverWidget !== overWidget) {
 	                var e = null;
 	                if (_lastOverWidget) {
@@ -4909,30 +3902,39 @@ var qtk =
 	            return null;
 	        }
 	    };
-	    ///////////////////////////////////////////
 	    Widget.prototype.getLayoutRect = function () {
-	        return rect_1.Rect.create(this.leftPadding, this.topPadding, this.w - this.leftPadding - this.rightPadding, this.h - this.topPadding - this.bottomPadding);
+	        return this.layoutRect.init(this.leftPadding, this.topPadding, this.w - this.leftPadding - this.rightPadding, this.h - this.topPadding - this.bottomPadding);
 	    };
+	    /**
+	     * 根据当前的childrenLayouter重新布局子控件。
+	     */
 	    Widget.prototype.relayoutChildren = function () {
+	        this.requestRedraw();
 	        if (this.childrenLayouter) {
-	            var r = this.getLayoutRect();
-	            var ret = this.childrenLayouter.layoutChildren(this, this.children, r);
-	            r.dispose();
-	            this.requestRedraw();
-	            return rect_1.Rect.rect.copy(ret);
+	            var ret = this.childrenLayouter.layoutChildren(this, this.children, this.getLayoutRect());
+	            return this.layoutRect.copy(ret);
 	        }
 	        return null;
 	    };
+	    /**
+	     * 请求重新布局当前控件。
+	     */
 	    Widget.prototype.requestRelayout = function () {
 	        if (this.parent) {
 	            this.parent.relayoutChildren();
 	        }
 	        return this;
 	    };
+	    /**
+	     * 根据当前的childrenLayouter创建子控件的布局参数。
+	     */
 	    Widget.prototype.createChildLayoutParam = function (options) {
 	        var layouter = this.childrenLayouter;
 	        return layouter ? layouter.createParam(options) : null;
 	    };
+	    /**
+	     * 启用指定的childrenLayouter。
+	     */
 	    Widget.prototype.useChildrenLayouter = function (type, options) {
 	        this.childrenLayouter = layouter_1.LayouterFactory.create(type, options);
 	        return this;
@@ -4941,14 +3943,16 @@ var qtk =
 	        get: function () {
 	            return this._childrenLayouter;
 	        },
+	        /**
+	         * 设置childrenLayouter。
+	         */
 	        set: function (layouter) {
 	            if (typeof layouter === "string") {
-	                this._childrenLayouter = layouter_1.LayouterFactory.create(layouter.toString(), null);
+	                this._childrenLayouter = layouter_1.LayouterFactory.create(layouter, null);
 	            }
 	            else {
 	                this._childrenLayouter = layouter;
 	            }
-	            this.relayoutChildren();
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -4957,11 +3961,11 @@ var qtk =
 	        get: function () {
 	            return this._layoutParam;
 	        },
+	        /**
+	         * 布局参数是父控件在布局当前控件时使用的。
+	         */
 	        set: function (param) {
 	            this._layoutParam = param;
-	            if (this.parent) {
-	                this.parent.relayoutChildren();
-	            }
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -5033,18 +4037,33 @@ var qtk =
 	        }
 	        return this;
 	    };
+	    /**
+	     * 获取本地化后的文本。
+	     */
 	    Widget.prototype.getLocaleText = function () {
 	        return this.text;
 	    };
+	    /**
+	     * 获取前景图片区域。
+	     */
+	    Widget.prototype.getFgImageRect = function (style) {
+	        return rect_1.Rect.rect.init(this.leftPadding, this.topPadding, this.clientW, this.clientH);
+	    };
+	    /**
+	     * 绘制前景图片，子控件根据需要重载。
+	     */
 	    Widget.prototype.drawImage = function (ctx, style) {
+	        if (style.foreGroundImage) {
+	            var r = this.getFgImageRect(style);
+	            style.foreGroundImage.draw(ctx, image_tile_1.ImageDrawType.ICON, r.x, r.y, r.w, r.h);
+	        }
 	        return this;
 	    };
+	    /**
+	     * 获取文本显示区域。
+	     */
 	    Widget.prototype.getTextRect = function (style) {
-	        var x = this.leftPadding;
-	        var y = this.topPadding;
-	        var w = this.w - x - this.rightPadding;
-	        var h = this.h - y - this.bottomPadding;
-	        return rect_1.Rect.rect.init(x, y, w, h);
+	        return rect_1.Rect.rect.init(this.leftPadding, this.topPadding, this.clientW, this.clientH);
 	    };
 	    Widget.prototype.drawText = function (ctx, style) {
 	        var text = this.getLocaleText();
@@ -5069,6 +4088,9 @@ var qtk =
 	            ctx.addRect(-5, -5, this.w + 10, this.h + 10);
 	        }
 	    };
+	    /**
+	     * 计算脏矩形。
+	     */
 	    Widget.prototype.computeDirtyRect = function (ctx) {
 	        ctx.save();
 	        this.applyTransform(ctx);
@@ -5158,10 +4180,11 @@ var qtk =
 	    };
 	    Widget.prototype.removeAllChildren = function () {
 	        this.children.forEach(function (child) {
+	            child.deinit();
 	            child.dispose();
 	        });
-	        this.children.length = 0;
 	        this.target = null;
+	        this.children.length = 0;
 	        this._lastOverWidget = null;
 	        return this;
 	    };
@@ -5204,6 +4227,7 @@ var qtk =
 	        this._children.forEach(function (child) {
 	            child.dispose();
 	        });
+	        this._app = null;
 	        this._parent = null;
 	        this._children = [];
 	        this._layoutParam = null;
@@ -5392,6 +4416,20 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
+	    Object.defineProperty(Widget.prototype, "clientW", {
+	        get: function () {
+	            return this._w - this.leftPadding - this.rightPadding;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(Widget.prototype, "clientH", {
+	        get: function () {
+	            return this._h - this.topPadding - this.bottomPadding;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    Object.defineProperty(Widget.prototype, "height", {
 	        get: function () {
 	            return this._h;
@@ -5429,7 +4467,7 @@ var qtk =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setProp("value", value, true);
+	            this.setValue(value, true, false);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -5567,7 +4605,7 @@ var qtk =
 	            return this._text;
 	        },
 	        set: function (value) {
-	            this.setProp("text", value, true);
+	            this.setProp("text", value ? value.toString() : "", true);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -5800,7 +4838,11 @@ var qtk =
 	            this.notifyChange();
 	        }
 	    };
-	    Widget.prototype.reset = function (type) {
+	    Widget.prototype.onReset = function () {
+	    };
+	    Widget.prototype.onCreated = function () {
+	    };
+	    Widget.prototype.reset = function (type, options) {
 	        this._x = 0;
 	        this._y = 0;
 	        this._z = 0;
@@ -5855,6 +4897,9 @@ var qtk =
 	        this.onkeyup = null;
 	        this._behaviors = {};
 	        this.removeAllListeners();
+	        this.onReset();
+	        this.set(options);
+	        this.onCreated();
 	        return this;
 	    };
 	    Widget.prototype.fromJson = function (json) {
@@ -5940,7 +4985,7 @@ var qtk =
 	    };
 	    Widget.create = function (app, options) {
 	        var widget = new Widget("dummy");
-	        widget.reset("dummy");
+	        widget.reset("dummy", null);
 	        widget.app = app;
 	        return widget;
 	    };
@@ -5982,7 +5027,7 @@ var qtk =
 
 
 /***/ },
-/* 22 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5991,10 +5036,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var emitter_1 = __webpack_require__(14);
-	var Events = __webpack_require__(15);
-	var event_detail_1 = __webpack_require__(23);
-	var inputEventAdapter = __webpack_require__(24);
+	var emitter_1 = __webpack_require__(8);
+	var Events = __webpack_require__(7);
+	var event_detail_1 = __webpack_require__(18);
+	var inputEventAdapter = __webpack_require__(19);
 	/**
 	 * Canvas是对HTMLCanvasElement的包装，主要解决两个问题：
 	 *
@@ -6215,7 +5260,7 @@ var qtk =
 
 
 /***/ },
-/* 23 */
+/* 18 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6313,14 +5358,14 @@ var qtk =
 
 
 /***/ },
-/* 24 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var Events = __webpack_require__(15);
-	var key_event_1 = __webpack_require__(25);
-	var emitter_1 = __webpack_require__(14);
-	var event_detail_1 = __webpack_require__(23);
+	var Events = __webpack_require__(7);
+	var key_event_1 = __webpack_require__(20);
+	var emitter_1 = __webpack_require__(8);
+	var event_detail_1 = __webpack_require__(18);
 	var grabs = [];
 	var keyGrabs = [];
 	var lastDetail;
@@ -6592,7 +5637,7 @@ var qtk =
 
 
 /***/ },
-/* 25 */
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6720,7 +5765,7 @@ var qtk =
 
 
 /***/ },
-/* 26 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -7594,10 +6639,10 @@ var qtk =
 
 	})(this);
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 27 */
+/* 22 */
 /***/ function(module, exports) {
 
 	//! stable.js 0.1.5, https://github.com/Two-Screen/stable
@@ -7721,13 +6766,13 @@ var qtk =
 
 
 /***/ },
-/* 28 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var style_1 = __webpack_require__(20);
-	var carota = __webpack_require__(29);
-	var ut = __webpack_require__(50);
+	var style_1 = __webpack_require__(14);
+	var carota = __webpack_require__(24);
+	var ut = __webpack_require__(45);
 	var tokenizer = ut.createTokenizerStream();
 	var Token = ut.Token;
 	var Break = ut.Break;
@@ -8018,18 +7063,18 @@ var qtk =
 
 
 /***/ },
-/* 29 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var node = __webpack_require__(30);
-	var editor = __webpack_require__(35);
-	var doc = __webpack_require__(36);
-	var dom = __webpack_require__(48);
-	var runs = __webpack_require__(32);
-	var html = __webpack_require__(49);
-	var frame = __webpack_require__(43);
-	var text = __webpack_require__(41);
-	var rect = __webpack_require__(33);
+	var node = __webpack_require__(25);
+	var editor = __webpack_require__(30);
+	var doc = __webpack_require__(31);
+	var dom = __webpack_require__(43);
+	var runs = __webpack_require__(27);
+	var html = __webpack_require__(44);
+	var frame = __webpack_require__(38);
+	var text = __webpack_require__(36);
+	var rect = __webpack_require__(28);
 
 	var bundle = {
 	    node: node,
@@ -8054,13 +7099,13 @@ var qtk =
 
 
 /***/ },
-/* 30 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var per = __webpack_require__(31);
-	var runs = __webpack_require__(32);
-	var rect = __webpack_require__(33);
-	var util = __webpack_require__(34);
+	var per = __webpack_require__(26);
+	var runs = __webpack_require__(27);
+	var rect = __webpack_require__(28);
+	var util = __webpack_require__(29);
 
 	exports.prototype = {
 	    children: function() {
@@ -8207,7 +7252,7 @@ var qtk =
 
 
 /***/ },
-/* 31 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -8492,7 +7537,7 @@ var qtk =
 
 
 /***/ },
-/* 32 */
+/* 27 */
 /***/ function(module, exports) {
 
 	exports.formattingKeys = [ 'bold', 'italic', 'underline', 'strikeout', 'color', 'font', 'size', 'align', 'script' ];
@@ -8669,7 +7714,7 @@ var qtk =
 
 
 /***/ },
-/* 33 */
+/* 28 */
 /***/ function(module, exports) {
 
 	
@@ -8710,7 +7755,7 @@ var qtk =
 
 
 /***/ },
-/* 34 */
+/* 29 */
 /***/ function(module, exports) {
 
 	exports.event = function() {
@@ -8739,13 +7784,13 @@ var qtk =
 	};
 
 /***/ },
-/* 35 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var per = __webpack_require__(31);
-	var carotaDoc = __webpack_require__(36);
-	var dom = __webpack_require__(48);
-	var rect = __webpack_require__(33);
+	var per = __webpack_require__(26);
+	var carotaDoc = __webpack_require__(31);
+	var dom = __webpack_require__(43);
+	var rect = __webpack_require__(28);
 
 	setInterval(function() {
 	    var editors = document.querySelectorAll('.carotaEditorCanvas');
@@ -9231,20 +8276,20 @@ var qtk =
 
 
 /***/ },
-/* 36 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var per = __webpack_require__(31);
-	var characters = __webpack_require__(37);
-	var split = __webpack_require__(38);
-	var word = __webpack_require__(39);
-	var node = __webpack_require__(30);
-	var runs = __webpack_require__(32);
-	var range = __webpack_require__(42);
-	var util = __webpack_require__(34);
-	var frame = __webpack_require__(43);
-	var codes = __webpack_require__(47);
-	var rect = __webpack_require__(33);
+	var per = __webpack_require__(26);
+	var characters = __webpack_require__(32);
+	var split = __webpack_require__(33);
+	var word = __webpack_require__(34);
+	var node = __webpack_require__(25);
+	var runs = __webpack_require__(27);
+	var range = __webpack_require__(37);
+	var util = __webpack_require__(29);
+	var frame = __webpack_require__(38);
+	var codes = __webpack_require__(42);
+	var rect = __webpack_require__(28);
 
 	var makeEditCommand = function(doc, start, count, words) {
 	    var selStart = doc.selection.start, selEnd = doc.selection.end;
@@ -9697,10 +8742,10 @@ var qtk =
 
 
 /***/ },
-/* 37 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var runs = __webpack_require__(32);
+	var runs = __webpack_require__(27);
 
 	var compatible = function(a, b) {
 	    if (a._runs !== b._runs) {
@@ -9768,7 +8813,7 @@ var qtk =
 	};
 
 /***/ },
-/* 38 */
+/* 33 */
 /***/ function(module, exports) {
 
 	/*  Creates a stateful transformer function that consumes Characters and produces "word coordinate"
@@ -9846,12 +8891,12 @@ var qtk =
 
 
 /***/ },
-/* 39 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var per = __webpack_require__(31);
-	var part = __webpack_require__(40);
-	var runs = __webpack_require__(32);
+	var per = __webpack_require__(26);
+	var part = __webpack_require__(35);
+	var runs = __webpack_require__(27);
 
 	/*  A Word has the following properties:
 
@@ -9988,10 +9033,10 @@ var qtk =
 
 
 /***/ },
-/* 40 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var text = __webpack_require__(41);
+	var text = __webpack_require__(36);
 
 	var defaultInline = {
 	    measure: function(formatting) {
@@ -10070,10 +9115,10 @@ var qtk =
 
 
 /***/ },
-/* 41 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var runs = __webpack_require__(32);
+	var runs = __webpack_require__(27);
 
 	/*  Returns a font CSS/Canvas string based on the settings in a run
 	 */
@@ -10236,11 +9281,11 @@ var qtk =
 	};
 
 /***/ },
-/* 42 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var per = __webpack_require__(31);
-	var runs = __webpack_require__(32);
+	var per = __webpack_require__(26);
+	var runs = __webpack_require__(27);
 
 	function Range(doc, start, end) {
 	    this.doc = doc;
@@ -10329,12 +9374,12 @@ var qtk =
 	};
 
 /***/ },
-/* 43 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var node = __webpack_require__(30);
-	var wrap = __webpack_require__(44);
-	var rect = __webpack_require__(33);
+	var node = __webpack_require__(25);
+	var wrap = __webpack_require__(39);
+	var rect = __webpack_require__(28);
 
 	var prototype = node.derive({
 	    bounds: function() {
@@ -10418,10 +9463,10 @@ var qtk =
 
 
 /***/ },
-/* 44 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var line = __webpack_require__(45);
+	var line = __webpack_require__(40);
 
 	/*  A stateful transformer function that accepts words and emits lines. If the first word
 	    is too wide, it will overhang; if width is zero or negative, there will be one word on
@@ -10519,13 +9564,13 @@ var qtk =
 
 
 /***/ },
-/* 45 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var positionedWord = __webpack_require__(46);
-	var rect = __webpack_require__(33);
-	var node = __webpack_require__(30);
-	var runs = __webpack_require__(32);
+	var positionedWord = __webpack_require__(41);
+	var rect = __webpack_require__(28);
+	var node = __webpack_require__(25);
+	var runs = __webpack_require__(27);
 
 	/*  A Line is returned by the wrap function. It contains an array of PositionedWord objects that are
 	    all on the same physical line in the wrapped text.
@@ -10620,15 +9665,15 @@ var qtk =
 
 
 /***/ },
-/* 46 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var rect = __webpack_require__(33);
-	var part = __webpack_require__(40);
-	var text = __webpack_require__(41);
-	var node = __webpack_require__(30);
-	var word = __webpack_require__(39);
-	var runs = __webpack_require__(32);
+	var rect = __webpack_require__(28);
+	var part = __webpack_require__(35);
+	var text = __webpack_require__(36);
+	var node = __webpack_require__(25);
+	var word = __webpack_require__(34);
+	var runs = __webpack_require__(27);
 
 	var newLineWidth = function(run) {
 	    return text.measure(text.enter, run).width;
@@ -10745,14 +9790,14 @@ var qtk =
 
 
 /***/ },
-/* 47 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var text = __webpack_require__(41);
-	var frame = __webpack_require__(43);
-	var node = __webpack_require__(30);
-	var rect = __webpack_require__(33);
-	var util = __webpack_require__(34);
+	var text = __webpack_require__(36);
+	var frame = __webpack_require__(38);
+	var node = __webpack_require__(25);
+	var rect = __webpack_require__(28);
+	var util = __webpack_require__(29);
 
 	var inlineNodePrototype = node.derive({
 	    parent: function() {
@@ -10952,7 +9997,7 @@ var qtk =
 
 
 /***/ },
-/* 48 */
+/* 43 */
 /***/ function(module, exports) {
 
 	
@@ -10995,11 +10040,11 @@ var qtk =
 	};
 
 /***/ },
-/* 49 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var runs = __webpack_require__(32);
-	var per = __webpack_require__(31);
+	var runs = __webpack_require__(27);
+	var per = __webpack_require__(26);
 
 	var tag = function(name, formattingProperty) {
 	    return function(node, formatting) {
@@ -11196,15 +10241,15 @@ var qtk =
 
 
 /***/ },
-/* 50 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Stream = __webpack_require__(51).Stream,
-	    util = __webpack_require__(72),
-	    TokenType = __webpack_require__(74),
-	    BreakType = __webpack_require__(75),
-	    tokenizer = __webpack_require__(76),
-	    LineBreak = __webpack_require__(78);
+	var Stream = __webpack_require__(46).Stream,
+	    util = __webpack_require__(67),
+	    TokenType = __webpack_require__(69),
+	    BreakType = __webpack_require__(70),
+	    tokenizer = __webpack_require__(71),
+	    LineBreak = __webpack_require__(73);
 
 	function TokenizerStream() {
 	    Stream.call(this);
@@ -11260,7 +10305,7 @@ var qtk =
 
 
 /***/ },
-/* 51 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -11286,15 +10331,15 @@ var qtk =
 
 	module.exports = Stream;
 
-	var EE = __webpack_require__(52).EventEmitter;
-	var inherits = __webpack_require__(53);
+	var EE = __webpack_require__(47).EventEmitter;
+	var inherits = __webpack_require__(48);
 
 	inherits(Stream, EE);
-	Stream.Readable = __webpack_require__(54);
-	Stream.Writable = __webpack_require__(68);
-	Stream.Duplex = __webpack_require__(69);
-	Stream.Transform = __webpack_require__(70);
-	Stream.PassThrough = __webpack_require__(71);
+	Stream.Readable = __webpack_require__(49);
+	Stream.Writable = __webpack_require__(63);
+	Stream.Duplex = __webpack_require__(64);
+	Stream.Transform = __webpack_require__(65);
+	Stream.PassThrough = __webpack_require__(66);
 
 	// Backwards-compat with node 0.4.x
 	Stream.Stream = Stream;
@@ -11393,7 +10438,7 @@ var qtk =
 
 
 /***/ },
-/* 52 */
+/* 47 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -11701,7 +10746,7 @@ var qtk =
 
 
 /***/ },
-/* 53 */
+/* 48 */
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -11730,24 +10775,24 @@ var qtk =
 
 
 /***/ },
-/* 54 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {exports = module.exports = __webpack_require__(55);
-	exports.Stream = __webpack_require__(51);
+	/* WEBPACK VAR INJECTION */(function(process) {exports = module.exports = __webpack_require__(50);
+	exports.Stream = __webpack_require__(46);
 	exports.Readable = exports;
-	exports.Writable = __webpack_require__(64);
-	exports.Duplex = __webpack_require__(63);
-	exports.Transform = __webpack_require__(66);
-	exports.PassThrough = __webpack_require__(67);
+	exports.Writable = __webpack_require__(59);
+	exports.Duplex = __webpack_require__(58);
+	exports.Transform = __webpack_require__(61);
+	exports.PassThrough = __webpack_require__(62);
 	if (!process.browser && process.env.READABLE_STREAM === 'disable') {
-	  module.exports = __webpack_require__(51);
+	  module.exports = __webpack_require__(46);
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 55 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -11774,17 +10819,17 @@ var qtk =
 	module.exports = Readable;
 
 	/*<replacement>*/
-	var isArray = __webpack_require__(56);
+	var isArray = __webpack_require__(51);
 	/*</replacement>*/
 
 
 	/*<replacement>*/
-	var Buffer = __webpack_require__(57).Buffer;
+	var Buffer = __webpack_require__(52).Buffer;
 	/*</replacement>*/
 
 	Readable.ReadableState = ReadableState;
 
-	var EE = __webpack_require__(52).EventEmitter;
+	var EE = __webpack_require__(47).EventEmitter;
 
 	/*<replacement>*/
 	if (!EE.listenerCount) EE.listenerCount = function(emitter, type) {
@@ -11792,18 +10837,18 @@ var qtk =
 	};
 	/*</replacement>*/
 
-	var Stream = __webpack_require__(51);
+	var Stream = __webpack_require__(46);
 
 	/*<replacement>*/
-	var util = __webpack_require__(61);
-	util.inherits = __webpack_require__(53);
+	var util = __webpack_require__(56);
+	util.inherits = __webpack_require__(48);
 	/*</replacement>*/
 
 	var StringDecoder;
 
 
 	/*<replacement>*/
-	var debug = __webpack_require__(62);
+	var debug = __webpack_require__(57);
 	if (debug && debug.debuglog) {
 	  debug = debug.debuglog('stream');
 	} else {
@@ -11815,7 +10860,7 @@ var qtk =
 	util.inherits(Readable, Stream);
 
 	function ReadableState(options, stream) {
-	  var Duplex = __webpack_require__(63);
+	  var Duplex = __webpack_require__(58);
 
 	  options = options || {};
 
@@ -11876,14 +10921,14 @@ var qtk =
 	  this.encoding = null;
 	  if (options.encoding) {
 	    if (!StringDecoder)
-	      StringDecoder = __webpack_require__(65).StringDecoder;
+	      StringDecoder = __webpack_require__(60).StringDecoder;
 	    this.decoder = new StringDecoder(options.encoding);
 	    this.encoding = options.encoding;
 	  }
 	}
 
 	function Readable(options) {
-	  var Duplex = __webpack_require__(63);
+	  var Duplex = __webpack_require__(58);
 
 	  if (!(this instanceof Readable))
 	    return new Readable(options);
@@ -11986,7 +11031,7 @@ var qtk =
 	// backwards compatibility.
 	Readable.prototype.setEncoding = function(enc) {
 	  if (!StringDecoder)
-	    StringDecoder = __webpack_require__(65).StringDecoder;
+	    StringDecoder = __webpack_require__(60).StringDecoder;
 	  this._readableState.decoder = new StringDecoder(enc);
 	  this._readableState.encoding = enc;
 	  return this;
@@ -12702,10 +11747,10 @@ var qtk =
 	  return -1;
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 56 */
+/* 51 */
 /***/ function(module, exports) {
 
 	module.exports = Array.isArray || function (arr) {
@@ -12714,7 +11759,7 @@ var qtk =
 
 
 /***/ },
-/* 57 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer, global) {/*!
@@ -12727,9 +11772,9 @@ var qtk =
 
 	'use strict'
 
-	var base64 = __webpack_require__(58)
-	var ieee754 = __webpack_require__(59)
-	var isArray = __webpack_require__(60)
+	var base64 = __webpack_require__(53)
+	var ieee754 = __webpack_require__(54)
+	var isArray = __webpack_require__(55)
 
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -14266,10 +13311,10 @@ var qtk =
 	  return i
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(57).Buffer, (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(52).Buffer, (function() { return this; }())))
 
 /***/ },
-/* 58 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
@@ -14399,7 +13444,7 @@ var qtk =
 
 
 /***/ },
-/* 59 */
+/* 54 */
 /***/ function(module, exports) {
 
 	exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -14489,7 +13534,7 @@ var qtk =
 
 
 /***/ },
-/* 60 */
+/* 55 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -14500,7 +13545,7 @@ var qtk =
 
 
 /***/ },
-/* 61 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright Joyent, Inc. and other Node contributors.
@@ -14611,16 +13656,16 @@ var qtk =
 	  return Object.prototype.toString.call(o);
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(57).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(52).Buffer))
 
 /***/ },
-/* 62 */
+/* 57 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 63 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -14661,12 +13706,12 @@ var qtk =
 
 
 	/*<replacement>*/
-	var util = __webpack_require__(61);
-	util.inherits = __webpack_require__(53);
+	var util = __webpack_require__(56);
+	util.inherits = __webpack_require__(48);
 	/*</replacement>*/
 
-	var Readable = __webpack_require__(55);
-	var Writable = __webpack_require__(64);
+	var Readable = __webpack_require__(50);
+	var Writable = __webpack_require__(59);
 
 	util.inherits(Duplex, Readable);
 
@@ -14713,10 +13758,10 @@ var qtk =
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 64 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -14747,18 +13792,18 @@ var qtk =
 	module.exports = Writable;
 
 	/*<replacement>*/
-	var Buffer = __webpack_require__(57).Buffer;
+	var Buffer = __webpack_require__(52).Buffer;
 	/*</replacement>*/
 
 	Writable.WritableState = WritableState;
 
 
 	/*<replacement>*/
-	var util = __webpack_require__(61);
-	util.inherits = __webpack_require__(53);
+	var util = __webpack_require__(56);
+	util.inherits = __webpack_require__(48);
 	/*</replacement>*/
 
-	var Stream = __webpack_require__(51);
+	var Stream = __webpack_require__(46);
 
 	util.inherits(Writable, Stream);
 
@@ -14769,7 +13814,7 @@ var qtk =
 	}
 
 	function WritableState(options, stream) {
-	  var Duplex = __webpack_require__(63);
+	  var Duplex = __webpack_require__(58);
 
 	  options = options || {};
 
@@ -14857,7 +13902,7 @@ var qtk =
 	}
 
 	function Writable(options) {
-	  var Duplex = __webpack_require__(63);
+	  var Duplex = __webpack_require__(58);
 
 	  // Writable ctor is applied to Duplexes, though they're not
 	  // instanceof Writable, they're instanceof Readable.
@@ -15197,10 +14242,10 @@ var qtk =
 	  state.ended = true;
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ },
-/* 65 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -15224,7 +14269,7 @@ var qtk =
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	var Buffer = __webpack_require__(57).Buffer;
+	var Buffer = __webpack_require__(52).Buffer;
 
 	var isBufferEncoding = Buffer.isEncoding
 	  || function(encoding) {
@@ -15427,7 +14472,7 @@ var qtk =
 
 
 /***/ },
-/* 66 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -15496,11 +14541,11 @@ var qtk =
 
 	module.exports = Transform;
 
-	var Duplex = __webpack_require__(63);
+	var Duplex = __webpack_require__(58);
 
 	/*<replacement>*/
-	var util = __webpack_require__(61);
-	util.inherits = __webpack_require__(53);
+	var util = __webpack_require__(56);
+	util.inherits = __webpack_require__(48);
 	/*</replacement>*/
 
 	util.inherits(Transform, Duplex);
@@ -15642,7 +14687,7 @@ var qtk =
 
 
 /***/ },
-/* 67 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -15672,11 +14717,11 @@ var qtk =
 
 	module.exports = PassThrough;
 
-	var Transform = __webpack_require__(66);
+	var Transform = __webpack_require__(61);
 
 	/*<replacement>*/
-	var util = __webpack_require__(61);
-	util.inherits = __webpack_require__(53);
+	var util = __webpack_require__(56);
+	util.inherits = __webpack_require__(48);
 	/*</replacement>*/
 
 	util.inherits(PassThrough, Transform);
@@ -15694,35 +14739,35 @@ var qtk =
 
 
 /***/ },
-/* 68 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(64)
+	module.exports = __webpack_require__(59)
 
 
 /***/ },
-/* 69 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(63)
+	module.exports = __webpack_require__(58)
 
 
 /***/ },
-/* 70 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(66)
+	module.exports = __webpack_require__(61)
 
 
 /***/ },
-/* 71 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(67)
+	module.exports = __webpack_require__(62)
 
 
 /***/ },
-/* 72 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -16250,7 +15295,7 @@ var qtk =
 	}
 	exports.isPrimitive = isPrimitive;
 
-	exports.isBuffer = __webpack_require__(73);
+	exports.isBuffer = __webpack_require__(68);
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -16294,7 +15339,7 @@ var qtk =
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(53);
+	exports.inherits = __webpack_require__(48);
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -16312,10 +15357,10 @@ var qtk =
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(7)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(6)))
 
 /***/ },
-/* 73 */
+/* 68 */
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
@@ -16326,7 +15371,7 @@ var qtk =
 	}
 
 /***/ },
-/* 74 */
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -16371,7 +15416,7 @@ var qtk =
 
 
 /***/ },
-/* 75 */
+/* 70 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -16403,13 +15448,13 @@ var qtk =
 
 
 /***/ },
-/* 76 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var util = __webpack_require__(72),
-	    Stream = __webpack_require__(51).Stream,
-	    types = __webpack_require__(74),
-	    tokens = __webpack_require__(77),
+	var util = __webpack_require__(67),
+	    Stream = __webpack_require__(46).Stream,
+	    types = __webpack_require__(69),
+	    tokens = __webpack_require__(72),
 	    tokenClasses = Object.keys(tokens),
 	    tokenRegExp = {};
 
@@ -16509,7 +15554,7 @@ var qtk =
 
 
 /***/ },
-/* 77 */
+/* 72 */
 /***/ function(module, exports) {
 
 	// This file is auto-generated. Do not modify.
@@ -16556,13 +15601,13 @@ var qtk =
 
 
 /***/ },
-/* 78 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var EventEmitter = __webpack_require__(52).EventEmitter,
-	    TokenType = __webpack_require__(74),
-	    BreakType = __webpack_require__(75),
-	    util = __webpack_require__(72);
+	var EventEmitter = __webpack_require__(47).EventEmitter,
+	    TokenType = __webpack_require__(69),
+	    BreakType = __webpack_require__(70),
+	    util = __webpack_require__(67);
 
 	function LineBreak() {
 	    EventEmitter.call(this);
@@ -16685,7 +15730,7 @@ var qtk =
 
 
 /***/ },
-/* 79 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16696,7 +15741,7 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(2);
 	var point_1 = __webpack_require__(1);
-	var matrix_stack_1 = __webpack_require__(18);
+	var matrix_stack_1 = __webpack_require__(12);
 	var DirtyRectContext = (function (_super) {
 	    __extends(DirtyRectContext, _super);
 	    function DirtyRectContext() {
@@ -16760,7 +15805,7 @@ var qtk =
 
 
 /***/ },
-/* 80 */
+/* 75 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16856,12 +15901,12 @@ var qtk =
 
 
 /***/ },
-/* 81 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var Events = __webpack_require__(15);
-	var inputEventAdapter = __webpack_require__(24);
+	var Events = __webpack_require__(7);
+	var inputEventAdapter = __webpack_require__(19);
 	/**
 	 * Behavior代表控件的一种行为特性，比如Resizable/Movable/Draggable/Droppable等。
 	 * 把这些行为特性抽象出来单独实现，一方面可以避免让Widget变得太复杂，另一方面可以最大限度的重用这些行为特性。
@@ -17010,11 +16055,11 @@ var qtk =
 
 
 /***/ },
-/* 82 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var factory_1 = __webpack_require__(83);
+	var factory_1 = __webpack_require__(78);
 	/**
 	 * Widget工厂，注册控件的创建函数和根据控件的类型创建控件。
 	 * 主要用于根据UI编辑器生成的UI数据创建UI，每个控件都要向WidgetFactory注册。
@@ -17041,7 +16086,7 @@ var qtk =
 
 
 /***/ },
-/* 83 */
+/* 78 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17069,7 +16114,7 @@ var qtk =
 
 
 /***/ },
-/* 84 */
+/* 79 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17112,7 +16157,7 @@ var qtk =
 
 
 /***/ },
-/* 85 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17121,16 +16166,16 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Group = (function (_super) {
 	    __extends(Group, _super);
 	    function Group() {
 	        _super.call(this, Group.TYPE);
 	    }
 	    Group.create = function (options) {
-	        return Group.recycleBin.create().reset(Group.TYPE).set(options);
+	        return Group.recycleBin.create().reset(Group.TYPE, options);
 	    };
 	    Group.TYPE = "group";
 	    Group.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Group(); });
@@ -17142,7 +16187,7 @@ var qtk =
 
 
 /***/ },
-/* 86 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17152,16 +16197,23 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var point_1 = __webpack_require__(1);
-	var label_1 = __webpack_require__(87);
-	var Events = __webpack_require__(15);
-	var widget_factory_1 = __webpack_require__(82);
-	var html_edit_1 = __webpack_require__(88);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var label_1 = __webpack_require__(82);
+	var Events = __webpack_require__(7);
+	var widget_factory_1 = __webpack_require__(77);
+	var html_edit_1 = __webpack_require__(83);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Edit = (function (_super) {
 	    __extends(Edit, _super);
 	    function Edit() {
 	        _super.call(this, Edit.TYPE);
 	    }
+	    Object.defineProperty(Edit.prototype, "inputFilter", {
+	        set: function (value) {
+	            this._inputFilter = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    Object.defineProperty(Edit.prototype, "inputTips", {
 	        get: function () {
 	            return this._inputTips;
@@ -17215,6 +16267,9 @@ var qtk =
 	            }
 	        }
 	    };
+	    Edit.prototype.filterText = function (value) {
+	        return this._inputFilter ? this._inputFilter(value) : value;
+	    };
 	    Edit.prototype.showEditor = function () {
 	        var _this = this;
 	        var style = this.getStyle();
@@ -17238,13 +16293,20 @@ var qtk =
 	            _this.dispatchEvent({ type: Events.BLUR });
 	        });
 	        input.on(Events.CHANGING, function (evt) {
-	            _this.text = evt.value;
+	            _this.text = _this.filterText(evt.value);
 	            _this.dispatchEvent(evt);
 	        });
 	        input.on(Events.CHANGE, function (evt) {
-	            _this.text = evt.value;
+	            _this.text = _this.filterText(evt.value);
 	            _this.dispatchEvent(evt);
 	        });
+	    };
+	    Edit.prototype.dispose = function () {
+	        _super.prototype.dispose.call(this);
+	        this._inputFilter = null;
+	        this._inputType = null;
+	        this._inputTips = null;
+	        this._input = null;
 	    };
 	    Edit.prototype.dispatchClick = function (evt) {
 	        _super.prototype.dispatchClick.call(this, evt);
@@ -17254,7 +16316,7 @@ var qtk =
 	        }
 	    };
 	    Edit.create = function (options) {
-	        return Edit.r.create().reset(Edit.TYPE).set(options);
+	        return Edit.r.create().reset(Edit.TYPE, options);
 	    };
 	    Edit.TYPE = "edit";
 	    Edit.r = new recyclable_creator_1.RecyclableCreator(function () { return new Edit(); });
@@ -17266,7 +16328,7 @@ var qtk =
 
 
 /***/ },
-/* 87 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17276,10 +16338,10 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var widget_1 = __webpack_require__(21);
-	var graphics_1 = __webpack_require__(28);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var graphics_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Label = (function (_super) {
 	    __extends(Label, _super);
 	    function Label(type) {
@@ -17362,13 +16424,11 @@ var qtk =
 	        _super.prototype.onInit.call(this);
 	        this.relayoutText();
 	    };
-	    Label.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Label.prototype.onReset = function () {
 	        this.padding = 5;
-	        return this;
 	    };
 	    Label.create = function (options) {
-	        return Label.recycleBin.create().reset(Label.TYPE).set(options);
+	        return Label.recycleBin.create().reset(Label.TYPE, options);
 	    };
 	    Label.TYPE = "label";
 	    Label.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Label(); });
@@ -17380,7 +16440,7 @@ var qtk =
 
 
 /***/ },
-/* 88 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17389,8 +16449,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var html_element_1 = __webpack_require__(89);
+	var Events = __webpack_require__(7);
+	var html_element_1 = __webpack_require__(84);
 	var HtmlEdit = (function (_super) {
 	    __extends(HtmlEdit, _super);
 	    function HtmlEdit() {
@@ -17487,7 +16547,7 @@ var qtk =
 
 
 /***/ },
-/* 89 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17496,7 +16556,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var emitter_1 = __webpack_require__(14);
+	var emitter_1 = __webpack_require__(8);
 	var HtmlElement = (function (_super) {
 	    __extends(HtmlElement, _super);
 	    function HtmlElement() {
@@ -17587,7 +16647,7 @@ var qtk =
 
 
 /***/ },
-/* 90 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17596,16 +16656,16 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Page = (function (_super) {
 	    __extends(Page, _super);
 	    function Page(type) {
 	        _super.call(this, type || Page.TYPE);
 	    }
 	    Page.create = function (options) {
-	        return Page.recycleBin.create().reset(Page.TYPE).set(options);
+	        return Page.recycleBin.create().reset(Page.TYPE, options);
 	    };
 	    Page.TYPE = "page";
 	    Page.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Page(); });
@@ -17617,7 +16677,7 @@ var qtk =
 
 
 /***/ },
-/* 91 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17626,9 +16686,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Pages = (function (_super) {
 	    __extends(Pages, _super);
 	    function Pages() {
@@ -17681,13 +16741,11 @@ var qtk =
 	    Pages.prototype.findEventTargetChild = function (x, y, ctx) {
 	        return this.target;
 	    };
-	    Pages.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Pages.prototype.onReset = function () {
 	        this.value = 0;
-	        return this;
 	    };
-	    Pages.create = function () {
-	        return Pages.recycleBin.create().reset(Pages.TYPE);
+	    Pages.create = function (options) {
+	        return Pages.recycleBin.create().reset(Pages.TYPE, options);
 	    };
 	    Pages.TYPE = "pages";
 	    Pages.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Pages(); });
@@ -17699,7 +16757,7 @@ var qtk =
 
 
 /***/ },
-/* 92 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17708,16 +16766,16 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Button = (function (_super) {
 	    __extends(Button, _super);
 	    function Button() {
 	        _super.call(this, Button.TYPE);
 	    }
 	    Button.create = function (options) {
-	        return Button.recycleBin.create().reset(Button.TYPE).set(options);
+	        return Button.recycleBin.create().reset(Button.TYPE, options);
 	    };
 	    Button.TYPE = "button";
 	    Button.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Button(); });
@@ -17729,7 +16787,7 @@ var qtk =
 
 
 /***/ },
-/* 93 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17738,9 +16796,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var page_1 = __webpack_require__(90);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var page_1 = __webpack_require__(85);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var TabPage = (function (_super) {
 	    __extends(TabPage, _super);
 	    function TabPage() {
@@ -17761,7 +16819,7 @@ var qtk =
 	        this._tabButton = null;
 	    };
 	    TabPage.create = function (options) {
-	        return TabPage.r.create().reset(TabPage.TYPE).set(options);
+	        return TabPage.r.create().reset(TabPage.TYPE, options);
 	    };
 	    TabPage.TYPE = "page";
 	    TabPage.r = new recyclable_creator_1.RecyclableCreator(function () { return new TabPage(); });
@@ -17773,7 +16831,7 @@ var qtk =
 
 
 /***/ },
-/* 94 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17783,13 +16841,13 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var button_1 = __webpack_require__(92);
-	var graphics_1 = __webpack_require__(28);
-	var consts_1 = __webpack_require__(3);
-	var radio_button_1 = __webpack_require__(95);
-	var widget_factory_1 = __webpack_require__(82);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var button_1 = __webpack_require__(87);
+	var graphics_1 = __webpack_require__(23);
+	var consts_1 = __webpack_require__(90);
+	var radio_button_1 = __webpack_require__(91);
+	var widget_factory_1 = __webpack_require__(77);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var TabButton = (function (_super) {
 	    __extends(TabButton, _super);
 	    function TabButton() {
@@ -17947,8 +17005,7 @@ var qtk =
 	    TabButton.prototype.drawText = function (ctx, style) {
 	        return this;
 	    };
-	    TabButton.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    TabButton.prototype.onReset = function () {
 	        this.padding = 2;
 	        this._tabPage = null;
 	        this._closeButton = null;
@@ -17956,7 +17013,6 @@ var qtk =
 	        this._currentIcon = null;
 	        this._closeButtonAtLeft = false;
 	        this._orientation = consts_1.Orientation.H;
-	        return this;
 	    };
 	    TabButton.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
@@ -17965,8 +17021,8 @@ var qtk =
 	        this._normalIcon = null;
 	        this._currentIcon = null;
 	    };
-	    TabButton.create = function () {
-	        return TabButton.re.create().reset(TabButton.TYPE);
+	    TabButton.create = function (options) {
+	        return TabButton.re.create().reset(TabButton.TYPE, options);
 	    };
 	    TabButton.TYPE = "tab-button";
 	    TabButton.re = new recyclable_creator_1.RecyclableCreator(function () { return new TabButton(); });
@@ -17978,7 +17034,78 @@ var qtk =
 
 
 /***/ },
-/* 95 */
+/* 90 */
+/***/ function(module, exports) {
+
+	"use strict";
+	(function (Orientation) {
+	    Orientation[Orientation["V"] = 1] = "V";
+	    Orientation[Orientation["VERTICAL"] = 1] = "VERTICAL";
+	    Orientation[Orientation["H"] = 2] = "H";
+	    Orientation[Orientation["HORIZONTAL"] = 2] = "HORIZONTAL";
+	})(exports.Orientation || (exports.Orientation = {}));
+	var Orientation = exports.Orientation;
+	;
+	(function (Direction) {
+	    Direction[Direction["W"] = 1] = "W";
+	    Direction[Direction["WEST"] = 1] = "WEST";
+	    Direction[Direction["E"] = 2] = "E";
+	    Direction[Direction["EAST"] = 2] = "EAST";
+	    Direction[Direction["N"] = 3] = "N";
+	    Direction[Direction["NORTH"] = 3] = "NORTH";
+	    Direction[Direction["S"] = 4] = "S";
+	    Direction[Direction["SOUTH"] = 4] = "SOUTH";
+	    Direction[Direction["L"] = 1] = "L";
+	    Direction[Direction["LEFT"] = 1] = "LEFT";
+	    Direction[Direction["R"] = 2] = "R";
+	    Direction[Direction["RIGHT"] = 2] = "RIGHT";
+	    Direction[Direction["T"] = 3] = "T";
+	    Direction[Direction["TOP"] = 3] = "TOP";
+	    Direction[Direction["B"] = 4] = "B";
+	    Direction[Direction["BOTTOM"] = 4] = "BOTTOM";
+	})(exports.Direction || (exports.Direction = {}));
+	var Direction = exports.Direction;
+	;
+	(function (AlignH) {
+	    AlignH[AlignH["L"] = 1] = "L";
+	    AlignH[AlignH["LEFT"] = 1] = "LEFT";
+	    AlignH[AlignH["C"] = 2] = "C";
+	    AlignH[AlignH["CENTER"] = 2] = "CENTER";
+	    AlignH[AlignH["R"] = 3] = "R";
+	    AlignH[AlignH["RIGHT"] = 3] = "RIGHT";
+	})(exports.AlignH || (exports.AlignH = {}));
+	var AlignH = exports.AlignH;
+	;
+	(function (AlignV) {
+	    AlignV[AlignV["T"] = 1] = "T";
+	    AlignV[AlignV["TOP"] = 1] = "TOP";
+	    AlignV[AlignV["M"] = 2] = "M";
+	    AlignV[AlignV["MIDDLE"] = 2] = "MIDDLE";
+	    AlignV[AlignV["B"] = 3] = "B";
+	    AlignV[AlignV["BOTTOM"] = 3] = "BOTTOM";
+	})(exports.AlignV || (exports.AlignV = {}));
+	var AlignV = exports.AlignV;
+	;
+	(function (Align) {
+	    Align[Align["L"] = 1] = "L";
+	    Align[Align["LEFT"] = 1] = "LEFT";
+	    Align[Align["C"] = 2] = "C";
+	    Align[Align["CENTER"] = 2] = "CENTER";
+	    Align[Align["R"] = 3] = "R";
+	    Align[Align["RIGHT"] = 3] = "RIGHT";
+	    Align[Align["T"] = 1] = "T";
+	    Align[Align["TOP"] = 1] = "TOP";
+	    Align[Align["M"] = 2] = "M";
+	    Align[Align["MIDDLE"] = 2] = "MIDDLE";
+	    Align[Align["B"] = 3] = "B";
+	    Align[Align["BOTTOM"] = 3] = "BOTTOM";
+	})(exports.Align || (exports.Align = {}));
+	var Align = exports.Align;
+	;
+
+
+/***/ },
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17987,9 +17114,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var check_button_1 = __webpack_require__(96);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var check_button_1 = __webpack_require__(92);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var RadioButton = (function (_super) {
 	    __extends(RadioButton, _super);
 	    function RadioButton(type) {
@@ -18006,7 +17133,7 @@ var qtk =
 	        configurable: true
 	    });
 	    RadioButton.create = function (options) {
-	        return RadioButton.r.create().reset(RadioButton.TYPE).set(options);
+	        return RadioButton.r.create().reset(RadioButton.TYPE, options);
 	    };
 	    RadioButton.TYPE = "radio-button";
 	    RadioButton.r = new recyclable_creator_1.RecyclableCreator(function () { return new RadioButton(); });
@@ -18018,7 +17145,7 @@ var qtk =
 
 
 /***/ },
-/* 96 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18027,10 +17154,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var CheckButton = (function (_super) {
 	    __extends(CheckButton, _super);
 	    function CheckButton(type) {
@@ -18117,7 +17244,7 @@ var qtk =
 	        _super.prototype.dispatchClick.call(this, evt);
 	    };
 	    CheckButton.create = function (options) {
-	        return CheckButton.recycleBin.create().reset(CheckButton.TYPE).set(options);
+	        return CheckButton.recycleBin.create().reset(CheckButton.TYPE, options);
 	    };
 	    CheckButton.TYPE = "check-button";
 	    CheckButton.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new CheckButton(); });
@@ -18129,7 +17256,7 @@ var qtk =
 
 
 /***/ },
-/* 97 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18139,14 +17266,14 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var pages_1 = __webpack_require__(91);
-	var widget_1 = __webpack_require__(21);
-	var tab_page_1 = __webpack_require__(93);
-	var Events = __webpack_require__(15);
-	var tab_button_1 = __webpack_require__(94);
-	var tab_button_group_1 = __webpack_require__(98);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var pages_1 = __webpack_require__(86);
+	var widget_1 = __webpack_require__(16);
+	var tab_page_1 = __webpack_require__(88);
+	var Events = __webpack_require__(7);
+	var tab_button_1 = __webpack_require__(89);
+	var tab_button_group_1 = __webpack_require__(94);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var TabControl = (function (_super) {
 	    __extends(TabControl, _super);
 	    function TabControl() {
@@ -18263,15 +17390,13 @@ var qtk =
 	        }
 	        return rect_1.Rect.rect.init(0, 0, this.w, this.h);
 	    };
-	    TabControl.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    TabControl.prototype.onReset = function () {
 	        this._value = 0;
 	        this._buttonGroupHeight = 30;
 	        this._pages = pages_1.Pages.create();
 	        this.addChild(this._pages, true);
 	        this._buttonGroup = tab_button_group_1.TabButtonGroup.create();
 	        this.addChild(this._buttonGroup, true);
-	        return this;
 	    };
 	    TabControl.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
@@ -18279,7 +17404,7 @@ var qtk =
 	        this._buttonGroup = null;
 	    };
 	    TabControl.create = function (options) {
-	        return TabControl.r.create().reset(TabControl.TYPE).set(options);
+	        return TabControl.r.create().reset(TabControl.TYPE, options);
 	    };
 	    TabControl.TYPE = "tab-control";
 	    TabControl.r = new recyclable_creator_1.RecyclableCreator(function () { return new TabControl(); });
@@ -18291,7 +17416,7 @@ var qtk =
 
 
 /***/ },
-/* 98 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18301,9 +17426,9 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var TabButtonGroup = (function (_super) {
 	    __extends(TabButtonGroup, _super);
 	    function TabButtonGroup() {
@@ -18383,13 +17508,11 @@ var qtk =
 	        }
 	        return this;
 	    };
-	    TabButtonGroup.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    TabButtonGroup.prototype.onReset = function () {
 	        this.autoExpand = true;
-	        return this;
 	    };
 	    TabButtonGroup.create = function (options) {
-	        return TabButtonGroup.r.create().reset(TabButtonGroup.TYPE).set(options);
+	        return TabButtonGroup.r.create().reset(TabButtonGroup.TYPE, options);
 	    };
 	    TabButtonGroup.TYPE = "tab-button-group";
 	    TabButtonGroup.r = new recyclable_creator_1.RecyclableCreator(function () { return new TabButtonGroup(); });
@@ -18401,7 +17524,7 @@ var qtk =
 
 
 /***/ },
-/* 99 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18410,25 +17533,25 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var group_1 = __webpack_require__(85);
-	var dialog_1 = __webpack_require__(100);
-	var label_1 = __webpack_require__(87);
-	var edit_1 = __webpack_require__(86);
-	var button_1 = __webpack_require__(92);
-	var Events = __webpack_require__(15);
-	var graphics_1 = __webpack_require__(28);
-	var list_view_1 = __webpack_require__(102);
-	var progress_bar_1 = __webpack_require__(108);
-	var application_1 = __webpack_require__(109);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var consts_1 = __webpack_require__(3);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var list_item_1 = __webpack_require__(114);
-	var dock_layouter_1 = __webpack_require__(115);
-	var linear_layouter_1 = __webpack_require__(116);
-	var grid_layouter_1 = __webpack_require__(117);
-	var simple_layouter_1 = __webpack_require__(118);
+	var group_1 = __webpack_require__(80);
+	var dialog_1 = __webpack_require__(96);
+	var label_1 = __webpack_require__(82);
+	var edit_1 = __webpack_require__(81);
+	var button_1 = __webpack_require__(87);
+	var Events = __webpack_require__(7);
+	var graphics_1 = __webpack_require__(23);
+	var list_view_1 = __webpack_require__(98);
+	var progress_bar_1 = __webpack_require__(104);
+	var application_1 = __webpack_require__(105);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var consts_1 = __webpack_require__(90);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var list_item_1 = __webpack_require__(110);
+	var dock_layouter_1 = __webpack_require__(111);
+	var linear_layouter_1 = __webpack_require__(112);
+	var grid_layouter_1 = __webpack_require__(113);
+	var simple_layouter_1 = __webpack_require__(114);
 	var TitleOptions = (function () {
 	    function TitleOptions(text, iconStyleType, hasCloseButton) {
 	        this.h = 0;
@@ -18439,6 +17562,7 @@ var qtk =
 	    }
 	    return TitleOptions;
 	}());
+	exports.TitleOptions = TitleOptions;
 	;
 	var ButtonOption = (function () {
 	    function ButtonOption() {
@@ -18459,6 +17583,7 @@ var qtk =
 	    });
 	    return ButtonsOptions;
 	}());
+	exports.ButtonsOptions = ButtonsOptions;
 	;
 	var MessageBox = (function (_super) {
 	    __extends(MessageBox, _super);
@@ -18593,11 +17718,10 @@ var qtk =
 	        this.initButtons(buttonsOptions);
 	        this.initContent(content);
 	    };
-	    MessageBox.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    MessageBox.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this.padding = 1;
 	        this.childrenLayouter = dock_layouter_1.DockLayouter.create();
-	        return this;
 	    };
 	    MessageBox.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
@@ -18648,14 +17772,16 @@ var qtk =
 	        var messageBox = MessageBox.create({ app: app, styleType: "messagebox.toast", w: rw, h: 0 });
 	        messageBox.createChildren(null, null, msg);
 	        messageBox.on(Events.POINTER_UP, function (evt) {
-	            this.animateClose();
-	            messageBox = null;
+	            if (messageBox) {
+	                this.animateClose();
+	                messageBox = null;
+	            }
 	        });
 	        setTimeout(function (evt) {
 	            if (messageBox) {
 	                messageBox.animateClose();
+	                messageBox = null;
 	            }
-	            messageBox = null;
 	        }, duration || 3000);
 	        messageBox.open();
 	    };
@@ -18760,7 +17886,7 @@ var qtk =
 	        messageBox.open();
 	    };
 	    MessageBox.create = function (options) {
-	        return MessageBox.rBin.create().reset(MessageBox.TYPE).set(options);
+	        return MessageBox.rBin.create().reset(MessageBox.TYPE, options);
 	    };
 	    MessageBox.TITLE_H = 25;
 	    MessageBox.BUTTONS_H = 40;
@@ -18775,7 +17901,7 @@ var qtk =
 
 
 /***/ },
-/* 100 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18784,9 +17910,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var window_1 = __webpack_require__(101);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var window_1 = __webpack_require__(97);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Dialog = (function (_super) {
 	    __extends(Dialog, _super);
 	    function Dialog(type) {
@@ -18801,7 +17927,7 @@ var qtk =
 	        return this;
 	    };
 	    Dialog.create = function (options) {
-	        return Dialog.recycleBin.create().reset(Dialog.TYPE).set(options);
+	        return Dialog.recycleBin.create().reset(Dialog.TYPE, options);
 	    };
 	    Dialog.TYPE = "dialog";
 	    Dialog.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Dialog(); });
@@ -18813,7 +17939,7 @@ var qtk =
 
 
 /***/ },
-/* 101 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18823,8 +17949,8 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var point_1 = __webpack_require__(1);
-	var widget_1 = __webpack_require__(21);
-	var Events = __webpack_require__(15);
+	var widget_1 = __webpack_require__(16);
+	var Events = __webpack_require__(7);
 	(function (WindowType) {
 	    WindowType[WindowType["NORMAL"] = 0] = "NORMAL";
 	    WindowType[WindowType["POPUP"] = 1] = "POPUP";
@@ -18846,13 +17972,11 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Window.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Window.prototype.onReset = function () {
 	        this._isWindow = true;
 	        this._grabbed = false;
 	        this.hasOwnCanvas = true;
 	        this._pointerPosition = point_1.Point.create(0, 0);
-	        return this;
 	    };
 	    Object.defineProperty(Window.prototype, "pointerPosition", {
 	        get: function () {
@@ -18914,6 +18038,7 @@ var qtk =
 	        }
 	        this.init();
 	        this.dispatchEvent({ type: Events.OPEN });
+	        this.relayoutChildren();
 	        return this;
 	    };
 	    Window.prototype.close = function () {
@@ -18935,7 +18060,7 @@ var qtk =
 
 
 /***/ },
-/* 102 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18944,10 +18069,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var scroll_view_1 = __webpack_require__(103);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var list_layouter_1 = __webpack_require__(107);
+	var scroll_view_1 = __webpack_require__(99);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var list_layouter_1 = __webpack_require__(103);
 	var ListView = (function (_super) {
 	    __extends(ListView, _super);
 	    function ListView() {
@@ -19021,16 +18146,15 @@ var qtk =
 	        this.contentHeight = r.h + this.topPadding + this.bottomPadding + 10;
 	        return r;
 	    };
-	    ListView.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    ListView.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this._itemSpacing = 0;
 	        this._itemHeight = 30;
 	        this.scrollerOptions.scrollingX = false;
 	        this._childrenLayouter = list_layouter_1.ListLayouter.create({ height: this.itemHeight, spacing: 0 });
-	        return this;
 	    };
 	    ListView.create = function (options) {
-	        return ListView.recycleBinListView.create().reset(ListView.TYPE).set(options);
+	        return ListView.recycleBinListView.create().reset(ListView.TYPE, options);
 	    };
 	    ListView.TYPE = "list-view";
 	    ListView.recycleBinListView = new recyclable_creator_1.RecyclableCreator(function () { return new ListView(); });
@@ -19042,7 +18166,7 @@ var qtk =
 
 
 /***/ },
-/* 103 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/// <reference path="../../typings/globals/scroller/index.d.ts"/>
@@ -19055,13 +18179,13 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(2);
 	var point_1 = __webpack_require__(1);
-	var scroller_1 = __webpack_require__(104);
-	var TWEEN = __webpack_require__(26);
-	var Events = __webpack_require__(15);
-	var graphics_1 = __webpack_require__(28);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var widget_1 = __webpack_require__(21);
+	var scroller_1 = __webpack_require__(100);
+	var TWEEN = __webpack_require__(21);
+	var Events = __webpack_require__(7);
+	var graphics_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var widget_1 = __webpack_require__(16);
 	/**
 	 * 滚动视图，同时支持PC和Mobile风格，通过dragToScroll和slideToScroll参数控制。
 	 */
@@ -19604,16 +18728,16 @@ var qtk =
 	                h -= this._scrollBarStyle.size;
 	            }
 	        }
-	        return rect_1.Rect.create(this.leftPadding, this.topPadding, w, h);
+	        return this.layoutRect.init(this.leftPadding, this.topPadding, w, h);
 	    };
 	    ScrollView.prototype.onInit = function () {
 	        _super.prototype.onInit.call(this);
 	        this.initScroller(this._scrollerOptions);
 	        this._scrollBarOpacity = this.dragToScroll ? 1 : 0;
 	    };
-	    ScrollView.prototype.reset = function (type) {
+	    ScrollView.prototype.onReset = function () {
 	        var _this = this;
-	        _super.prototype.reset.call(this, type);
+	        _super.prototype.onReset.call(this);
 	        this._ox = 0;
 	        this._oy = 0;
 	        this._cw = 0;
@@ -19636,10 +18760,9 @@ var qtk =
 	            _this.onWheel(evt);
 	        });
 	        this._scrollEvent = Events.ScrollEvent.create();
-	        return this;
 	    };
 	    ScrollView.create = function (options) {
-	        return ScrollView.recycleBin.create().reset(ScrollView.TYPE).set(options);
+	        return ScrollView.recycleBin.create().reset(ScrollView.TYPE, options);
 	    };
 	    ScrollView.TYPE = "scroll-view";
 	    ScrollView.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ScrollView(); });
@@ -19676,13 +18799,13 @@ var qtk =
 
 
 /***/ },
-/* 104 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
 	    if (true) {
 	        // AMD
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(105), __webpack_require__(106)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(101), __webpack_require__(102)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof exports === 'object') {
 	        // CommonJS
 	        factory(exports, require('./lib/animate'), require('./lib/Scroller'));
@@ -19694,7 +18817,7 @@ var qtk =
 
 
 /***/ },
-/* 105 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -19931,7 +19054,7 @@ var qtk =
 
 
 /***/ },
-/* 106 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -19951,7 +19074,7 @@ var qtk =
 	(function (root, factory) {
 	    if (true) {
 	        // AMD
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(105)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(101)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof module === 'object') {
 	        // CommonJS
 	        module.exports = factory(require('./animate'));
@@ -21089,7 +20212,7 @@ var qtk =
 
 
 /***/ },
-/* 107 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21099,7 +20222,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var layouter_1 = __webpack_require__(80);
+	var layouter_1 = __webpack_require__(75);
 	var TYPE = "list";
 	/**
 	 * 列表布局器。
@@ -21189,7 +20312,7 @@ var qtk =
 
 
 /***/ },
-/* 108 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21198,10 +20321,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var graphics_1 = __webpack_require__(28);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var graphics_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	(function (ProgressBarType) {
 	    ProgressBarType[ProgressBarType["V"] = 1] = "V";
 	    ProgressBarType[ProgressBarType["VERTICAL"] = 1] = "VERTICAL";
@@ -21282,7 +20405,7 @@ var qtk =
 	        return this;
 	    };
 	    ProgressBar.create = function (options) {
-	        return ProgressBar.recycleBin.create().reset(ProgressBar.TYPE).set(options);
+	        return ProgressBar.recycleBin.create().reset(ProgressBar.TYPE, options);
 	    };
 	    ProgressBar.TYPE = "progress-bar";
 	    ProgressBar.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ProgressBar(); });
@@ -21294,7 +20417,7 @@ var qtk =
 
 
 /***/ },
-/* 109 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21303,18 +20426,18 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var path = __webpack_require__(6);
-	var TWEEN = __webpack_require__(26);
-	var Assets = __webpack_require__(4);
-	var Services = __webpack_require__(110);
-	var main_loop_1 = __webpack_require__(16);
-	var emitter_1 = __webpack_require__(14);
-	var view_port_1 = __webpack_require__(111);
-	var image_tile_1 = __webpack_require__(13);
-	var theme_manager_1 = __webpack_require__(112);
-	var deviceInfo = __webpack_require__(113);
-	var inputEventAdapter = __webpack_require__(24);
+	var Events = __webpack_require__(7);
+	var path = __webpack_require__(5);
+	var TWEEN = __webpack_require__(21);
+	var Assets = __webpack_require__(3);
+	var Services = __webpack_require__(106);
+	var main_loop_1 = __webpack_require__(10);
+	var emitter_1 = __webpack_require__(8);
+	var view_port_1 = __webpack_require__(107);
+	var image_tile_1 = __webpack_require__(15);
+	var theme_manager_1 = __webpack_require__(108);
+	var deviceInfo = __webpack_require__(109);
+	var inputEventAdapter = __webpack_require__(19);
 	/**
 	 * 代表整个应用程序，可以通过Application获取各种服务。
 	 *
@@ -21464,7 +20587,7 @@ var qtk =
 
 
 /***/ },
-/* 110 */
+/* 106 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21490,7 +20613,7 @@ var qtk =
 
 
 /***/ },
-/* 111 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/// <reference path="../typings/globals/eventemitter3/index.d.ts"/>
@@ -21500,8 +20623,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var emitter_1 = __webpack_require__(14);
-	var Events = __webpack_require__(15);
+	var emitter_1 = __webpack_require__(8);
+	var Events = __webpack_require__(7);
 	/**
 	 * 表示屏幕大小和密度。
 	 */
@@ -21591,12 +20714,12 @@ var qtk =
 
 
 /***/ },
-/* 112 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var style_1 = __webpack_require__(20);
-	var utils_1 = __webpack_require__(27);
+	var style_1 = __webpack_require__(14);
+	var utils_1 = __webpack_require__(22);
 	/**
 	 * 主题用来统一控制Widget的外观风格。
 	 */
@@ -21682,7 +20805,7 @@ var qtk =
 
 
 /***/ },
-/* 113 */
+/* 109 */
 /***/ function(module, exports) {
 
 	/**
@@ -21712,7 +20835,7 @@ var qtk =
 
 
 /***/ },
-/* 114 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21722,11 +20845,11 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var graphics_1 = __webpack_require__(28);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var image_tile_1 = __webpack_require__(13);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var graphics_1 = __webpack_require__(23);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var image_tile_1 = __webpack_require__(15);
 	(function (ListItemStyle) {
 	    ListItemStyle[ListItemStyle["NORMAL"] = 0] = "NORMAL";
 	    ListItemStyle[ListItemStyle["FIRST"] = 1] = "FIRST";
@@ -21796,7 +20919,7 @@ var qtk =
 	        return rect_1.Rect.rect.init(x, y, w, h);
 	    };
 	    ListItem.create = function (options) {
-	        return ListItem.recycleBin.create().reset(ListItem.TYPE).set(options);
+	        return ListItem.recycleBin.create().reset(ListItem.TYPE, options);
 	    };
 	    ListItem.TYPE = "list-item";
 	    ListItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ListItem(); });
@@ -21848,7 +20971,7 @@ var qtk =
 	        configurable: true
 	    });
 	    ListItemCheckable.create = function (options) {
-	        return ListItemCheckable.rBin.create().reset(ListItemCheckable.TYPE).set(options);
+	        return ListItemCheckable.rBin.create().reset(ListItemCheckable.TYPE, options);
 	    };
 	    ListItemCheckable.TYPE = "list-item.checkable";
 	    ListItemCheckable.rBin = new recyclable_creator_1.RecyclableCreator(function () { return new ListItemCheckable(); });
@@ -21860,7 +20983,7 @@ var qtk =
 
 
 /***/ },
-/* 115 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21869,8 +20992,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var consts_1 = __webpack_require__(3);
-	var layouter_1 = __webpack_require__(80);
+	var consts_1 = __webpack_require__(90);
+	var layouter_1 = __webpack_require__(75);
 	var TYPE = "dock";
 	/**
 	 * Dock布局器。
@@ -21984,7 +21107,7 @@ var qtk =
 
 
 /***/ },
-/* 116 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21993,9 +21116,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var consts_1 = __webpack_require__(3);
-	var utils_1 = __webpack_require__(27);
-	var layouter_1 = __webpack_require__(80);
+	var consts_1 = __webpack_require__(90);
+	var utils_1 = __webpack_require__(22);
+	var layouter_1 = __webpack_require__(75);
 	var TYPE_H = "linear-h";
 	var TYPE_V = "linear-v";
 	/**
@@ -22165,15 +21288,15 @@ var qtk =
 	var LinearLayouterParam = (function () {
 	    function LinearLayouterParam(type, w, h, spacing, align, position) {
 	        this.type = type || TYPE_V;
-	        this.w = w;
-	        this.h = h;
+	        this.w = w || "100%";
+	        this.h = h || "100%";
 	        this.align = align;
 	        this.spacing = spacing;
 	        this.position = position;
 	    }
 	    LinearLayouterParam.createWithType = function (type, opts) {
 	        var options = opts || {};
-	        return new LinearLayouterParam(type, options.w || options.width, options.h || options.height, options.spacing || 0, options.align || consts_1.Align.C, options.position || 1);
+	        return new LinearLayouterParam(type, options.w || options.width, options.h || options.height, options.spacing || 0, options.align || consts_1.Align.C, options.position === undefined ? 1 : options.position);
 	    };
 	    LinearLayouterParam.create = function (opts) {
 	        return this.createWithType(TYPE_H, opts);
@@ -22187,7 +21310,7 @@ var qtk =
 
 
 /***/ },
-/* 117 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22197,7 +21320,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var rect_1 = __webpack_require__(2);
-	var layouter_1 = __webpack_require__(80);
+	var layouter_1 = __webpack_require__(75);
 	var TYPE = "grid";
 	/**
 	 * 网格布局器。
@@ -22325,7 +21448,7 @@ var qtk =
 
 
 /***/ },
-/* 118 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22334,7 +21457,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var layouter_1 = __webpack_require__(80);
+	var layouter_1 = __webpack_require__(75);
 	var TYPE = "simple";
 	/**
 	 * 简单的布局器。
@@ -22434,7 +21557,7 @@ var qtk =
 	    }
 	    SimpleLayouterParam.create = function (opts) {
 	        var options = opts || {};
-	        return new SimpleLayouterParam(options.x || '0px', options.y || '0px', options.w || '0px', options.h || '0px');
+	        return new SimpleLayouterParam(options.x || '0px', options.y || 'center', options.w || '100%', options.h || '100%');
 	    };
 	    return SimpleLayouterParam;
 	}());
@@ -22443,7 +21566,7 @@ var qtk =
 
 
 /***/ },
-/* 119 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22452,10 +21575,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var scroll_view_1 = __webpack_require__(103);
-	var carota = __webpack_require__(29);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var scroll_view_1 = __webpack_require__(99);
+	var carota = __webpack_require__(24);
 	var rect = carota.rect;
 	var createDoc = carota.document;
 	var RichText = (function (_super) {
@@ -22540,7 +21663,7 @@ var qtk =
 	        _super.prototype.dispose.call(this);
 	    };
 	    RichText.create = function (options) {
-	        return RichText.reBin.create().reset(RichText.TYPE).set(options);
+	        return RichText.reBin.create().reset(RichText.TYPE, options);
 	    };
 	    RichText.TYPE = "rich-text";
 	    RichText.reBin = new recyclable_creator_1.RecyclableCreator(function () { return new RichText(); });
@@ -22552,7 +21675,7 @@ var qtk =
 
 
 /***/ },
-/* 120 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22561,10 +21684,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var rich_text_1 = __webpack_require__(119);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var carota = __webpack_require__(29);
+	var rich_text_1 = __webpack_require__(115);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var carota = __webpack_require__(24);
 	var createDoc = carota.document;
 	var dom = carota.dom;
 	var node = carota.node;
@@ -23055,7 +22178,7 @@ var qtk =
 	        return this._selectDragStart || (document.activeElement === this._textArea);
 	    };
 	    RichTextEdit.create = function (options) {
-	        return RichTextEdit.rBin.create().reset(RichTextEdit.TYPE).set(options);
+	        return RichTextEdit.rBin.create().reset(RichTextEdit.TYPE, options);
 	    };
 	    RichTextEdit.TYPE = "rich-text-edit";
 	    RichTextEdit.rBin = new recyclable_creator_1.RecyclableCreator(function () { return new RichTextEdit(); });
@@ -23067,7 +22190,7 @@ var qtk =
 
 
 /***/ },
-/* 121 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23076,12 +22199,12 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var button_1 = __webpack_require__(92);
-	var graphics_1 = __webpack_require__(28);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var progress_bar_1 = __webpack_require__(108);
+	var Events = __webpack_require__(7);
+	var button_1 = __webpack_require__(87);
+	var graphics_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var progress_bar_1 = __webpack_require__(104);
 	var Slider = (function (_super) {
 	    __extends(Slider, _super);
 	    function Slider(type) {
@@ -23201,7 +22324,7 @@ var qtk =
 	        return this;
 	    };
 	    Slider.create = function (options) {
-	        return Slider.r.create().reset(Slider.TYPE).set(options);
+	        return Slider.r.create().reset(Slider.TYPE, options);
 	    };
 	    Slider.TYPE = "slider";
 	    Slider.r = new recyclable_creator_1.RecyclableCreator(function () { return new Slider(); });
@@ -23213,7 +22336,7 @@ var qtk =
 
 
 /***/ },
-/* 122 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23222,11 +22345,11 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_1 = __webpack_require__(21);
-	var TWEEN = __webpack_require__(26);
-	var graphics_1 = __webpack_require__(28);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var widget_1 = __webpack_require__(16);
+	var TWEEN = __webpack_require__(21);
+	var graphics_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var Switch = (function (_super) {
 	    __extends(Switch, _super);
 	    function Switch() {
@@ -23305,7 +22428,7 @@ var qtk =
 	        _super.prototype.dispatchPointerUp.call(this, evt);
 	    };
 	    Switch.create = function (options) {
-	        return Switch.recycleBin.create().reset(Switch.TYPE).set(options);
+	        return Switch.recycleBin.create().reset(Switch.TYPE, options);
 	    };
 	    Switch.TYPE = "switch";
 	    Switch.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Switch(); });
@@ -23317,7 +22440,7 @@ var qtk =
 
 
 /***/ },
-/* 123 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23328,16 +22451,18 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(2);
 	var point_1 = __webpack_require__(1);
-	var widget_1 = __webpack_require__(21);
-	var dialog_1 = __webpack_require__(100);
-	var graphics_1 = __webpack_require__(28);
-	var Events = __webpack_require__(15);
-	var list_view_1 = __webpack_require__(102);
-	var list_item_1 = __webpack_require__(114);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var image_tile_1 = __webpack_require__(13);
-	var simple_layouter_1 = __webpack_require__(118);
+	var edit_1 = __webpack_require__(81);
+	var button_1 = __webpack_require__(87);
+	var widget_1 = __webpack_require__(16);
+	var dialog_1 = __webpack_require__(96);
+	var graphics_1 = __webpack_require__(23);
+	var Events = __webpack_require__(7);
+	var list_view_1 = __webpack_require__(98);
+	var list_item_1 = __webpack_require__(110);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var image_tile_1 = __webpack_require__(15);
+	var simple_layouter_1 = __webpack_require__(114);
 	var ComboBoxOption = (function () {
 	    function ComboBoxOption(text, value, imageURL, color) {
 	        this.text = text;
@@ -23355,10 +22480,9 @@ var qtk =
 	    function ComboBoxItem() {
 	        _super.call(this, ComboBoxItem.TYPE);
 	    }
-	    ComboBoxItem.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    ComboBoxItem.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this.padding = 2;
-	        return this;
 	    };
 	    Object.defineProperty(ComboBoxItem.prototype, "text", {
 	        get: function () {
@@ -23405,7 +22529,7 @@ var qtk =
 	        return this;
 	    };
 	    ComboBoxItem.create = function (options) {
-	        return ComboBoxItem.r.create().reset(ComboBoxItem.TYPE).set(options);
+	        return ComboBoxItem.r.create().reset(ComboBoxItem.TYPE, options);
 	    };
 	    ComboBoxItem.TYPE = "combo-box-item";
 	    ComboBoxItem.r = new recyclable_creator_1.RecyclableCreator(function () { return new ComboBoxItem(); });
@@ -23413,12 +22537,12 @@ var qtk =
 	}(list_item_1.ListItem));
 	exports.ComboBoxItem = ComboBoxItem;
 	;
-	var ComboBox = (function (_super) {
-	    __extends(ComboBox, _super);
-	    function ComboBox() {
-	        _super.call(this, ComboBox.TYPE);
+	var ComboBoxBase = (function (_super) {
+	    __extends(ComboBoxBase, _super);
+	    function ComboBoxBase(type) {
+	        _super.call(this, type);
 	    }
-	    Object.defineProperty(ComboBox.prototype, "itemHeight", {
+	    Object.defineProperty(ComboBoxBase.prototype, "itemHeight", {
 	        get: function () {
 	            return this._itemHeight || 25;
 	        },
@@ -23428,72 +22552,55 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(ComboBox.prototype, "text", {
-	        get: function () {
-	            return this._current ? this._current.text : "";
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(ComboBox.prototype, "value", {
+	    Object.defineProperty(ComboBoxBase.prototype, "value", {
 	        get: function () {
 	            return this._current ? this._current.value : null;
 	        },
 	        set: function (value) {
 	            var arr = this._options;
-	            var n = arr.length;
 	            this._current = null;
 	            this._value = value;
-	            for (var i = 0; i < n; i++) {
-	                var iter = arr[i];
-	                if (iter.value === value) {
-	                    this._current = iter;
-	                    break;
+	            if (arr) {
+	                var n = arr.length;
+	                for (var i = 0; i < n; i++) {
+	                    var iter = arr[i];
+	                    if (iter.value === value) {
+	                        this._current = iter;
+	                        break;
+	                    }
 	                }
 	            }
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    ComboBox.prototype.resetOptions = function () {
+	    ComboBoxBase.prototype.resetOptions = function () {
 	        this._options = [];
 	        return this;
 	    };
-	    ComboBox.prototype.addOption = function (text, value, imageURL, color) {
+	    Object.defineProperty(ComboBoxBase.prototype, "optionsCount", {
+	        get: function () {
+	            return this._options.length;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ComboBoxBase.prototype.addOption = function (text, value, imageURL, color) {
 	        var item = new ComboBoxOption(text, value, imageURL, color);
 	        this._options.push(item);
-	        if (value === this._value) {
+	        if (value === this._value || (value === undefined && text === this._value)) {
 	            this._current = item;
 	        }
 	        return this;
 	    };
-	    ComboBox.prototype.drawImage = function (ctx, style) {
-	        if (style.foreGroundImage) {
-	            var x = this.w - this.h;
-	            var y = this.topPadding;
-	            var w = this.h - this.topPadding - this.bottomPadding;
-	            var h = w;
-	            style.foreGroundImage.draw(ctx, image_tile_1.ImageDrawType.AUTO, x, y, w, h);
-	        }
-	        return this;
-	    };
-	    ComboBox.prototype.dispatchClick = function (evt) {
-	        _super.prototype.dispatchClick.call(this, evt);
-	        if (!this._isPopupOpened) {
-	            this.showPopup();
-	        }
-	    };
-	    ComboBox.prototype.onItemSelected = function (data) {
+	    ComboBoxBase.prototype.onItemSelected = function (data) {
 	        if (data) {
-	            this._current = data;
 	            this.requestRedraw();
-	            var e = Events.ChangeEvent.create();
-	            e.init(Events.CHANGE, { oldValue: null, newValue: data.value });
-	            this.dispatchEvent(e);
-	            e.dispose();
+	            this._current = data;
+	            this.dispatchEvent(this.eChangeEvent.init(Events.CHANGE, { oldValue: null, newValue: data.value }));
 	        }
 	    };
-	    ComboBox.prototype.showPopup = function () {
+	    ComboBoxBase.prototype.showPopup = function () {
 	        var _this = this;
 	        var vp = this.app.getViewPort();
 	        var p = this.toViewPoint(point_1.Point.point.init(0, 0));
@@ -23555,26 +22662,124 @@ var qtk =
 	            }
 	        });
 	    };
-	    ComboBox.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    ComboBoxBase.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
+	        this.padding = 2;
 	        this._options = [];
-	        this.padding = 6;
-	        return this;
+	        this.itemHeight = 25;
+	        this._current = null;
+	    };
+	    return ComboBoxBase;
+	}(widget_1.Widget));
+	exports.ComboBoxBase = ComboBoxBase;
+	;
+	var ComboBox = (function (_super) {
+	    __extends(ComboBox, _super);
+	    function ComboBox() {
+	        _super.call(this, ComboBox.TYPE);
+	    }
+	    Object.defineProperty(ComboBox.prototype, "text", {
+	        get: function () {
+	            return this._current ? this._current.text : "";
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ComboBox.prototype.getFgImageRect = function (style) {
+	        var h = this.clientH;
+	        return rect_1.Rect.rect.init(this.w - this.h, this.topPadding, h, h);
+	    };
+	    ComboBox.prototype.dispatchClick = function (evt) {
+	        _super.prototype.dispatchClick.call(this, evt);
+	        if (!this._isPopupOpened) {
+	            this.showPopup();
+	        }
 	    };
 	    ComboBox.create = function (options) {
-	        return ComboBox.recycleBin.create().reset(ComboBox.TYPE).set(options);
+	        return ComboBox.recycleBin.create().reset(ComboBox.TYPE, options);
 	    };
 	    ComboBox.TYPE = "combo-box";
 	    ComboBox.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ComboBox(); });
 	    return ComboBox;
-	}(widget_1.Widget));
+	}(ComboBoxBase));
 	exports.ComboBox = ComboBox;
 	;
 	widget_factory_1.WidgetFactory.register(ComboBox.TYPE, ComboBox.create);
+	var ComboBoxEditable = (function (_super) {
+	    __extends(ComboBoxEditable, _super);
+	    function ComboBoxEditable() {
+	        _super.call(this, ComboBoxEditable.TYPE);
+	    }
+	    Object.defineProperty(ComboBoxEditable.prototype, "value", {
+	        get: function () {
+	            return this._edit ? this._edit.text : this._value;
+	        },
+	        set: function (value) {
+	            this._value = value;
+	            if (this._edit) {
+	                this._edit.text = value;
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ComboBoxEditable.prototype.onItemSelected = function (data) {
+	        if (data) {
+	            _super.prototype.onItemSelected.call(this, data);
+	            if (this._edit) {
+	                this._edit.text = data.text || data.value;
+	            }
+	        }
+	    };
+	    ComboBoxEditable.prototype.relayoutChildren = function () {
+	        this.requestRedraw();
+	        if (this._edit && this._button) {
+	            var x = this.leftPadding;
+	            var y = this.topPadding;
+	            var w = this.clientW - this.h;
+	            var h = this.clientH;
+	            this._edit.moveResizeTo(x, y, w, h, 0);
+	            x = this.w - this.h;
+	            w = this.h - this.rightPadding;
+	            this._button.moveResizeTo(x, y, w, h, 0);
+	        }
+	        return this.getLayoutRect();
+	    };
+	    ComboBoxEditable.prototype.dispose = function () {
+	        this._edit = null;
+	        this._button = null;
+	        _super.prototype.dispose.call(this);
+	    };
+	    ComboBoxEditable.prototype.onReset = function () {
+	        var _this = this;
+	        _super.prototype.onReset.call(this);
+	        this.padding = 0;
+	        this._edit = edit_1.Edit.create();
+	        this.addChild(this._edit);
+	        this._button = button_1.Button.create({ styleType: "combo-box.button" });
+	        this.addChild(this._button);
+	        this._button.on(Events.CLICK, function (evt) {
+	            if (!_this._isPopupOpened) {
+	                _this.showPopup();
+	            }
+	        });
+	    };
+	    ComboBoxEditable.create = function (options) {
+	        return ComboBoxEditable.recycleBin.create().reset(ComboBoxEditable.TYPE, options);
+	    };
+	    ComboBoxEditable.TYPE = "combo-box.editable";
+	    ComboBoxEditable.recycleBin = new recyclable_creator_1.RecyclableCreator(function () {
+	        return new ComboBoxEditable();
+	    });
+	    return ComboBoxEditable;
+	}(ComboBoxBase));
+	exports.ComboBoxEditable = ComboBoxEditable;
+	;
+	widget_factory_1.WidgetFactory.register(ComboBoxEditable.TYPE, ComboBoxEditable.create);
 
 
 /***/ },
-/* 124 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23585,16 +22790,16 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(2);
 	var point_1 = __webpack_require__(1);
-	var dialog_1 = __webpack_require__(100);
-	var graphics_1 = __webpack_require__(28);
-	var list_view_1 = __webpack_require__(102);
-	var Events = __webpack_require__(15);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var list_layouter_1 = __webpack_require__(107);
-	var simple_layouter_1 = __webpack_require__(118);
+	var dialog_1 = __webpack_require__(96);
+	var graphics_1 = __webpack_require__(23);
+	var list_view_1 = __webpack_require__(98);
+	var Events = __webpack_require__(7);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var list_layouter_1 = __webpack_require__(103);
+	var simple_layouter_1 = __webpack_require__(114);
 	var Menu = (function (_super) {
 	    __extends(Menu, _super);
 	    function Menu() {
@@ -23758,8 +22963,8 @@ var qtk =
 	        });
 	        return item;
 	    };
-	    Menu.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Menu.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this.hasOwnCanvas = true;
 	        this.styleType = "widget.transparent";
 	        this.childrenLayouter = simple_layouter_1.SimpleLayouter.create();
@@ -23778,7 +22983,6 @@ var qtk =
 	        this.bottomPadding = 4;
 	        this.leftPadding = 2;
 	        this.rightPadding = 2;
-	        return this;
 	    };
 	    Menu.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
@@ -23787,7 +22991,7 @@ var qtk =
 	        this._openedMenu = null;
 	    };
 	    Menu.create = function (options) {
-	        return Menu.r.create().reset(Menu.TYPE).set(options);
+	        return Menu.r.create().reset(Menu.TYPE, options);
 	    };
 	    Menu.TYPE = "menu";
 	    Menu.r = new recyclable_creator_1.RecyclableCreator(function () { return new Menu(); });
@@ -23907,8 +23111,8 @@ var qtk =
 	            }
 	        }
 	    };
-	    MenuItem.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    MenuItem.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this._icon = null;
 	        this._iconURL = null;
 	        this.checkable = false;
@@ -23916,7 +23120,6 @@ var qtk =
 	        this.onInitSubMenu = null;
 	        this.leftPadding = 2;
 	        this.rightPadding = 4;
-	        return this;
 	    };
 	    MenuItem.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
@@ -23926,8 +23129,8 @@ var qtk =
 	        this.shortcut = null;
 	        this.onInitSubMenu = null;
 	    };
-	    MenuItem.create = function () {
-	        return MenuItem.recycleBin.create().reset(MenuItem.TYPE);
+	    MenuItem.create = function (options) {
+	        return MenuItem.recycleBin.create().reset(MenuItem.TYPE, options);
 	    };
 	    MenuItem.TYPE = "menu-item";
 	    MenuItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new MenuItem(); });
@@ -23940,7 +23143,7 @@ var qtk =
 
 
 /***/ },
-/* 125 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23949,14 +23152,14 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var menu_1 = __webpack_require__(124);
+	var menu_1 = __webpack_require__(120);
 	var point_1 = __webpack_require__(1);
-	var Events = __webpack_require__(15);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var linear_layouter_1 = __webpack_require__(116);
+	var Events = __webpack_require__(7);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var linear_layouter_1 = __webpack_require__(112);
 	var MenuBar = (function (_super) {
 	    __extends(MenuBar, _super);
 	    function MenuBar() {
@@ -24047,14 +23250,13 @@ var qtk =
 	        this.addChild(item);
 	        return item;
 	    };
-	    MenuBar.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    MenuBar.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this.itemWidth = 40;
 	        this.childrenLayouter = linear_layouter_1.LinearLayouter.createH({ spacing: 1 });
-	        return this;
 	    };
 	    MenuBar.create = function (options) {
-	        return MenuBar.recycleBin.create().reset(MenuBar.TYPE).set(options);
+	        return MenuBar.recycleBin.create().reset(MenuBar.TYPE, options);
 	    };
 	    MenuBar.TYPE = "menu-bar";
 	    MenuBar.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new MenuBar(); });
@@ -24134,7 +23336,7 @@ var qtk =
 	        _super.prototype.dispose.call(this);
 	    };
 	    MenuBarItem.create = function (options) {
-	        return MenuBarItem.recycleBin.create().reset(MenuBarItem.TYPE).set(options);
+	        return MenuBarItem.recycleBin.create().reset(MenuBarItem.TYPE, options);
 	    };
 	    MenuBarItem.TYPE = "menu-bar-item";
 	    MenuBarItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new MenuBarItem(); });
@@ -24147,7 +23349,7 @@ var qtk =
 
 
 /***/ },
-/* 126 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24156,12 +23358,12 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var style_1 = __webpack_require__(20);
-	var widget_1 = __webpack_require__(21);
-	var widget_factory_1 = __webpack_require__(82);
-	var graphics_1 = __webpack_require__(28);
-	var consts_1 = __webpack_require__(3);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var style_1 = __webpack_require__(14);
+	var widget_1 = __webpack_require__(16);
+	var widget_factory_1 = __webpack_require__(77);
+	var graphics_1 = __webpack_require__(23);
+	var consts_1 = __webpack_require__(90);
+	var recyclable_creator_1 = __webpack_require__(79);
 	/**
 	 * 颜色控件。
 	 */
@@ -24214,12 +23416,10 @@ var qtk =
 	        this._style = style;
 	        return this;
 	    };
-	    Color.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    Color.prototype.onReset = function () {
 	        this._style = style_1.Style.create();
 	        this._style.fontSize = 16;
 	        this._style.textColor = "Black";
-	        return this;
 	    };
 	    Color.prototype.getStyle = function () {
 	        return this._style;
@@ -24254,7 +23454,7 @@ var qtk =
 	        configurable: true
 	    });
 	    ColorTile.create = function (options) {
-	        return ColorTile.recycleBin.create().reset(ColorTile.TYPE).set(options);
+	        return ColorTile.recycleBin.create().reset(ColorTile.TYPE, options);
 	    };
 	    ColorTile.TYPE = "color-tile";
 	    ColorTile.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ColorTile(); });
@@ -24384,7 +23584,7 @@ var qtk =
 	        return this;
 	    };
 	    ColorLine.create = function (options) {
-	        return ColorLine.recycleBin.create().reset(ColorLine.TYPE).set(options);
+	        return ColorLine.recycleBin.create().reset(ColorLine.TYPE, options);
 	    };
 	    ColorLine.TYPE = "color-tile";
 	    ColorLine.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ColorLine(); });
@@ -24396,7 +23596,7 @@ var qtk =
 
 
 /***/ },
-/* 127 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24407,11 +23607,11 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(2);
 	var point_1 = __webpack_require__(1);
-	var widget_factory_1 = __webpack_require__(82);
-	var graphics_1 = __webpack_require__(28);
-	var image_tile_1 = __webpack_require__(13);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var widget_1 = __webpack_require__(21);
+	var widget_factory_1 = __webpack_require__(77);
+	var graphics_1 = __webpack_require__(23);
+	var image_tile_1 = __webpack_require__(15);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var widget_1 = __webpack_require__(16);
 	/**
 	 * 树形视图中，显示的一个子项。
 	 */
@@ -24627,17 +23827,15 @@ var qtk =
 	        this.parentItem = null;
 	        this._childrenItems = null;
 	    };
-	    TreeItem.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    TreeItem.prototype.onReset = function () {
 	        this._level = 0;
 	        this._data = null;
 	        this._indention = 30;
 	        this._parentItem = null;
 	        this._childrenItems = [];
-	        return this;
 	    };
 	    TreeItem.create = function (options) {
-	        return TreeItem.recycleBin.create().reset(TreeItem.TYPE).set(options);
+	        return TreeItem.recycleBin.create().reset(TreeItem.TYPE, options);
 	    };
 	    TreeItem.TYPE = "tree-item";
 	    TreeItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TreeItem(); });
@@ -24649,7 +23847,7 @@ var qtk =
 
 
 /***/ },
-/* 128 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24658,11 +23856,11 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var tree_item_1 = __webpack_require__(127);
-	var list_view_1 = __webpack_require__(102);
-	var tree_item_data_1 = __webpack_require__(129);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var tree_item_1 = __webpack_require__(123);
+	var list_view_1 = __webpack_require__(98);
+	var tree_item_data_1 = __webpack_require__(125);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	/**
 	 * 树形视图。
 	 */
@@ -24782,18 +23980,17 @@ var qtk =
 	        this.children.length = 0;
 	        return this;
 	    };
-	    TreeView.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    TreeView.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this._rootData = tree_item_data_1.TreeItemData.create("root", null, null);
 	        this.scrollerOptions.scrollingX = true;
-	        return this;
 	    };
 	    TreeView.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
 	        this._rootData = null;
 	    };
 	    TreeView.create = function (options) {
-	        return TreeView.recycleBinTreeView.create().reset(TreeView.TYPE).set(options);
+	        return TreeView.recycleBinTreeView.create().reset(TreeView.TYPE, options);
 	    };
 	    TreeView.TYPE = "tree-view";
 	    TreeView.recycleBinTreeView = new recyclable_creator_1.RecyclableCreator(function () { return new TreeView(); });
@@ -24805,7 +24002,7 @@ var qtk =
 
 
 /***/ },
-/* 129 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24814,9 +24011,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var utils_1 = __webpack_require__(27);
-	var emitter_1 = __webpack_require__(14);
-	var image_tile_1 = __webpack_require__(13);
+	var utils_1 = __webpack_require__(22);
+	var emitter_1 = __webpack_require__(8);
+	var image_tile_1 = __webpack_require__(15);
 	/**
 	 * TreeItem对应的数据信息。
 	 */
@@ -24894,7 +24091,7 @@ var qtk =
 
 
 /***/ },
-/* 130 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24903,10 +24100,10 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
-	var grid_layouter_1 = __webpack_require__(117);
-	var scroll_view_1 = __webpack_require__(103);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var grid_layouter_1 = __webpack_require__(113);
+	var scroll_view_1 = __webpack_require__(99);
 	var GridView = (function (_super) {
 	    __extends(GridView, _super);
 	    function GridView() {
@@ -25025,15 +24222,14 @@ var qtk =
 	        _super.prototype.onInit.call(this);
 	        this.relayoutChildren();
 	    };
-	    GridView.prototype.reset = function (type) {
-	        _super.prototype.reset.call(this, type);
+	    GridView.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
 	        this._cols = 3;
 	        this._rows = 3;
 	        this._childrenLayouter = grid_layouter_1.GridLayouter.create({ cols: this.cols, rows: this.rows });
-	        return this;
 	    };
 	    GridView.create = function (options) {
-	        return GridView.recycleBinGridView.create().reset(GridView.TYPE).set(options);
+	        return GridView.recycleBinGridView.create().reset(GridView.TYPE, options);
 	    };
 	    GridView.TYPE = "grid-view";
 	    GridView.recycleBinGridView = new recyclable_creator_1.RecyclableCreator(function () { return new GridView(); });
@@ -25045,7 +24241,7 @@ var qtk =
 
 
 /***/ },
-/* 131 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25054,16 +24250,16 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var window_1 = __webpack_require__(101);
-	var widget_factory_1 = __webpack_require__(82);
-	var recyclable_creator_1 = __webpack_require__(84);
+	var window_1 = __webpack_require__(97);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
 	var WindowNormal = (function (_super) {
 	    __extends(WindowNormal, _super);
 	    function WindowNormal() {
 	        _super.call(this, WindowNormal.TYPE);
 	    }
 	    WindowNormal.create = function (options) {
-	        return WindowNormal.recycleBin.create().reset(WindowNormal.TYPE).set(options);
+	        return WindowNormal.recycleBin.create().reset(WindowNormal.TYPE, options);
 	    };
 	    WindowNormal.TYPE = "window-normal";
 	    WindowNormal.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new WindowNormal(); });
@@ -25075,7 +24271,7 @@ var qtk =
 
 
 /***/ },
-/* 132 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25084,9 +24280,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var key_event_1 = __webpack_require__(25);
-	var behavior_1 = __webpack_require__(81);
+	var Events = __webpack_require__(7);
+	var key_event_1 = __webpack_require__(20);
+	var behavior_1 = __webpack_require__(76);
 	/**
 	 * 让Widget具有拖放功能的拖动功能。
 	 *
@@ -25160,7 +24356,7 @@ var qtk =
 
 
 /***/ },
-/* 133 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25169,8 +24365,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var behavior_1 = __webpack_require__(81);
+	var Events = __webpack_require__(7);
+	var behavior_1 = __webpack_require__(76);
 	/**
 	 * 让Widget可作为拖放功能的Drop目标。
 	 *
@@ -25211,7 +24407,7 @@ var qtk =
 
 
 /***/ },
-/* 134 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25220,9 +24416,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Events = __webpack_require__(15);
-	var key_event_1 = __webpack_require__(25);
-	var behavior_1 = __webpack_require__(81);
+	var Events = __webpack_require__(7);
+	var key_event_1 = __webpack_require__(20);
+	var behavior_1 = __webpack_require__(76);
 	/**
 	 * Movable Behavior的初始化参数。
 	 */
@@ -25331,7 +24527,7 @@ var qtk =
 
 
 /***/ },
-/* 135 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25341,8 +24537,8 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var point_1 = __webpack_require__(1);
-	var key_event_1 = __webpack_require__(25);
-	var behavior_1 = __webpack_require__(81);
+	var key_event_1 = __webpack_require__(20);
+	var behavior_1 = __webpack_require__(76);
 	/**
 	 * Resizable Behavior的初始化参数。
 	 */
@@ -25504,6 +24700,523 @@ var qtk =
 	behavior_1.BehaviorFactory.register(Resizable.TYPE, function (widget, options) {
 	    return new Resizable(widget, options);
 	});
+
+
+/***/ },
+/* 132 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var edit_1 = __webpack_require__(81);
+	var title_value_1 = __webpack_require__(133);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var TitleEdit = (function (_super) {
+	    __extends(TitleEdit, _super);
+	    function TitleEdit(type) {
+	        _super.call(this, type || TitleEdit.TYPE);
+	    }
+	    Object.defineProperty(TitleEdit.prototype, "inputFilter", {
+	        get: function () {
+	            return this._inputFilter;
+	        },
+	        set: function (value) {
+	            this._inputFilter = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.set({ inputFilter: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleEdit.prototype, "inputType", {
+	        get: function () {
+	            return this._inputType;
+	        },
+	        set: function (value) {
+	            this._inputType = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.set({ inputType: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleEdit.prototype, "inputTips", {
+	        get: function () {
+	            return this._inputTips;
+	        },
+	        set: function (value) {
+	            this._inputTips = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.set({ inputTips: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    TitleEdit.prototype.createValueWidget = function (options) {
+	        var opts = options || {};
+	        if (this._inputTips) {
+	            opts.inputTips = this._inputTips;
+	        }
+	        if (this._inputType) {
+	            opts.inputType = this._inputType;
+	        }
+	        if (this._inputFilter) {
+	            opts.inputFilter = this._inputFilter;
+	        }
+	        return edit_1.Edit.create(opts);
+	    };
+	    TitleEdit.create = function (options) {
+	        return TitleEdit.recycleBin.create().reset(TitleEdit.TYPE, options);
+	    };
+	    TitleEdit.TYPE = "title-edit";
+	    TitleEdit.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleEdit(); });
+	    return TitleEdit;
+	}(title_value_1.TitleValue));
+	exports.TitleEdit = TitleEdit;
+	;
+	widget_factory_1.WidgetFactory.register(TitleEdit.TYPE, TitleEdit.create);
+
+
+/***/ },
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var label_1 = __webpack_require__(82);
+	var widget_1 = __webpack_require__(16);
+	var linear_layouter_1 = __webpack_require__(112);
+	var TitleValue = (function (_super) {
+	    __extends(TitleValue, _super);
+	    function TitleValue(type) {
+	        _super.call(this, type);
+	    }
+	    Object.defineProperty(TitleValue.prototype, "title", {
+	        get: function () {
+	            return this._title;
+	        },
+	        set: function (value) {
+	            this._title = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleValue.prototype, "titleW", {
+	        get: function () {
+	            return this._titleW;
+	        },
+	        set: function (value) {
+	            this._titleW = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleValue.prototype, "valueW", {
+	        get: function () {
+	            return this._valueW;
+	        },
+	        set: function (value) {
+	            this._valueW = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleValue.prototype, "titleWidget", {
+	        get: function () {
+	            return this._titleWidget;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleValue.prototype, "valueWidget", {
+	        get: function () {
+	            return this._valueWidget;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleValue.prototype, "value", {
+	        get: function () {
+	            return this._valueWidget ? this.valueWidget.value : this._value;
+	        },
+	        set: function (value) {
+	            this._value = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.value = value;
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /*
+	     * Child must override
+	     */
+	    TitleValue.prototype.createValueWidget = function (options) {
+	        return null;
+	    };
+	    TitleValue.prototype.onInit = function () {
+	        _super.prototype.onInit.call(this);
+	        this.titleWidget.text = this._title;
+	        this.titleWidget.layoutParam = linear_layouter_1.LinearLayouterParam.create({ w: this._titleW, h: "100%" });
+	        this.valueWidget.layoutParam = linear_layouter_1.LinearLayouterParam.create({ w: this._valueW, h: "100%" });
+	    };
+	    TitleValue.prototype.onReset = function () {
+	        _super.prototype.onReset.call(this);
+	        this.padding = 2;
+	        this.childrenLayouter = linear_layouter_1.LinearLayouter.createH({ spacing: 5 });
+	        var titleWidget = label_1.Label.create();
+	        this.addChild(titleWidget);
+	        this._titleWidget = titleWidget;
+	        var valueWidget = this.createValueWidget();
+	        this.addChild(valueWidget);
+	        this._valueWidget = valueWidget;
+	    };
+	    TitleValue.prototype.dispose = function () {
+	        _super.prototype.dispose.call(this);
+	        this._titleWidget = null;
+	        this._valueWidget = null;
+	    };
+	    return TitleValue;
+	}(widget_1.Widget));
+	exports.TitleValue = TitleValue;
+	;
+
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var title_value_1 = __webpack_require__(133);
+	var choosable_edit_1 = __webpack_require__(135);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var TitleChoosableEdit = (function (_super) {
+	    __extends(TitleChoosableEdit, _super);
+	    function TitleChoosableEdit(type) {
+	        _super.call(this, type || TitleChoosableEdit.TYPE);
+	    }
+	    Object.defineProperty(TitleChoosableEdit.prototype, "onChoose", {
+	        get: function () {
+	            var edit = this._valueWidget;
+	            return edit.onChoose;
+	        },
+	        set: function (value) {
+	            var edit = this._valueWidget;
+	            edit.onChoose = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TitleChoosableEdit.prototype, "inputTips", {
+	        get: function () {
+	            return this._inputTips;
+	        },
+	        set: function (value) {
+	            this._inputTips = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.set({ inputTips: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    TitleChoosableEdit.prototype.createValueWidget = function (options) {
+	        return choosable_edit_1.ChoosableEdit.create();
+	    };
+	    TitleChoosableEdit.create = function (options) {
+	        return TitleChoosableEdit.recycleBin.create().reset(TitleChoosableEdit.TYPE, options);
+	    };
+	    TitleChoosableEdit.TYPE = "title-choosable-edit";
+	    TitleChoosableEdit.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleChoosableEdit(); });
+	    return TitleChoosableEdit;
+	}(title_value_1.TitleValue));
+	exports.TitleChoosableEdit = TitleChoosableEdit;
+	;
+	widget_factory_1.WidgetFactory.register(TitleChoosableEdit.TYPE, TitleChoosableEdit.create);
+
+
+/***/ },
+/* 135 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var edit_1 = __webpack_require__(81);
+	var button_1 = __webpack_require__(87);
+	var widget_1 = __webpack_require__(16);
+	var Events = __webpack_require__(7);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var ChoosableEdit = (function (_super) {
+	    __extends(ChoosableEdit, _super);
+	    function ChoosableEdit() {
+	        _super.call(this, ChoosableEdit.TYPE);
+	    }
+	    Object.defineProperty(ChoosableEdit.prototype, "inputTips", {
+	        get: function () {
+	            return this._inputTips;
+	        },
+	        set: function (value) {
+	            this._inputTips = value;
+	            if (this._edit) {
+	                this._edit.set({ inputTips: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(ChoosableEdit.prototype, "value", {
+	        get: function () {
+	            return this._edit ? this._edit.text : this._value;
+	        },
+	        set: function (value) {
+	            this._value = value;
+	            if (this._edit) {
+	                this._edit.text = value;
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ChoosableEdit.prototype.relayoutChildren = function () {
+	        this.requestRedraw();
+	        if (this._edit && this._button) {
+	            var x = this.leftPadding;
+	            var y = this.topPadding;
+	            var h = this.clientH;
+	            var w = this.clientW - this.h - 6;
+	            this._edit.moveResizeTo(x, y, w, h, 0);
+	            w = this.h;
+	            x = this.w - w - 4;
+	            this._button.moveResizeTo(x, y, w, h, 0);
+	        }
+	        return this.getLayoutRect();
+	    };
+	    ChoosableEdit.prototype.dispose = function () {
+	        this._edit = null;
+	        this._button = null;
+	        _super.prototype.dispose.call(this);
+	    };
+	    ChoosableEdit.prototype.onReset = function () {
+	        var _this = this;
+	        _super.prototype.onReset.call(this);
+	        this.padding = 0;
+	        this.onChoose = null;
+	        this._edit = edit_1.Edit.create();
+	        this.addChild(this._edit);
+	        this._edit.on(Events.CHANGE, function (evt) {
+	            _this.dispatchEvent(evt);
+	        });
+	        this._button = button_1.Button.create({ text: "..." });
+	        this.addChild(this._button);
+	        this._button.on(Events.CLICK, function (evt) {
+	            if (_this.onChoose) {
+	                _this.onChoose();
+	            }
+	        });
+	    };
+	    ChoosableEdit.create = function (options) {
+	        return ChoosableEdit.rBin.create().reset(ChoosableEdit.TYPE, options);
+	    };
+	    ChoosableEdit.TYPE = "choosable.edit";
+	    ChoosableEdit.rBin = new recyclable_creator_1.RecyclableCreator(function () {
+	        return new ChoosableEdit();
+	    });
+	    return ChoosableEdit;
+	}(widget_1.Widget));
+	exports.ChoosableEdit = ChoosableEdit;
+	;
+	widget_factory_1.WidgetFactory.register(ChoosableEdit.TYPE, ChoosableEdit.create);
+
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var edit_1 = __webpack_require__(81);
+	var title_value_1 = __webpack_require__(133);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var TitleTextArea = (function (_super) {
+	    __extends(TitleTextArea, _super);
+	    function TitleTextArea(type) {
+	        _super.call(this, type || TitleTextArea.TYPE);
+	    }
+	    Object.defineProperty(TitleTextArea.prototype, "inputTips", {
+	        get: function () {
+	            return this._inputTips;
+	        },
+	        set: function (value) {
+	            this._inputTips = value;
+	            if (this._valueWidget) {
+	                this._valueWidget.set({ inputTips: value });
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    TitleTextArea.prototype.createValueWidget = function (options) {
+	        var opts = options || {};
+	        if (this._inputTips) {
+	            opts.inputTips = this._inputTips;
+	        }
+	        opts.multiLines = true;
+	        return edit_1.Edit.create(opts);
+	    };
+	    TitleTextArea.create = function (options) {
+	        return TitleTextArea.recycleBin.create().reset(TitleTextArea.TYPE, options);
+	    };
+	    TitleTextArea.TYPE = "title-text-area";
+	    TitleTextArea.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleTextArea(); });
+	    return TitleTextArea;
+	}(title_value_1.TitleValue));
+	exports.TitleTextArea = TitleTextArea;
+	;
+	widget_factory_1.WidgetFactory.register(TitleTextArea.TYPE, TitleTextArea.create);
+
+
+/***/ },
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var slider_1 = __webpack_require__(117);
+	var title_value_1 = __webpack_require__(133);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var TitleSlider = (function (_super) {
+	    __extends(TitleSlider, _super);
+	    function TitleSlider(type) {
+	        _super.call(this, type || TitleSlider.TYPE);
+	    }
+	    TitleSlider.prototype.createValueWidget = function (options) {
+	        return slider_1.Slider.create(options);
+	    };
+	    TitleSlider.create = function (options) {
+	        return TitleSlider.recycleBin.create().reset(TitleSlider.TYPE, options);
+	    };
+	    TitleSlider.TYPE = "title-slider";
+	    TitleSlider.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleSlider(); });
+	    return TitleSlider;
+	}(title_value_1.TitleValue));
+	exports.TitleSlider = TitleSlider;
+	;
+	widget_factory_1.WidgetFactory.register(TitleSlider.TYPE, TitleSlider.create);
+
+
+/***/ },
+/* 138 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var title_value_1 = __webpack_require__(133);
+	var widget_factory_1 = __webpack_require__(77);
+	var recyclable_creator_1 = __webpack_require__(79);
+	var combo_box_1 = __webpack_require__(119);
+	var TitleComboBoxBase = (function (_super) {
+	    __extends(TitleComboBoxBase, _super);
+	    function TitleComboBoxBase(type) {
+	        _super.call(this, type);
+	    }
+	    Object.defineProperty(TitleComboBoxBase.prototype, "itemHeight", {
+	        get: function () {
+	            var comboBox = this._valueWidget;
+	            return comboBox.itemHeight;
+	        },
+	        set: function (value) {
+	            var comboBox = this._valueWidget;
+	            comboBox.itemHeight = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    TitleComboBoxBase.prototype.resetOptions = function () {
+	        var comboBox = this._valueWidget;
+	        comboBox.resetOptions();
+	        return this;
+	    };
+	    TitleComboBoxBase.prototype.addOption = function (text, value, imageURL, color) {
+	        var comboBox = this._valueWidget;
+	        comboBox.addOption(text, value, imageURL, color);
+	        return this;
+	    };
+	    return TitleComboBoxBase;
+	}(title_value_1.TitleValue));
+	exports.TitleComboBoxBase = TitleComboBoxBase;
+	var TitleComboBox = (function (_super) {
+	    __extends(TitleComboBox, _super);
+	    function TitleComboBox(type) {
+	        _super.call(this, type || TitleComboBox.TYPE);
+	    }
+	    TitleComboBox.prototype.createValueWidget = function (options) {
+	        return combo_box_1.ComboBox.create(options);
+	    };
+	    TitleComboBox.create = function (options) {
+	        return TitleComboBox.recycleBin.create().reset(TitleComboBox.TYPE, options);
+	    };
+	    TitleComboBox.TYPE = "title-combo-box";
+	    TitleComboBox.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleComboBox(); });
+	    return TitleComboBox;
+	}(TitleComboBoxBase));
+	exports.TitleComboBox = TitleComboBox;
+	;
+	widget_factory_1.WidgetFactory.register(TitleComboBox.TYPE, TitleComboBox.create);
+	var TitleComboBoxEditable = (function (_super) {
+	    __extends(TitleComboBoxEditable, _super);
+	    function TitleComboBoxEditable(type) {
+	        _super.call(this, type || TitleComboBoxEditable.TYPE);
+	    }
+	    TitleComboBoxEditable.prototype.createValueWidget = function (options) {
+	        return combo_box_1.ComboBoxEditable.create(options);
+	    };
+	    TitleComboBoxEditable.create = function (options) {
+	        return TitleComboBoxEditable.recycleBin.create().reset(TitleComboBoxEditable.TYPE, options);
+	    };
+	    TitleComboBoxEditable.TYPE = "title-combo-box-editable";
+	    TitleComboBoxEditable.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TitleComboBoxEditable(); });
+	    return TitleComboBoxEditable;
+	}(TitleComboBoxBase));
+	exports.TitleComboBoxEditable = TitleComboBoxEditable;
+	;
+	widget_factory_1.WidgetFactory.register(TitleComboBoxEditable.TYPE, TitleComboBoxEditable.create);
 
 
 /***/ }
