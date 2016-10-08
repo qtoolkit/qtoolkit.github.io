@@ -17,7 +17,7 @@ function onReady(app) {
 		}));
 	win.addChild(label);
 	
-	var listView = ListView.create({dragToScroll:true, slideToScroll:true, itemHeight:40});
+	var listView = ListView.create({dragToScroll:true, slideToScroll:true, itemH:40});
 	listView.layoutParam = win.createChildLayoutParam({x:"25%", y:"25%", w:"50%", h:"50%"});
 	win.addChild(listView);
 
@@ -28,6 +28,8 @@ function onReady(app) {
 		{title:"Pages", data:"pages"},
 		{title:"Switch", data:"switch"},
 		{title:"Dialog", data:"dialog"},
+		{title:"Basic Data Binding", data:"databinding-basic"},
+		{title:"List Data Binding", data:"databinding-ext"},
 		{title:"Accordion", data:"accordion"},
 		{title:"PropertySheets", data:"propertysheets"},
 		{title:"Movable", data:"movable"},
