@@ -26500,13 +26500,13 @@ var qtk =
 	        set: function (value) {
 	            this._value = value;
 	            if (this._xEditor) {
-	                this._xEditor.value = value.x;
+	                this._xEditor.value = +value.x;
 	            }
 	            if (this._yEditor) {
-	                this._yEditor.value = value.y;
+	                this._yEditor.value = +value.y;
 	            }
 	            if (this._zEditor) {
-	                this._zEditor.value = value.z;
+	                this._zEditor.value = +value.z;
 	            }
 	        },
 	        enumerable: true,
