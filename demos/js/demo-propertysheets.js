@@ -8,6 +8,7 @@ function addPage(propertySheets, title) {
 	page.addChoosableEdit("URL", "https://qtoolkit.github.io/demos/index.html").onChoose = function() {
 		this.value = "choose";
 	};
+	page.addLink("Home", "https://github.com/qtoolkit/qtk"); 
 	page.addTextArea("Desc", "QToolKit"); 
 	page.addSlider("Opacity", 0.3); 
 	page.addComboBox("Color", "Red").addOption("Red").addOption("Green").addOption("Blue"); 
@@ -118,6 +119,7 @@ function addPageDataBinding(propertySheets, title) {
 	var data = {
 		name:"QTK",
 		age:100,
+		home:"https://github.com/qtoolkit/qtk",
 		desc:"QToolKit",
 		point:{x:100, y:200},
 		point3d:{x:1, y:2, z:3},
@@ -141,6 +143,7 @@ function addPageDataBinding(propertySheets, title) {
 	var json = [
 		{type:"number", name:"Age", desc:"age", path:"age"},
 		{type:"text", name:"Name", desc:"name", path:"name"},
+		{type:"link", name:"Home", desc:"Home", path:"home"},
 		{type:"text-readonly", name:"Desc", path:"desc"},
 		{type:"line", name:"Point"},
 		{type:"vector2", name:"Point", path:"point"},
