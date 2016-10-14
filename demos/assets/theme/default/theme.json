@@ -435,6 +435,10 @@
 		},
 		"active" : {
 			"backGroundColor" : "#3E93F9"
+		},
+		"disable" : {
+			"textColor" : "gray",
+			"backGroundColor" : null
 		}
 	},
 	"menu-item.space": {
