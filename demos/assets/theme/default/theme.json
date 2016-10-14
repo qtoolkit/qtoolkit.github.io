@@ -10,7 +10,9 @@
 		"active" : {},
 		"over" : {},
 		"selected" : {},
-		"disable" : {}
+		"disable" : {
+			"textColor" : "gray"
+		}
 	},
 	"title.line": {
 		"extends": "widget",
