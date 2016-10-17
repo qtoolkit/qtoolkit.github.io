@@ -2,9 +2,7 @@
 function addShowMessage(win, msg, w) {
 	var item = qtk.Button.create({text:"Show Message"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showMessage(msg, function(evt) {
-			console.log("close");
-		}, w);
+		qtk.InteractionRequest.notify(qtk.NotificationInfo.create(msg, w));
 	});
 	win.addChild(item, true);
 }
@@ -12,11 +10,9 @@ function addShowMessage(win, msg, w) {
 function addShowConfirm(win, msg, w) {
 	var item = qtk.Button.create({text:"Show Confirm"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showConfirm(msg, function(evt) {
-			console.log("yes");
-		},function(evt) {
-			console.log("no");
-		}, w);
+		qtk.InteractionRequest.confirm(qtk.ConfirmationInfo.create(msg, w), function(info) {
+			console.dir(info);
+		});
 	});
 	win.addChild(item, true);
 }
@@ -24,7 +20,7 @@ function addShowConfirm(win, msg, w) {
 function addShowToast(win, msg, w) {
 	var item = qtk.Button.create({text:"Show Toast"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showToast(msg, 1000, w);
+		qtk.InteractionRequest.toast(qtk.ToastInfo.create(msg, 500, w));
 	});
 	win.addChild(item, true);
 }
@@ -36,7 +32,7 @@ function addShowProgress(win, w) {
 			progress += 0.1;
 			onProgress(progress);
 			if(progress < 1) {
-				setTimeout(updateProgress, 1000);
+				setTimeout(updateProgress, 200);
 			}
 		}
 		updateProgress();
@@ -44,9 +40,11 @@ function addShowProgress(win, w) {
 
 	var item = qtk.Button.create({text:"Show Progress"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showProgress("Downloading...",  download, function(evt) {
-			console.log("done");
-		}, w);
+		var info = qtk.ProgressInfo.create("Downloading...", download, w);
+
+		qtk.InteractionRequest.progress(info, function(ret) {
+			console.dir(ret);
+		});
 	});
 	win.addChild(item, true);
 }
@@ -58,9 +56,10 @@ function isInputValid(value) {
 function addShowInput(win, inputTips, value, inputType, w) {
 	var item = qtk.Button.create({text:"Show Input"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showInput("Please Input...", inputTips, value, isInputValid, function(value) {
-			console.log("input:" + value);
-		}, inputType, w);
+		qtk.InteractionRequest.input(qtk.InputInfo.create(inputTips, value, inputTips, inputType,  w), 
+		function(info) {
+			console.dir(info);
+		});
 	});
 	win.addChild(item, true);
 }
@@ -76,11 +75,16 @@ function addShowChoice(win, multiple, w, h) {
 			{text:"Center", iconURL:iconURL},
 			{text:"Right", iconURL:iconURL},
 		];
+	var choiceInfo = qtk.ChoiceInfo.create("Please Choose", multiple, w, h);
+	data.forEach(function(item) {
+		choiceInfo.addOption(item.text, item.iconURL);
+	});
+
 	var item = qtk.Button.create({text:"showChoose"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.MessageBox.showChoice("Please Choose", data, multiple, function onDone(ret) {
-			console.log(ret);
-		}, w, h);
+		qtk.InteractionRequest.choice(choiceInfo, function(ret) {
+			console.dir(ret);
+		});
 	});
 	win.addChild(item, true);
 }
@@ -114,18 +118,17 @@ function addShowProperty(win, w, onlyOK) {
 
 	var item = qtk.Button.create({text:"showProperty"});
 	item.on(qtk.Events.CLICK, function(evt) {
-		qtk.PropertyDialog.show(propsDesc, data, function onYes(ret) {
+		qtk.InteractionRequest.props(qtk.PropsInfo.create(propsDesc, data, true, w), function(ret) {
 			console.dir(ret);
-		}, onlyOK ? null : function onNo(ret) {
-			console.dir(ret);
-		}, w);
+		});
 	});
 
 	win.addChild(item, true);
 }
 
 function onReady(app) {
-	var win = qtk.WindowNormal.create({app:app, padding : 10}).maximize();;
+	var vp = app.getViewPort();
+	var win = qtk.WindowNormal.create({app:app,  w:vp.width, h:vp.height, padding : 10});
 	
 	win.childrenLayouter = qtk.GridLayouter.create({rowHeight:60, cols:3, margin:10});
 

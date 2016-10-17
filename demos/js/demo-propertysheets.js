@@ -23,7 +23,7 @@ function addPage(propertySheets, title) {
 		console.log(this.value);
 	}); 
 	
-	page.addVector3("Vector3", 10, 100, 1000).on(qtk.Events.CHANGING, function(evt) {
+	page.addVector3("Vector3", 10, 100, 1000, "X", "Y", "R").on(qtk.Events.CHANGING, function(evt) {
 		console.log(this.value);
 	}); 
 	page.addGroupEnd();
@@ -36,11 +36,12 @@ function addPageFromJson(propertySheets, title) {
 	propertySheets.addPage(title, page);
 
 	var json = [
+		{type:"bool", name:"Check", value:true, desc:"check"},
 		{type:"number", name:"Age", value:"100", desc:"age"},
 		{type:"text", name:"Name", value:"QTK"},
 		{type:"text-readonly", name:"Desc", value:"QToolKit"},
 		{type:"vector2", name:"Point", value:{x:10, y:20}},
-		{type:"vector3", name:"Point3D", value:{x:10, y:20, z:30}},
+		{type:"vector3", name:"Point3D", value:{x:10, y:20, z:30}, zTitle:"Radius"},
 		{type:"range", name:"Range", value:{first:100, second:1000}},
 		{type:"options", name:"Color", value:"Green", options:["Green", "Red", "Blue"]},
 		{type:"slider", name:"Opacity", value:0.5}
@@ -61,6 +62,7 @@ function addPageFromJsonWatch(propertySheets, title) {
 		point3d:{x:1, y:2, z:3},
 		range:{first:100, second:200},
 		color:"Red",
+		rect:{},
 		opacity:0.5
 	};
 
@@ -98,6 +100,7 @@ function addPageFromJsonWatch(propertySheets, title) {
 
 	
 	var json2 = [
+		{type:"vector4", name:"Rect", path:"rect", zTitle:"Width", wTitle:"Height"},
 		{type:"number", name:"Age", desc:"age", path:"age"},
 		{type:"text", name:"Name", path:"name"}
 	];
