@@ -1398,6 +1398,7 @@ var qtk =
 	exports.DRAGLEAVE = "dragleave";
 	exports.DRAGOVER = "dragover";
 	exports.DRAGSTART = "dragstart";
+	exports.SHORTCUT = "shortcut";
 	exports.INTERACTION_REQUEST = "interaction-request";
 	var Event = (function () {
 	    function Event() {
@@ -1579,6 +1580,23 @@ var qtk =
 	    return KeyEvent;
 	}(InputEvent));
 	exports.KeyEvent = KeyEvent;
+	var ShortcutEvent = (function (_super) {
+	    __extends(ShortcutEvent, _super);
+	    function ShortcutEvent() {
+	        _super.apply(this, arguments);
+	    }
+	    ShortcutEvent.prototype.init = function (type, keys) {
+	        _super.prototype.init.call(this, type, {});
+	        this.keys = keys;
+	        return this;
+	    };
+	    ShortcutEvent.create = function (type, keys) {
+	        var e = new ShortcutEvent();
+	        return e.init(type, keys);
+	    };
+	    return ShortcutEvent;
+	}(Event));
+	exports.ShortcutEvent = ShortcutEvent;
 	var TickEvent = (function (_super) {
 	    __extends(TickEvent, _super);
 	    function TickEvent() {
@@ -3889,7 +3907,7 @@ var qtk =
 	            shiftKey = value;
 	            break;
 	        }
-	        case key_event_1.KeyEvent.VK_META: {
+	        case key_event_1.KeyEvent.VK_COMMAND: {
 	            commandKey = value;
 	            break;
 	        }
@@ -4098,6 +4116,7 @@ var qtk =
 	    VK_X: 88,
 	    VK_Y: 89,
 	    VK_Z: 90,
+	    VK_COMMAND: 91,
 	    VK_CONTEXT_MENU: 93,
 	    VK_NUMPAD0: 96,
 	    VK_NUMPAD1: 97,
@@ -18021,11 +18040,46 @@ var qtk =
 	        this.y = (h - this.h) >> 1;
 	        return this;
 	    };
+	    Window.prototype.dispatchKeyDown = function (evt) {
+	        _super.prototype.dispatchKeyDown.call(this, evt);
+	        var keys = "";
+	        if (evt.ctrlKey) {
+	            keys = "ctrl";
+	        }
+	        if (evt.commandKey) {
+	            keys += keys ? "+cmd" : "cmd";
+	        }
+	        if (evt.altKey) {
+	            keys += keys ? "+alt" : "alt";
+	        }
+	        if (evt.shiftKey) {
+	            keys += keys ? "+shift" : "shift";
+	        }
+	        var key = String.fromCharCode(evt.keyCode).toLowerCase();
+	        if (key) {
+	            keys += (keys ? ("+" + key) : key);
+	            var e = this._shortcutEvent;
+	            e.init(Events.SHORTCUT, keys);
+	            this.dispatchShortcut(e);
+	        }
+	    };
+	    Window.prototype.dispatchShortcut = function (e) {
+	        this.dispatchEvent(e);
+	    };
+	    Window.prototype.registerShortcut = function (keys, func) {
+	        var lowerKeys = keys.toLowerCase();
+	        this.on(Events.SHORTCUT, function (evt) {
+	            if (lowerKeys === evt.keys) {
+	                func(evt);
+	            }
+	        });
+	    };
 	    Window.prototype.onReset = function () {
 	        this._isWindow = true;
 	        this._grabbed = false;
 	        this.hasOwnCanvas = true;
 	        this._pointerPosition = point_1.Point.create(0, 0);
+	        this._shortcutEvent = Events.ShortcutEvent.create(null, null);
 	    };
 	    return Window;
 	}(widget_1.Widget));
@@ -22555,11 +22609,39 @@ var qtk =
 	})(exports.ListItemStyle || (exports.ListItemStyle = {}));
 	var ListItemStyle = exports.ListItemStyle;
 	;
+	/**
+	 * 列表项。
+	 */
 	var ListItem = (function (_super) {
 	    __extends(ListItem, _super);
 	    function ListItem(type) {
 	        _super.call(this, type || ListItem.TYPE);
 	    }
+	    Object.defineProperty(ListItem.prototype, "oddEvenStyle", {
+	        get: function () {
+	            return this._oddEvenStyle;
+	        },
+	        /**
+	         * 奇数行和偶数行是否采用不同的风格。
+	         */
+	        set: function (value) {
+	            this._oddEvenStyle = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ListItem.prototype.getStyleType = function () {
+	        if (!this._oddEvenStyle) {
+	            return _super.prototype.getStyleType.call(this);
+	        }
+	        return this._index % 2 ? "list-item.even" : "list-item.odd";
+	    };
+	    ListItem.prototype.relayoutChildren = function () {
+	        if (this.parent) {
+	            this._index = this.parent.children.indexOf(this);
+	        }
+	        return _super.prototype.relayoutChildren.call(this);
+	    };
 	    Object.defineProperty(ListItem.prototype, "iconURL", {
 	        get: function () {
 	            return this._iconURL;
@@ -22622,7 +22704,7 @@ var qtk =
 	    ListItem.create = function (options) {
 	        return ListItem.recycleBin.create().reset(ListItem.TYPE, options);
 	    };
-	    ListItem.defProps = Object.assign({}, widget_1.Widget.defProps, { _iconURL: null });
+	    ListItem.defProps = Object.assign({}, widget_1.Widget.defProps, { _oddEvenStyle: false, _iconURL: null });
 	    ListItem.TYPE = "list-item";
 	    ListItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new ListItem(); });
 	    return ListItem;
