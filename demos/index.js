@@ -312,13 +312,22 @@ var qtk =
 	exports.TableIndexItem = table_index_item_1.TableIndexItem;
 	var table_header_item_1 = __webpack_require__(347);
 	exports.TableHeaderItem = table_header_item_1.TableHeaderItem;
-	var range_fixer_1 = __webpack_require__(348);
+	var delegate_filter_1 = __webpack_require__(348);
+	exports.DelegateFilter = delegate_filter_1.DelegateFilter;
+	var delegate_comparator_1 = __webpack_require__(349);
+	exports.DelegateComparator = delegate_comparator_1.DelegateComparator;
+	var comparators_1 = __webpack_require__(350);
+	exports.NumberComparator = comparators_1.NumberComparator;
+	exports.StringComparator = comparators_1.StringComparator;
+	exports.RevertComparator = comparators_1.RevertComparator;
+	exports.ObjectPropComparator = comparators_1.ObjectPropComparator;
+	var range_fixer_1 = __webpack_require__(351);
 	exports.RangeFixer = range_fixer_1.RangeFixer;
-	var number_fixer_1 = __webpack_require__(349);
+	var number_fixer_1 = __webpack_require__(352);
 	exports.NumberFixer = number_fixer_1.NumberFixer;
-	var vector2_fixer_1 = __webpack_require__(350);
+	var vector2_fixer_1 = __webpack_require__(353);
 	exports.Vector2Fixer = vector2_fixer_1.Vector2Fixer;
-	var vector3_fixer_1 = __webpack_require__(351);
+	var vector3_fixer_1 = __webpack_require__(354);
 	exports.Vector3Fixer = vector3_fixer_1.Vector3Fixer;
 
 
@@ -1360,6 +1369,7 @@ var qtk =
 	exports.WHEEL = "qtk-wheel";
 	exports.KEYUP = "qtk-keyup";
 	exports.KEYDOWN = "qtk-keydown";
+	exports.CONFIRM = "confirm";
 	exports.CONTEXT_MENU = "qtk-context-menu";
 	exports.POINTER_DOWN = "qtk-pointer-down";
 	exports.POINTER_MOVE = "qtk-pointer-move";
@@ -1375,8 +1385,7 @@ var qtk =
 	exports.CHANGING = "changing";
 	exports.PROP_CHANGE = "prop-change";
 	exports.PROP_DELETE = "prop-delete";
-	exports.ITEM_ADD = "item-add";
-	exports.ITEM_DELETE = "item-delete";
+	exports.ITEMS_CHANGE = "items-change";
 	exports.DISPOSE = "dispose";
 	exports.RUN = "run";
 	exports.QUIT = "quit";
@@ -1410,6 +1419,7 @@ var qtk =
 	exports.AFTER_DRAW = "after-draw";
 	exports.BEFORE_APPLY_TRANSFORM = "before-apply-transform";
 	exports.AFTER_APPLY_TRANSFORM = "after-apply-transform";
+	exports.SORT = "sort";
 	exports.SCROLL = "scroll";
 	exports.SCROLL_DONE = "scroll-done";
 	exports.DRAG = "drag";
@@ -1814,10 +1824,50 @@ var qtk =
 	}(Event));
 	exports.ProgressEvent = ProgressEvent;
 	;
+	/**
+	 * 排序事件
+	 */
+	var SortEvent = (function (_super) {
+	    __extends(SortEvent, _super);
+	    function SortEvent() {
+	        _super.apply(this, arguments);
+	    }
+	    SortEvent.prototype.init = function (key, isDec) {
+	        _super.prototype.init.call(this, exports.SORT);
+	        this.key = key;
+	        this.isDec = isDec;
+	        return this;
+	    };
+	    SortEvent.create = function (key, isDec) {
+	        var e = new SortEvent();
+	        return e.init(key, isDec);
+	    };
+	    return SortEvent;
+	}(Event));
+	exports.SortEvent = SortEvent;
+	;
 	function createAnyEvent(type, payload) {
 	    return AnyEvent.create(type, payload);
 	}
 	exports.createAnyEvent = createAnyEvent;
+	var eventsMapToType = {
+	    click: exports.CLICK,
+	    keydown: exports.KEYDOWN,
+	    keyup: exports.KEYUP,
+	    confirm: exports.CONFIRM,
+	    change: exports.CHANGE,
+	    chaning: exports.CHANGING,
+	    dblclick: exports.DBLCLICK,
+	    pointerup: exports.POINTER_UP,
+	    pointermove: exports.POINTER_MOVE,
+	    pointerdown: exports.POINTER_DOWN,
+	    pointerenter: exports.POINTER_ENTER,
+	    pointerleave: exports.POINTER_LEAVE
+	};
+	function mapToEvent(name) {
+	    return eventsMapToType[name];
+	}
+	exports.mapToEvent = mapToEvent;
 
 
 /***/ },
@@ -4214,6 +4264,7 @@ var qtk =
 	var point_1 = __webpack_require__(2);
 	var label_1 = __webpack_require__(18);
 	var Events = __webpack_require__(6);
+	var key_event_1 = __webpack_require__(16);
 	var html_edit_1 = __webpack_require__(84);
 	var widget_1 = __webpack_require__(19);
 	var widget_factory_1 = __webpack_require__(23);
@@ -4351,6 +4402,7 @@ var qtk =
 	            this.dispatchEvent({ type: Events.BLUR });
 	            this.win.off(Events.WHEEL, this.onWheel);
 	        }
+	        this.requestRedraw();
 	    };
 	    Edit.prototype.showEditor = function () {
 	        var _this = this;
@@ -4394,6 +4446,15 @@ var qtk =
 	            e.init(Events.CHANGE, { value: value, oldValue: oldValue });
 	            ;
 	            _this.dispatchEvent(e);
+	        });
+	        input.on(Events.KEYDOWN, function (evt) {
+	            _this.dispatchEvent(evt);
+	        });
+	        input.on(Events.KEYUP, function (evt) {
+	            if (!_this.multiLineMode && evt.keyCode === key_event_1.KeyEvent.VK_RETURN) {
+	                _this.dispatchEvent({ type: Events.CONFIRM });
+	            }
+	            _this.dispatchEvent(evt);
 	        });
 	    };
 	    Object.defineProperty(Edit.prototype, "validationTips", {
@@ -4472,7 +4533,12 @@ var qtk =
 	        if (this._inited) {
 	            var style = this.getStyle();
 	            var text = this.getLocaleText();
-	            this._textLines = graphics_1.Graphics.layoutText(text, this.w, style.font);
+	            if (text && style) {
+	                this._textLines = graphics_1.Graphics.layoutText(text, this.w, style.font);
+	            }
+	            else {
+	                this._textLines = [];
+	            }
 	        }
 	        return this;
 	    };
@@ -5686,7 +5752,7 @@ var qtk =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setValue(value, true, false);
+	            this.setValue(value, false, false);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -6299,13 +6365,16 @@ var qtk =
 	            }
 	            this._isEnableFunc = function () {
 	                var enable = true;
-	                dataBindingRule.forEach(function (prop, item) {
-	                    var source = item.source;
-	                    if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
-	                        var commandSource = source;
-	                        enable = enable && viewModal.canExecute(commandSource.command);
-	                    }
-	                });
+	                var vm = this._viewModal;
+	                if (vm) {
+	                    dataBindingRule.forEach(function (prop, item) {
+	                        var source = item.source;
+	                        if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
+	                            var commandSource = source;
+	                            enable = enable && vm.canExecute(commandSource.command);
+	                        }
+	                    });
+	                }
 	                return enable;
 	            };
 	        }
@@ -6354,14 +6423,19 @@ var qtk =
 	            var source = item.source;
 	            if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
 	                var commandSource = source;
-	                if (prop === "click") {
+	                var type = Events.mapToEvent(prop);
+	                if (type) {
 	                    if (commandSource.eventHandler) {
-	                        _this.off(Events.CLICK, commandSource.eventHandler);
+	                        _this.off(type, commandSource.eventHandler);
 	                    }
 	                    commandSource.eventHandler = function (evt) {
-	                        viewModal.execCommand(commandSource.command, commandSource.commandArgs);
+	                        var args = commandSource.commandArgs || evt;
+	                        viewModal.execCommand(commandSource.command, args);
 	                    };
-	                    _this.on(Events.CLICK, commandSource.eventHandler);
+	                    _this.on(type, commandSource.eventHandler);
+	                }
+	                else {
+	                    console.log(prop + " is not supported yet.");
 	                }
 	            }
 	        });
@@ -17345,11 +17419,13 @@ var qtk =
 	};
 	var Events = __webpack_require__(6);
 	var html_element_1 = __webpack_require__(85);
+	var event_detail_1 = __webpack_require__(14);
 	var HtmlEdit = (function (_super) {
 	    __extends(HtmlEdit, _super);
 	    function HtmlEdit() {
 	        _super.apply(this, arguments);
-	        this.e = Events.ChangeEvent.create();
+	        this.changeEvent = Events.ChangeEvent.create();
+	        this.keyEvent = Events.KeyEvent.create(null, event_detail_1.KeyEventDetail.create(0));
 	    }
 	    Object.defineProperty(HtmlEdit.prototype, "inputType", {
 	        set: function (value) {
@@ -17391,25 +17467,28 @@ var qtk =
 	        var me = this;
 	        var element = this.element;
 	        element.onkeyup = function (e) {
+	            var evt = me.changeEvent;
 	            var detail = { oldValue: this.value, newValue: this.value };
+	            me.dispatchEvent(me.keyEvent.init(Events.KEYUP, event_detail_1.KeyEventDetail.create(e.keyCode)));
 	            if (e.keyCode === 13 && tag === "input") {
+	                me.dispatchEvent(evt.init(Events.CHANGE, detail));
 	                this.blur();
-	                me.e.init(Events.CHANGE, detail);
 	            }
 	            else {
-	                me.e.init(Events.CHANGING, detail);
+	                me.dispatchEvent(evt.init(Events.CHANGING, detail));
 	            }
-	            me.dispatchEvent(me.e);
+	        };
+	        element.onkeydown = function (e) {
+	            me.dispatchEvent(me.keyEvent.init(Events.KEYDOWN, event_detail_1.KeyEventDetail.create(e.keyCode)));
 	        };
 	        element.oninput = function (evt) {
 	            var detail = { oldValue: this.value, newValue: this.value };
-	            me.e.init(Events.CHANGING, detail);
-	            me.dispatchEvent(me.e);
+	            me.dispatchEvent(me.changeEvent.init(Events.CHANGING, detail));
 	        };
 	        element.onchange = function (evt) {
 	            var detail = { oldValue: this.value, newValue: this.value };
-	            me.e.init(Events.CHANGE, detail);
-	            me.dispatchEvent(me.e);
+	            me.changeEvent.init(Events.CHANGE, detail);
+	            me.dispatchEvent(me.changeEvent);
 	        };
 	        element.onblur = function (evt) {
 	            me.hide();
@@ -21175,7 +21254,7 @@ var qtk =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setValue(value, true, true);
+	            this.setValue(value, false, true);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -21223,8 +21302,7 @@ var qtk =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setProp("value", value, true);
-	            this.notifyChange();
+	            this.setValue(value, false, false);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -21296,6 +21374,7 @@ var qtk =
 	    };
 	    CheckButton.prototype.dispatchClick = function (evt) {
 	        this.value = !this.value;
+	        this.notifyChange();
 	        _super.prototype.dispatchClick.call(this, evt);
 	    };
 	    CheckButton.create = function (options) {
@@ -27490,12 +27569,18 @@ var qtk =
 	            return this._data;
 	        },
 	        set: function (value) {
-	            this._data = value;
-	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	            this.setData(value, true);
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
+	    ViewModalDefault.prototype.setData = function (value, notify) {
+	        this._data = value;
+	        if (notify) {
+	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	        }
+	        return this;
+	    };
 	    ViewModalDefault.prototype.getBindingMode = function () {
 	        return iview_modal_1.BindingMode.TWO_WAY;
 	    };
@@ -27571,7 +27656,7 @@ var qtk =
 	        this._commands[name] = cmd;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterCommand = function (name, cmd) {
+	    ViewModalDefault.prototype.unregisterCommand = function (name) {
 	        this._commands[name] = null;
 	        return this;
 	    };
@@ -27582,7 +27667,7 @@ var qtk =
 	        this._converters[name] = converter;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterValueConverter = function (name, converter) {
+	    ViewModalDefault.prototype.unregisterValueConverter = function (name) {
 	        this._converters[name] = null;
 	        return this;
 	    };
@@ -27601,7 +27686,7 @@ var qtk =
 	        this._validationRules[name] = validationRule;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterValidationRule = function (name, validationRule) {
+	    ViewModalDefault.prototype.unregisterValidationRule = function (name) {
 	        this._validationRules[name] = null;
 	        return this;
 	    };
@@ -56126,15 +56211,65 @@ var qtk =
 	    function CollectionViewModal(data) {
 	        _super.call(this, data);
 	        this.isCollection = true;
-	        this._collection = data;
-	        var n = data.length;
-	        var viewModalItems = [];
-	        for (var i = 0; i < n; i++) {
-	            viewModalItems.push(this.createItemViewModal(i));
-	        }
+	        this.filters = {};
+	        this.comparators = {};
 	        this._current = 0;
-	        this._viewModalItems = viewModalItems;
+	        this._collection = data;
+	        this.needUpdateViewModalItems = true;
 	    }
+	    Object.defineProperty(CollectionViewModal.prototype, "collection", {
+	        /**
+	         * 原始的数据。
+	         */
+	        get: function () {
+	            return this._collection;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(CollectionViewModal.prototype, "current", {
+	        get: function () {
+	            return this._current;
+	        },
+	        /**
+	         * 当前数据项的序号。
+	         */
+	        set: function (value) {
+	            var viewModalItems = this.viewModalItems;
+	            this._current = Math.min(viewModalItems.length - 1, Math.max(0, value));
+	            this.notifyChange(Events.PROP_CHANGE, "/", value);
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(CollectionViewModal.prototype, "total", {
+	        get: function () {
+	            return this.viewModalItems.length;
+	        },
+	        /**
+	         * 过滤之后总的项数。
+	         */
+	        set: function (value) {
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(CollectionViewModal.prototype, "viewModalItems", {
+	        /**
+	         * 子项目的ViewModal
+	         */
+	        get: function () {
+	            if (this.needUpdateViewModalItems) {
+	                this.updateViewModalItems();
+	            }
+	            return this._viewModalItems;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /*
+	     * 对于属性操作，都是针对当前项的ViewModal的操作。
+	     */
 	    CollectionViewModal.prototype.getProp = function (path, converterName) {
 	        var vm = this.currentViewModal;
 	        return vm ? vm.getProp(path, converterName) : null;
@@ -56147,82 +56282,209 @@ var qtk =
 	        var vm = this.currentViewModal;
 	        return vm ? vm.setProp(path, value, converterName, validationRule) : ivalidation_rule_1.ValidationResult.invalidResult;
 	    };
+	    Object.defineProperty(CollectionViewModal.prototype, "currentViewModal", {
+	        /**
+	         * 当前项的ViewModal
+	         */
+	        get: function () {
+	            return this.viewModalItems[this._current];
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * 注册子项的增加删除的变化事件。
+	     */
 	    CollectionViewModal.prototype.onItemsChange = function (callback) {
-	        this.on(Events.ITEM_ADD, callback);
-	        this.on(Events.ITEM_DELETE, callback);
+	        this.on(Events.ITEMS_CHANGE, callback);
 	        return this;
 	    };
+	    /**
+	     * 注销子项的增加删除的变化事件。
+	     */
 	    CollectionViewModal.prototype.offItemsChange = function (callback) {
-	        this.off(Events.ITEM_ADD, callback);
-	        this.off(Events.ITEM_DELETE, callback);
+	        this.off(Events.ITEMS_CHANGE, callback);
 	        return this;
 	    };
-	    CollectionViewModal.prototype.fixState = function () {
-	        var n = this._collection.length;
-	        if (this.current >= n) {
-	            this.current = n - 1;
-	        }
-	        this._viewModalItems.forEach(function (item, index) {
-	            item.index = index;
-	        });
-	    };
+	    /**
+	     * 增加一个数据项。
+	     */
 	    CollectionViewModal.prototype.addItem = function (data, index) {
 	        var n = this._collection.length;
 	        var index = index < n ? index : n;
 	        this._collection.splice(index, 0, data);
-	        this._viewModalItems.splice(index, 0, this.createItemViewModal(index));
-	        this.fixState();
-	        this.notifyChange(Events.ITEM_ADD, "/", index);
+	        this.updateViewModalItems(true);
 	        return this;
 	    };
+	    /**
+	     * 删除一个数据项。
+	     */
 	    CollectionViewModal.prototype.removeItem = function (index) {
 	        this._collection.splice(index, 1);
-	        this._viewModalItems.splice(index, 1);
-	        this.fixState();
-	        this.notifyChange(Events.ITEM_DELETE, "/", index);
+	        this.updateViewModalItems(true);
 	        return this;
 	    };
-	    Object.defineProperty(CollectionViewModal.prototype, "collection", {
-	        get: function () {
-	            return this._collection;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "currentViewModal", {
-	        get: function () {
-	            return this._viewModalItems[this._current];
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "total", {
-	        get: function () {
-	            return this._viewModalItems.length;
-	        },
-	        set: function (value) {
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "current", {
-	        get: function () {
-	            return this._current;
-	        },
-	        set: function (value) {
-	            this._current = Math.min(this._viewModalItems.length - 1, Math.max(0, value));
-	            this.notifyChange(Events.PROP_CHANGE, "/", value);
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
+	    /**
+	     * 删除指定规则的数据项。
+	     */
+	    CollectionViewModal.prototype.removeItems = function (func) {
+	        var _this = this;
+	        var collection = this._collection.filter(function (item, index, arr) {
+	            return !func(item, index, arr);
+	        });
+	        this._collection.length = 0;
+	        collection.forEach(function (item) {
+	            _this._collection.push(item);
+	        });
+	        this.updateViewModalItems(true);
+	        return this;
+	    };
+	    /**
+	     * 是否存在指定条件的项。
+	     */
+	    CollectionViewModal.prototype.hasItems = function (func, filtered) {
+	        var arr = filtered ? this._filteredSortedCollection : this._collection;
+	        return arr.some(func);
+	    };
+	    /**
+	     * 获取指定序号的子ViewModal
+	     */
 	    CollectionViewModal.prototype.getItemViewModal = function (index) {
-	        var i = (index >= 0 && index < this._viewModalItems.length) ? index : this._current;
-	        return this._viewModalItems[i];
+	        var i = (index >= 0 && index < this.total) ? index : this._current;
+	        return this.viewModalItems[i];
 	    };
-	    CollectionViewModal.prototype.createItemViewModal = function (index) {
-	        return ItemViewModal.create(this, index);
+	    CollectionViewModal.prototype.getItemData = function (index) {
+	        var i = (index >= 0 && index < this.total) ? index : this._current;
+	        return this._filteredSortedCollection[i];
 	    };
+	    /*
+	     * 获取过滤并排序之后的集合。
+	     */
+	    CollectionViewModal.prototype.getFilteredSortedCollection = function () {
+	        var collection = this._collection;
+	        var filteredSortedCollection = null;
+	        var filter = this.filters && this.filter ? this.filters[this.filter] : null;
+	        if (filter) {
+	            filteredSortedCollection = collection.filter(function (item) {
+	                return filter.check(item);
+	            });
+	        }
+	        else {
+	            filteredSortedCollection = collection.slice();
+	        }
+	        var comparator = this.comparators && this.comparator ? this.comparators[this.comparator] : null;
+	        if (comparator) {
+	            filteredSortedCollection.sort(function (a, b) {
+	                return comparator.compare(a, b);
+	            });
+	        }
+	        this._filteredSortedCollection = filteredSortedCollection;
+	        return filteredSortedCollection;
+	    };
+	    /**
+	     * 获取排序过滤集合中的序数对应于原始集合中的序数。
+	     */
+	    CollectionViewModal.prototype.getRawIndexOf = function (index) {
+	        if ((this.comparators && this.comparator) || (this.filters && this.filter)) {
+	            var obj = this._filteredSortedCollection[index];
+	            return this.collection.indexOf(obj);
+	        }
+	        else {
+	            return index;
+	        }
+	    };
+	    /*
+	     * 创建一个子ViewModal。
+	     */
+	    CollectionViewModal.prototype.createItemViewModal = function (index, data) {
+	        return ItemViewModal.create(this, index, data);
+	    };
+	    /*
+	     * 重新创建ViewModalItems。
+	     */
+	    CollectionViewModal.prototype.updateViewModalItems = function (force) {
+	        var _this = this;
+	        if (force || this.needUpdateViewModalItems) {
+	            this.needUpdateViewModalItems = false;
+	            console.time("filter and sort");
+	            var collection = this.getFilteredSortedCollection();
+	            var n = collection.length;
+	            if (this.current >= n) {
+	                this._current = n - 1;
+	            }
+	            if (this._viewModalItems) {
+	                this._viewModalItems.forEach(function (item) {
+	                    item.dispose();
+	                });
+	            }
+	            this._viewModalItems = collection.map(function (data, i) {
+	                return _this.createItemViewModal(i, data);
+	            });
+	            console.timeEnd("filter and sort");
+	            console.time("notify ITEMS_CHANGE");
+	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	            this.notifyChange(Events.ITEMS_CHANGE, "/", null);
+	            console.timeEnd("notify ITEMS_CHANGE");
+	        }
+	    };
+	    /**
+	     * 注册过滤器。
+	     */
+	    CollectionViewModal.prototype.registerFilter = function (name, filter) {
+	        this.filters[name] = filter;
+	        return this;
+	    };
+	    /**
+	     * 注销过滤器。
+	     */
+	    CollectionViewModal.prototype.unregisterFilter = function (name) {
+	        delete this.filters[name];
+	        return this;
+	    };
+	    Object.defineProperty(CollectionViewModal.prototype, "filter", {
+	        get: function () {
+	            return this._filter;
+	        },
+	        /**
+	         * 当前的过滤器器。
+	         */
+	        set: function (name) {
+	            this._filter = name;
+	            this.needUpdateViewModalItems = true;
+	            this.updateViewModalItems();
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * 注册排序用的比较器。
+	     */
+	    CollectionViewModal.prototype.registerComparator = function (name, comparator) {
+	        this.comparators[name] = comparator;
+	        return this;
+	    };
+	    /**
+	     * 注销排序用的比较器。
+	     */
+	    CollectionViewModal.prototype.unregisterComparator = function (name) {
+	        delete this.comparators[name];
+	        return this;
+	    };
+	    Object.defineProperty(CollectionViewModal.prototype, "comparator", {
+	        get: function () {
+	            return this._comparator;
+	        },
+	        /**
+	         * 设置当前的比较器。
+	         */
+	        set: function (name) {
+	            this._comparator = name;
+	            this.needUpdateViewModalItems = true;
+	            this.updateViewModalItems();
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    CollectionViewModal.create = function (data) {
 	        var viewModal = new CollectionViewModal(data);
 	        return viewModal;
@@ -56237,11 +56499,9 @@ var qtk =
 	 */
 	var ItemViewModal = (function (_super) {
 	    __extends(ItemViewModal, _super);
-	    function ItemViewModal(collectionViewModal, index) {
-	        _super.call(this, collectionViewModal.collection[index]);
+	    function ItemViewModal() {
+	        _super.call(this, null);
 	        this.isCollection = false;
-	        this.index = index;
-	        this.collectionViewModal = collectionViewModal;
 	        this.initCommands();
 	    }
 	    ItemViewModal.prototype.getCommand = function (name) {
@@ -56293,24 +56553,43 @@ var qtk =
 	        return this.collectionViewModal.current === this.index;
 	    };
 	    ItemViewModal.prototype.notifyChange = function (type, path, value) {
-	        if (this.isCurrent) {
-	            this.collectionViewModal.notifyChange(type, path, value);
+	        var collectionViewModal = this.collectionViewModal;
+	        if (collectionViewModal.comparator || collectionViewModal.filter) {
+	            collectionViewModal.updateViewModalItems(true);
 	        }
-	        _super.prototype.notifyChange.call(this, type, path, value);
+	        else {
+	            if (this.isCurrent) {
+	                collectionViewModal.notifyChange(type, path, value);
+	            }
+	            _super.prototype.notifyChange.call(this, type, path, value);
+	        }
 	    };
 	    ItemViewModal.prototype.initCommands = function () {
 	        var _this = this;
-	        var collectionViewModal = this.collectionViewModal;
 	        this.registerCommand("activate", delegate_command_1.DelegateCommand.create(function (args) {
-	            collectionViewModal.current = _this.index;
+	            _this.collectionViewModal.current = _this.index;
 	        }));
 	        this.registerCommand("remove", delegate_command_1.DelegateCommand.create(function (args) {
-	            collectionViewModal.removeItem(collectionViewModal.current);
+	            _this.collectionViewModal.removeItem(_this.collectionViewModal.getRawIndexOf(_this.index));
 	        }));
 	    };
-	    ItemViewModal.create = function (collectionViewModal, index) {
-	        return new ItemViewModal(collectionViewModal, index);
+	    ItemViewModal.prototype.init = function (collectionViewModal, index, data) {
+	        this.collectionViewModal = collectionViewModal;
+	        this.index = index;
+	        this.setData(data, false);
+	        return this;
 	    };
+	    ItemViewModal.prototype.dispose = function () {
+	        this.index = -1;
+	        this.removeAllListeners();
+	        this.collectionViewModal = null;
+	        ItemViewModal.cache.push(this);
+	    };
+	    ItemViewModal.create = function (collectionViewModal, index, data) {
+	        var vm = ItemViewModal.cache.length > 0 ? ItemViewModal.cache.pop() : (new ItemViewModal());
+	        return vm.init(collectionViewModal, index, data);
+	    };
+	    ItemViewModal.cache = [];
 	    return ItemViewModal;
 	}(view_modal_default_1.ViewModalDefault));
 	exports.ItemViewModal = ItemViewModal;
@@ -57141,15 +57420,15 @@ var qtk =
 	 * 描述表格中某列的信息。
 	 */
 	var TableColInfo = (function () {
-	    function TableColInfo(title, widgetType, w, options, sortable) {
+	    function TableColInfo(title, widgetType, w, options, sortKey) {
 	        this.w = w;
 	        this.title = title;
-	        this.sortable = sortable;
+	        this.sortKey = sortKey;
 	        this.options = options || {};
 	        this.widgetType = widgetType || "label";
 	    }
-	    TableColInfo.create = function (title, widgetType, w, options, sortable) {
-	        return new TableColInfo(title, widgetType, w, options, sortable);
+	    TableColInfo.create = function (title, widgetType, w, options, sortKey) {
+	        return new TableColInfo(title, widgetType, w, options, sortKey);
 	    };
 	    return TableColInfo;
 	}());
@@ -57326,7 +57605,7 @@ var qtk =
 	        }
 	        var headerBar = this._headerBar;
 	        this._colsInfo.forEach(function (item) {
-	            var headerItem = table_header_item_1.TableHeaderItem.create({ w: item.w, text: item.title, sortable: item.sortable });
+	            var headerItem = table_header_item_1.TableHeaderItem.create({ w: item.w, text: item.title, sortKey: item.sortKey });
 	            headerBar.addChild(headerItem);
 	            headerItem.on(Events.RESIZE_END, function (evt) {
 	                _this.onHeaderItemResized();
@@ -57336,6 +57615,9 @@ var qtk =
 	            });
 	            headerItem.on(Events.RESIZING, function (evt) {
 	                _this.onHeaderItemResizing();
+	            });
+	            headerItem.on(Events.SORT, function (evt) {
+	                _this.dispatchEvent(evt);
 	            });
 	        });
 	        var client = this._client;
@@ -57477,16 +57759,17 @@ var qtk =
 	    __extends(TableHeaderItem, _super);
 	    function TableHeaderItem() {
 	        _super.call(this, TableHeaderItem.TYPE);
+	        this._sortEvent = Events.SortEvent.create(null, false);
 	    }
-	    Object.defineProperty(TableHeaderItem.prototype, "sortable", {
+	    Object.defineProperty(TableHeaderItem.prototype, "sortKey", {
 	        get: function () {
-	            return this._sortable;
+	            return this._sortKey;
 	        },
 	        /**
 	         * 是否点击时按该列排序。
 	         */
 	        set: function (value) {
-	            this._sortable = value;
+	            this._sortKey = value;
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -57510,7 +57793,7 @@ var qtk =
 	    };
 	    TableHeaderItem.prototype.getStyleType = function () {
 	        var styleType = this._styleType || this.type;
-	        if (!this._sortable || !this._sortStatus) {
+	        if (!this._sortKey || !this._sortStatus) {
 	            return styleType;
 	        }
 	        return styleType + "." + this._sortStatus;
@@ -57525,13 +57808,22 @@ var qtk =
 	        this.useBehavior("resizable", { east: true, animateDuration: 0 });
 	    };
 	    TableHeaderItem.prototype.triggerSortStatus = function () {
-	        if (this._sortable) {
+	        var _this = this;
+	        var isDec = false;
+	        if (this._sortKey) {
 	            if (this._sortStatus === TableHeaderItem.SORT_INC) {
+	                isDec = true;
 	                this._sortStatus = TableHeaderItem.SORT_DEC;
 	            }
 	            else {
 	                this._sortStatus = TableHeaderItem.SORT_INC;
 	            }
+	            this.dispatchEvent(this._sortEvent.init(this._sortKey, isDec));
+	            this.parent.children.forEach(function (child) {
+	                if (child !== _this && child.type === _this.type) {
+	                    child._sortStatus = null;
+	                }
+	            });
 	        }
 	    };
 	    TableHeaderItem.create = function (options) {
@@ -57550,6 +57842,135 @@ var qtk =
 
 /***/ },
 /* 348 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var DelegateFilter = (function () {
+	    function DelegateFilter(check) {
+	        this._check = check;
+	    }
+	    DelegateFilter.prototype.check = function (data) {
+	        return this._check(data);
+	    };
+	    DelegateFilter.create = function (check) {
+	        return new DelegateFilter(check);
+	    };
+	    return DelegateFilter;
+	}());
+	exports.DelegateFilter = DelegateFilter;
+	;
+
+
+/***/ },
+/* 349 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var DelegateComparator = (function () {
+	    function DelegateComparator(compare) {
+	        this._compare = compare;
+	    }
+	    DelegateComparator.prototype.compare = function (a, b) {
+	        return this._compare(a, b);
+	    };
+	    DelegateComparator.create = function (compare) {
+	        return new DelegateComparator(compare);
+	    };
+	    return DelegateComparator;
+	}());
+	exports.DelegateComparator = DelegateComparator;
+	;
+
+
+/***/ },
+/* 350 */
+/***/ function(module, exports) {
+
+	"use strict";
+	/**
+	 * 数值比较器。
+	 */
+	var NumberComparator = (function () {
+	    function NumberComparator() {
+	    }
+	    NumberComparator.prototype.compare = function (a, b) {
+	        return a - b;
+	    };
+	    NumberComparator.create = function () {
+	        return new NumberComparator();
+	    };
+	    return NumberComparator;
+	}());
+	exports.NumberComparator = NumberComparator;
+	;
+	/**
+	 * 字符串比较器。
+	 */
+	var StringComparator = (function () {
+	    function StringComparator() {
+	    }
+	    StringComparator.prototype.compare = function (a, b) {
+	        if (a > b) {
+	            return 1;
+	        }
+	        else if (a == b) {
+	            return 0;
+	        }
+	        else {
+	            return -1;
+	        }
+	    };
+	    StringComparator.create = function () {
+	        return new StringComparator();
+	    };
+	    return StringComparator;
+	}());
+	exports.StringComparator = StringComparator;
+	;
+	/**
+	 * 反向比较器。
+	 */
+	var RevertComparator = (function () {
+	    function RevertComparator(comparator) {
+	        this.comparator = comparator;
+	    }
+	    RevertComparator.prototype.compare = function (a, b) {
+	        var ret = this.comparator.compare(a, b);
+	        if (ret) {
+	            ret = -ret;
+	        }
+	        return ret;
+	    };
+	    RevertComparator.create = function (comparator) {
+	        return new RevertComparator(comparator);
+	    };
+	    return RevertComparator;
+	}());
+	exports.RevertComparator = RevertComparator;
+	;
+	/**
+	 * 对象属性比较器。
+	 */
+	var ObjectPropComparator = (function () {
+	    function ObjectPropComparator(comparator, prop) {
+	        this.prop = prop;
+	        this.comparator = comparator;
+	    }
+	    ObjectPropComparator.prototype.compare = function (a, b) {
+	        var prop = this.prop;
+	        return this.comparator.compare(a[prop], b[prop]);
+	    };
+	    ObjectPropComparator.create = function (comparator, prop) {
+	        return new ObjectPropComparator(comparator, prop);
+	    };
+	    return ObjectPropComparator;
+	}());
+	exports.ObjectPropComparator = ObjectPropComparator;
+	;
+
+
+/***/ },
+/* 351 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57588,7 +58009,7 @@ var qtk =
 
 
 /***/ },
-/* 349 */
+/* 352 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57612,7 +58033,7 @@ var qtk =
 
 
 /***/ },
-/* 350 */
+/* 353 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57641,7 +58062,7 @@ var qtk =
 
 
 /***/ },
-/* 351 */
+/* 354 */
 /***/ function(module, exports) {
 
 	"use strict";
