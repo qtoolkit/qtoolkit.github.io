@@ -64,14 +64,14 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var qtk_particles_editor_1 = __webpack_require__(2);
-	var view_modal_1 = __webpack_require__(373);
+	var view_model_1 = __webpack_require__(377);
 	var ProtonEditor = (function (_super) {
 	    __extends(ProtonEditor, _super);
 	    function ProtonEditor() {
 	        _super.apply(this, arguments);
 	    }
 	    ProtonEditor.run = function () {
-	        return qtk_particles_editor_1.ParticlesEditor.run("proton-editor", view_modal_1.ProtonViewModal.TYPE);
+	        return qtk_particles_editor_1.ParticlesEditor.run("proton-editor", view_model_1.ProtonViewModel.TYPE);
 	    };
 	    return ProtonEditor;
 	}(qtk_particles_editor_1.ParticlesEditor));
@@ -86,30 +86,30 @@ var editor =
 	"use strict";
 	var document_1 = __webpack_require__(3);
 	exports.Document = document_1.Document;
-	var draw_info_1 = __webpack_require__(356);
+	var draw_info_1 = __webpack_require__(360);
 	exports.DrawInfo = draw_info_1.DrawInfo;
-	var particles_editor_1 = __webpack_require__(357);
+	var particles_editor_1 = __webpack_require__(361);
 	exports.ParticlesEditor = particles_editor_1.ParticlesEditor;
-	var command_draw_1 = __webpack_require__(363);
+	var command_draw_1 = __webpack_require__(367);
 	exports.CommandDraw = command_draw_1.CommandDraw;
-	var command_new_1 = __webpack_require__(364);
+	var command_new_1 = __webpack_require__(368);
 	exports.CommandNew = command_new_1.CommandNew;
-	var command_open_1 = __webpack_require__(365);
+	var command_open_1 = __webpack_require__(369);
 	exports.CommandOpen = command_open_1.CommandOpen;
-	var command_save_1 = __webpack_require__(366);
+	var command_save_1 = __webpack_require__(370);
 	exports.CommandSave = command_save_1.CommandSave;
-	var command_export_1 = __webpack_require__(367);
+	var command_export_1 = __webpack_require__(371);
 	exports.CommandExport = command_export_1.CommandExport;
-	var command_about_1 = __webpack_require__(369);
+	var command_about_1 = __webpack_require__(373);
 	exports.CommandAbout = command_about_1.CommandAbout;
-	var command_remove_1 = __webpack_require__(370);
+	var command_remove_1 = __webpack_require__(374);
 	exports.CommandRemove = command_remove_1.CommandRemove;
-	var command_content_1 = __webpack_require__(371);
+	var command_content_1 = __webpack_require__(375);
 	exports.CommandContent = command_content_1.CommandContent;
-	var particles_view_modal_1 = __webpack_require__(372);
-	exports.ParticlesViewModal = particles_view_modal_1.ParticlesViewModal;
-	var iparticles_view_modal_1 = __webpack_require__(362);
-	exports.ParticlesViewModalFactory = iparticles_view_modal_1.ParticlesViewModalFactory;
+	var particles_view_model_1 = __webpack_require__(376);
+	exports.ParticlesViewModel = particles_view_model_1.ParticlesViewModel;
+	var iparticles_view_model_1 = __webpack_require__(366);
+	exports.ParticlesViewModelFactory = iparticles_view_model_1.ParticlesViewModelFactory;
 	//# sourceMappingURL=index.js.map
 
 /***/ },
@@ -251,17 +251,18 @@ var editor =
 	exports.TreeView = tree_view_1.TreeView;
 	var application_1 = __webpack_require__(125);
 	exports.Application = application_1.Application;
-	var movable_1 = __webpack_require__(166);
+	var movable_1 = __webpack_require__(167);
 	exports.Movable = movable_1.Movable;
 	var theme_manager_1 = __webpack_require__(126);
 	exports.ThemeManager = theme_manager_1.ThemeManager;
-	var draggable_1 = __webpack_require__(167);
+	var draggable_1 = __webpack_require__(168);
 	exports.Draggable = draggable_1.Draggable;
-	var droppable_1 = __webpack_require__(168);
+	var droppable_1 = __webpack_require__(169);
 	exports.Droppable = droppable_1.Droppable;
-	var resizable_1 = __webpack_require__(169);
+	var resizable_1 = __webpack_require__(170);
 	exports.Resizable = resizable_1.Resizable;
-	var menu_1 = __webpack_require__(170);
+	exports.ResizableOptions = resizable_1.ResizableOptions;
+	var menu_1 = __webpack_require__(171);
 	exports.Menu = menu_1.Menu;
 	exports.MenuItem = menu_1.MenuItem;
 	var radio_button_1 = __webpack_require__(110);
@@ -270,63 +271,63 @@ var editor =
 	exports.TreeItemData = tree_item_data_1.TreeItemData;
 	var check_button_1 = __webpack_require__(111);
 	exports.CheckButton = check_button_1.CheckButton;
-	var window_normal_1 = __webpack_require__(171);
+	var window_normal_1 = __webpack_require__(172);
 	exports.WindowNormal = window_normal_1.WindowNormal;
 	var widget_factory_1 = __webpack_require__(27);
 	exports.WidgetFactory = widget_factory_1.WidgetFactory;
-	var menu_bar_1 = __webpack_require__(172);
+	var menu_bar_1 = __webpack_require__(173);
 	exports.MenuBar = menu_bar_1.MenuBar;
 	exports.MenuBarItem = menu_bar_1.MenuBarItem;
-	var color_tile_1 = __webpack_require__(143);
+	var color_tile_1 = __webpack_require__(144);
 	exports.ColorTile = color_tile_1.ColorTile;
 	exports.ColorLine = color_tile_1.ColorLine;
 	var list_item_1 = __webpack_require__(118);
 	exports.ListItem = list_item_1.ListItem;
 	exports.ListItemStyle = list_item_1.ListItemStyle;
-	var chart_view_1 = __webpack_require__(173);
+	var chart_view_1 = __webpack_require__(174);
 	exports.ChartView = chart_view_1.ChartView;
 	var graphics_1 = __webpack_require__(29);
 	exports.RoundType = graphics_1.RoundType;
 	exports.Graphics = graphics_1.Graphics;
-	var accordion_1 = __webpack_require__(326);
+	var accordion_1 = __webpack_require__(327);
 	exports.Accordion = accordion_1.Accordion;
 	var service_locator_1 = __webpack_require__(128);
 	exports.ServiceLocator = service_locator_1.ServiceLocator;
-	var ruler_1 = __webpack_require__(329);
+	var ruler_1 = __webpack_require__(330);
 	exports.VRuler = ruler_1.VRuler;
 	exports.HRuler = ruler_1.HRuler;
-	var title_content_1 = __webpack_require__(327);
+	var title_content_1 = __webpack_require__(328);
 	exports.TitleContent = title_content_1.TitleContent;
-	var title_label_1 = __webpack_require__(145);
+	var title_label_1 = __webpack_require__(146);
 	exports.TitleLabel = title_label_1.TitleLabel;
-	var title_range_1 = __webpack_require__(147);
+	var title_range_1 = __webpack_require__(148);
 	exports.TitleRange = title_range_1.TitleRange;
-	var title_vector_1 = __webpack_require__(149);
+	var title_vector_1 = __webpack_require__(150);
 	exports.TitleVector = title_vector_1.TitleVector;
-	var title_edit_1 = __webpack_require__(144);
+	var title_edit_1 = __webpack_require__(145);
 	exports.TitleEdit = title_edit_1.TitleEdit;
-	var title_slider_1 = __webpack_require__(151);
+	var title_slider_1 = __webpack_require__(152);
 	exports.TitleSlider = title_slider_1.TitleSlider;
-	var property_page_1 = __webpack_require__(139);
+	var property_page_1 = __webpack_require__(140);
 	exports.PropertyPage = property_page_1.PropertyPage;
-	var property_dialog_1 = __webpack_require__(138);
+	var property_dialog_1 = __webpack_require__(139);
 	exports.PropertyDialog = property_dialog_1.PropertyDialog;
-	var range_edit_1 = __webpack_require__(148);
+	var range_edit_1 = __webpack_require__(149);
 	exports.RangeEdit = range_edit_1.RangeEdit;
-	var vector_edit_1 = __webpack_require__(150);
+	var vector_edit_1 = __webpack_require__(151);
 	exports.VectorEdit = vector_edit_1.VectorEdit;
-	var choosable_edit_1 = __webpack_require__(154);
+	var choosable_edit_1 = __webpack_require__(155);
 	exports.ChoosableEdit = choosable_edit_1.ChoosableEdit;
-	var title_text_area_1 = __webpack_require__(152);
+	var title_text_area_1 = __webpack_require__(153);
 	exports.TitleTextArea = title_text_area_1.TitleTextArea;
-	var property_sheets_1 = __webpack_require__(330);
+	var property_sheets_1 = __webpack_require__(331);
 	exports.PropertySheets = property_sheets_1.PropertySheets;
 	var progress_bar_1 = __webpack_require__(100);
 	exports.ProgressBarType = progress_bar_1.ProgressBarType;
 	exports.ProgressBar = progress_bar_1.ProgressBar;
-	var title_choosable_edit_1 = __webpack_require__(153);
+	var title_choosable_edit_1 = __webpack_require__(154);
 	exports.TitleChoosableEdit = title_choosable_edit_1.TitleChoosableEdit;
-	var dock_layouter_1 = __webpack_require__(134);
+	var dock_layouter_1 = __webpack_require__(135);
 	exports.DockLayouter = dock_layouter_1.DockLayouter;
 	exports.DockLayouterParam = dock_layouter_1.DockLayouterParam;
 	var grid_layouter_1 = __webpack_require__(121);
@@ -338,7 +339,7 @@ var editor =
 	var simple_layouter_1 = __webpack_require__(119);
 	exports.SimpleLayouter = simple_layouter_1.SimpleLayouter;
 	exports.SimpleLayouterParam = simple_layouter_1.SimpleLayouterParam;
-	var linear_layouter_1 = __webpack_require__(135);
+	var linear_layouter_1 = __webpack_require__(136);
 	exports.LinearLayouter = linear_layouter_1.LinearLayouter;
 	exports.LinearLayouterParam = linear_layouter_1.LinearLayouterParam;
 	var widget_1 = __webpack_require__(23);
@@ -353,10 +354,10 @@ var editor =
 	exports.AlignV = consts_1.AlignV;
 	exports.Orientation = consts_1.Orientation;
 	exports.Services = consts_1.Services;
-	var title_combo_box_1 = __webpack_require__(156);
+	var title_combo_box_1 = __webpack_require__(157);
 	exports.TitleComboBox = title_combo_box_1.TitleComboBox;
 	exports.TitleComboBoxEditable = title_combo_box_1.TitleComboBoxEditable;
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	exports.ButtonOption = message_box_1.ButtonOption;
 	exports.ButtonsOptions = message_box_1.ButtonsOptions;
 	exports.TitleOptions = message_box_1.TitleOptions;
@@ -367,37 +368,41 @@ var editor =
 	exports.ScrollView = scroll_view_1.ScrollView;
 	var device_info_1 = __webpack_require__(127);
 	exports.DeviceInfo = device_info_1.DeviceInfo;
-	var view_modal_1 = __webpack_require__(157);
-	exports.ViewModal = view_modal_1.ViewModal;
+	var view_model_1 = __webpack_require__(158);
+	exports.ViewModel = view_model_1.ViewModel;
 	var recyclable_creator_1 = __webpack_require__(87);
 	exports.RecyclableCreator = recyclable_creator_1.RecyclableCreator;
-	var delegate_command_1 = __webpack_require__(331);
+	var delegate_command_1 = __webpack_require__(332);
 	exports.DelegateCommand = delegate_command_1.DelegateCommand;
-	var collection_view_modal_1 = __webpack_require__(332);
-	exports.CollectionViewModal = collection_view_modal_1.CollectionViewModal;
-	var delegate_value_converter_1 = __webpack_require__(333);
+	var collection_view_model_1 = __webpack_require__(333);
+	exports.CollectionViewModel = collection_view_model_1.CollectionViewModel;
+	var delegate_value_converter_1 = __webpack_require__(334);
 	exports.DelegateValueConverter = delegate_value_converter_1.DelegateValueConverter;
-	var ivalidation_rule_1 = __webpack_require__(161);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
+	exports.WidgetRecyclableCreator = widget_recyclable_creator_1.WidgetRecyclableCreator;
+	var ivalidation_rule_1 = __webpack_require__(162);
 	exports.ValidationResult = ivalidation_rule_1.ValidationResult;
-	var delegate_validation_rule_1 = __webpack_require__(334);
+	var delegate_validation_rule_1 = __webpack_require__(335);
 	exports.DelegateValidationRule = delegate_validation_rule_1.DelegateValidationRule;
 	var binding_rule_1 = __webpack_require__(83);
 	exports.BindingRule = binding_rule_1.BindingRule;
 	exports.BindingDataSource = binding_rule_1.BindingDataSource;
 	exports.BindingCommandSource = binding_rule_1.BindingCommandSource;
 	exports.BindingRuleItem = binding_rule_1.BindingRuleItem;
-	var props_desc_1 = __webpack_require__(155);
+	var iview_model_1 = __webpack_require__(85);
+	exports.BindingMode = iview_model_1.BindingMode;
+	var props_desc_1 = __webpack_require__(156);
 	exports.PagePropsDesc = props_desc_1.PagePropsDesc;
 	exports.PropsDesc = props_desc_1.PropsDesc;
 	exports.PropDesc = props_desc_1.PropDesc;
 	exports.NumberPropDesc = props_desc_1.NumberPropDesc;
 	exports.SliderPropDesc = props_desc_1.SliderPropDesc;
-	var props_desc_2 = __webpack_require__(155);
+	var props_desc_2 = __webpack_require__(156);
 	exports.TextPropDesc = props_desc_2.TextPropDesc;
 	exports.ReadonlyTextPropDesc = props_desc_2.ReadonlyTextPropDesc;
 	exports.OptionsPropDesc = props_desc_2.OptionsPropDesc;
 	exports.RangePropDesc = props_desc_2.RangePropDesc;
-	var props_desc_3 = __webpack_require__(155);
+	var props_desc_3 = __webpack_require__(156);
 	exports.Vector2PropDesc = props_desc_3.Vector2PropDesc;
 	exports.Vector3PropDesc = props_desc_3.Vector3PropDesc;
 	exports.LinePropDesc = props_desc_3.LinePropDesc;
@@ -410,50 +415,59 @@ var editor =
 	exports.Assets = Assets;
 	var inputEventAdapter = __webpack_require__(19);
 	exports.inputEventAdapter = inputEventAdapter;
-	var toast_info_1 = __webpack_require__(335);
+	var toast_info_1 = __webpack_require__(336);
 	exports.ToastInfo = toast_info_1.ToastInfo;
-	var input_info_1 = __webpack_require__(336);
+	var input_info_1 = __webpack_require__(337);
 	exports.InputInfo = input_info_1.InputInfo;
-	var props_info_1 = __webpack_require__(337);
+	var props_info_1 = __webpack_require__(338);
 	exports.PropsInfo = props_info_1.PropsInfo;
-	var choice_info_1 = __webpack_require__(338);
+	var choice_info_1 = __webpack_require__(339);
 	exports.ChoiceInfo = choice_info_1.ChoiceInfo;
-	var progress_info_1 = __webpack_require__(339);
+	var progress_info_1 = __webpack_require__(340);
 	exports.ProgressInfo = progress_info_1.ProgressInfo;
-	var confirmation_info_1 = __webpack_require__(340);
+	var confirmation_info_1 = __webpack_require__(341);
 	exports.ConfirmationInfo = confirmation_info_1.ConfirmationInfo;
-	var notification_info_1 = __webpack_require__(341);
+	var notification_info_1 = __webpack_require__(342);
 	exports.NotificationInfo = notification_info_1.NotificationInfo;
-	var interaction_types_1 = __webpack_require__(130);
+	var interaction_types_1 = __webpack_require__(131);
 	exports.InteractionTypes = interaction_types_1.InteractionTypes;
-	var interaction_request_1 = __webpack_require__(129);
+	var interaction_request_1 = __webpack_require__(130);
 	exports.InteractionRequest = interaction_request_1.InteractionRequest;
-	var interaction_service_1 = __webpack_require__(131);
+	var interaction_service_1 = __webpack_require__(132);
 	exports.InteractionService = interaction_service_1.InteractionService;
-	var items_storage_1 = __webpack_require__(342);
+	var items_storage_1 = __webpack_require__(343);
 	exports.ItemsStorage = items_storage_1.ItemsStorage;
-	var table_row_1 = __webpack_require__(343);
+	var table_row_1 = __webpack_require__(344);
 	exports.TableRow = table_row_1.TableRow;
-	var table_client_1 = __webpack_require__(344);
+	var table_client_1 = __webpack_require__(345);
 	exports.TableClient = table_client_1.TableClient;
-	var table_index_1 = __webpack_require__(346);
+	var table_index_1 = __webpack_require__(347);
 	exports.TableIndex = table_index_1.TableIndex;
-	var table_header_1 = __webpack_require__(348);
+	var table_header_1 = __webpack_require__(349);
 	exports.TableHeader = table_header_1.TableHeader;
-	var table_1 = __webpack_require__(349);
+	var table_1 = __webpack_require__(350);
 	exports.Table = table_1.Table;
 	exports.TableColInfo = table_1.TableColInfo;
-	var table_index_item_1 = __webpack_require__(350);
+	var table_index_item_1 = __webpack_require__(351);
 	exports.TableIndexItem = table_index_item_1.TableIndexItem;
-	var table_header_item_1 = __webpack_require__(351);
+	var table_header_item_1 = __webpack_require__(352);
 	exports.TableHeaderItem = table_header_item_1.TableHeaderItem;
-	var range_fixer_1 = __webpack_require__(352);
+	var delegate_filter_1 = __webpack_require__(353);
+	exports.DelegateFilter = delegate_filter_1.DelegateFilter;
+	var delegate_comparator_1 = __webpack_require__(354);
+	exports.DelegateComparator = delegate_comparator_1.DelegateComparator;
+	var comparators_1 = __webpack_require__(355);
+	exports.NumberComparator = comparators_1.NumberComparator;
+	exports.StringComparator = comparators_1.StringComparator;
+	exports.RevertComparator = comparators_1.RevertComparator;
+	exports.ObjectPropComparator = comparators_1.ObjectPropComparator;
+	var range_fixer_1 = __webpack_require__(356);
 	exports.RangeFixer = range_fixer_1.RangeFixer;
-	var number_fixer_1 = __webpack_require__(353);
+	var number_fixer_1 = __webpack_require__(357);
 	exports.NumberFixer = number_fixer_1.NumberFixer;
-	var vector2_fixer_1 = __webpack_require__(354);
+	var vector2_fixer_1 = __webpack_require__(358);
 	exports.Vector2Fixer = vector2_fixer_1.Vector2Fixer;
-	var vector3_fixer_1 = __webpack_require__(355);
+	var vector3_fixer_1 = __webpack_require__(359);
 	exports.Vector3Fixer = vector3_fixer_1.Vector3Fixer;
 
 
@@ -1495,6 +1509,7 @@ var editor =
 	exports.WHEEL = "qtk-wheel";
 	exports.KEYUP = "qtk-keyup";
 	exports.KEYDOWN = "qtk-keydown";
+	exports.CONFIRM = "confirm";
 	exports.CONTEXT_MENU = "qtk-context-menu";
 	exports.POINTER_DOWN = "qtk-pointer-down";
 	exports.POINTER_MOVE = "qtk-pointer-move";
@@ -1510,8 +1525,7 @@ var editor =
 	exports.CHANGING = "changing";
 	exports.PROP_CHANGE = "prop-change";
 	exports.PROP_DELETE = "prop-delete";
-	exports.ITEM_ADD = "item-add";
-	exports.ITEM_DELETE = "item-delete";
+	exports.ITEMS_CHANGE = "items-change";
 	exports.DISPOSE = "dispose";
 	exports.RUN = "run";
 	exports.QUIT = "quit";
@@ -1521,14 +1535,21 @@ var editor =
 	exports.MOVING = "moving";
 	exports.MOVE_END = "move-end";
 	exports.MOVE_BEGIN = "move-begin";
+	exports.MOVE_CANCEL = "move-cancel";
 	exports.CHOOSE = "choose";
-	exports.OPEN = "open";
+	exports.WINDOW_OPEN = "window-open";
+	exports.WINDOW_CLOSE = "window-close";
+	exports.WINDOW_CREATE = "window-create";
+	exports.WINDOW_CREATED = "window-created";
 	exports.INIT = "init";
 	exports.FOCUS = "focus";
 	exports.BLUR = "blur";
 	exports.DEINIT = "deinit";
-	exports.CLOSE = "close";
 	exports.RESIZE = "resize";
+	exports.RESIZING = "resizing";
+	exports.RESIZE_END = "resize-end";
+	exports.RESIZE_BEGIN = "resize-begin";
+	exports.RESIZE_CANCEL = "resize-cancel";
 	exports.READY = "ready";
 	exports.TICK = "tick";
 	exports.PRETICK = "pretick";
@@ -1540,6 +1561,7 @@ var editor =
 	exports.AFTER_DRAW = "after-draw";
 	exports.BEFORE_APPLY_TRANSFORM = "before-apply-transform";
 	exports.AFTER_APPLY_TRANSFORM = "after-apply-transform";
+	exports.SORT = "sort";
 	exports.SCROLL = "scroll";
 	exports.SCROLL_DONE = "scroll-done";
 	exports.DRAG = "drag";
@@ -1627,7 +1649,7 @@ var editor =
 	exports.AnyEvent = AnyEvent;
 	;
 	/**
-	 * View Modal请求显示指定的视图或跳转到指定的视图。
+	 * View Model请求显示指定的视图或跳转到指定的视图。
 	 */
 	var InteractionRequestEvent = (function (_super) {
 	    __extends(InteractionRequestEvent, _super);
@@ -1687,6 +1709,8 @@ var editor =
 	        this.pointerDownX = detail.pointerDownX;
 	        this.pointerDownY = detail.pointerDownY;
 	        this.pointerDownTime = detail.pointerDownTime;
+	        this.dx = detail.x - detail.pointerDownX;
+	        this.dy = detail.y - detail.pointerDownY;
 	        return this;
 	    };
 	    PointerEvent.create = function (type, detail) {
@@ -1923,6 +1947,23 @@ var editor =
 	}(Event));
 	exports.ScrollEvent = ScrollEvent;
 	;
+	var WindowEvent = (function (_super) {
+	    __extends(WindowEvent, _super);
+	    function WindowEvent() {
+	        _super.apply(this, arguments);
+	    }
+	    WindowEvent.prototype.reset = function (type, widget) {
+	        _super.prototype.init.call(this, type);
+	        this.widget = widget;
+	        return this;
+	    };
+	    WindowEvent.create = function () {
+	        return new WindowEvent();
+	    };
+	    return WindowEvent;
+	}(Event));
+	exports.WindowEvent = WindowEvent;
+	;
 	var ProgressEvent = (function (_super) {
 	    __extends(ProgressEvent, _super);
 	    function ProgressEvent() {
@@ -1942,10 +1983,50 @@ var editor =
 	}(Event));
 	exports.ProgressEvent = ProgressEvent;
 	;
+	/**
+	 * 排序事件
+	 */
+	var SortEvent = (function (_super) {
+	    __extends(SortEvent, _super);
+	    function SortEvent() {
+	        _super.apply(this, arguments);
+	    }
+	    SortEvent.prototype.init = function (key, isDec) {
+	        _super.prototype.init.call(this, exports.SORT);
+	        this.key = key;
+	        this.isDec = isDec;
+	        return this;
+	    };
+	    SortEvent.create = function (key, isDec) {
+	        var e = new SortEvent();
+	        return e.init(key, isDec);
+	    };
+	    return SortEvent;
+	}(Event));
+	exports.SortEvent = SortEvent;
+	;
 	function createAnyEvent(type, payload) {
 	    return AnyEvent.create(type, payload);
 	}
 	exports.createAnyEvent = createAnyEvent;
+	var eventsMapToType = {
+	    click: exports.CLICK,
+	    keydown: exports.KEYDOWN,
+	    keyup: exports.KEYUP,
+	    confirm: exports.CONFIRM,
+	    change: exports.CHANGE,
+	    chaning: exports.CHANGING,
+	    dblclick: exports.DBLCLICK,
+	    pointerup: exports.POINTER_UP,
+	    pointermove: exports.POINTER_MOVE,
+	    pointerdown: exports.POINTER_DOWN,
+	    pointerenter: exports.POINTER_ENTER,
+	    pointerleave: exports.POINTER_LEAVE
+	};
+	function mapToEvent(name) {
+	    return eventsMapToType[name];
+	}
+	exports.mapToEvent = mapToEvent;
 
 
 /***/ },
@@ -3961,6 +4042,7 @@ var editor =
 	var pointerDownX = 0;
 	var pointerDownY = 0;
 	var pointerDownTime = 0;
+	var pointerMoved = false;
 	var globalInputEmitter = new emitter_1.Emitter();
 	function dispatchEvent(target, type, detail) {
 	    var realTarget = target;
@@ -3976,13 +4058,13 @@ var editor =
 	    globalInputEmitter.dispatchEvent(event);
 	    realTarget.dispatchEvent(event);
 	}
-	function getPointerDetail(e) {
+	function getPointerDetail(e, timeStamp) {
 	    if (e) {
 	        var id = e.identifier || 0;
 	        var x = Math.max(e.pageX || 0, e.x || e.clientX);
 	        var y = Math.max(e.pageY || 0, e.y || e.clientY);
 	        lastDetail = event_detail_1.PointerEventDetail.create(id, x, y, altKey, ctrlKey, shiftKey, commandKey);
-	        lastDetail.timeStamp = e.timeStamp;
+	        lastDetail.timeStamp = e.timeStamp || timeStamp;
 	    }
 	    return lastDetail;
 	}
@@ -3992,18 +4074,18 @@ var editor =
 	        pointerDownX = detail.x;
 	        pointerDownY = detail.y;
 	        pointerDownTime = Date.now();
+	        pointerMoved = false;
 	    }
 	    else if (type === Events.POINTER_UP) {
 	        detail.setPointerDown(pointerDown, pointerDownX, pointerDownY, pointerDownTime);
-	        var dx = Math.abs(detail.x - pointerDownX);
-	        var dy = Math.abs(detail.y - pointerDownY);
-	        var isClick = dx < 5 && dy < 5;
 	        pointerDown = false;
-	        if (isClick) {
+	        pointerMoved = false;
+	        if (!pointerMoved) {
 	            dispatchEvent(target, Events.CLICK, detail);
 	        }
 	    }
 	    else {
+	        pointerMoved = true;
 	        detail.setPointerDown(pointerDown, pointerDownX, pointerDownY, pointerDownTime);
 	    }
 	    dispatchEvent(target, type, detail);
@@ -4028,26 +4110,31 @@ var editor =
 	    dispatchPointerEvent(Events.POINTER_OVER, evt.target, getPointerDetail(evt));
 	}
 	function getTouchPoints(evt) {
-	    var touches = evt.touches || evt.changedTouches || evt.touchList;
-	    var ret = touches.map(function (touch) {
-	        return getPointerDetail(touch);
-	    });
+	    var touches = evt.touches || evt.changedTouches || evt.touchList || evt.targetTouches;
+	    var n = touches.length;
+	    var ret = [];
+	    for (var i = 0; i < n; i++) {
+	        ret.push(getPointerDetail(touches[i]));
+	    }
 	    if (ret.length < 1) {
 	        ret.push(getPointerDetail(null));
 	    }
 	    return ret;
 	}
 	function onTouchStart(evt) {
-	    var detail = getPointerDetail(getTouchPoints(evt)[0]);
+	    var detail = getPointerDetail(getTouchPoints(evt)[0], evt.timeStamp);
 	    dispatchPointerEvent(Events.POINTER_DOWN, evt.target, detail);
+	    evt.preventDefault();
 	}
 	function onTouchMove(evt) {
-	    var detail = getPointerDetail(getTouchPoints(evt)[0]);
+	    var detail = getPointerDetail(getTouchPoints(evt)[0], evt.timeStamp);
 	    dispatchPointerEvent(Events.POINTER_MOVE, evt.target, detail);
+	    evt.preventDefault();
 	}
 	function onTouchEnd(evt) {
-	    var detail = getPointerDetail(getTouchPoints(evt)[0]);
+	    var detail = getPointerDetail(getTouchPoints(evt)[0], evt.timeStamp);
 	    dispatchPointerEvent(Events.POINTER_UP, evt.target, detail);
+	    evt.preventDefault();
 	}
 	function onPointerDown(evt) {
 	    dispatchPointerEvent(Events.POINTER_DOWN, evt.target, getPointerDetail(evt));
@@ -4362,6 +4449,7 @@ var editor =
 	var point_1 = __webpack_require__(6);
 	var label_1 = __webpack_require__(22);
 	var Events = __webpack_require__(10);
+	var key_event_1 = __webpack_require__(20);
 	var html_edit_1 = __webpack_require__(88);
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
@@ -4499,6 +4587,7 @@ var editor =
 	            this.dispatchEvent({ type: Events.BLUR });
 	            this.win.off(Events.WHEEL, this.onWheel);
 	        }
+	        this.requestRedraw();
 	    };
 	    Edit.prototype.showEditor = function () {
 	        var _this = this;
@@ -4542,6 +4631,15 @@ var editor =
 	            e.init(Events.CHANGE, { value: value, oldValue: oldValue });
 	            ;
 	            _this.dispatchEvent(e);
+	        });
+	        input.on(Events.KEYDOWN, function (evt) {
+	            _this.dispatchEvent(evt);
+	        });
+	        input.on(Events.KEYUP, function (evt) {
+	            if (!_this.multiLineMode && evt.keyCode === key_event_1.KeyEvent.VK_RETURN) {
+	                _this.dispatchEvent({ type: Events.CONFIRM });
+	            }
+	            _this.dispatchEvent(evt);
 	        });
 	    };
 	    Object.defineProperty(Edit.prototype, "validationTips", {
@@ -4620,7 +4718,12 @@ var editor =
 	        if (this._inited) {
 	            var style = this.getStyle();
 	            var text = this.getLocaleText();
-	            this._textLines = graphics_1.Graphics.layoutText(text, this.w, style.font);
+	            if (text && style) {
+	                this._textLines = graphics_1.Graphics.layoutText(text, this.w, style.font);
+	            }
+	            else {
+	                this._textLines = [];
+	            }
 	        }
 	        return this;
 	    };
@@ -4734,7 +4837,7 @@ var editor =
 	var behavior_1 = __webpack_require__(81);
 	var layouter_1 = __webpack_require__(82);
 	var binding_rule_1 = __webpack_require__(83);
-	var iview_modal_1 = __webpack_require__(85);
+	var iview_model_1 = __webpack_require__(85);
 	(function (WidgetMode) {
 	    WidgetMode[WidgetMode["RUNTIME"] = 0] = "RUNTIME";
 	    WidgetMode[WidgetMode["DESIGN"] = 1] = "DESIGN";
@@ -4776,11 +4879,11 @@ var editor =
 	        this.layoutRect = rect_1.Rect.create(0, 0, 0, 0);
 	        this.eChangeEvent = Events.ChangeEvent.create();
 	        this.ePropChangeEvent = Events.PropChangeEvent.create();
-	        this.viewModalChangeFunc = function (evt) {
-	            var viewModal = this._viewModal;
+	        this.viewModelChangeFunc = function (evt) {
+	            var viewModel = this._viewModel;
 	            var dataBindingRule = this._dataBindingRule;
-	            if (dataBindingRule && viewModal) {
-	                this.onBindData(viewModal, dataBindingRule);
+	            if (dataBindingRule && viewModel) {
+	                this.onBindData(viewModel, dataBindingRule);
 	            }
 	        }.bind(this);
 	        this.type = type;
@@ -4984,6 +5087,26 @@ var editor =
 	        }
 	        this.dispatchEvent(evt, false);
 	    };
+	    Widget.prototype.dispatchPointerLeave = function (evt) {
+	        if (this.state === WidgetState.OVER || this.state === WidgetState.ACTIVE) {
+	            var e = Events.PointerEvent.create(Events.POINTER_LEAVE, evt);
+	            this.dispatchEvent(e, false);
+	            this.state = WidgetState.NORMAL;
+	            e.dispose();
+	        }
+	        if (this.target) {
+	            this.target.dispatchPointerLeave(evt);
+	        }
+	        if (this._lastOverWidget) {
+	            this._lastOverWidget.dispatchPointerLeave(evt);
+	            this._lastOverWidget = null;
+	        }
+	    };
+	    Widget.prototype.dispatchPointerEnter = function (evt) {
+	        var e = Events.PointerEvent.create(Events.POINTER_ENTER, evt);
+	        this.dispatchEvent(e, false);
+	        e.dispose();
+	    };
 	    Widget.prototype.dispatchPointerMoveToUnder = function (evt, ctx) {
 	        ctx.save();
 	        this.applyTransform(ctx);
@@ -4996,15 +5119,10 @@ var editor =
 	                var e = null;
 	                if (_lastOverWidget) {
 	                    _lastOverWidget.dispatchPointerMove(evt, ctx);
-	                    e = Events.PointerEvent.create(Events.POINTER_LEAVE, evt);
-	                    _lastOverWidget.dispatchEvent(e, false);
-	                    e.dispose();
-	                    _lastOverWidget.state = WidgetState.NORMAL;
+	                    _lastOverWidget.dispatchPointerLeave(evt);
 	                }
 	                if (overWidget) {
-	                    e = Events.PointerEvent.create(Events.POINTER_ENTER, evt);
-	                    overWidget.dispatchEvent(e, false);
-	                    e.dispose();
+	                    overWidget.dispatchPointerEnter(evt);
 	                }
 	                this._lastOverWidget = overWidget;
 	            }
@@ -5262,7 +5380,7 @@ var editor =
 	     */
 	    Widget.prototype.relayoutChildren = function () {
 	        this.requestRedraw();
-	        if (this.childrenLayouter && ((this.w > 0 && this.h > 0) || this._inited)) {
+	        if (this.children.length > 0 && this.childrenLayouter && ((this.w > 0 && this.h > 0) || this._inited)) {
 	            var ret = this.childrenLayouter.layoutChildren(this, this.children, this.getLayoutRect());
 	            return this.layoutRect.copy(ret);
 	        }
@@ -5318,6 +5436,9 @@ var editor =
 	         */
 	        set: function (param) {
 	            this._layoutParam = param;
+	            if (param) {
+	                param.widget = this;
+	            }
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -5596,7 +5717,7 @@ var editor =
 	        this._children = [];
 	        this._layoutParam = null;
 	        this._childrenLayouter = null;
-	        this._viewModal = null;
+	        this._viewModel = null;
 	        this._dataBindingRule = null;
 	        this.removeBinding();
 	        if (this.recycle) {
@@ -5834,7 +5955,7 @@ var editor =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setValue(value, true, false);
+	            this.setValue(value, false, false);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -6266,7 +6387,7 @@ var editor =
 	        this.onkeydown = null;
 	        this.onkeyup = null;
 	        this._behaviors = {};
-	        this._viewModal = null;
+	        this._viewModel = null;
 	        this._dataBindingRule = null;
 	        this.onReset();
 	        this.set(options);
@@ -6402,7 +6523,7 @@ var editor =
 	        configurable: true
 	    });
 	    /**
-	     * 显式的更新ViewModal。
+	     * 显式的更新ViewModel。
 	     */
 	    Widget.prototype.updateExplicit = function () {
 	        if (this._dataBindingRule) {
@@ -6413,12 +6534,12 @@ var editor =
 	        });
 	    };
 	    Widget.prototype.removeBinding = function () {
-	        var viewModal = this._viewModal;
+	        var viewModel = this._viewModel;
 	        var dataBindingRule = this._dataBindingRule;
-	        if (dataBindingRule && viewModal) {
-	            viewModal.offChange(this.viewModalChangeFunc);
+	        if (dataBindingRule && viewModel) {
+	            viewModel.offChange(this.viewModelChangeFunc);
 	        }
-	        this._viewModal = null;
+	        this._viewModel = null;
 	        this._dataBindingRule = null;
 	    };
 	    Widget.prototype.onBeforeBindData = function () {
@@ -6428,88 +6549,96 @@ var editor =
 	    /**
 	     * 绑定数据。
 	     */
-	    Widget.prototype.bindData = function (viewModal) {
+	    Widget.prototype.bindData = function (viewModel) {
 	        var _this = this;
 	        var dataBindingRule = this._dataBindingRule;
-	        this._viewModal = viewModal;
+	        this._viewModel = viewModel;
 	        this.onBeforeBindData();
-	        if (dataBindingRule && viewModal) {
-	            var bindingMode = viewModal.getBindingMode();
-	            this.onBindCommand(viewModal, dataBindingRule);
-	            if (bindingMode !== iview_modal_1.BindingMode.ONE_WAY_TO_SOURCE) {
-	                this.onBindData(viewModal, dataBindingRule);
+	        if (dataBindingRule && viewModel) {
+	            var bindingMode = viewModel.bindingMode;
+	            this.onBindCommand(viewModel, dataBindingRule);
+	            if (bindingMode !== iview_model_1.BindingMode.ONE_WAY_TO_SOURCE) {
+	                this.onBindData(viewModel, dataBindingRule);
 	            }
-	            if (bindingMode === iview_modal_1.BindingMode.TWO_WAY || bindingMode === iview_modal_1.BindingMode.ONE_WAY_TO_SOURCE) {
+	            if (bindingMode === iview_model_1.BindingMode.TWO_WAY || bindingMode === iview_model_1.BindingMode.ONE_WAY_TO_SOURCE) {
 	                this.watchTargetChange(dataBindingRule);
 	            }
-	            if (bindingMode !== iview_modal_1.BindingMode.ONE_TIME && bindingMode !== iview_modal_1.BindingMode.ONE_WAY_TO_SOURCE) {
-	                viewModal.onChange(this.viewModalChangeFunc);
+	            if (bindingMode !== iview_model_1.BindingMode.ONE_TIME && bindingMode !== iview_model_1.BindingMode.ONE_WAY_TO_SOURCE) {
+	                viewModel.onChange(this.viewModelChangeFunc);
 	            }
 	            this._isEnableFunc = function () {
 	                var enable = true;
-	                dataBindingRule.forEach(function (prop, item) {
-	                    var source = item.source;
-	                    if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
-	                        var commandSource = source;
-	                        enable = enable && viewModal.canExecute(commandSource.command);
-	                    }
-	                });
+	                var vm = this._viewModel;
+	                if (vm) {
+	                    dataBindingRule.forEach(function (prop, item) {
+	                        var source = item.source;
+	                        if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
+	                            var commandSource = source;
+	                            enable = enable && vm.canExecute(commandSource.command);
+	                        }
+	                    });
+	                }
 	                return enable;
 	            };
 	        }
-	        this.bindChildren(viewModal);
-	        if (viewModal.isCollection && this._templateItemJson) {
-	            var collectionViewModal = viewModal;
-	            collectionViewModal.onItemsChange(function (evt) {
-	                _this.bindChildren(viewModal);
+	        this.bindChildren(viewModel);
+	        if (viewModel.isCollection && this._templateItemJson) {
+	            var collectionViewModel = viewModel;
+	            collectionViewModel.onItemsChange(function (evt) {
+	                _this.bindChildren(viewModel);
 	            });
 	        }
 	        this.onAfterBindData();
 	        return this;
 	    };
-	    Widget.prototype.bindChildren = function (viewModal) {
-	        if (viewModal.isCollection) {
+	    Widget.prototype.bindChildren = function (viewModel) {
+	        if (viewModel.isCollection) {
 	            if (this._templateItemJson) {
-	                //对于集合viewModal，如果有模板项存在，则动态生成子控件。
+	                //对于集合viewModel，如果有模板项存在，则动态生成子控件。
 	                var json = this._templateItemJson;
-	                var collectionViewModal = viewModal;
-	                var n = collectionViewModal.total;
+	                var collectionViewModel = viewModel;
+	                var n = collectionViewModel.total;
 	                this.removeAllChildren();
 	                for (var i = 0; i < n; i++) {
-	                    var itemViewModal = collectionViewModal.getItemViewModal(i);
+	                    var itemViewModel = collectionViewModel.getItemViewModel(i);
 	                    var child = this.addChildWithTemplate(true);
-	                    child.bindData(itemViewModal);
+	                    child.bindData(itemViewModel);
 	                }
 	                this.relayoutChildren();
 	            }
 	            else {
-	                //对于集合viewModal，如果没有模板项存在，则绑定集合viewModal当前项到子控件。
+	                //对于集合viewModel，如果没有模板项存在，则绑定集合viewModel当前项到子控件。
 	                this._children.forEach(function (child) {
-	                    child.bindData(viewModal);
+	                    child.bindData(viewModel);
 	                });
 	            }
 	        }
 	        else {
-	            //对于非集合viewModal，按正常绑定子控件。
+	            //对于非集合viewModel，按正常绑定子控件。
 	            this._children.forEach(function (child) {
-	                child.bindData(viewModal);
+	                child.bindData(viewModel);
 	            });
 	        }
 	    };
-	    Widget.prototype.onBindCommand = function (viewModal, dataBindingRule) {
+	    Widget.prototype.onBindCommand = function (viewModel, dataBindingRule) {
 	        var _this = this;
 	        dataBindingRule.forEach(function (prop, item) {
 	            var source = item.source;
 	            if (source.type === binding_rule_1.BindingCommandSource.TYPE) {
 	                var commandSource = source;
-	                if (prop === "click") {
+	                var type = Events.mapToEvent(prop);
+	                if (type) {
 	                    if (commandSource.eventHandler) {
-	                        _this.off(Events.CLICK, commandSource.eventHandler);
+	                        _this.off(type, commandSource.eventHandler);
 	                    }
 	                    commandSource.eventHandler = function (evt) {
-	                        viewModal.execCommand(commandSource.command, commandSource.commandArgs);
+	                        var args = commandSource.commandArgs || evt;
+	                        viewModel.execCommand(commandSource.command, args);
 	                    };
-	                    _this.on(Events.CLICK, commandSource.eventHandler);
+	                    _this.on(type, commandSource.eventHandler);
+	                }
+	                else {
+	                    console.log(prop + " is not supported yet.");
 	                }
 	            }
 	        });
@@ -6517,25 +6646,25 @@ var editor =
 	    /*
 	     * 把数据显示到界面上。
 	     */
-	    Widget.prototype.onBindData = function (viewModal, dataBindingRule) {
+	    Widget.prototype.onBindData = function (viewModel, dataBindingRule) {
 	        var _this = this;
 	        dataBindingRule.forEach(function (prop, item) {
 	            var source = item.source;
 	            if (source.type === binding_rule_1.BindingDataSource.TYPE) {
 	                var dataSource = source;
 	                var value = dataSource.value;
-	                var bindingMode = dataSource.mode || iview_modal_1.BindingMode.TWO_WAY;
+	                var bindingMode = dataSource.mode || iview_model_1.BindingMode.TWO_WAY;
 	                if (value === undefined && dataSource.path) {
-	                    value = viewModal.getProp(dataSource.path, dataSource.converter);
+	                    value = viewModel.getProp(dataSource.path, dataSource.converter);
 	                }
-	                if (bindingMode !== iview_modal_1.BindingMode.ONE_WAY_TO_SOURCE) {
+	                if (bindingMode !== iview_model_1.BindingMode.ONE_WAY_TO_SOURCE) {
 	                    _this.onBindProp(prop, value);
 	                }
 	            }
 	        });
 	    };
 	    Widget.prototype.getPropDefaultBindMode = function (prop) {
-	        return (prop === "value" && this.inputable) ? iview_modal_1.BindingMode.TWO_WAY : iview_modal_1.BindingMode.ONE_WAY;
+	        return (prop === "value" && this.inputable) ? iview_model_1.BindingMode.TWO_WAY : iview_model_1.BindingMode.ONE_WAY;
 	    };
 	    /*
 	     * 子控件重载此函数向用户提示数据无效。
@@ -6551,14 +6680,14 @@ var editor =
 	        dataBindingRule.forEach(function (prop, item) {
 	            if (item.source.type === binding_rule_1.BindingDataSource.TYPE) {
 	                var dataSource = item.source;
-	                if (dataSource.updateTiming === iview_modal_1.UpdateTiming.EXPLICIT) {
+	                if (dataSource.updateTiming === iview_model_1.UpdateTiming.EXPLICIT) {
 	                    _this.updateValueToSource(_this.value, dataSource);
 	                }
 	            }
 	        });
 	    };
 	    Widget.prototype.updateValueToSource = function (value, dataSource, oldValue) {
-	        var result = this._viewModal.setPropEx(dataSource, value, oldValue);
+	        var result = this._viewModel.setPropEx(dataSource, value, oldValue);
 	        if (result.code) {
 	            this.onInvalidInput(result.message);
 	        }
@@ -6572,15 +6701,15 @@ var editor =
 	    Widget.prototype.watchTargetValueChange = function (dataSource) {
 	        var _this = this;
 	        var updateTiming = dataSource.updateTiming;
-	        var bindingMode = dataSource.mode || iview_modal_1.BindingMode.TWO_WAY;
-	        if (updateTiming === iview_modal_1.UpdateTiming.EXPLICIT) {
+	        var bindingMode = dataSource.mode || iview_model_1.BindingMode.TWO_WAY;
+	        if (updateTiming === iview_model_1.UpdateTiming.EXPLICIT) {
 	            return;
 	        }
-	        if (bindingMode === iview_modal_1.BindingMode.TWO_WAY || bindingMode === iview_modal_1.BindingMode.ONE_WAY_TO_SOURCE) {
+	        if (bindingMode === iview_model_1.BindingMode.TWO_WAY || bindingMode === iview_model_1.BindingMode.ONE_WAY_TO_SOURCE) {
 	            this.on(Events.CHANGE, function (evt) {
 	                _this.updateValueToSource(evt.value, dataSource, evt.oldValue);
 	            });
-	            if (updateTiming === iview_modal_1.UpdateTiming.CHANGING) {
+	            if (updateTiming === iview_model_1.UpdateTiming.CHANGING) {
 	                this.on(Events.CHANGING, function (evt) {
 	                    _this.updateValueToSource(evt.value, dataSource);
 	                });
@@ -6597,7 +6726,7 @@ var editor =
 	            if (source.type === binding_rule_1.BindingDataSource.TYPE) {
 	                var dataSource = source;
 	                var bindingMode = _this.getPropDefaultBindMode(prop);
-	                if (bindingMode === iview_modal_1.BindingMode.TWO_WAY) {
+	                if (bindingMode === iview_model_1.BindingMode.TWO_WAY) {
 	                    _this.watchTargetValueChange(dataSource);
 	                }
 	            }
@@ -17313,10 +17442,27 @@ var editor =
 	    return LayouterFactory;
 	}(factory_1.Factory));
 	exports.LayouterFactory = LayouterFactory;
+	/**
+	 * 布局参数。
+	 * 如果父控件有指定childrenLayouter，那么其中的子控件需要有与之对应的LayouterParam。
+	 */
 	var LayouterParam = (function () {
 	    function LayouterParam(type) {
 	        this.type = type;
 	    }
+	    Object.defineProperty(LayouterParam.prototype, "widget", {
+	        get: function () {
+	            return this._widget;
+	        },
+	        /**
+	         * 与之关联的Widget。
+	         */
+	        set: function (value) {
+	            this._widget = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    /**
 	     * 从JSON数据创建。
 	     */
@@ -17384,11 +17530,11 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var json_serializer_1 = __webpack_require__(84);
-	var iview_modal_1 = __webpack_require__(85);
-	var iview_modal_2 = __webpack_require__(85);
+	var iview_model_1 = __webpack_require__(85);
+	var iview_model_2 = __webpack_require__(85);
 	;
 	/**
-	 * 数据源。如果指定了value，直接从value获取数据。否则通过path从ViewModal中获取数据。
+	 * 数据源。如果指定了value，直接从value获取数据。否则通过path从ViewModel中获取数据。
 	 */
 	var BindingDataSource = (function (_super) {
 	    __extends(BindingDataSource, _super);
@@ -17397,8 +17543,8 @@ var editor =
 	        this.converter = converter;
 	        this.type = BindingDataSource.TYPE;
 	        this.validationRule = validationRule;
-	        this.mode = mode || iview_modal_2.BindingMode.TWO_WAY;
-	        this.updateTiming = updateTiming !== undefined ? updateTiming : iview_modal_2.UpdateTiming.CHANGING;
+	        this.mode = mode || iview_model_2.BindingMode.TWO_WAY;
+	        this.updateTiming = updateTiming !== undefined ? updateTiming : iview_model_2.UpdateTiming.CHANGING;
 	        if (path !== undefined) {
 	            this.path = path;
 	        }
@@ -17519,11 +17665,11 @@ var editor =
 	            }
 	            var mode = dataSource.mode;
 	            if (mode && typeof mode === "string") {
-	                dataSource.mode = iview_modal_1.toBindingMode(mode);
+	                dataSource.mode = iview_model_1.toBindingMode(mode);
 	            }
 	            var updateTiming = dataSource.updateTiming;
 	            if (updateTiming && typeof updateTiming === "string") {
-	                dataSource.updateTiming = iview_modal_1.toUpdateTiming(updateTiming);
+	                dataSource.updateTiming = iview_model_1.toUpdateTiming(updateTiming);
 	            }
 	        }
 	        return rule;
@@ -17581,22 +17727,22 @@ var editor =
 	(function (BindingMode) {
 	    /**
 	     * 双向数据绑定。
-	     * 界面数据变化时自动更新ViewModal，ViewModal数据有变化时自动更新界面。
+	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时自动更新界面。
 	     */
 	    BindingMode[BindingMode["TWO_WAY"] = 0] = "TWO_WAY";
 	    /**
 	     * 单向数据绑定。
-	     * 界面数据变化时不更新ViewModal，ViewModal数据有变化时自动更新界面。
+	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时自动更新界面。
 	     */
 	    BindingMode[BindingMode["ONE_WAY"] = 1] = "ONE_WAY";
 	    /**
 	     * 只在初始化时绑定。
-	     * 界面数据变化时不更新ViewModal，ViewModal数据有变化时不更新界面。
+	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时不更新界面。
 	     */
 	    BindingMode[BindingMode["ONE_TIME"] = 2] = "ONE_TIME";
 	    /**
 	     * 单向数据绑定。
-	     * 界面数据变化时自动更新ViewModal，ViewModal数据有变化时不更新界面。
+	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时不更新界面。
 	     */
 	    BindingMode[BindingMode["ONE_WAY_TO_SOURCE"] = 3] = "ONE_WAY_TO_SOURCE";
 	})(exports.BindingMode || (exports.BindingMode = {}));
@@ -17608,7 +17754,7 @@ var editor =
 	}
 	exports.toBindingMode = toBindingMode;
 	/**
-	 * 更新ViewModal的时机。
+	 * 更新ViewModel的时机。
 	 */
 	(function (UpdateTiming) {
 	    /**
@@ -17724,11 +17870,13 @@ var editor =
 	};
 	var Events = __webpack_require__(10);
 	var html_element_1 = __webpack_require__(89);
+	var event_detail_1 = __webpack_require__(18);
 	var HtmlEdit = (function (_super) {
 	    __extends(HtmlEdit, _super);
 	    function HtmlEdit() {
 	        _super.apply(this, arguments);
-	        this.e = Events.ChangeEvent.create();
+	        this.changeEvent = Events.ChangeEvent.create();
+	        this.keyEvent = Events.KeyEvent.create(null, event_detail_1.KeyEventDetail.create(0));
 	    }
 	    Object.defineProperty(HtmlEdit.prototype, "inputType", {
 	        set: function (value) {
@@ -17770,25 +17918,28 @@ var editor =
 	        var me = this;
 	        var element = this.element;
 	        element.onkeyup = function (e) {
+	            var evt = me.changeEvent;
 	            var detail = { oldValue: this.value, newValue: this.value };
+	            me.dispatchEvent(me.keyEvent.init(Events.KEYUP, event_detail_1.KeyEventDetail.create(e.keyCode)));
 	            if (e.keyCode === 13 && tag === "input") {
+	                me.dispatchEvent(evt.init(Events.CHANGE, detail));
 	                this.blur();
-	                me.e.init(Events.CHANGE, detail);
 	            }
 	            else {
-	                me.e.init(Events.CHANGING, detail);
+	                me.dispatchEvent(evt.init(Events.CHANGING, detail));
 	            }
-	            me.dispatchEvent(me.e);
+	        };
+	        element.onkeydown = function (e) {
+	            me.dispatchEvent(me.keyEvent.init(Events.KEYDOWN, event_detail_1.KeyEventDetail.create(e.keyCode)));
 	        };
 	        element.oninput = function (evt) {
 	            var detail = { oldValue: this.value, newValue: this.value };
-	            me.e.init(Events.CHANGING, detail);
-	            me.dispatchEvent(me.e);
+	            me.dispatchEvent(me.changeEvent.init(Events.CHANGING, detail));
 	        };
 	        element.onchange = function (evt) {
 	            var detail = { oldValue: this.value, newValue: this.value };
-	            me.e.init(Events.CHANGE, detail);
-	            me.dispatchEvent(me.e);
+	            me.changeEvent.init(Events.CHANGE, detail);
+	            me.dispatchEvent(me.changeEvent);
 	        };
 	        element.onblur = function (evt) {
 	            me.hide();
@@ -18406,6 +18557,7 @@ var editor =
 	    __extends(Window, _super);
 	    function Window(type) {
 	        _super.call(this, type);
+	        this._windowEvent = Events.WindowEvent.create();
 	    }
 	    Object.defineProperty(Window.prototype, "grabbed", {
 	        get: function () {
@@ -18500,9 +18652,16 @@ var editor =
 	            this._canvas.grabKey();
 	        }
 	        this.init();
-	        this.dispatchEvent({ type: Events.OPEN });
 	        this.relayoutChildren();
+	        this.dispatchWindowEvent(Events.WINDOW_OPEN);
 	        return this;
+	    };
+	    Window.prototype.dispatchWindowEvent = function (type) {
+	        var e = this._windowEvent.reset(type, this);
+	        this.dispatchEvent(e);
+	        if (this.app) {
+	            this.app.dispatchEvent(e);
+	        }
 	    };
 	    /**
 	     * 关闭窗口。
@@ -18511,7 +18670,7 @@ var editor =
 	        if (this._hasOwnCanvas) {
 	            this._canvas.ungrabKey();
 	        }
-	        this.dispatchEvent({ type: Events.CLOSE });
+	        this.dispatchWindowEvent(Events.WINDOW_CLOSE);
 	        this.ungrab();
 	        this.deinit();
 	        this.dispose();
@@ -18579,12 +18738,21 @@ var editor =
 	            }
 	        });
 	    };
+	    Window.prototype.onCreated = function () {
+	        _super.prototype.onCreated.call(this);
+	        this.dispatchWindowEvent(Events.WINDOW_CREATED);
+	    };
 	    Window.prototype.onReset = function () {
 	        this._isWindow = true;
 	        this._grabbed = false;
 	        this.hasOwnCanvas = true;
 	        this._pointerPosition = point_1.Point.create(0, 0);
 	        this._shortcutEvent = Events.ShortcutEvent.create(null, null);
+	    };
+	    Window.prototype.reset = function (type, options) {
+	        this._app = options ? options.app : null;
+	        this.dispatchWindowEvent(Events.WINDOW_CREATE);
+	        return _super.prototype.reset.call(this, type, options);
 	    };
 	    return Window;
 	}(widget_1.Widget));
@@ -21554,7 +21722,7 @@ var editor =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setValue(value, true, true);
+	            this.setValue(value, false, true);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -21602,8 +21770,7 @@ var editor =
 	            return this._value;
 	        },
 	        set: function (value) {
-	            this.setProp("value", value, true);
-	            this.notifyChange();
+	            this.setValue(value, false, false);
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -21675,6 +21842,7 @@ var editor =
 	    };
 	    CheckButton.prototype.dispatchClick = function (evt) {
 	        this.value = !this.value;
+	        this.notifyChange();
 	        _super.prototype.dispatchClick.call(this, evt);
 	    };
 	    CheckButton.create = function (options) {
@@ -23008,7 +23176,7 @@ var editor =
 	    ListView.prototype.relayoutChildren = function () {
 	        var r = _super.prototype.relayoutChildren.call(this);
 	        this.contentW = r.w + this.leftPadding + this.rightPadding;
-	        this.contentH = r.h + this.topPadding + this.bottomPadding + 10;
+	        this.contentH = r.h + this.topPadding + this.bottomPadding;
 	        return r;
 	    };
 	    ListView.prototype.onReset = function () {
@@ -23095,7 +23263,7 @@ var editor =
 	            child.relayoutChildren();
 	            y += h;
 	        }
-	        this.rect.init(rect.x, rect.y, w, y);
+	        this.rect.init(rect.x, rect.y, w, y - rect.y);
 	        return this.rect;
 	    };
 	    ListLayouter.prototype.createParam = function (options) {
@@ -24262,9 +24430,10 @@ var editor =
 	var theme_manager_1 = __webpack_require__(126);
 	var device_info_1 = __webpack_require__(127);
 	var service_locator_1 = __webpack_require__(128);
+	var window_manager_1 = __webpack_require__(129);
 	var inputEventAdapter = __webpack_require__(19);
-	var interaction_request_1 = __webpack_require__(129);
-	var interaction_service_1 = __webpack_require__(131);
+	var interaction_request_1 = __webpack_require__(130);
+	var interaction_service_1 = __webpack_require__(132);
 	/**
 	 * 代表整个应用程序，可以通过Application获取各种服务。
 	 *
@@ -24390,6 +24559,9 @@ var editor =
 	            var time = evt.deltaTime;
 	            TWEEN.update(time);
 	        });
+	        if (device_info_1.DeviceInfo.isMobile || this.options.isMobile) {
+	            this._windwManager = window_manager_1.WindowManager.create({ app: this });
+	        }
 	        return this;
 	    };
 	    Application.prototype.getService = function (name) {
@@ -24585,7 +24757,60 @@ var editor =
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var interaction_types_1 = __webpack_require__(130);
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var widget_1 = __webpack_require__(23);
+	var Events = __webpack_require__(10);
+	var widget_factory_1 = __webpack_require__(27);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
+	var WindowManager = (function (_super) {
+	    __extends(WindowManager, _super);
+	    function WindowManager() {
+	        _super.call(this, WindowManager.TYPE);
+	    }
+	    WindowManager.prototype.onWindowCreate = function (evt) {
+	        console.log("onWindowCreate");
+	    };
+	    WindowManager.prototype.onWindowCreated = function (evt) {
+	        console.log("onWindowCreated");
+	    };
+	    WindowManager.prototype.onWindowOpen = function (evt) {
+	        console.log("onWindowOpen");
+	    };
+	    WindowManager.prototype.onWindowClose = function (evt) {
+	        console.log("onWindowClose");
+	    };
+	    WindowManager.prototype.onCreated = function () {
+	        var _this = this;
+	        _super.prototype.onCreated.call(this);
+	        var app = this.app;
+	        this.createCanvas();
+	        app.on(Events.WINDOW_OPEN, function (evt) { return _this.onWindowOpen(evt); });
+	        app.on(Events.WINDOW_CLOSE, function (evt) { return _this.onWindowClose(evt); });
+	        app.on(Events.WINDOW_CREATE, function (evt) { return _this.onWindowCreate(evt); });
+	        app.on(Events.WINDOW_CREATED, function (evt) { return _this.onWindowCreated(evt); });
+	    };
+	    WindowManager.create = function (options) {
+	        return WindowManager.recycleBin.create(options);
+	    };
+	    WindowManager.TYPE = "window-manager";
+	    WindowManager.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(WindowManager);
+	    return WindowManager;
+	}(widget_1.Widget));
+	exports.WindowManager = WindowManager;
+	;
+	widget_factory_1.WidgetFactory.register(WindowManager.TYPE, WindowManager.create);
+
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var interaction_types_1 = __webpack_require__(131);
 	var InteractionRequest = (function () {
 	    function InteractionRequest(service) {
 	        this.service = service;
@@ -24648,7 +24873,7 @@ var editor =
 
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -24669,20 +24894,20 @@ var editor =
 
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var emitter_1 = __webpack_require__(8);
 	var Events = __webpack_require__(10);
-	var toast_dialog_1 = __webpack_require__(132);
-	var input_dialog_1 = __webpack_require__(136);
-	var props_dialog_1 = __webpack_require__(137);
-	var choice_dialog_1 = __webpack_require__(162);
-	var progress_dialog_1 = __webpack_require__(163);
-	var confirmation_dialog_1 = __webpack_require__(164);
-	var notification_dialog_1 = __webpack_require__(165);
-	var interaction_types_1 = __webpack_require__(130);
+	var toast_dialog_1 = __webpack_require__(133);
+	var input_dialog_1 = __webpack_require__(137);
+	var props_dialog_1 = __webpack_require__(138);
+	var choice_dialog_1 = __webpack_require__(163);
+	var progress_dialog_1 = __webpack_require__(164);
+	var confirmation_dialog_1 = __webpack_require__(165);
+	var notification_dialog_1 = __webpack_require__(166);
+	var interaction_types_1 = __webpack_require__(131);
 	var InteractionService = (function () {
 	    function InteractionService() {
 	        this._emitter = new emitter_1.Emitter();
@@ -24757,11 +24982,11 @@ var editor =
 
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var ToastDialog = (function () {
 	    function ToastDialog() {
 	    }
@@ -24775,7 +25000,7 @@ var editor =
 
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24799,8 +25024,8 @@ var editor =
 	var consts_1 = __webpack_require__(109);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var list_item_1 = __webpack_require__(118);
-	var dock_layouter_1 = __webpack_require__(134);
-	var linear_layouter_1 = __webpack_require__(135);
+	var dock_layouter_1 = __webpack_require__(135);
+	var linear_layouter_1 = __webpack_require__(136);
 	var grid_layouter_1 = __webpack_require__(121);
 	var simple_layouter_1 = __webpack_require__(119);
 	var TitleOptions = (function () {
@@ -25001,7 +25226,7 @@ var editor =
 	        buttonsOption.buttons.push({ styleType: "button.ok", text: "Close", onClick: null });
 	        var titleOptions = new TitleOptions("Infomation", "messagebox.info.icon", true);
 	        messageBox.createChildren(titleOptions, buttonsOption, msg);
-	        messageBox.on(Events.CLOSE, onClose);
+	        messageBox.on(Events.WINDOW_CLOSE, onClose);
 	        messageBox.open();
 	    };
 	    MessageBox.showConfirm = function (msg, onYes, onNo, w) {
@@ -25152,7 +25377,7 @@ var editor =
 
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25161,6 +25386,7 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+	var Events = __webpack_require__(10);
 	var consts_1 = __webpack_require__(109);
 	var layouter_1 = __webpack_require__(82);
 	var TYPE = "dock";
@@ -25266,6 +25492,30 @@ var editor =
 	        this.size = size;
 	        this.position = position;
 	    }
+	    Object.defineProperty(DockLayouterParam.prototype, "widget", {
+	        set: function (widget) {
+	            var _this = this;
+	            this._widget = widget;
+	            widget.on(Events.RESIZING, function (evt) { return _this.onWidgetResized(); });
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * 对应的Widget被用户RESIZE之后，重排兄弟控件。
+	     */
+	    DockLayouterParam.prototype.onWidgetResized = function () {
+	        var widget = this._widget;
+	        if (this.position === consts_1.Direction.LEFT || this.position === consts_1.Direction.RIGHT) {
+	            var w = widget.w;
+	            this.size = w.toString();
+	        }
+	        else if (this.position === consts_1.Direction.TOP || this.position === consts_1.Direction.BOTTOM) {
+	            var h = widget.h;
+	            this.size = h.toString();
+	        }
+	        widget.parent.relayoutChildren();
+	    };
 	    DockLayouterParam.create = function (opts) {
 	        var options = opts || {};
 	        return new DockLayouterParam(options.position, options.size || "");
@@ -25278,7 +25528,7 @@ var editor =
 
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25489,11 +25739,11 @@ var editor =
 
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var InputDialog = (function () {
 	    function InputDialog() {
 	    }
@@ -25510,11 +25760,11 @@ var editor =
 
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var property_dialog_1 = __webpack_require__(138);
+	var property_dialog_1 = __webpack_require__(139);
 	var PropsDialog = (function () {
 	    function PropsDialog() {
 	    }
@@ -25532,7 +25782,7 @@ var editor =
 
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25542,11 +25792,11 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var application_1 = __webpack_require__(125);
-	var property_page_1 = __webpack_require__(139);
-	var view_modal_1 = __webpack_require__(157);
+	var property_page_1 = __webpack_require__(140);
+	var view_model_1 = __webpack_require__(158);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var widget_factory_1 = __webpack_require__(27);
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var simple_layouter_1 = __webpack_require__(119);
 	/**
 	 * 属性对话框。
@@ -25585,7 +25835,7 @@ var editor =
 	        messageBox.createChildren(titleOptions, buttonsOption, null);
 	        var group = messageBox.content.set({ padding: 5, childrenLayouter: simple_layouter_1.SimpleLayouter.create() });
 	        group.addChild(page);
-	        var vm = view_modal_1.ViewModal.create(dataCopy);
+	        var vm = view_model_1.ViewModel.create(dataCopy);
 	        page.bindData(vm);
 	        messageBox.open();
 	    };
@@ -25601,7 +25851,7 @@ var editor =
 
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25611,24 +25861,24 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Events = __webpack_require__(10);
-	var title_link_1 = __webpack_require__(140);
-	var title_line_1 = __webpack_require__(142);
-	var title_edit_1 = __webpack_require__(144);
-	var title_label_1 = __webpack_require__(145);
-	var title_check_button_1 = __webpack_require__(146);
-	var title_range_1 = __webpack_require__(147);
-	var title_vector_1 = __webpack_require__(149);
+	var title_link_1 = __webpack_require__(141);
+	var title_line_1 = __webpack_require__(143);
+	var title_edit_1 = __webpack_require__(145);
+	var title_label_1 = __webpack_require__(146);
+	var title_check_button_1 = __webpack_require__(147);
+	var title_range_1 = __webpack_require__(148);
+	var title_vector_1 = __webpack_require__(150);
 	var widget_1 = __webpack_require__(23);
-	var title_slider_1 = __webpack_require__(151);
-	var title_text_area_1 = __webpack_require__(152);
+	var title_slider_1 = __webpack_require__(152);
+	var title_text_area_1 = __webpack_require__(153);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
-	var title_choosable_edit_1 = __webpack_require__(153);
-	var props_desc_1 = __webpack_require__(155);
-	var title_combo_box_1 = __webpack_require__(156);
-	var props_desc_2 = __webpack_require__(155);
-	var props_desc_3 = __webpack_require__(155);
-	var props_desc_4 = __webpack_require__(155);
+	var title_choosable_edit_1 = __webpack_require__(154);
+	var props_desc_1 = __webpack_require__(156);
+	var title_combo_box_1 = __webpack_require__(157);
+	var props_desc_2 = __webpack_require__(156);
+	var props_desc_3 = __webpack_require__(156);
+	var props_desc_4 = __webpack_require__(156);
 	/**
 	 * 属性编辑页，包装了各种TitleValue。
 	 */
@@ -25955,10 +26205,10 @@ var editor =
 	            console.log("reload changed");
 	            _this.initWithPropsDesc(propsDesc);
 	        });
-	        var viewModal = this._viewModal;
-	        if (viewModal) {
+	        var viewModel = this._viewModel;
+	        if (viewModel) {
 	            this.children.forEach(function (child) {
-	                child.bindData(viewModal);
+	                child.bindData(viewModel);
 	            });
 	        }
 	        this.relayoutChildren();
@@ -26010,7 +26260,7 @@ var editor =
 
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26021,7 +26271,7 @@ var editor =
 	};
 	var Events = __webpack_require__(10);
 	var label_1 = __webpack_require__(22);
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleLink = (function (_super) {
@@ -26056,7 +26306,7 @@ var editor =
 
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26068,7 +26318,7 @@ var editor =
 	var Events = __webpack_require__(10);
 	var label_1 = __webpack_require__(22);
 	var widget_1 = __webpack_require__(23);
-	var linear_layouter_1 = __webpack_require__(135);
+	var linear_layouter_1 = __webpack_require__(136);
 	var TitleValue = (function (_super) {
 	    __extends(TitleValue, _super);
 	    function TitleValue(type) {
@@ -26192,7 +26442,7 @@ var editor =
 
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26201,8 +26451,8 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(141);
-	var color_tile_1 = __webpack_require__(143);
+	var title_value_1 = __webpack_require__(142);
+	var color_tile_1 = __webpack_require__(144);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleLine = (function (_super) {
@@ -26226,7 +26476,7 @@ var editor =
 
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26486,7 +26736,7 @@ var editor =
 
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26496,7 +26746,7 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var edit_1 = __webpack_require__(21);
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleEdit = (function (_super) {
@@ -26569,7 +26819,7 @@ var editor =
 
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26579,7 +26829,7 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var label_1 = __webpack_require__(22);
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleLabel = (function (_super) {
@@ -26603,7 +26853,7 @@ var editor =
 
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26612,7 +26862,7 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var check_button_1 = __webpack_require__(111);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
@@ -26637,7 +26887,7 @@ var editor =
 
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26646,8 +26896,8 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var range_edit_1 = __webpack_require__(148);
-	var title_value_1 = __webpack_require__(141);
+	var range_edit_1 = __webpack_require__(149);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleRange = (function (_super) {
@@ -26671,7 +26921,7 @@ var editor =
 
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26807,7 +27057,7 @@ var editor =
 
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26816,8 +27066,8 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var vector_edit_1 = __webpack_require__(150);
-	var title_value_1 = __webpack_require__(141);
+	var vector_edit_1 = __webpack_require__(151);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleVector = (function (_super) {
@@ -26858,7 +27108,7 @@ var editor =
 
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27102,7 +27352,7 @@ var editor =
 
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27112,7 +27362,7 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var slider_1 = __webpack_require__(99);
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleSlider = (function (_super) {
@@ -27136,7 +27386,7 @@ var editor =
 
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27146,7 +27396,7 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var edit_1 = __webpack_require__(21);
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleTextArea = (function (_super) {
@@ -27188,7 +27438,7 @@ var editor =
 
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27197,8 +27447,8 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(141);
-	var choosable_edit_1 = __webpack_require__(154);
+	var title_value_1 = __webpack_require__(142);
+	var choosable_edit_1 = __webpack_require__(155);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var TitleChoosableEdit = (function (_super) {
@@ -27247,7 +27497,7 @@ var editor =
 
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27346,7 +27596,7 @@ var editor =
 
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27728,7 +27978,7 @@ var editor =
 
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27737,7 +27987,7 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(141);
+	var title_value_1 = __webpack_require__(142);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
 	var combo_box_1 = __webpack_require__(115);
@@ -27810,35 +28060,6 @@ var editor =
 
 
 /***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var view_modal_default_1 = __webpack_require__(158);
-	/**
-	 * IViewModal的基本实现。如果不能满足要求，可以重载部分函数。
-	 */
-	var ViewModal = (function (_super) {
-	    __extends(ViewModal, _super);
-	    function ViewModal() {
-	        _super.apply(this, arguments);
-	    }
-	    ViewModal.create = function (data) {
-	        var viewModal = new ViewModal(data);
-	        return viewModal;
-	    };
-	    return ViewModal;
-	}(view_modal_default_1.ViewModalDefault));
-	exports.ViewModal = ViewModal;
-	;
-
-
-/***/ },
 /* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27848,50 +28069,93 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var pointer = __webpack_require__(159);
+	var view_model_default_1 = __webpack_require__(159);
+	/**
+	 * IViewModel的基本实现。如果不能满足要求，可以重载部分函数。
+	 */
+	var ViewModel = (function (_super) {
+	    __extends(ViewModel, _super);
+	    function ViewModel() {
+	        _super.apply(this, arguments);
+	    }
+	    ViewModel.create = function (data) {
+	        var viewModel = new ViewModel(data);
+	        return viewModel;
+	    };
+	    return ViewModel;
+	}(view_model_default_1.ViewModelDefault));
+	exports.ViewModel = ViewModel;
+	;
+
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var pointer = __webpack_require__(160);
 	var emitter_1 = __webpack_require__(8);
 	var Events = __webpack_require__(10);
-	var ivalidation_rule_1 = __webpack_require__(161);
-	var iview_modal_1 = __webpack_require__(85);
-	var ViewModalDefault = (function (_super) {
-	    __extends(ViewModalDefault, _super);
-	    function ViewModalDefault(data) {
+	var ivalidation_rule_1 = __webpack_require__(162);
+	var iview_model_1 = __webpack_require__(85);
+	var ViewModelDefault = (function (_super) {
+	    __extends(ViewModelDefault, _super);
+	    function ViewModelDefault(data) {
 	        _super.call(this);
 	        this._commands = {};
 	        this._converters = {};
 	        this._data = data || {};
 	        this._validationRules = {};
 	        this.isCollection = false;
+	        this._bindingMode = iview_model_1.BindingMode.TWO_WAY;
 	        this._ePropChange = Events.PropChangeEvent.create();
 	    }
-	    Object.defineProperty(ViewModalDefault.prototype, "data", {
+	    Object.defineProperty(ViewModelDefault.prototype, "data", {
 	        get: function () {
 	            return this._data;
 	        },
 	        set: function (value) {
-	            this._data = value;
-	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	            this.setData(value, true);
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    ViewModalDefault.prototype.getBindingMode = function () {
-	        return iview_modal_1.BindingMode.TWO_WAY;
+	    ViewModelDefault.prototype.setData = function (value, notify) {
+	        this._data = value;
+	        if (notify) {
+	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	        }
+	        return this;
 	    };
-	    ViewModalDefault.prototype.onChange = function (callback) {
+	    Object.defineProperty(ViewModelDefault.prototype, "bindingMode", {
+	        get: function () {
+	            return this._bindingMode;
+	        },
+	        set: function (value) {
+	            this._bindingMode = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    ViewModelDefault.prototype.onChange = function (callback) {
 	        this.on(Events.PROP_DELETE, callback);
 	        this.on(Events.PROP_CHANGE, callback);
 	        return this;
 	    };
-	    ViewModalDefault.prototype.offChange = function (callback) {
+	    ViewModelDefault.prototype.offChange = function (callback) {
 	        this.off(Events.PROP_DELETE, callback);
 	        this.off(Events.PROP_CHANGE, callback);
 	        return this;
 	    };
-	    ViewModalDefault.prototype.notifyChange = function (type, path, value) {
+	    ViewModelDefault.prototype.notifyChange = function (type, path, value) {
 	        this.dispatchEvent(this._ePropChange.init(type, { prop: path, value: value }));
 	    };
-	    ViewModalDefault.prototype.fixPath = function (path) {
+	    ViewModelDefault.prototype.fixPath = function (path) {
 	        if (path && path.charAt(0) !== '/') {
 	            return '/' + path;
 	        }
@@ -27899,22 +28163,22 @@ var editor =
 	            return path;
 	        }
 	    };
-	    ViewModalDefault.prototype.getProp = function (path, converterName) {
+	    ViewModelDefault.prototype.getProp = function (path, converterName) {
 	        var value = pointer.get(this._data, this.fixPath(path));
 	        return this.convert(converterName, value);
 	    };
-	    ViewModalDefault.prototype.delProp = function (path) {
+	    ViewModelDefault.prototype.delProp = function (path) {
 	        pointer.remove(this._data, path);
 	        this.notifyChange(Events.PROP_DELETE, this.fixPath(path), null);
 	        return this;
 	    };
-	    ViewModalDefault.prototype.setPropEx = function (source, value, oldValue) {
+	    ViewModelDefault.prototype.setPropEx = function (source, value, oldValue) {
 	        var path = source.path;
 	        var converterName = source.converter;
 	        var validationRule = source.validationRule;
 	        return this.setProp(path, value, converterName, validationRule);
 	    };
-	    ViewModalDefault.prototype.setProp = function (path, v, converterName, validationRule) {
+	    ViewModelDefault.prototype.setProp = function (path, v, converterName, validationRule) {
 	        var value = this.convertBack(converterName, v);
 	        var validateResult = this.isValueValid(validationRule, value);
 	        if (!validateResult.code) {
@@ -27927,10 +28191,10 @@ var editor =
 	        return validateResult;
 	        ;
 	    };
-	    ViewModalDefault.prototype.getCommand = function (name) {
+	    ViewModelDefault.prototype.getCommand = function (name) {
 	        return this._commands[name];
 	    };
-	    ViewModalDefault.prototype.canExecute = function (name) {
+	    ViewModelDefault.prototype.canExecute = function (name) {
 	        var ret = false;
 	        var cmd = this.getCommand(name);
 	        if (cmd && cmd.canExecute()) {
@@ -27938,7 +28202,7 @@ var editor =
 	        }
 	        return ret;
 	    };
-	    ViewModalDefault.prototype.execCommand = function (name, args) {
+	    ViewModelDefault.prototype.execCommand = function (name, args) {
 	        var ret = false;
 	        var cmd = this.getCommand(name);
 	        if (cmd && cmd.canExecute()) {
@@ -27946,61 +28210,61 @@ var editor =
 	        }
 	        return ret;
 	    };
-	    ViewModalDefault.prototype.registerCommand = function (name, cmd) {
+	    ViewModelDefault.prototype.registerCommand = function (name, cmd) {
 	        this._commands[name] = cmd;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterCommand = function (name, cmd) {
+	    ViewModelDefault.prototype.unregisterCommand = function (name) {
 	        this._commands[name] = null;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.getValueConverter = function (name) {
+	    ViewModelDefault.prototype.getValueConverter = function (name) {
 	        return this._converters[name];
 	    };
-	    ViewModalDefault.prototype.registerValueConverter = function (name, converter) {
+	    ViewModelDefault.prototype.registerValueConverter = function (name, converter) {
 	        this._converters[name] = converter;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterValueConverter = function (name, converter) {
+	    ViewModelDefault.prototype.unregisterValueConverter = function (name) {
 	        this._converters[name] = null;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.convert = function (converterName, value) {
+	    ViewModelDefault.prototype.convert = function (converterName, value) {
 	        var converter = converterName ? this.getValueConverter(converterName) : null;
 	        return converter ? converter.convert(value) : value;
 	    };
-	    ViewModalDefault.prototype.convertBack = function (converterName, value) {
+	    ViewModelDefault.prototype.convertBack = function (converterName, value) {
 	        var converter = converterName ? this.getValueConverter(converterName) : null;
 	        return converter ? converter.convertBack(value) : value;
 	    };
-	    ViewModalDefault.prototype.getValidationRule = function (name) {
+	    ViewModelDefault.prototype.getValidationRule = function (name) {
 	        return this._validationRules[name];
 	    };
-	    ViewModalDefault.prototype.registerValidationRule = function (name, validationRule) {
+	    ViewModelDefault.prototype.registerValidationRule = function (name, validationRule) {
 	        this._validationRules[name] = validationRule;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.unregisterValidationRule = function (name, validationRule) {
+	    ViewModelDefault.prototype.unregisterValidationRule = function (name) {
 	        this._validationRules[name] = null;
 	        return this;
 	    };
-	    ViewModalDefault.prototype.isValueValid = function (ruleName, value) {
+	    ViewModelDefault.prototype.isValueValid = function (ruleName, value) {
 	        var validationRule = ruleName ? this.getValidationRule(ruleName) : null;
 	        return validationRule ? validationRule.validate(value) : ivalidation_rule_1.ValidationResult.validResult;
 	    };
-	    return ViewModalDefault;
+	    return ViewModelDefault;
 	}(emitter_1.Emitter));
-	exports.ViewModalDefault = ViewModalDefault;
+	exports.ViewModelDefault = ViewModelDefault;
 	;
 
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var each = __webpack_require__(160);
+	var each = __webpack_require__(161);
 	module.exports = api;
 
 
@@ -28212,7 +28476,7 @@ var editor =
 
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports) {
 
 	
@@ -28240,7 +28504,7 @@ var editor =
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28273,11 +28537,11 @@ var editor =
 
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var ChoiceDialog = (function () {
 	    function ChoiceDialog() {
 	    }
@@ -28294,11 +28558,11 @@ var editor =
 
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var ProgressDialog = (function () {
 	    function ProgressDialog() {
 	    }
@@ -28314,11 +28578,11 @@ var editor =
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var ConfirmationDialog = (function () {
 	    function ConfirmationDialog() {
 	    }
@@ -28338,11 +28602,11 @@ var editor =
 
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(133);
+	var message_box_1 = __webpack_require__(134);
 	var NotificationDialog = (function () {
 	    function NotificationDialog() {
 	    }
@@ -28358,7 +28622,7 @@ var editor =
 
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28400,18 +28664,17 @@ var editor =
 	    __extends(Movable, _super);
 	    function Movable(widget, options) {
 	        _super.call(this, Movable.TYPE, widget, options);
-	        this.moveEvent = { type: Events.MOVE };
 	        this.movingEvent = { type: Events.MOVING };
 	        this.moveEndEvent = { type: Events.MOVE_END };
 	        this.moveBeginEvent = { type: Events.MOVE_BEGIN };
+	        this.moveCancelEvent = { type: Events.MOVE_CANCEL };
 	    }
 	    Movable.prototype.init = function (options) {
 	        this.options = new MovableOptions(options);
 	    };
-	    Movable.prototype.moveWidget = function (x, y, animate, end) {
+	    Movable.prototype.moveWidget = function (x, y, end) {
 	        var options = this.options;
 	        var moveParent = options.moveParent;
-	        var duration = options.animateDuration;
 	        var widget = moveParent ? this.widget.parent : this.widget;
 	        if (!options.xMovable) {
 	            x = widget.x;
@@ -28425,7 +28688,7 @@ var editor =
 	        if (options.yLimit) {
 	            y = Math.min(options.yMax, Math.max(options.yMin, y));
 	        }
-	        widget.moveTo(x, y, animate ? 500 : 0);
+	        widget.moveTo(x, y);
 	        if (end) {
 	            widget.dispatchEvent(this.moveEndEvent);
 	        }
@@ -28434,9 +28697,22 @@ var editor =
 	        }
 	    };
 	    Movable.prototype.onCancelled = function () {
-	        this.widget.requestRedraw();
-	        this.moveWidget(this.x, this.y, true, true);
+	        var _this = this;
+	        var animate = true;
+	        var widget = this.widget;
+	        var duration = this.options.animateDuration;
+	        widget.requestRedraw();
 	        document.body.style.cursor = "default";
+	        var tween = widget.moveTo(this.x, this.y, duration);
+	        if (tween) {
+	            tween.onComplete(function (evt) {
+	                widget.dispatchEvent(_this.moveCancelEvent);
+	            });
+	            tween.onUpdate(function (evt) {
+	                widget.dispatchEvent(_this.movingEvent);
+	            });
+	            return;
+	        }
 	    };
 	    Movable.prototype.onKeyDownGlobal = function (evt) {
 	        var keyCode = evt.detail.keyCode;
@@ -28458,16 +28734,16 @@ var editor =
 	        document.body.style.cursor = "default";
 	        if (this.dragging) {
 	            this.dragging = false;
-	            var dx = evt.x - evt.pointerDownX;
-	            var dy = evt.y - evt.pointerDownY;
-	            this.moveWidget(this.x + dx, this.y + dy, false, true);
+	            var dx = evt.dx;
+	            var dy = evt.dy;
+	            this.moveWidget(this.x + dx, this.y + dy, true);
 	        }
 	    };
 	    Movable.prototype.onPointerMove = function (evt) {
 	        if (this.dragging) {
-	            var dx = evt.x - evt.pointerDownX;
-	            var dy = evt.y - evt.pointerDownY;
-	            this.moveWidget(this.x + dx, this.y + dy, false, false);
+	            var dx = evt.dx;
+	            var dy = evt.dy;
+	            this.moveWidget(this.x + dx, this.y + dy, false);
 	        }
 	    };
 	    ;
@@ -28481,7 +28757,7 @@ var editor =
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28566,7 +28842,7 @@ var editor =
 
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28617,7 +28893,7 @@ var editor =
 
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28627,6 +28903,7 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var point_1 = __webpack_require__(6);
+	var Events = __webpack_require__(10);
 	var key_event_1 = __webpack_require__(20);
 	var behavior_1 = __webpack_require__(81);
 	/**
@@ -28658,14 +28935,32 @@ var editor =
 	    __extends(Resizable, _super);
 	    function Resizable(widget, options) {
 	        _super.call(this, Resizable.TYPE, widget, options);
+	        this.resizingEvent = { type: Events.RESIZING };
+	        this.resizeEndEvent = { type: Events.RESIZE_END };
+	        this.resizeBeginEvent = { type: Events.RESIZE_BEGIN };
+	        this.resizeCancelEvent = { type: Events.RESIZE_CANCEL };
 	    }
 	    Resizable.prototype.init = function (options) {
 	        this.options = new ResizableOptions(options);
 	    };
 	    Resizable.prototype.onCancelled = function () {
-	        this.widget.requestRedraw();
+	        var _this = this;
+	        var widget = this.widget;
+	        var duration = this.options.animateDuration;
+	        widget.requestRedraw();
 	        document.body.style.cursor = "default";
-	        this.widget.moveResizeTo(this.x, this.y, this.w, this.h, this.options.animateDuration);
+	        var tween = this.widget.moveResizeTo(this.x, this.y, this.w, this.h, duration);
+	        if (tween) {
+	            tween.onComplete(function (evt) {
+	                widget.dispatchEvent(_this.resizeCancelEvent);
+	            });
+	            tween.onUpdate(function (evt) {
+	                widget.dispatchEvent(_this.resizingEvent);
+	            });
+	        }
+	        else {
+	            widget.dispatchEvent(this.resizeCancelEvent);
+	        }
 	    };
 	    Resizable.prototype.onKeyDownGlobal = function (evt) {
 	        var keyCode = evt.detail.keyCode;
@@ -28677,19 +28972,24 @@ var editor =
 	    Resizable.prototype.onPointerDown = function (evt) {
 	        var result = this.testPointerPosition(evt);
 	        if (result) {
-	            this.x = this.widget.x;
-	            this.y = this.widget.y;
-	            this.w = this.widget.w;
-	            this.h = this.widget.h;
+	            var widget = this.widget;
+	            this.x = widget.x;
+	            this.y = widget.y;
+	            this.w = widget.w;
+	            this.h = widget.h;
 	            this.resizing = true;
 	            this.pointerDownArea = result;
 	            document.body.style.cursor = result + "-resize";
+	            widget.dispatchEvent(this.resizeBeginEvent);
 	        }
 	        else {
 	            document.body.style.cursor = "default";
 	        }
 	    };
 	    Resizable.prototype.onPointerUp = function (evt) {
+	        if (this.resizing) {
+	            this.widget.dispatchEvent(this.resizeEndEvent);
+	        }
 	        this.resizing = false;
 	        document.body.style.cursor = "default";
 	    };
@@ -28701,8 +29001,10 @@ var editor =
 	        var right = w - delta;
 	        var bottom = h - delta;
 	        var options = this.options;
+	        var southResizable = options.southWest || options.southEast || options.south;
+	        var northResizable = options.northWest || options.northEast || options.north;
 	        if (p.y >= 0 && p.y <= delta) {
-	            if (p.x >= 0 && p.x <= delta && options.northWest) {
+	            if (p.x >= 0 && p.x <= delta && northResizable) {
 	                return "nw";
 	            }
 	            else if (p.x > delta && p.x < right && options.north) {
@@ -28720,7 +29022,7 @@ var editor =
 	                return "e";
 	            }
 	        }
-	        else if (p.y >= bottom && p.y <= h && options.southWest) {
+	        else if (p.y >= bottom && p.y <= h && southResizable) {
 	            if (p.x >= 0 && p.x <= delta) {
 	                return "sw";
 	            }
@@ -28735,9 +29037,9 @@ var editor =
 	    };
 	    Resizable.prototype.onPointerMove = function (evt) {
 	        if (this.resizing) {
+	            var dx = evt.dx;
+	            var dy = evt.dy;
 	            var widget = this.widget;
-	            var dx = evt.x - evt.pointerDownX;
-	            var dy = evt.y - evt.pointerDownY;
 	            switch (this.pointerDownArea) {
 	                case "n": {
 	                    widget.moveResizeTo(this.x, this.y + dy, this.w, this.h - dy);
@@ -28772,6 +29074,7 @@ var editor =
 	                    break;
 	                }
 	            }
+	            widget.dispatchEvent(this.resizingEvent);
 	        }
 	        else {
 	            var result = this.testPointerPosition(evt);
@@ -28793,7 +29096,7 @@ var editor =
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28827,7 +29130,7 @@ var editor =
 	            var _this = this;
 	            this._openedMenu = value;
 	            if (value) {
-	                value.on(Events.CLOSE, function (evt) {
+	                value.on(Events.WINDOW_CLOSE, function (evt) {
 	                    _this._openedMenu = null;
 	                });
 	            }
@@ -29159,7 +29462,7 @@ var editor =
 
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29189,7 +29492,7 @@ var editor =
 
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29198,14 +29501,14 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var menu_1 = __webpack_require__(170);
+	var menu_1 = __webpack_require__(171);
 	var point_1 = __webpack_require__(6);
 	var Events = __webpack_require__(10);
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
 	var image_tile_1 = __webpack_require__(11);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
-	var linear_layouter_1 = __webpack_require__(135);
+	var linear_layouter_1 = __webpack_require__(136);
 	var MenuBar = (function (_super) {
 	    __extends(MenuBar, _super);
 	    function MenuBar() {
@@ -29219,7 +29522,7 @@ var editor =
 	            var _this = this;
 	            this._openedMenu = value;
 	            if (value) {
-	                value.on(Events.CLOSE, function (evt) {
+	                value.on(Events.WINDOW_CLOSE, function (evt) {
 	                    _this._openedMenu = null;
 	                });
 	            }
@@ -29414,7 +29717,7 @@ var editor =
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29423,7 +29726,7 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	__webpack_require__(174);
+	__webpack_require__(175);
 	var point_1 = __webpack_require__(6);
 	var Events = __webpack_require__(10);
 	var widget_1 = __webpack_require__(23);
@@ -29553,16 +29856,15 @@ var editor =
 
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * @namespace Chart
 	 */
-	var Chart = __webpack_require__(175)();
+	var Chart = __webpack_require__(176)();
 
-	__webpack_require__(176)(Chart);
-	__webpack_require__(182)(Chart);
+	__webpack_require__(177)(Chart);
 	__webpack_require__(183)(Chart);
 	__webpack_require__(184)(Chart);
 	__webpack_require__(185)(Chart);
@@ -29576,41 +29878,42 @@ var editor =
 	__webpack_require__(193)(Chart);
 	__webpack_require__(194)(Chart);
 	__webpack_require__(195)(Chart);
-
 	__webpack_require__(196)(Chart);
+
 	__webpack_require__(197)(Chart);
 	__webpack_require__(198)(Chart);
 	__webpack_require__(199)(Chart);
-
 	__webpack_require__(200)(Chart);
+
 	__webpack_require__(201)(Chart);
 	__webpack_require__(202)(Chart);
 	__webpack_require__(203)(Chart);
 	__webpack_require__(204)(Chart);
 	__webpack_require__(205)(Chart);
+	__webpack_require__(206)(Chart);
 
 	// Controllers must be loaded after elements
 	// See Chart.core.datasetController.dataElementType
-	__webpack_require__(313)(Chart);
 	__webpack_require__(314)(Chart);
 	__webpack_require__(315)(Chart);
 	__webpack_require__(316)(Chart);
 	__webpack_require__(317)(Chart);
 	__webpack_require__(318)(Chart);
-
 	__webpack_require__(319)(Chart);
+
 	__webpack_require__(320)(Chart);
 	__webpack_require__(321)(Chart);
 	__webpack_require__(322)(Chart);
 	__webpack_require__(323)(Chart);
 	__webpack_require__(324)(Chart);
 	__webpack_require__(325)(Chart);
+	__webpack_require__(326)(Chart);
 
 	window.Chart = module.exports = Chart;
 
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29672,14 +29975,14 @@ var editor =
 
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	/* global document: false */
 	'use strict';
 
-	var color = __webpack_require__(177);
+	var color = __webpack_require__(178);
 
 	module.exports = function(Chart) {
 		// Global Chart helpers object for utility methods and classes
@@ -30711,12 +31014,12 @@ var editor =
 
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var convert = __webpack_require__(178);
-	var string = __webpack_require__(180);
+	var convert = __webpack_require__(179);
+	var string = __webpack_require__(181);
 
 	var Color = function (obj) {
 		if (obj instanceof Color) {
@@ -31200,10 +31503,10 @@ var editor =
 
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var conversions = __webpack_require__(179);
+	var conversions = __webpack_require__(180);
 
 	var convert = function() {
 	   return new Converter();
@@ -31297,7 +31600,7 @@ var editor =
 	module.exports = convert;
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports) {
 
 	/* MIT license */
@@ -32001,11 +32304,11 @@ var editor =
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var colorNames = __webpack_require__(181);
+	var colorNames = __webpack_require__(182);
 
 	module.exports = {
 	   getRgba: getRgba,
@@ -32228,7 +32531,7 @@ var editor =
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32383,7 +32686,7 @@ var editor =
 	};
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32493,7 +32796,7 @@ var editor =
 
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32595,7 +32898,7 @@ var editor =
 
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports) {
 
 	/* global window: false */
@@ -32732,7 +33035,7 @@ var editor =
 
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33527,7 +33830,7 @@ var editor =
 
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33842,7 +34145,7 @@ var editor =
 
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34187,7 +34490,7 @@ var editor =
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34233,7 +34536,7 @@ var editor =
 
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34368,7 +34671,7 @@ var editor =
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34576,7 +34879,7 @@ var editor =
 
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35333,7 +35636,7 @@ var editor =
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35546,7 +35849,7 @@ var editor =
 
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36051,7 +36354,7 @@ var editor =
 
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36328,7 +36631,7 @@ var editor =
 
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37211,7 +37514,7 @@ var editor =
 
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37321,7 +37624,7 @@ var editor =
 
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37511,7 +37814,7 @@ var editor =
 
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37595,7 +37898,7 @@ var editor =
 
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37777,7 +38080,7 @@ var editor =
 
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37881,7 +38184,7 @@ var editor =
 
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38016,7 +38319,7 @@ var editor =
 
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38190,7 +38493,7 @@ var editor =
 
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38422,7 +38725,7 @@ var editor =
 
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38844,13 +39147,13 @@ var editor =
 
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	'use strict';
 
-	var moment = __webpack_require__(206);
+	var moment = __webpack_require__(207);
 	moment = typeof(moment) === 'function' ? moment : window.moment;
 
 	module.exports = function(Chart) {
@@ -39310,7 +39613,7 @@ var editor =
 
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -41109,7 +41412,7 @@ var editor =
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(208)("./" + name);
+	                __webpack_require__(209)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -43547,10 +43850,10 @@ var editor =
 	    return _moment;
 
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(207)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(208)(module)))
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -43566,218 +43869,218 @@ var editor =
 
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 209,
-		"./af.js": 209,
-		"./ar": 210,
-		"./ar-ly": 211,
-		"./ar-ly.js": 211,
-		"./ar-ma": 212,
-		"./ar-ma.js": 212,
-		"./ar-sa": 213,
-		"./ar-sa.js": 213,
-		"./ar-tn": 214,
-		"./ar-tn.js": 214,
-		"./ar.js": 210,
-		"./az": 215,
-		"./az.js": 215,
-		"./be": 216,
-		"./be.js": 216,
-		"./bg": 217,
-		"./bg.js": 217,
-		"./bn": 218,
-		"./bn.js": 218,
-		"./bo": 219,
-		"./bo.js": 219,
-		"./br": 220,
-		"./br.js": 220,
-		"./bs": 221,
-		"./bs.js": 221,
-		"./ca": 222,
-		"./ca.js": 222,
-		"./cs": 223,
-		"./cs.js": 223,
-		"./cv": 224,
-		"./cv.js": 224,
-		"./cy": 225,
-		"./cy.js": 225,
-		"./da": 226,
-		"./da.js": 226,
-		"./de": 227,
-		"./de-at": 228,
-		"./de-at.js": 228,
-		"./de.js": 227,
-		"./dv": 229,
-		"./dv.js": 229,
-		"./el": 230,
-		"./el.js": 230,
-		"./en-au": 231,
-		"./en-au.js": 231,
-		"./en-ca": 232,
-		"./en-ca.js": 232,
-		"./en-gb": 233,
-		"./en-gb.js": 233,
-		"./en-ie": 234,
-		"./en-ie.js": 234,
-		"./en-nz": 235,
-		"./en-nz.js": 235,
-		"./eo": 236,
-		"./eo.js": 236,
-		"./es": 237,
-		"./es-do": 238,
-		"./es-do.js": 238,
-		"./es.js": 237,
-		"./et": 239,
-		"./et.js": 239,
-		"./eu": 240,
-		"./eu.js": 240,
-		"./fa": 241,
-		"./fa.js": 241,
-		"./fi": 242,
-		"./fi.js": 242,
-		"./fo": 243,
-		"./fo.js": 243,
-		"./fr": 244,
-		"./fr-ca": 245,
-		"./fr-ca.js": 245,
-		"./fr-ch": 246,
-		"./fr-ch.js": 246,
-		"./fr.js": 244,
-		"./fy": 247,
-		"./fy.js": 247,
-		"./gd": 248,
-		"./gd.js": 248,
-		"./gl": 249,
-		"./gl.js": 249,
-		"./he": 250,
-		"./he.js": 250,
-		"./hi": 251,
-		"./hi.js": 251,
-		"./hr": 252,
-		"./hr.js": 252,
-		"./hu": 253,
-		"./hu.js": 253,
-		"./hy-am": 254,
-		"./hy-am.js": 254,
-		"./id": 255,
-		"./id.js": 255,
-		"./is": 256,
-		"./is.js": 256,
-		"./it": 257,
-		"./it.js": 257,
-		"./ja": 258,
-		"./ja.js": 258,
-		"./jv": 259,
-		"./jv.js": 259,
-		"./ka": 260,
-		"./ka.js": 260,
-		"./kk": 261,
-		"./kk.js": 261,
-		"./km": 262,
-		"./km.js": 262,
-		"./ko": 263,
-		"./ko.js": 263,
-		"./ky": 264,
-		"./ky.js": 264,
-		"./lb": 265,
-		"./lb.js": 265,
-		"./lo": 266,
-		"./lo.js": 266,
-		"./lt": 267,
-		"./lt.js": 267,
-		"./lv": 268,
-		"./lv.js": 268,
-		"./me": 269,
-		"./me.js": 269,
-		"./mi": 270,
-		"./mi.js": 270,
-		"./mk": 271,
-		"./mk.js": 271,
-		"./ml": 272,
-		"./ml.js": 272,
-		"./mr": 273,
-		"./mr.js": 273,
-		"./ms": 274,
-		"./ms-my": 275,
-		"./ms-my.js": 275,
-		"./ms.js": 274,
-		"./my": 276,
-		"./my.js": 276,
-		"./nb": 277,
-		"./nb.js": 277,
-		"./ne": 278,
-		"./ne.js": 278,
-		"./nl": 279,
-		"./nl.js": 279,
-		"./nn": 280,
-		"./nn.js": 280,
-		"./pa-in": 281,
-		"./pa-in.js": 281,
-		"./pl": 282,
-		"./pl.js": 282,
-		"./pt": 283,
-		"./pt-br": 284,
-		"./pt-br.js": 284,
-		"./pt.js": 283,
-		"./ro": 285,
-		"./ro.js": 285,
-		"./ru": 286,
-		"./ru.js": 286,
-		"./se": 287,
-		"./se.js": 287,
-		"./si": 288,
-		"./si.js": 288,
-		"./sk": 289,
-		"./sk.js": 289,
-		"./sl": 290,
-		"./sl.js": 290,
-		"./sq": 291,
-		"./sq.js": 291,
-		"./sr": 292,
-		"./sr-cyrl": 293,
-		"./sr-cyrl.js": 293,
-		"./sr.js": 292,
-		"./ss": 294,
-		"./ss.js": 294,
-		"./sv": 295,
-		"./sv.js": 295,
-		"./sw": 296,
-		"./sw.js": 296,
-		"./ta": 297,
-		"./ta.js": 297,
-		"./te": 298,
-		"./te.js": 298,
-		"./th": 299,
-		"./th.js": 299,
-		"./tl-ph": 300,
-		"./tl-ph.js": 300,
-		"./tlh": 301,
-		"./tlh.js": 301,
-		"./tr": 302,
-		"./tr.js": 302,
-		"./tzl": 303,
-		"./tzl.js": 303,
-		"./tzm": 304,
-		"./tzm-latn": 305,
-		"./tzm-latn.js": 305,
-		"./tzm.js": 304,
-		"./uk": 306,
-		"./uk.js": 306,
-		"./uz": 307,
-		"./uz.js": 307,
-		"./vi": 308,
-		"./vi.js": 308,
-		"./x-pseudo": 309,
-		"./x-pseudo.js": 309,
-		"./zh-cn": 310,
-		"./zh-cn.js": 310,
-		"./zh-hk": 311,
-		"./zh-hk.js": 311,
-		"./zh-tw": 312,
-		"./zh-tw.js": 312
+		"./af": 210,
+		"./af.js": 210,
+		"./ar": 211,
+		"./ar-ly": 212,
+		"./ar-ly.js": 212,
+		"./ar-ma": 213,
+		"./ar-ma.js": 213,
+		"./ar-sa": 214,
+		"./ar-sa.js": 214,
+		"./ar-tn": 215,
+		"./ar-tn.js": 215,
+		"./ar.js": 211,
+		"./az": 216,
+		"./az.js": 216,
+		"./be": 217,
+		"./be.js": 217,
+		"./bg": 218,
+		"./bg.js": 218,
+		"./bn": 219,
+		"./bn.js": 219,
+		"./bo": 220,
+		"./bo.js": 220,
+		"./br": 221,
+		"./br.js": 221,
+		"./bs": 222,
+		"./bs.js": 222,
+		"./ca": 223,
+		"./ca.js": 223,
+		"./cs": 224,
+		"./cs.js": 224,
+		"./cv": 225,
+		"./cv.js": 225,
+		"./cy": 226,
+		"./cy.js": 226,
+		"./da": 227,
+		"./da.js": 227,
+		"./de": 228,
+		"./de-at": 229,
+		"./de-at.js": 229,
+		"./de.js": 228,
+		"./dv": 230,
+		"./dv.js": 230,
+		"./el": 231,
+		"./el.js": 231,
+		"./en-au": 232,
+		"./en-au.js": 232,
+		"./en-ca": 233,
+		"./en-ca.js": 233,
+		"./en-gb": 234,
+		"./en-gb.js": 234,
+		"./en-ie": 235,
+		"./en-ie.js": 235,
+		"./en-nz": 236,
+		"./en-nz.js": 236,
+		"./eo": 237,
+		"./eo.js": 237,
+		"./es": 238,
+		"./es-do": 239,
+		"./es-do.js": 239,
+		"./es.js": 238,
+		"./et": 240,
+		"./et.js": 240,
+		"./eu": 241,
+		"./eu.js": 241,
+		"./fa": 242,
+		"./fa.js": 242,
+		"./fi": 243,
+		"./fi.js": 243,
+		"./fo": 244,
+		"./fo.js": 244,
+		"./fr": 245,
+		"./fr-ca": 246,
+		"./fr-ca.js": 246,
+		"./fr-ch": 247,
+		"./fr-ch.js": 247,
+		"./fr.js": 245,
+		"./fy": 248,
+		"./fy.js": 248,
+		"./gd": 249,
+		"./gd.js": 249,
+		"./gl": 250,
+		"./gl.js": 250,
+		"./he": 251,
+		"./he.js": 251,
+		"./hi": 252,
+		"./hi.js": 252,
+		"./hr": 253,
+		"./hr.js": 253,
+		"./hu": 254,
+		"./hu.js": 254,
+		"./hy-am": 255,
+		"./hy-am.js": 255,
+		"./id": 256,
+		"./id.js": 256,
+		"./is": 257,
+		"./is.js": 257,
+		"./it": 258,
+		"./it.js": 258,
+		"./ja": 259,
+		"./ja.js": 259,
+		"./jv": 260,
+		"./jv.js": 260,
+		"./ka": 261,
+		"./ka.js": 261,
+		"./kk": 262,
+		"./kk.js": 262,
+		"./km": 263,
+		"./km.js": 263,
+		"./ko": 264,
+		"./ko.js": 264,
+		"./ky": 265,
+		"./ky.js": 265,
+		"./lb": 266,
+		"./lb.js": 266,
+		"./lo": 267,
+		"./lo.js": 267,
+		"./lt": 268,
+		"./lt.js": 268,
+		"./lv": 269,
+		"./lv.js": 269,
+		"./me": 270,
+		"./me.js": 270,
+		"./mi": 271,
+		"./mi.js": 271,
+		"./mk": 272,
+		"./mk.js": 272,
+		"./ml": 273,
+		"./ml.js": 273,
+		"./mr": 274,
+		"./mr.js": 274,
+		"./ms": 275,
+		"./ms-my": 276,
+		"./ms-my.js": 276,
+		"./ms.js": 275,
+		"./my": 277,
+		"./my.js": 277,
+		"./nb": 278,
+		"./nb.js": 278,
+		"./ne": 279,
+		"./ne.js": 279,
+		"./nl": 280,
+		"./nl.js": 280,
+		"./nn": 281,
+		"./nn.js": 281,
+		"./pa-in": 282,
+		"./pa-in.js": 282,
+		"./pl": 283,
+		"./pl.js": 283,
+		"./pt": 284,
+		"./pt-br": 285,
+		"./pt-br.js": 285,
+		"./pt.js": 284,
+		"./ro": 286,
+		"./ro.js": 286,
+		"./ru": 287,
+		"./ru.js": 287,
+		"./se": 288,
+		"./se.js": 288,
+		"./si": 289,
+		"./si.js": 289,
+		"./sk": 290,
+		"./sk.js": 290,
+		"./sl": 291,
+		"./sl.js": 291,
+		"./sq": 292,
+		"./sq.js": 292,
+		"./sr": 293,
+		"./sr-cyrl": 294,
+		"./sr-cyrl.js": 294,
+		"./sr.js": 293,
+		"./ss": 295,
+		"./ss.js": 295,
+		"./sv": 296,
+		"./sv.js": 296,
+		"./sw": 297,
+		"./sw.js": 297,
+		"./ta": 298,
+		"./ta.js": 298,
+		"./te": 299,
+		"./te.js": 299,
+		"./th": 300,
+		"./th.js": 300,
+		"./tl-ph": 301,
+		"./tl-ph.js": 301,
+		"./tlh": 302,
+		"./tlh.js": 302,
+		"./tr": 303,
+		"./tr.js": 303,
+		"./tzl": 304,
+		"./tzl.js": 304,
+		"./tzm": 305,
+		"./tzm-latn": 306,
+		"./tzm-latn.js": 306,
+		"./tzm.js": 305,
+		"./uk": 307,
+		"./uk.js": 307,
+		"./uz": 308,
+		"./uz.js": 308,
+		"./vi": 309,
+		"./vi.js": 309,
+		"./x-pseudo": 310,
+		"./x-pseudo.js": 310,
+		"./zh-cn": 311,
+		"./zh-cn.js": 311,
+		"./zh-hk": 312,
+		"./zh-hk.js": 312,
+		"./zh-tw": 313,
+		"./zh-tw.js": 313
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -43790,11 +44093,11 @@ var editor =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 208;
+	webpackContext.id = 209;
 
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43802,7 +44105,7 @@ var editor =
 	//! author : Werner Mollentze : https://github.com/wernerm
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43871,7 +44174,7 @@ var editor =
 	}));
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43881,7 +44184,7 @@ var editor =
 	//! author : forabi https://github.com/forabi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44012,7 +44315,7 @@ var editor =
 	}));
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44020,7 +44323,7 @@ var editor =
 	//! author : Ali Hmer: https://github.com/kikoanis
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44138,7 +44441,7 @@ var editor =
 	}));
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44147,7 +44450,7 @@ var editor =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44202,7 +44505,7 @@ var editor =
 	}));
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44210,7 +44513,7 @@ var editor =
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44310,7 +44613,7 @@ var editor =
 	}));
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44318,7 +44621,7 @@ var editor =
 	//! author : Nader Toukabri : https://github.com/naderio
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44373,7 +44676,7 @@ var editor =
 	}));
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44381,7 +44684,7 @@ var editor =
 	//! author : topchiyev : https://github.com/topchiyev
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44482,7 +44785,7 @@ var editor =
 	}));
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44492,7 +44795,7 @@ var editor =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44620,7 +44923,7 @@ var editor =
 	}));
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44628,7 +44931,7 @@ var editor =
 	//! author : Krasen Borisov : https://github.com/kraz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44714,7 +45017,7 @@ var editor =
 	}));
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44722,7 +45025,7 @@ var editor =
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44837,7 +45140,7 @@ var editor =
 	}));
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44845,7 +45148,7 @@ var editor =
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44960,7 +45263,7 @@ var editor =
 	}));
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44968,7 +45271,7 @@ var editor =
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45072,7 +45375,7 @@ var editor =
 	}));
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45081,7 +45384,7 @@ var editor =
 	//! based on (hr) translation by Bojan Marković
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45219,7 +45522,7 @@ var editor =
 	}));
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45227,7 +45530,7 @@ var editor =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45304,7 +45607,7 @@ var editor =
 	}));
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45312,7 +45615,7 @@ var editor =
 	//! author : petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45480,7 +45783,7 @@ var editor =
 	}));
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45488,7 +45791,7 @@ var editor =
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45547,7 +45850,7 @@ var editor =
 	}));
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45556,7 +45859,7 @@ var editor =
 	//! author : https://github.com/ryangreaves
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45632,7 +45935,7 @@ var editor =
 	}));
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45640,7 +45943,7 @@ var editor =
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45696,7 +45999,7 @@ var editor =
 	}));
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45706,7 +46009,7 @@ var editor =
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45778,7 +46081,7 @@ var editor =
 	}));
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45789,7 +46092,7 @@ var editor =
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45861,7 +46164,7 @@ var editor =
 	}));
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45869,7 +46172,7 @@ var editor =
 	//! author : Jawish Hameed : https://github.com/jawish
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45964,7 +46267,7 @@ var editor =
 	}));
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45972,7 +46275,7 @@ var editor =
 	//! author : Aggelos Karalias : https://github.com/mehiel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46066,7 +46369,7 @@ var editor =
 	}));
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46074,7 +46377,7 @@ var editor =
 	//! author : Jared Morse : https://github.com/jarcoal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46137,7 +46440,7 @@ var editor =
 	}));
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46145,7 +46448,7 @@ var editor =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46204,7 +46507,7 @@ var editor =
 	}));
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46212,7 +46515,7 @@ var editor =
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46275,7 +46578,7 @@ var editor =
 	}));
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46283,7 +46586,7 @@ var editor =
 	//! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46346,7 +46649,7 @@ var editor =
 	}));
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46354,7 +46657,7 @@ var editor =
 	//! author : Luke McGregor : https://github.com/lukemcgregor
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46417,7 +46720,7 @@ var editor =
 	}));
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46427,7 +46730,7 @@ var editor =
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46494,7 +46797,7 @@ var editor =
 	}));
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46502,7 +46805,7 @@ var editor =
 	//! author : Julio Napurí : https://github.com/julionc
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46579,14 +46882,14 @@ var editor =
 	}));
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : Spanish (Dominican Republic) [es-do]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46663,7 +46966,7 @@ var editor =
 	}));
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46672,7 +46975,7 @@ var editor =
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46747,7 +47050,7 @@ var editor =
 	}));
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46755,7 +47058,7 @@ var editor =
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46817,7 +47120,7 @@ var editor =
 	}));
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46825,7 +47128,7 @@ var editor =
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46927,7 +47230,7 @@ var editor =
 	}));
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46935,7 +47238,7 @@ var editor =
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47038,7 +47341,7 @@ var editor =
 	}));
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47046,7 +47349,7 @@ var editor =
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47102,7 +47405,7 @@ var editor =
 	}));
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47110,7 +47413,7 @@ var editor =
 	//! author : John Fischer : https://github.com/jfroffice
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47170,7 +47473,7 @@ var editor =
 	}));
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47178,7 +47481,7 @@ var editor =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47234,7 +47537,7 @@ var editor =
 	}));
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47242,7 +47545,7 @@ var editor =
 	//! author : Gaspard Bucher : https://github.com/gaspard
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47302,7 +47605,7 @@ var editor =
 	}));
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47310,7 +47613,7 @@ var editor =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47379,7 +47682,7 @@ var editor =
 	}));
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47387,7 +47690,7 @@ var editor =
 	//! author : Jon Ashdown : https://github.com/jonashdown
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47459,7 +47762,7 @@ var editor =
 	}));
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47467,7 +47770,7 @@ var editor =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47540,7 +47843,7 @@ var editor =
 	}));
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47550,7 +47853,7 @@ var editor =
 	//! author : Tal Ater : https://github.com/TalAter
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47643,7 +47946,7 @@ var editor =
 	}));
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47651,7 +47954,7 @@ var editor =
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47771,7 +48074,7 @@ var editor =
 	}));
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47779,7 +48082,7 @@ var editor =
 	//! author : Bojan Marković : https://github.com/bmarkovic
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47920,7 +48223,7 @@ var editor =
 	}));
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47928,7 +48231,7 @@ var editor =
 	//! author : Adam Brunner : https://github.com/adambrunner
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48033,7 +48336,7 @@ var editor =
 	}));
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48041,7 +48344,7 @@ var editor =
 	//! author : Armendarabyan : https://github.com/armendarabyan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48132,7 +48435,7 @@ var editor =
 	}));
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48141,7 +48444,7 @@ var editor =
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48219,7 +48522,7 @@ var editor =
 	}));
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48227,7 +48530,7 @@ var editor =
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48350,7 +48653,7 @@ var editor =
 	}));
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48359,7 +48662,7 @@ var editor =
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48424,7 +48727,7 @@ var editor =
 	}));
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48432,7 +48735,7 @@ var editor =
 	//! author : LI Long : https://github.com/baryon
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48504,7 +48807,7 @@ var editor =
 	}));
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48513,7 +48816,7 @@ var editor =
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48591,7 +48894,7 @@ var editor =
 	}));
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48599,7 +48902,7 @@ var editor =
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48684,7 +48987,7 @@ var editor =
 	}));
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48692,7 +48995,7 @@ var editor =
 	//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48775,7 +49078,7 @@ var editor =
 	}));
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48783,7 +49086,7 @@ var editor =
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48837,7 +49140,7 @@ var editor =
 	}));
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48846,7 +49149,7 @@ var editor =
 	//! author : Jeeeyul Lee <jeeeyul@gmail.com>
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48906,7 +49209,7 @@ var editor =
 	}));
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48914,7 +49217,7 @@ var editor =
 	//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48998,7 +49301,7 @@ var editor =
 	}));
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49007,7 +49310,7 @@ var editor =
 	//! author : David Raison : https://github.com/kwisatz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49139,7 +49442,7 @@ var editor =
 	}));
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49147,7 +49450,7 @@ var editor =
 	//! author : Ryan Hart : https://github.com/ryanhart2
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49213,7 +49516,7 @@ var editor =
 	}));
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49221,7 +49524,7 @@ var editor =
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49334,7 +49637,7 @@ var editor =
 	}));
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49343,7 +49646,7 @@ var editor =
 	//! author : Jānis Elmeris : https://github.com/JanisE
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49435,7 +49738,7 @@ var editor =
 	}));
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49443,7 +49746,7 @@ var editor =
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49550,7 +49853,7 @@ var editor =
 	}));
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49558,7 +49861,7 @@ var editor =
 	//! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49618,7 +49921,7 @@ var editor =
 	}));
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49626,7 +49929,7 @@ var editor =
 	//! author : Borislav Mickov : https://github.com/B0k0
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49712,7 +50015,7 @@ var editor =
 	}));
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49720,7 +50023,7 @@ var editor =
 	//! author : Floyd Pink : https://github.com/floydpink
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49797,7 +50100,7 @@ var editor =
 	}));
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49806,7 +50109,7 @@ var editor =
 	//! author : Vivek Athalye : https://github.com/vnathalye
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49960,7 +50263,7 @@ var editor =
 	}));
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49968,7 +50271,7 @@ var editor =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50046,7 +50349,7 @@ var editor =
 	}));
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50055,7 +50358,7 @@ var editor =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50133,7 +50436,7 @@ var editor =
 	}));
 
 /***/ },
-/* 276 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50143,7 +50446,7 @@ var editor =
 	//! author : Tin Aung Lin : https://github.com/thanyawzinmin
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50232,7 +50535,7 @@ var editor =
 	}));
 
 /***/ },
-/* 277 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50241,7 +50544,7 @@ var editor =
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50299,7 +50602,7 @@ var editor =
 	}));
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50307,7 +50610,7 @@ var editor =
 	//! author : suvash : https://github.com/suvash
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50426,7 +50729,7 @@ var editor =
 	}));
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50435,7 +50738,7 @@ var editor =
 	//! author : Jacob Middag : https://github.com/middagj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50516,7 +50819,7 @@ var editor =
 	}));
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50524,7 +50827,7 @@ var editor =
 	//! author : https://github.com/mechuwind
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50580,7 +50883,7 @@ var editor =
 	}));
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50588,7 +50891,7 @@ var editor =
 	//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50708,7 +51011,7 @@ var editor =
 	}));
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50716,7 +51019,7 @@ var editor =
 	//! author : Rafal Hirsz : https://github.com/evoL
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50817,7 +51120,7 @@ var editor =
 	}));
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50825,7 +51128,7 @@ var editor =
 	//! author : Jefferson : https://github.com/jalex79
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50886,7 +51189,7 @@ var editor =
 	}));
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50894,7 +51197,7 @@ var editor =
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50951,7 +51254,7 @@ var editor =
 	}));
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50960,7 +51263,7 @@ var editor =
 	//! author : Valentin Agachi : https://github.com/avaly
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51030,7 +51333,7 @@ var editor =
 	}));
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51040,7 +51343,7 @@ var editor =
 	//! author : Коренберг Марк : https://github.com/socketpair
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51217,7 +51520,7 @@ var editor =
 	}));
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51225,7 +51528,7 @@ var editor =
 	//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51282,7 +51585,7 @@ var editor =
 	}));
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51290,7 +51593,7 @@ var editor =
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51357,7 +51660,7 @@ var editor =
 	}));
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51366,7 +51669,7 @@ var editor =
 	//! based on work of petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51511,7 +51814,7 @@ var editor =
 	}));
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51519,7 +51822,7 @@ var editor =
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51677,7 +51980,7 @@ var editor =
 	}));
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51687,7 +51990,7 @@ var editor =
 	//! author : Oerd Cukalla : https://github.com/oerd
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51751,7 +52054,7 @@ var editor =
 	}));
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51759,7 +52062,7 @@ var editor =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51865,7 +52168,7 @@ var editor =
 	}));
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51873,7 +52176,7 @@ var editor =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51979,7 +52282,7 @@ var editor =
 	}));
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51987,7 +52290,7 @@ var editor =
 	//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52072,7 +52375,7 @@ var editor =
 	}));
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52080,7 +52383,7 @@ var editor =
 	//! author : Jens Alm : https://github.com/ulmus
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52145,7 +52448,7 @@ var editor =
 	}));
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52153,7 +52456,7 @@ var editor =
 	//! author : Fahad Kassim : https://github.com/fadsel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52208,7 +52511,7 @@ var editor =
 	}));
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52216,7 +52519,7 @@ var editor =
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52341,7 +52644,7 @@ var editor =
 	}));
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52349,7 +52652,7 @@ var editor =
 	//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52434,7 +52737,7 @@ var editor =
 	}));
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52442,7 +52745,7 @@ var editor =
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52505,7 +52808,7 @@ var editor =
 	}));
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52513,7 +52816,7 @@ var editor =
 	//! author : Dan Hagman : https://github.com/hagmandan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52571,7 +52874,7 @@ var editor =
 	}));
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52579,7 +52882,7 @@ var editor =
 	//! author : Dominika Kruk : https://github.com/amaranthrose
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52695,7 +52998,7 @@ var editor =
 	}));
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52704,7 +53007,7 @@ var editor =
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52789,7 +53092,7 @@ var editor =
 	}));
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52798,7 +53101,7 @@ var editor =
 	//! author : Iustì Canun
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52884,7 +53187,7 @@ var editor =
 	}));
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52892,7 +53195,7 @@ var editor =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52946,7 +53249,7 @@ var editor =
 	}));
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52954,7 +53257,7 @@ var editor =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53008,7 +53311,7 @@ var editor =
 	}));
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53017,7 +53320,7 @@ var editor =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53158,7 +53461,7 @@ var editor =
 	}));
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53166,7 +53469,7 @@ var editor =
 	//! author : Sardor Muminov : https://github.com/muminoff
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53220,7 +53523,7 @@ var editor =
 	}));
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53228,7 +53531,7 @@ var editor =
 	//! author : Bang Nguyen : https://github.com/bangnk
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53303,7 +53606,7 @@ var editor =
 	}));
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53311,7 +53614,7 @@ var editor =
 	//! author : Andrew Hood : https://github.com/andrewhood125
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53375,7 +53678,7 @@ var editor =
 	}));
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53384,7 +53687,7 @@ var editor =
 	//! author : Zeno Zeng : https://github.com/zenozeng
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53506,7 +53809,7 @@ var editor =
 	}));
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53516,7 +53819,7 @@ var editor =
 	//! author : Konstantin : https://github.com/skfd
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53615,7 +53918,7 @@ var editor =
 	}));
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53624,7 +53927,7 @@ var editor =
 	//! author : Chris Lam : https://github.com/hehachris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(206)) :
+	    true ? factory(__webpack_require__(207)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53723,7 +54026,7 @@ var editor =
 	}));
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54279,7 +54582,7 @@ var editor =
 
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54407,7 +54710,7 @@ var editor =
 
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54716,7 +55019,7 @@ var editor =
 
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55059,7 +55362,7 @@ var editor =
 
 
 /***/ },
-/* 317 */
+/* 318 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55280,7 +55583,7 @@ var editor =
 
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55467,7 +55770,7 @@ var editor =
 
 
 /***/ },
-/* 319 */
+/* 320 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55484,7 +55787,7 @@ var editor =
 
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55500,7 +55803,7 @@ var editor =
 
 
 /***/ },
-/* 321 */
+/* 322 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55517,7 +55820,7 @@ var editor =
 
 
 /***/ },
-/* 322 */
+/* 323 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55534,7 +55837,7 @@ var editor =
 
 
 /***/ },
-/* 323 */
+/* 324 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55551,7 +55854,7 @@ var editor =
 
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55568,7 +55871,7 @@ var editor =
 
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55621,7 +55924,7 @@ var editor =
 
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55633,8 +55936,8 @@ var editor =
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
-	var title_content_1 = __webpack_require__(327);
-	var collapsable_title_1 = __webpack_require__(328);
+	var title_content_1 = __webpack_require__(328);
+	var collapsable_title_1 = __webpack_require__(329);
 	/**
 	 * 手风琴控件。它有多个页面，在每一时刻只展开一个。
 	 */
@@ -55737,7 +56040,7 @@ var editor =
 
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55968,7 +56271,7 @@ var editor =
 
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56054,7 +56357,7 @@ var editor =
 
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56363,7 +56666,7 @@ var editor =
 
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56374,9 +56677,9 @@ var editor =
 	};
 	var scroll_view_1 = __webpack_require__(104);
 	var widget_factory_1 = __webpack_require__(27);
-	var title_content_1 = __webpack_require__(327);
+	var title_content_1 = __webpack_require__(328);
 	var widget_recyclable_creator_1 = __webpack_require__(86);
-	var collapsable_title_1 = __webpack_require__(328);
+	var collapsable_title_1 = __webpack_require__(329);
 	/**
 	 * 管理多个页面，每个页面可以展开或折叠。
 	 */
@@ -56474,7 +56777,7 @@ var editor =
 
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56499,7 +56802,7 @@ var editor =
 
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56509,151 +56812,327 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Events = __webpack_require__(10);
-	var delegate_command_1 = __webpack_require__(331);
-	var ivalidation_rule_1 = __webpack_require__(161);
-	var view_modal_default_1 = __webpack_require__(158);
+	var delegate_command_1 = __webpack_require__(332);
+	var ivalidation_rule_1 = __webpack_require__(162);
+	var iview_model_1 = __webpack_require__(85);
+	var view_model_default_1 = __webpack_require__(159);
 	/**
-	 * 集合ViewModal。delProp/getProp/setProp操作当前的项。
+	 * 集合ViewModel。delProp/getProp/setProp操作当前的项。
 	 */
-	var CollectionViewModal = (function (_super) {
-	    __extends(CollectionViewModal, _super);
-	    function CollectionViewModal(data) {
+	var CollectionViewModel = (function (_super) {
+	    __extends(CollectionViewModel, _super);
+	    function CollectionViewModel(data) {
 	        _super.call(this, data);
 	        this.isCollection = true;
-	        this._collection = data;
-	        var n = data.length;
-	        var viewModalItems = [];
-	        for (var i = 0; i < n; i++) {
-	            viewModalItems.push(this.createItemViewModal(i));
-	        }
+	        this.filters = {};
+	        this.comparators = {};
 	        this._current = 0;
-	        this._viewModalItems = viewModalItems;
+	        this._collection = data;
+	        this.needUpdateViewModelItems = true;
 	    }
-	    CollectionViewModal.prototype.getProp = function (path, converterName) {
-	        var vm = this.currentViewModal;
-	        return vm ? vm.getProp(path, converterName) : null;
-	    };
-	    CollectionViewModal.prototype.delProp = function (path) {
-	        var vm = this.currentViewModal;
-	        return vm ? vm.delProp(path) : this;
-	    };
-	    CollectionViewModal.prototype.setProp = function (path, value, converterName, validationRule) {
-	        var vm = this.currentViewModal;
-	        return vm ? vm.setProp(path, value, converterName, validationRule) : ivalidation_rule_1.ValidationResult.invalidResult;
-	    };
-	    CollectionViewModal.prototype.onItemsChange = function (callback) {
-	        this.on(Events.ITEM_ADD, callback);
-	        this.on(Events.ITEM_DELETE, callback);
-	        return this;
-	    };
-	    CollectionViewModal.prototype.offItemsChange = function (callback) {
-	        this.off(Events.ITEM_ADD, callback);
-	        this.off(Events.ITEM_DELETE, callback);
-	        return this;
-	    };
-	    CollectionViewModal.prototype.fixState = function () {
-	        var n = this._collection.length;
-	        if (this.current >= n) {
-	            this.current = n - 1;
-	        }
-	        this._viewModalItems.forEach(function (item, index) {
-	            item.index = index;
-	        });
-	    };
-	    CollectionViewModal.prototype.addItem = function (data, index) {
-	        var n = this._collection.length;
-	        var index = index < n ? index : n;
-	        this._collection.splice(index, 0, data);
-	        this._viewModalItems.splice(index, 0, this.createItemViewModal(index));
-	        this.fixState();
-	        this.notifyChange(Events.ITEM_ADD, "/", index);
-	        return this;
-	    };
-	    CollectionViewModal.prototype.removeItem = function (index) {
-	        this._collection.splice(index, 1);
-	        this._viewModalItems.splice(index, 1);
-	        this.fixState();
-	        this.notifyChange(Events.ITEM_DELETE, "/", index);
-	        return this;
-	    };
-	    Object.defineProperty(CollectionViewModal.prototype, "collection", {
+	    Object.defineProperty(CollectionViewModel.prototype, "collection", {
+	        /**
+	         * 原始的数据。
+	         */
 	        get: function () {
 	            return this._collection;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "currentViewModal", {
-	        get: function () {
-	            return this._viewModalItems[this._current];
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "total", {
-	        get: function () {
-	            return this._viewModalItems.length;
-	        },
-	        set: function (value) {
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(CollectionViewModal.prototype, "current", {
+	    Object.defineProperty(CollectionViewModel.prototype, "current", {
 	        get: function () {
 	            return this._current;
 	        },
+	        /**
+	         * 当前数据项的序号。
+	         */
 	        set: function (value) {
-	            this._current = Math.min(this._viewModalItems.length - 1, Math.max(0, value));
+	            var viewModelItems = this.viewModelItems;
+	            this._current = Math.min(viewModelItems.length - 1, Math.max(0, value));
 	            this.notifyChange(Events.PROP_CHANGE, "/", value);
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    CollectionViewModal.prototype.getItemViewModal = function (index) {
-	        var i = (index >= 0 && index < this._viewModalItems.length) ? index : this._current;
-	        return this._viewModalItems[i];
+	    Object.defineProperty(CollectionViewModel.prototype, "total", {
+	        get: function () {
+	            return this.viewModelItems.length;
+	        },
+	        /**
+	         * 过滤之后总的项数。
+	         */
+	        set: function (value) {
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(CollectionViewModel.prototype, "viewModelItems", {
+	        /**
+	         * 子项目的ViewModel
+	         */
+	        get: function () {
+	            if (this.needUpdateViewModelItems) {
+	                this.updateViewModelItems();
+	            }
+	            return this._viewModelItems;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /*
+	     * 对于属性操作，都是针对当前项的ViewModel的操作。
+	     */
+	    CollectionViewModel.prototype.getProp = function (path, converterName) {
+	        var vm = this.currentViewModel;
+	        return vm ? vm.getProp(path, converterName) : null;
 	    };
-	    CollectionViewModal.prototype.createItemViewModal = function (index) {
-	        return ItemViewModal.create(this, index);
+	    CollectionViewModel.prototype.delProp = function (path) {
+	        var vm = this.currentViewModel;
+	        return vm ? vm.delProp(path) : this;
 	    };
-	    CollectionViewModal.create = function (data) {
-	        var viewModal = new CollectionViewModal(data);
-	        return viewModal;
+	    CollectionViewModel.prototype.setProp = function (path, value, converterName, validationRule) {
+	        var vm = this.currentViewModel;
+	        return vm ? vm.setProp(path, value, converterName, validationRule) : ivalidation_rule_1.ValidationResult.invalidResult;
 	    };
-	    return CollectionViewModal;
-	}(view_modal_default_1.ViewModalDefault));
-	exports.CollectionViewModal = CollectionViewModal;
+	    Object.defineProperty(CollectionViewModel.prototype, "currentViewModel", {
+	        /**
+	         * 当前项的ViewModel
+	         */
+	        get: function () {
+	            return this.viewModelItems[this._current];
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * 注册子项的增加删除的变化事件。
+	     */
+	    CollectionViewModel.prototype.onItemsChange = function (callback) {
+	        this.on(Events.ITEMS_CHANGE, callback);
+	        return this;
+	    };
+	    /**
+	     * 注销子项的增加删除的变化事件。
+	     */
+	    CollectionViewModel.prototype.offItemsChange = function (callback) {
+	        this.off(Events.ITEMS_CHANGE, callback);
+	        return this;
+	    };
+	    /**
+	     * 增加一个数据项。
+	     */
+	    CollectionViewModel.prototype.addItem = function (data, index) {
+	        var n = this._collection.length;
+	        var index = index < n ? index : n;
+	        this._collection.splice(index, 0, data);
+	        this.updateViewModelItems(true);
+	        return this;
+	    };
+	    /**
+	     * 删除一个数据项。
+	     */
+	    CollectionViewModel.prototype.removeItem = function (index) {
+	        this._collection.splice(index, 1);
+	        this.updateViewModelItems(true);
+	        return this;
+	    };
+	    /**
+	     * 删除指定规则的数据项。
+	     */
+	    CollectionViewModel.prototype.removeItems = function (func) {
+	        var _this = this;
+	        var collection = this._collection.filter(function (item, index, arr) {
+	            return !func(item, index, arr);
+	        });
+	        this._collection.length = 0;
+	        collection.forEach(function (item) {
+	            _this._collection.push(item);
+	        });
+	        this.updateViewModelItems(true);
+	        return this;
+	    };
+	    /**
+	     * 是否存在指定条件的项。
+	     */
+	    CollectionViewModel.prototype.hasItems = function (func, filtered) {
+	        var arr = filtered ? this._filteredSortedCollection : this._collection;
+	        return arr.some(func);
+	    };
+	    /**
+	     * 获取指定序号的子ViewModel
+	     */
+	    CollectionViewModel.prototype.getItemViewModel = function (index) {
+	        var i = (index >= 0 && index < this.total) ? index : this._current;
+	        return this.viewModelItems[i];
+	    };
+	    CollectionViewModel.prototype.getItemData = function (index) {
+	        var i = (index >= 0 && index < this.total) ? index : this._current;
+	        return this._filteredSortedCollection[i];
+	    };
+	    /*
+	     * 获取过滤并排序之后的集合。
+	     */
+	    CollectionViewModel.prototype.getFilteredSortedCollection = function () {
+	        var collection = this._collection;
+	        var filteredSortedCollection = null;
+	        var filter = this.filters && this.filter ? this.filters[this.filter] : null;
+	        if (filter) {
+	            filteredSortedCollection = collection.filter(function (item) {
+	                return filter.check(item);
+	            });
+	        }
+	        else {
+	            filteredSortedCollection = collection.slice();
+	        }
+	        var comparator = this.comparators && this.comparator ? this.comparators[this.comparator] : null;
+	        if (comparator) {
+	            filteredSortedCollection.sort(function (a, b) {
+	                return comparator.compare(a, b);
+	            });
+	        }
+	        this._filteredSortedCollection = filteredSortedCollection;
+	        return filteredSortedCollection;
+	    };
+	    /**
+	     * 获取排序过滤集合中的序数对应于原始集合中的序数。
+	     */
+	    CollectionViewModel.prototype.getRawIndexOf = function (index) {
+	        if ((this.comparators && this.comparator) || (this.filters && this.filter)) {
+	            var obj = this._filteredSortedCollection[index];
+	            return this.collection.indexOf(obj);
+	        }
+	        else {
+	            return index;
+	        }
+	    };
+	    /*
+	     * 创建一个子ViewModel。
+	     */
+	    CollectionViewModel.prototype.createItemViewModel = function (index, data) {
+	        return ItemViewModel.create(this, index, data);
+	    };
+	    /*
+	     * 重新创建ViewModelItems。
+	     */
+	    CollectionViewModel.prototype.updateViewModelItems = function (force) {
+	        var _this = this;
+	        if (force || this.needUpdateViewModelItems) {
+	            this.needUpdateViewModelItems = false;
+	            console.time("filter and sort");
+	            var collection = this.getFilteredSortedCollection();
+	            var n = collection.length;
+	            if (this.current >= n) {
+	                this._current = n - 1;
+	            }
+	            if (this._viewModelItems) {
+	                this._viewModelItems.forEach(function (item) {
+	                    item.dispose();
+	                });
+	            }
+	            this._viewModelItems = collection.map(function (data, i) {
+	                return _this.createItemViewModel(i, data);
+	            });
+	            console.timeEnd("filter and sort");
+	            console.time("notify ITEMS_CHANGE");
+	            this.notifyChange(Events.PROP_CHANGE, "/", null);
+	            this.notifyChange(Events.ITEMS_CHANGE, "/", null);
+	            console.timeEnd("notify ITEMS_CHANGE");
+	        }
+	    };
+	    /**
+	     * 注册过滤器。
+	     */
+	    CollectionViewModel.prototype.registerFilter = function (name, filter) {
+	        this.filters[name] = filter;
+	        return this;
+	    };
+	    /**
+	     * 注销过滤器。
+	     */
+	    CollectionViewModel.prototype.unregisterFilter = function (name) {
+	        delete this.filters[name];
+	        return this;
+	    };
+	    Object.defineProperty(CollectionViewModel.prototype, "filter", {
+	        get: function () {
+	            return this._filter;
+	        },
+	        /**
+	         * 当前的过滤器器。
+	         */
+	        set: function (name) {
+	            this._filter = name;
+	            this.needUpdateViewModelItems = true;
+	            this.updateViewModelItems();
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * 注册排序用的比较器。
+	     */
+	    CollectionViewModel.prototype.registerComparator = function (name, comparator) {
+	        this.comparators[name] = comparator;
+	        return this;
+	    };
+	    /**
+	     * 注销排序用的比较器。
+	     */
+	    CollectionViewModel.prototype.unregisterComparator = function (name) {
+	        delete this.comparators[name];
+	        return this;
+	    };
+	    Object.defineProperty(CollectionViewModel.prototype, "comparator", {
+	        get: function () {
+	            return this._comparator;
+	        },
+	        /**
+	         * 设置当前的比较器。
+	         */
+	        set: function (name) {
+	            this._comparator = name;
+	            this.needUpdateViewModelItems = true;
+	            this.updateViewModelItems();
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    CollectionViewModel.create = function (data) {
+	        var viewModel = new CollectionViewModel(data);
+	        return viewModel;
+	    };
+	    return CollectionViewModel;
+	}(view_model_default_1.ViewModelDefault));
+	exports.CollectionViewModel = CollectionViewModel;
 	;
 	/**
-	 * 表示集合ViewModal中的单项ViewModal。
+	 * 表示集合ViewModel中的单项ViewModel。
 	 *
 	 */
-	var ItemViewModal = (function (_super) {
-	    __extends(ItemViewModal, _super);
-	    function ItemViewModal(collectionViewModal, index) {
-	        _super.call(this, collectionViewModal.collection[index]);
+	var ItemViewModel = (function (_super) {
+	    __extends(ItemViewModel, _super);
+	    function ItemViewModel() {
+	        _super.call(this, null);
 	        this.isCollection = false;
-	        this.index = index;
-	        this.collectionViewModal = collectionViewModal;
 	        this.initCommands();
 	    }
-	    ItemViewModal.prototype.getCommand = function (name) {
+	    ItemViewModel.prototype.getCommand = function (name) {
 	        var cmd = _super.prototype.getCommand.call(this, name);
 	        if (!cmd) {
-	            cmd = this.collectionViewModal.getCommand(name);
+	            cmd = this.collectionViewModel.getCommand(name);
 	        }
 	        return cmd;
 	    };
-	    ItemViewModal.prototype.canExecute = function (name) {
+	    ItemViewModel.prototype.canExecute = function (name) {
 	        if (_super.prototype.canExecute.call(this, name)) {
 	            return true;
 	        }
 	        else {
-	            return this.collectionViewModal.canExecute(name);
+	            return this.collectionViewModel.canExecute(name);
 	        }
 	    };
-	    ItemViewModal.prototype.execCommand = function (name, args) {
+	    ItemViewModel.prototype.execCommand = function (name, args) {
 	        var cmd = _super.prototype.getCommand.call(this, name);
 	        if (cmd) {
 	            return _super.prototype.execCommand.call(this, name, args);
@@ -56665,53 +57144,76 @@ var editor =
 	            else {
 	                args = { $index: this.index };
 	            }
-	            return this.collectionViewModal.execCommand(name, args);
+	            return this.collectionViewModel.execCommand(name, args);
 	        }
 	    };
-	    ItemViewModal.prototype.convert = function (converterName, value) {
-	        return this.collectionViewModal.convert(converterName, value);
+	    ItemViewModel.prototype.convert = function (converterName, value) {
+	        return this.collectionViewModel.convert(converterName, value);
 	    };
-	    ItemViewModal.prototype.convertBack = function (converterName, value) {
-	        return this.collectionViewModal.convertBack(converterName, value);
+	    ItemViewModel.prototype.convertBack = function (converterName, value) {
+	        return this.collectionViewModel.convertBack(converterName, value);
 	    };
-	    ItemViewModal.prototype.isValueValid = function (ruleName, value) {
-	        return this.collectionViewModal.isValueValid(ruleName, value);
+	    ItemViewModel.prototype.isValueValid = function (ruleName, value) {
+	        return this.collectionViewModel.isValueValid(ruleName, value);
 	    };
-	    ItemViewModal.prototype.getValueConverter = function (name) {
-	        return this.collectionViewModal.getValueConverter(name);
+	    ItemViewModel.prototype.getValueConverter = function (name) {
+	        return this.collectionViewModel.getValueConverter(name);
 	    };
-	    ItemViewModal.prototype.getValidationRule = function (name) {
-	        return this.collectionViewModal.getValidationRule(name);
+	    ItemViewModel.prototype.getValidationRule = function (name) {
+	        return this.collectionViewModel.getValidationRule(name);
 	    };
-	    ItemViewModal.prototype.isCurrent = function () {
-	        return this.collectionViewModal.current === this.index;
+	    ItemViewModel.prototype.isCurrent = function () {
+	        return this.collectionViewModel.current === this.index;
 	    };
-	    ItemViewModal.prototype.notifyChange = function (type, path, value) {
-	        if (this.isCurrent) {
-	            this.collectionViewModal.notifyChange(type, path, value);
+	    ItemViewModel.prototype.notifyChange = function (type, path, value) {
+	        var collectionViewModel = this.collectionViewModel;
+	        if (collectionViewModel.bindingMode === iview_model_1.BindingMode.ONE_WAY) {
+	            return;
 	        }
-	        _super.prototype.notifyChange.call(this, type, path, value);
+	        if (collectionViewModel.comparator || collectionViewModel.filter) {
+	            collectionViewModel.updateViewModelItems(true);
+	        }
+	        else {
+	            if (this.isCurrent) {
+	                collectionViewModel.notifyChange(type, path, value);
+	            }
+	            _super.prototype.notifyChange.call(this, type, path, value);
+	        }
 	    };
-	    ItemViewModal.prototype.initCommands = function () {
+	    ItemViewModel.prototype.initCommands = function () {
 	        var _this = this;
-	        var collectionViewModal = this.collectionViewModal;
 	        this.registerCommand("activate", delegate_command_1.DelegateCommand.create(function (args) {
-	            collectionViewModal.current = _this.index;
+	            _this.collectionViewModel.current = _this.index;
 	        }));
 	        this.registerCommand("remove", delegate_command_1.DelegateCommand.create(function (args) {
-	            collectionViewModal.removeItem(collectionViewModal.current);
+	            _this.collectionViewModel.removeItem(_this.collectionViewModel.getRawIndexOf(_this.index));
 	        }));
 	    };
-	    ItemViewModal.create = function (collectionViewModal, index) {
-	        return new ItemViewModal(collectionViewModal, index);
+	    ItemViewModel.prototype.init = function (collectionViewModel, index, data) {
+	        this.collectionViewModel = collectionViewModel;
+	        this.index = index;
+	        this.setData(data, false);
+	        this.bindingMode = collectionViewModel.bindingMode;
+	        return this;
 	    };
-	    return ItemViewModal;
-	}(view_modal_default_1.ViewModalDefault));
-	exports.ItemViewModal = ItemViewModal;
+	    ItemViewModel.prototype.dispose = function () {
+	        this.index = -1;
+	        this.removeAllListeners();
+	        this.collectionViewModel = null;
+	        ItemViewModel.cache.push(this);
+	    };
+	    ItemViewModel.create = function (collectionViewModel, index, data) {
+	        var vm = ItemViewModel.cache.length > 0 ? ItemViewModel.cache.pop() : (new ItemViewModel());
+	        return vm.init(collectionViewModel, index, data);
+	    };
+	    ItemViewModel.cache = [];
+	    return ItemViewModel;
+	}(view_model_default_1.ViewModelDefault));
+	exports.ItemViewModel = ItemViewModel;
 
 
 /***/ },
-/* 333 */
+/* 334 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56736,7 +57238,7 @@ var editor =
 
 
 /***/ },
-/* 334 */
+/* 335 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56757,7 +57259,7 @@ var editor =
 
 
 /***/ },
-/* 335 */
+/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56777,7 +57279,7 @@ var editor =
 
 
 /***/ },
-/* 336 */
+/* 337 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56802,7 +57304,7 @@ var editor =
 
 
 /***/ },
-/* 337 */
+/* 338 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56823,7 +57325,7 @@ var editor =
 
 
 /***/ },
-/* 338 */
+/* 339 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56863,7 +57365,7 @@ var editor =
 
 
 /***/ },
-/* 339 */
+/* 340 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56883,7 +57385,7 @@ var editor =
 
 
 /***/ },
-/* 340 */
+/* 341 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56903,7 +57405,7 @@ var editor =
 
 
 /***/ },
-/* 341 */
+/* 342 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56922,7 +57424,7 @@ var editor =
 
 
 /***/ },
-/* 342 */
+/* 343 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56968,7 +57470,7 @@ var editor =
 
 
 /***/ },
-/* 343 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56979,27 +57481,24 @@ var editor =
 	};
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
 	/**
-	 * 表格
+	 * 表格中的一行。
 	 */
 	var TableRow = (function (_super) {
 	    __extends(TableRow, _super);
 	    function TableRow() {
 	        _super.call(this, TableRow.TYPE);
 	    }
-	    TableRow.prototype.onReset = function () {
-	        _super.prototype.onReset.call(this);
-	    };
 	    TableRow.prototype.relayoutChildren = function () {
 	        var tableClient = (this.parent);
 	        if (!this.w || !this.h || !tableClient) {
 	            return;
 	        }
-	        var colsWidth = tableClient.colsWidth;
 	        var h = this.clientH;
 	        var x = this.leftPadding;
 	        var y = this.rightPadding;
+	        var colsWidth = tableClient.colsWidth;
 	        this.children.forEach(function (child, index) {
 	            var w = colsWidth[index] || 100;
 	            child.moveResizeTo(x, y, w, h);
@@ -57009,10 +57508,10 @@ var editor =
 	        return null;
 	    };
 	    TableRow.create = function (options) {
-	        return TableRow.recycleBin.create().reset(TableRow.TYPE, options);
+	        return TableRow.recycleBin.create(options);
 	    };
 	    TableRow.TYPE = "table-row";
-	    TableRow.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableRow(); });
+	    TableRow.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableRow);
 	    return TableRow;
 	}(widget_1.Widget));
 	exports.TableRow = TableRow;
@@ -57021,7 +57520,7 @@ var editor =
 
 
 /***/ },
-/* 344 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57032,11 +57531,11 @@ var editor =
 	};
 	var rect_1 = __webpack_require__(5);
 	var point_1 = __webpack_require__(6);
-	var range_1 = __webpack_require__(345);
+	var range_1 = __webpack_require__(346);
 	var list_view_1 = __webpack_require__(116);
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
 	/**
 	 * 表格内容区域
 	 */
@@ -57273,10 +57772,10 @@ var editor =
 	        this._selectedRows = range_1.Range.create(0, 0);
 	    };
 	    TableClient.create = function (options) {
-	        return TableClient.rBin.create().reset(TableClient.TYPE, options);
+	        return TableClient.rBin.create(options);
 	    };
 	    TableClient.TYPE = "table-client";
-	    TableClient.rBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableClient(); });
+	    TableClient.rBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableClient);
 	    return TableClient;
 	}(list_view_1.ListView));
 	exports.TableClient = TableClient;
@@ -57285,7 +57784,7 @@ var editor =
 
 
 /***/ },
-/* 345 */
+/* 346 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57312,7 +57811,7 @@ var editor =
 
 
 /***/ },
-/* 346 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57322,10 +57821,10 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
-	var passive_scrollable_group_1 = __webpack_require__(347);
+	var passive_scrollable_group_1 = __webpack_require__(348);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
 	/**
-	 * 表格左边的索引序数。
+	 * 表格左边的行序数。
 	 */
 	var TableIndex = (function (_super) {
 	    __extends(TableIndex, _super);
@@ -57333,10 +57832,10 @@ var editor =
 	        _super.call(this, TableIndex.TYPE);
 	    }
 	    TableIndex.create = function (options) {
-	        return TableIndex.recycleBin.create().reset(TableIndex.TYPE, options);
+	        return TableIndex.recycleBin.create(options);
 	    };
 	    TableIndex.TYPE = "table-index";
-	    TableIndex.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableIndex(); });
+	    TableIndex.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableIndex);
 	    return TableIndex;
 	}(passive_scrollable_group_1.PassiveScrollableGroup));
 	exports.TableIndex = TableIndex;
@@ -57345,7 +57844,7 @@ var editor =
 
 
 /***/ },
-/* 347 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57356,7 +57855,7 @@ var editor =
 	};
 	var widget_1 = __webpack_require__(23);
 	/**
-	 * 可滚的分组。
+	 * 被动式可滚分组。滚动区域由外面设置。
 	 */
 	var PassiveScrollableGroup = (function (_super) {
 	    __extends(PassiveScrollableGroup, _super);
@@ -57367,6 +57866,9 @@ var editor =
 	        get: function () {
 	            return this._ox;
 	        },
+	        /**
+	         * X的偏移。
+	         */
 	        set: function (value) {
 	            this._ox = value;
 	        },
@@ -57377,6 +57879,9 @@ var editor =
 	        get: function () {
 	            return this._oy;
 	        },
+	        /**
+	         * Y的偏移。
+	         */
 	        set: function (value) {
 	            this._oy = value;
 	        },
@@ -57476,7 +57981,7 @@ var editor =
 
 
 /***/ },
-/* 348 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57485,9 +57990,9 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var recyclable_creator_1 = __webpack_require__(87);
 	var widget_factory_1 = __webpack_require__(27);
-	var passive_scrollable_group_1 = __webpack_require__(347);
+	var passive_scrollable_group_1 = __webpack_require__(348);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
 	/**
 	 * 表格头
 	 */
@@ -57497,10 +58002,10 @@ var editor =
 	        _super.call(this, TableHeader.TYPE);
 	    }
 	    TableHeader.create = function (options) {
-	        return TableHeader.recycleBin.create().reset(TableHeader.TYPE, options);
+	        return TableHeader.recycleBin.create(options);
 	    };
 	    TableHeader.TYPE = "table-header";
-	    TableHeader.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableHeader(); });
+	    TableHeader.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableHeader);
 	    return TableHeader;
 	}(passive_scrollable_group_1.PassiveScrollableGroup));
 	exports.TableHeader = TableHeader;
@@ -57509,7 +58014,7 @@ var editor =
 
 
 /***/ },
-/* 349 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57521,90 +58026,147 @@ var editor =
 	var Events = __webpack_require__(10);
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
-	var table_row_1 = __webpack_require__(343);
-	var table_index_1 = __webpack_require__(346);
-	var table_client_1 = __webpack_require__(344);
-	var table_header_1 = __webpack_require__(348);
-	var table_index_item_1 = __webpack_require__(350);
-	var table_header_item_1 = __webpack_require__(351);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
+	var table_row_1 = __webpack_require__(344);
+	var table_index_1 = __webpack_require__(347);
+	var table_client_1 = __webpack_require__(345);
+	var table_header_1 = __webpack_require__(349);
+	var table_index_item_1 = __webpack_require__(351);
+	var table_header_item_1 = __webpack_require__(352);
+	/**
+	 * 描述表格中某列的信息。
+	 */
 	var TableColInfo = (function () {
-	    function TableColInfo(title, widgetType, w, options, sortable) {
+	    function TableColInfo(title, widgetType, w, options, sortKey) {
 	        this.w = w;
 	        this.title = title;
-	        this.sortable = sortable;
-	        this.widgetType = widgetType;
+	        this.sortKey = sortKey;
 	        this.options = options || {};
+	        this.widgetType = widgetType || "label";
 	    }
-	    TableColInfo.create = function (title, widgetType, w, options, sortable) {
-	        return new TableColInfo(title, widgetType, w, options, sortable);
+	    TableColInfo.create = function (title, widgetType, w, options, sortKey) {
+	        return new TableColInfo(title, widgetType, w, options, sortKey);
 	    };
 	    return TableColInfo;
 	}());
 	exports.TableColInfo = TableColInfo;
 	;
 	/**
-	 * 表格
+	 * 表格。表格由三部分组成：
+	 * 1.表头(TableHeader):  在最上方，显示每一列的标题，可以点击触发按该列进行排序。
+	 * 2.行序号(TableIndex): 在左边，显示每一行的序号。
+	 * 3.客户区(TableClient):占据表的主体部分，显示表格的内容。
 	 */
 	var Table = (function (_super) {
 	    __extends(Table, _super);
 	    function Table() {
 	        _super.call(this, Table.TYPE);
 	    }
-	    Object.defineProperty(Table.prototype, "itemH", {
+	    Object.defineProperty(Table.prototype, "headerBar", {
+	        /**
+	         * 表头
+	         */
 	        get: function () {
-	            return this._itemH;
+	            return this._headerBar;
 	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(Table.prototype, "indexBar", {
+	        /**
+	         * 行序号
+	         */
+	        get: function () {
+	            return this._indexBar;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(Table.prototype, "client", {
+	        /**
+	         * 客户区
+	         */
+	        get: function () {
+	            return this._client;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(Table.prototype, "rowH", {
+	        get: function () {
+	            return this._rowH;
+	        },
+	        /**
+	         * 每行的高度(在绑定数据之前设置才有效)。
+	         */
 	        set: function (value) {
-	            this._itemH = value;
+	            this._rowH = value;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
 	    Object.defineProperty(Table.prototype, "indexBarW", {
 	        get: function () {
-	            return this._indexBarW;
+	            return this._ibW;
 	        },
+	        /**
+	         * 行序号的宽度(在绑定数据之前设置才有效)。
+	         */
 	        set: function (value) {
-	            this._indexBarW = value;
+	            this._ibW = value;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
 	    Object.defineProperty(Table.prototype, "headerBarH", {
 	        get: function () {
-	            return this._headerBarH;
+	            return this._hbH;
 	        },
+	        /**
+	         * 表头的高度(在绑定数据之前设置才有效)。
+	         */
 	        set: function (value) {
-	            this._headerBarH = value;
+	            this._hbH = value;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
 	    Object.defineProperty(Table.prototype, "showIndexBar", {
 	        get: function () {
-	            return this._showIndexBar;
+	            return this._siB;
 	        },
+	        /**
+	         * 是否显示行序号(在绑定数据之前设置才有效)。
+	         */
 	        set: function (value) {
-	            this._showIndexBar = value;
+	            this._siB = value;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
+	    /**
+	     * 清除所有列。
+	     */
 	    Table.prototype.resetColumns = function () {
 	        this._colsInfo = [];
 	        return this;
 	    };
+	    /**
+	     * 增加一列。
+	     */
 	    Table.prototype.addColumn = function (colInfo) {
 	        this._colsInfo.push(colInfo);
 	        return this;
 	    };
+	    /**
+	     * 获取所有列。
+	     */
 	    Table.prototype.getColumns = function () {
 	        return this._colsInfo;
 	    };
 	    Table.prototype.getTemplateRow = function () {
 	        if (!this._templateRow) {
-	            var row = table_row_1.TableRow.create({ w: this.w, h: this.itemH, app: this.app });
+	            var row = table_row_1.TableRow.create({ w: this.w, h: this.rowH, app: this.app });
 	            this._colsInfo.forEach(function (item) {
 	                var widget = widget_factory_1.WidgetFactory.create(item.widgetType, item.options);
 	                widget.styleType = widget.type + ".table";
@@ -57614,16 +58176,17 @@ var editor =
 	        }
 	        return this._templateRow;
 	    };
-	    Table.prototype.bindData = function (viewModal) {
+	    Table.prototype.bindData = function (viewModel) {
 	        this.prepareUI();
 	        var client = this._client;
 	        if (client) {
 	            client.templateItem = this.getTemplateRow();
-	            client.bindData(viewModal);
+	            client.removeAllChildren();
+	            client.bindData(viewModel);
 	        }
+	        var itemH = this.rowH;
 	        var indexBar = this._indexBar;
 	        if (indexBar) {
-	            var itemH = this.itemH;
 	            indexBar.removeAllChildren();
 	            client.children.forEach(function (item, index) {
 	                indexBar.addChild(table_index_item_1.TableIndexItem.create({ text: index, h: itemH }), true);
@@ -57632,27 +58195,55 @@ var editor =
 	        }
 	        return this;
 	    };
+	    Table.prototype.onHeaderItemResized = function () {
+	        var client = this.client;
+	        var colsWidth = this.headerBar.children.map(function (item) {
+	            return item.w;
+	        });
+	        client.colsWidth = colsWidth;
+	        client.relayoutChildren();
+	        this.headerBar.relayoutChildren();
+	    };
+	    Table.prototype.onHeaderItemResizing = function () {
+	        this.headerBar.relayoutChildren();
+	    };
 	    Table.prototype.prepareUI = function () {
 	        var _this = this;
-	        var itemH = this.itemH;
+	        var itemH = this.rowH;
 	        this.removeAllChildren();
 	        var showIndexBar = this.showIndexBar;
 	        this._headerBar = table_header_1.TableHeader.create({ h: this.headerBarH, w: this.w });
-	        this._indexBar = table_index_1.TableIndex.create({ w: this.indexBarW, h: this.h });
 	        this._client = table_client_1.TableClient.create({ itemH: itemH, w: this.w - this.indexBarW, h: this.h - this.headerBarH });
 	        this.addChild(this._client, false);
 	        this.addChild(this._headerBar, false);
-	        this.addChild(this._indexBar, false);
+	        if (showIndexBar) {
+	            this._indexBar = table_index_1.TableIndex.create({ w: this.indexBarW, h: this.h });
+	            this.addChild(this._indexBar, false);
+	        }
 	        var headerBar = this._headerBar;
 	        this._colsInfo.forEach(function (item) {
-	            var headerItem = table_header_item_1.TableHeaderItem.create({ w: item.w, text: item.title, sortable: item.sortable });
+	            var headerItem = table_header_item_1.TableHeaderItem.create({ w: item.w, text: item.title, sortKey: item.sortKey });
 	            headerBar.addChild(headerItem);
+	            headerItem.on(Events.RESIZE_END, function (evt) {
+	                _this.onHeaderItemResized();
+	            });
+	            headerItem.on(Events.RESIZE_CANCEL, function (evt) {
+	                _this.onHeaderItemResized();
+	            });
+	            headerItem.on(Events.RESIZING, function (evt) {
+	                _this.onHeaderItemResizing();
+	            });
+	            headerItem.on(Events.SORT, function (evt) {
+	                _this.dispatchEvent(evt);
+	            });
 	        });
 	        var client = this._client;
 	        var indexBar = this._indexBar;
 	        var headerBar = this._headerBar;
 	        client.on(Events.SCROLL, function (evt) {
-	            indexBar.offsetY = evt.offsetY;
+	            if (indexBar) {
+	                indexBar.offsetY = evt.offsetY;
+	            }
 	            headerBar.offsetX = evt.offsetX;
 	            _this.requestRedraw();
 	        });
@@ -57660,9 +58251,6 @@ var editor =
 	    };
 	    Table.prototype.onInit = function () {
 	        _super.prototype.onInit.call(this);
-	        if (!this._headerBar) {
-	            this.prepareUI();
-	        }
 	    };
 	    Table.prototype.relayoutChildren = function () {
 	        if (!this.w || !this.h) {
@@ -57675,10 +58263,10 @@ var editor =
 	        var client = this._client;
 	        var indexBar = this._indexBar;
 	        var headerBar = this._headerBar;
-	        var indexBarW = this._indexBarW;
-	        var headerBarH = this._headerBarH;
+	        var indexBarW = this.indexBarW;
+	        var headerBarH = this.headerBarH;
 	        var yy = y + headerBarH;
-	        var xx = this.showIndexBar ? x + this._indexBarW : x;
+	        var xx = this.showIndexBar ? x + indexBarW : x;
 	        w = this.w - xx - this.rightPadding;
 	        h = this.h - yy - this.bottomPadding;
 	        var colsWidth = null;
@@ -57700,6 +58288,11 @@ var editor =
 	        }
 	        return this.getLayoutRect();
 	    };
+	    Table.prototype.dispatchWheel = function (evt) {
+	        if (this.client) {
+	            this.client.dispatchWheel(evt);
+	        }
+	    };
 	    Table.prototype.dispose = function () {
 	        _super.prototype.dispose.call(this);
 	        this._templateRow = null;
@@ -57710,58 +58303,22 @@ var editor =
 	    };
 	    Table.prototype.onReset = function () {
 	        _super.prototype.onReset.call(this);
-	        this._itemH = 30;
 	        this.resetColumns();
-	        this._indexBarW = 30;
-	        this._headerBarH = 30;
-	        this._showIndexBar = true;
+	    };
+	    Table.prototype.getDefProps = function () {
+	        return Table.defProps;
 	    };
 	    Table.create = function (options) {
-	        return Table.recycleBin.create().reset(Table.TYPE, options);
+	        return Table.recycleBin.create(options);
 	    };
+	    Table.defProps = Object.assign({}, widget_1.Widget.defProps, { _rowH: 30, _ibW: 30, _hbH: 30, _siB: true });
 	    Table.TYPE = "table";
-	    Table.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new Table(); });
+	    Table.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(Table);
 	    return Table;
 	}(widget_1.Widget));
 	exports.Table = Table;
 	;
 	widget_factory_1.WidgetFactory.register(Table.TYPE, Table.create);
-
-
-/***/ },
-/* 350 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var widget_1 = __webpack_require__(23);
-	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
-	/**
-	 * 表格左边的序数项。
-	 */
-	var TableIndexItem = (function (_super) {
-	    __extends(TableIndexItem, _super);
-	    function TableIndexItem() {
-	        _super.call(this, TableIndexItem.TYPE);
-	    }
-	    TableIndexItem.prototype.onReset = function () {
-	        _super.prototype.onReset.call(this);
-	    };
-	    TableIndexItem.create = function (options) {
-	        return TableIndexItem.recycleBin.create().reset(TableIndexItem.TYPE, options);
-	    };
-	    TableIndexItem.TYPE = "table-index-item";
-	    TableIndexItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableIndexItem(); });
-	    return TableIndexItem;
-	}(widget_1.Widget));
-	exports.TableIndexItem = TableIndexItem;
-	;
-	widget_factory_1.WidgetFactory.register(TableIndexItem.TYPE, TableIndexItem.create);
 
 
 /***/ },
@@ -57774,11 +58331,44 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+	var widget_1 = __webpack_require__(23);
+	var widget_factory_1 = __webpack_require__(27);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
+	/**
+	 * 表格左边的行序数项。
+	 */
+	var TableIndexItem = (function (_super) {
+	    __extends(TableIndexItem, _super);
+	    function TableIndexItem() {
+	        _super.call(this, TableIndexItem.TYPE);
+	    }
+	    TableIndexItem.create = function (options) {
+	        return TableIndexItem.recycleBin.create(options);
+	    };
+	    TableIndexItem.TYPE = "table-index-item";
+	    TableIndexItem.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableIndexItem);
+	    return TableIndexItem;
+	}(widget_1.Widget));
+	exports.TableIndexItem = TableIndexItem;
+	;
+	widget_factory_1.WidgetFactory.register(TableIndexItem.TYPE, TableIndexItem.create);
+
+
+/***/ },
+/* 352 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
 	var rect_1 = __webpack_require__(5);
 	var Events = __webpack_require__(10);
 	var widget_1 = __webpack_require__(23);
 	var widget_factory_1 = __webpack_require__(27);
-	var recyclable_creator_1 = __webpack_require__(87);
+	var widget_recyclable_creator_1 = __webpack_require__(86);
 	/**
 	 * 表格头的一项。
 	 */
@@ -57786,13 +58376,27 @@ var editor =
 	    __extends(TableHeaderItem, _super);
 	    function TableHeaderItem() {
 	        _super.call(this, TableHeaderItem.TYPE);
+	        this._sortEvent = Events.SortEvent.create(null, false);
 	    }
-	    Object.defineProperty(TableHeaderItem.prototype, "sortable", {
+	    Object.defineProperty(TableHeaderItem.prototype, "sortKey", {
 	        get: function () {
-	            return this._sortable;
+	            return this._sortKey;
 	        },
+	        /**
+	         * 是否点击时按该列排序。
+	         */
 	        set: function (value) {
-	            this._sortable = value;
+	            this._sortKey = value;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(TableHeaderItem.prototype, "sortStatus", {
+	        /**
+	         * 当前的排序状态。
+	         */
+	        get: function () {
+	            return this._sortStatus;
 	        },
 	        enumerable: true,
 	        configurable: true
@@ -57806,7 +58410,7 @@ var editor =
 	    };
 	    TableHeaderItem.prototype.getStyleType = function () {
 	        var styleType = this._styleType || this.type;
-	        if (!this._sortable || !this._sortStatus) {
+	        if (!this._sortKey || !this._sortStatus) {
 	            return styleType;
 	        }
 	        return styleType + "." + this._sortStatus;
@@ -57816,23 +58420,36 @@ var editor =
 	        this._sortStatus = null;
 	        this.on(Events.CLICK, this.triggerSortStatus.bind(this));
 	    };
+	    TableHeaderItem.prototype.onInit = function () {
+	        _super.prototype.onInit.call(this);
+	        this.useBehavior("resizable", { east: true, animateDuration: 0 });
+	    };
 	    TableHeaderItem.prototype.triggerSortStatus = function () {
-	        if (this._sortable) {
+	        var _this = this;
+	        var isDec = false;
+	        if (this._sortKey) {
 	            if (this._sortStatus === TableHeaderItem.SORT_INC) {
+	                isDec = true;
 	                this._sortStatus = TableHeaderItem.SORT_DEC;
 	            }
 	            else {
 	                this._sortStatus = TableHeaderItem.SORT_INC;
 	            }
+	            this.dispatchEvent(this._sortEvent.init(this._sortKey, isDec));
+	            this.parent.children.forEach(function (child) {
+	                if (child !== _this && child.type === _this.type) {
+	                    child._sortStatus = null;
+	                }
+	            });
 	        }
 	    };
 	    TableHeaderItem.create = function (options) {
-	        return TableHeaderItem.recycleBin.create().reset(TableHeaderItem.TYPE, options);
+	        return TableHeaderItem.recycleBin.create(options);
 	    };
 	    TableHeaderItem.SORT_INC = "inc";
 	    TableHeaderItem.SORT_DEC = "dec";
 	    TableHeaderItem.TYPE = "table-header-item";
-	    TableHeaderItem.recycleBin = new recyclable_creator_1.RecyclableCreator(function () { return new TableHeaderItem(); });
+	    TableHeaderItem.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(TableHeaderItem);
 	    return TableHeaderItem;
 	}(widget_1.Widget));
 	exports.TableHeaderItem = TableHeaderItem;
@@ -57841,7 +58458,136 @@ var editor =
 
 
 /***/ },
-/* 352 */
+/* 353 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var DelegateFilter = (function () {
+	    function DelegateFilter(check) {
+	        this._check = check;
+	    }
+	    DelegateFilter.prototype.check = function (data) {
+	        return this._check(data);
+	    };
+	    DelegateFilter.create = function (check) {
+	        return new DelegateFilter(check);
+	    };
+	    return DelegateFilter;
+	}());
+	exports.DelegateFilter = DelegateFilter;
+	;
+
+
+/***/ },
+/* 354 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var DelegateComparator = (function () {
+	    function DelegateComparator(compare) {
+	        this._compare = compare;
+	    }
+	    DelegateComparator.prototype.compare = function (a, b) {
+	        return this._compare(a, b);
+	    };
+	    DelegateComparator.create = function (compare) {
+	        return new DelegateComparator(compare);
+	    };
+	    return DelegateComparator;
+	}());
+	exports.DelegateComparator = DelegateComparator;
+	;
+
+
+/***/ },
+/* 355 */
+/***/ function(module, exports) {
+
+	"use strict";
+	/**
+	 * 数值比较器。
+	 */
+	var NumberComparator = (function () {
+	    function NumberComparator() {
+	    }
+	    NumberComparator.prototype.compare = function (a, b) {
+	        return a - b;
+	    };
+	    NumberComparator.create = function () {
+	        return new NumberComparator();
+	    };
+	    return NumberComparator;
+	}());
+	exports.NumberComparator = NumberComparator;
+	;
+	/**
+	 * 字符串比较器。
+	 */
+	var StringComparator = (function () {
+	    function StringComparator() {
+	    }
+	    StringComparator.prototype.compare = function (a, b) {
+	        if (a > b) {
+	            return 1;
+	        }
+	        else if (a == b) {
+	            return 0;
+	        }
+	        else {
+	            return -1;
+	        }
+	    };
+	    StringComparator.create = function () {
+	        return new StringComparator();
+	    };
+	    return StringComparator;
+	}());
+	exports.StringComparator = StringComparator;
+	;
+	/**
+	 * 反向比较器。
+	 */
+	var RevertComparator = (function () {
+	    function RevertComparator(comparator) {
+	        this.comparator = comparator;
+	    }
+	    RevertComparator.prototype.compare = function (a, b) {
+	        var ret = this.comparator.compare(a, b);
+	        if (ret) {
+	            ret = -ret;
+	        }
+	        return ret;
+	    };
+	    RevertComparator.create = function (comparator) {
+	        return new RevertComparator(comparator);
+	    };
+	    return RevertComparator;
+	}());
+	exports.RevertComparator = RevertComparator;
+	;
+	/**
+	 * 对象属性比较器。
+	 */
+	var ObjectPropComparator = (function () {
+	    function ObjectPropComparator(comparator, prop) {
+	        this.prop = prop;
+	        this.comparator = comparator;
+	    }
+	    ObjectPropComparator.prototype.compare = function (a, b) {
+	        var prop = this.prop;
+	        return this.comparator.compare(a[prop], b[prop]);
+	    };
+	    ObjectPropComparator.create = function (comparator, prop) {
+	        return new ObjectPropComparator(comparator, prop);
+	    };
+	    return ObjectPropComparator;
+	}());
+	exports.ObjectPropComparator = ObjectPropComparator;
+	;
+
+
+/***/ },
+/* 356 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57880,7 +58626,7 @@ var editor =
 
 
 /***/ },
-/* 353 */
+/* 357 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57904,7 +58650,7 @@ var editor =
 
 
 /***/ },
-/* 354 */
+/* 358 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57933,7 +58679,7 @@ var editor =
 
 
 /***/ },
-/* 355 */
+/* 359 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57965,7 +58711,7 @@ var editor =
 
 
 /***/ },
-/* 356 */
+/* 360 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57986,7 +58732,7 @@ var editor =
 	//# sourceMappingURL=draw-info.js.map
 
 /***/ },
-/* 357 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57995,31 +58741,31 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var main_window_1 = __webpack_require__(358);
+	var main_window_1 = __webpack_require__(362);
 	var qtk_1 = __webpack_require__(4);
-	var iparticles_view_modal_1 = __webpack_require__(362);
+	var iparticles_view_model_1 = __webpack_require__(366);
 	var themeDataURL = "https://qtoolkit.github.io/demos/assets/theme/default/theme.json";
 	var ParticlesEditor = (function (_super) {
 	    __extends(ParticlesEditor, _super);
-	    function ParticlesEditor(appName, viewModalName) {
+	    function ParticlesEditor(appName, viewModelName) {
 	        _super.call(this, appName);
-	        this._viewModalName = viewModalName;
+	        this._viewModelName = viewModelName;
 	    }
-	    ParticlesEditor.prototype.getViewModalName = function () {
-	        return this._viewModalName;
+	    ParticlesEditor.prototype.getViewModelName = function () {
+	        return this._viewModelName;
 	    };
-	    ParticlesEditor.prototype.createViewModal = function () {
-	        var name = this.getViewModalName();
+	    ParticlesEditor.prototype.createViewModel = function () {
+	        var name = this.getViewModelName();
 	        var storage = qtk_1.ItemsStorage.create(name);
-	        return iparticles_view_modal_1.ParticlesViewModalFactory.create(name, { storage: storage });
+	        return iparticles_view_model_1.ParticlesViewModelFactory.create(name, { storage: storage });
 	    };
 	    ParticlesEditor.prototype.onReady = function () {
 	        var vp = this.getViewPort();
-	        var viewModal = this.createViewModal();
-	        this.mainWindow = main_window_1.MainWindow.create({ w: vp.w, h: vp.h, app: this, viewModal: viewModal });
+	        var viewModel = this.createViewModel();
+	        this.mainWindow = main_window_1.MainWindow.create({ w: vp.w, h: vp.h, app: this, viewModel: viewModel });
 	    };
-	    ParticlesEditor.run = function (appName, viewModalName) {
-	        var app = new ParticlesEditor(appName, viewModalName);
+	    ParticlesEditor.run = function (appName, viewModelName) {
+	        var app = new ParticlesEditor(appName, viewModelName);
 	        app.init({ sysThemeDataURL: themeDataURL });
 	        app.run();
 	        return app;
@@ -58031,7 +58777,7 @@ var editor =
 	//# sourceMappingURL=particles-editor.js.map
 
 /***/ },
-/* 358 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58041,9 +58787,9 @@ var editor =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var qtk_1 = __webpack_require__(4);
-	var main_menu_bar_1 = __webpack_require__(359);
-	var particles_view_1 = __webpack_require__(360);
-	var particle_properties_1 = __webpack_require__(361);
+	var main_menu_bar_1 = __webpack_require__(363);
+	var particles_view_1 = __webpack_require__(364);
+	var particle_properties_1 = __webpack_require__(365);
 	var qtk_2 = __webpack_require__(4);
 	var MainWindow = (function (_super) {
 	    __extends(MainWindow, _super);
@@ -58052,15 +58798,15 @@ var editor =
 	    }
 	    MainWindow.prototype.onCreated = function () {
 	        _super.prototype.onCreated.call(this);
-	        var viewModal = this.viewModal;
+	        var viewModel = this.viewModel;
 	        this.childrenLayouter = qtk_2.DockLayouter.create();
-	        this.addChild(main_menu_bar_1.MainMenuBar.create({ viewModal: viewModal,
+	        this.addChild(main_menu_bar_1.MainMenuBar.create({ viewModel: viewModel,
 	            layoutParam: qtk_2.DockLayouterParam.create({ position: qtk_1.Direction.TOP, size: 30 })
 	        }));
-	        this.addChild(particles_view_1.ParticlesView.create({ viewModal: viewModal,
+	        this.addChild(particles_view_1.ParticlesView.create({ viewModel: viewModel,
 	            layoutParam: qtk_2.DockLayouterParam.create({ position: qtk_1.Direction.LEFT, size: "70%" })
 	        }));
-	        this.addChild(particle_properties_1.ParticleProperties.create({ viewModal: viewModal,
+	        this.addChild(particle_properties_1.ParticleProperties.create({ viewModel: viewModel,
 	            layoutParam: qtk_2.DockLayouterParam.create({ position: qtk_1.Direction.LEFT, size: "100%" })
 	        }));
 	    };
@@ -58077,7 +58823,7 @@ var editor =
 	//# sourceMappingURL=main-window.js.map
 
 /***/ },
-/* 359 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58101,13 +58847,13 @@ var editor =
 	        menu.addItem("Remove", null).set({ dataBindingRule: { click: { command: "remove" } } });
 	        menu.addSpace();
 	        menu.addItem("Export", null).set({ dataBindingRule: { click: { command: "export" } } });
-	        menu.bindData(this.viewModal);
+	        menu.bindData(this.viewModel);
 	    };
 	    MainMenuBar.prototype.onHelpMenu = function (menu) {
 	        menu.w = 128;
 	        menu.addItem("Content", null).set({ dataBindingRule: { click: { command: "content" } } });
 	        menu.addItem("About", null).set({ dataBindingRule: { click: { command: "about" } } });
-	        menu.bindData(this.viewModal);
+	        menu.bindData(this.viewModel);
 	    };
 	    MainMenuBar.prototype.onCreated = function () {
 	        _super.prototype.onCreated.call(this);
@@ -58127,7 +58873,7 @@ var editor =
 	//# sourceMappingURL=main-menu-bar.js.map
 
 /***/ },
-/* 360 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58136,7 +58882,7 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var draw_info_1 = __webpack_require__(356);
+	var draw_info_1 = __webpack_require__(360);
 	var qtk_1 = __webpack_require__(4);
 	var ParticlesView = (function (_super) {
 	    __extends(ParticlesView, _super);
@@ -58146,11 +58892,11 @@ var editor =
 	        this._style = qtk_1.Style.create();
 	    }
 	    ParticlesView.prototype.drawBackground = function (ctx, style) {
-	        var viewModal = this.viewModal;
-	        ctx.fillStyle = viewModal.getProp("/backGroundColor") || "#F6F6F6";
+	        var viewModel = this.viewModel;
+	        ctx.fillStyle = viewModel.getProp("/backGroundColor") || "#F6F6F6";
 	        ctx.fillRect(0, 0, this.w, this.h);
 	        this._drawInfo.init(ctx, qtk_1.Rect.rect.init(0, 0, this.w, this.h));
-	        viewModal.execCommand("draw", this._drawInfo);
+	        viewModel.execCommand("draw", this._drawInfo);
 	        this.requestRedraw();
 	        return this;
 	    };
@@ -58169,7 +58915,7 @@ var editor =
 	//# sourceMappingURL=particles-view.js.map
 
 /***/ },
-/* 361 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58189,23 +58935,23 @@ var editor =
 	    };
 	    ParticleProperties.prototype.createUI = function () {
 	        var _this = this;
-	        var viewModal = this.viewModal;
-	        var propsDesc = viewModal.getPropsDesc();
+	        var viewModel = this.viewModel;
+	        var propsDesc = viewModel.getPropsDesc();
 	        this._style = qtk_1.Style.create();
-	        var titleW = viewModal.getPropTitleWidth();
+	        var titleW = viewModel.getPropTitleWidth();
 	        this.removeAllChildren();
 	        propsDesc.forEach(function (pageDesc) {
 	            var page = qtk_1.PropertyPage.create({ titleW: titleW });
 	            page.initWithPropsDesc(pageDesc.propsDesc);
 	            var titlePage = _this.addPage(pageDesc.title, page);
-	            page.bindData(viewModal);
+	            page.bindData(viewModel);
 	            titlePage.collapsed = false;
 	        });
 	    };
 	    ParticleProperties.prototype.onCreated = function () {
 	        var _this = this;
-	        var viewModal = this.viewModal;
-	        viewModal.onChange(function (evt) {
+	        var viewModel = this.viewModel;
+	        viewModel.onChange(function (evt) {
 	            if (evt.prop === "/") {
 	                _this.createUI();
 	            }
@@ -58225,29 +58971,29 @@ var editor =
 	//# sourceMappingURL=particle-properties.js.map
 
 /***/ },
-/* 362 */
+/* 366 */
 /***/ function(module, exports) {
 
 	"use strict";
 	;
-	var ParticlesViewModalFactory = (function () {
-	    function ParticlesViewModalFactory() {
+	var ParticlesViewModelFactory = (function () {
+	    function ParticlesViewModelFactory() {
 	    }
-	    ParticlesViewModalFactory.register = function (type, creator) {
-	        ParticlesViewModalFactory.viewModals[type] = creator;
+	    ParticlesViewModelFactory.register = function (type, creator) {
+	        ParticlesViewModelFactory.viewModels[type] = creator;
 	    };
-	    ParticlesViewModalFactory.create = function (type, options) {
-	        var creator = ParticlesViewModalFactory.viewModals[type];
+	    ParticlesViewModelFactory.create = function (type, options) {
+	        var creator = ParticlesViewModelFactory.viewModels[type];
 	        return creator(options);
 	    };
-	    ParticlesViewModalFactory.viewModals = {};
-	    return ParticlesViewModalFactory;
+	    ParticlesViewModelFactory.viewModels = {};
+	    return ParticlesViewModelFactory;
 	}());
-	exports.ParticlesViewModalFactory = ParticlesViewModalFactory;
-	//# sourceMappingURL=iparticles-view-modal.js.map
+	exports.ParticlesViewModelFactory = ParticlesViewModelFactory;
+	//# sourceMappingURL=iparticles-view-model.js.map
 
 /***/ },
-/* 363 */
+/* 367 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58285,37 +59031,37 @@ var editor =
 	//# sourceMappingURL=command-draw.js.map
 
 /***/ },
-/* 364 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var qtk_1 = __webpack_require__(4);
 	var CommandNew = (function () {
-	    function CommandNew(viewModal, choiceInfo) {
-	        this._viewModal = viewModal;
+	    function CommandNew(viewModel, choiceInfo) {
+	        this._viewModel = viewModel;
 	        this._choiceInfo = choiceInfo;
 	    }
 	    CommandNew.prototype.canExecute = function () {
 	        return true;
 	    };
 	    CommandNew.prototype.execute = function (args) {
-	        var viewModal = this._viewModal;
+	        var viewModel = this._viewModel;
 	        console.log("CommandNew");
 	        qtk_1.InteractionRequest.choice(this._choiceInfo, function (ret) {
 	            var arr = ret.value;
 	            if (arr && arr.length) {
 	                var template = arr[0].text;
-	                viewModal.createDoc(template);
+	                viewModel.createDoc(template);
 	            }
 	        });
 	        return true;
 	    };
-	    CommandNew.create = function (viewModal, templates) {
+	    CommandNew.create = function (viewModel, templates) {
 	        var choiceInfo = qtk_1.ChoiceInfo.create("Please choose a template", false, 300, 300);
 	        templates.forEach(function (item) {
 	            choiceInfo.addOption(item);
 	        });
-	        return new CommandNew(viewModal, choiceInfo);
+	        return new CommandNew(viewModel, choiceInfo);
 	    };
 	    return CommandNew;
 	}());
@@ -58324,23 +59070,23 @@ var editor =
 	//# sourceMappingURL=command-new.js.map
 
 /***/ },
-/* 365 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var qtk_1 = __webpack_require__(4);
 	var CommandOpen = (function () {
-	    function CommandOpen(viewModal) {
-	        this._viewModal = viewModal;
+	    function CommandOpen(viewModel) {
+	        this._viewModel = viewModel;
 	    }
 	    CommandOpen.prototype.canExecute = function () {
-	        var viewModal = this._viewModal;
-	        var docList = viewModal.getDocList();
+	        var viewModel = this._viewModel;
+	        var docList = viewModel.getDocList();
 	        return docList && docList.length > 0;
 	    };
 	    CommandOpen.prototype.execute = function (args) {
-	        var viewModal = this._viewModal;
-	        var docList = viewModal.getDocList();
+	        var viewModel = this._viewModel;
+	        var docList = viewModel.getDocList();
 	        var choiceInfo = qtk_1.ChoiceInfo.create("Open...", false, 300, 300);
 	        docList.forEach(function (item) {
 	            choiceInfo.addOption(item);
@@ -58349,13 +59095,13 @@ var editor =
 	            var arr = ret.value;
 	            if (arr && arr.length) {
 	                var fileName = arr[0].text;
-	                viewModal.openDoc(fileName);
+	                viewModel.openDoc(fileName);
 	            }
 	        });
 	        return true;
 	    };
-	    CommandOpen.create = function (viewModal) {
-	        return new CommandOpen(viewModal);
+	    CommandOpen.create = function (viewModel) {
+	        return new CommandOpen(viewModel);
 	    };
 	    return CommandOpen;
 	}());
@@ -58364,38 +59110,38 @@ var editor =
 	//# sourceMappingURL=command-open.js.map
 
 /***/ },
-/* 366 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var qtk_1 = __webpack_require__(4);
 	var CommandSave = (function () {
-	    function CommandSave(viewModal, isSaveAs) {
+	    function CommandSave(viewModel, isSaveAs) {
 	        this._isSaveAs = isSaveAs;
-	        this._viewModal = viewModal;
+	        this._viewModel = viewModel;
 	        this._inputInfo = qtk_1.InputInfo.create("Please input file name:", null);
 	    }
 	    CommandSave.prototype.canExecute = function () {
 	        return true;
 	    };
 	    CommandSave.prototype.execute = function (args) {
-	        var viewModal = this._viewModal;
-	        var fileName = viewModal.getDocName();
+	        var viewModel = this._viewModel;
+	        var fileName = viewModel.getDocName();
 	        if (!fileName || this._isSaveAs) {
 	            qtk_1.InteractionRequest.input(this._inputInfo, function (ret) {
 	                if (ret.value) {
-	                    viewModal.saveDoc(ret.value);
+	                    viewModel.saveDoc(ret.value);
 	                }
 	            });
 	        }
 	        else {
-	            viewModal.saveDoc(fileName);
+	            viewModel.saveDoc(fileName);
 	            qtk_1.InteractionRequest.toast(qtk_1.ToastInfo.create("Save done."));
 	        }
 	        return true;
 	    };
-	    CommandSave.create = function (viewModal, isSaveAs) {
-	        return new CommandSave(viewModal, isSaveAs);
+	    CommandSave.create = function (viewModel, isSaveAs) {
+	        return new CommandSave(viewModel, isSaveAs);
 	    };
 	    return CommandSave;
 	}());
@@ -58404,27 +59150,27 @@ var editor =
 	//# sourceMappingURL=command-save.js.map
 
 /***/ },
-/* 367 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var saveAs = __webpack_require__(368).default;
+	var saveAs = __webpack_require__(372).default;
 	var qtk_1 = __webpack_require__(4);
 	var CommandExport = (function () {
-	    function CommandExport(viewModal, choiceInfo) {
-	        this._viewModal = viewModal;
+	    function CommandExport(viewModel, choiceInfo) {
+	        this._viewModel = viewModel;
 	        this._choiceInfo = choiceInfo;
 	    }
 	    CommandExport.prototype.canExecute = function () {
 	        return true;
 	    };
 	    CommandExport.prototype.execute = function (args) {
-	        var viewModal = this._viewModal;
+	        var viewModel = this._viewModel;
 	        qtk_1.InteractionRequest.choice(this._choiceInfo, function (ret) {
 	            var arr = ret.value;
 	            if (arr && arr.length) {
 	                var format = arr[0].text;
-	                var result = viewModal.exportDoc(format);
+	                var result = viewModel.exportDoc(format);
 	                if (result) {
 	                    var blob = new Blob([result], { type: 'text/plain;charset=utf-8' });
 	                    saveAs(blob, 'particles.json');
@@ -58433,13 +59179,13 @@ var editor =
 	        });
 	        return true;
 	    };
-	    CommandExport.create = function (viewModal) {
-	        var formatList = viewModal.getFormatList();
+	    CommandExport.create = function (viewModel) {
+	        var formatList = viewModel.getFormatList();
 	        var choiceInfo = qtk_1.ChoiceInfo.create("Export as...", false, 300, 200);
 	        formatList.forEach(function (item) {
 	            choiceInfo.addOption(item);
 	        });
-	        return new CommandExport(viewModal, choiceInfo);
+	        return new CommandExport(viewModel, choiceInfo);
 	    };
 	    return CommandExport;
 	}());
@@ -58448,7 +59194,7 @@ var editor =
 	//# sourceMappingURL=command-export.js.map
 
 /***/ },
-/* 368 */
+/* 372 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -58717,14 +59463,14 @@ var editor =
 	exports.default = saveAs;
 
 /***/ },
-/* 369 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var qtk_1 = __webpack_require__(4);
 	var CommandAbout = (function () {
-	    function CommandAbout(viewModal, propsInfo) {
-	        this._viewModal = viewModal;
+	    function CommandAbout(viewModel, propsInfo) {
+	        this._viewModel = viewModel;
 	        this._propsInfo = propsInfo;
 	    }
 	    CommandAbout.prototype.canExecute = function () {
@@ -58735,7 +59481,7 @@ var editor =
 	        });
 	        return true;
 	    };
-	    CommandAbout.create = function (viewModal, engine) {
+	    CommandAbout.create = function (viewModel, engine) {
 	        var data = {
 	            author: "Li XianJing",
 	            email: "xianjimli@hotmail.com",
@@ -58750,7 +59496,7 @@ var editor =
 	        ];
 	        var pagePropsDesc = qtk_1.PagePropsDesc.create("About", descJson);
 	        var propsInfo = qtk_1.PropsInfo.create(pagePropsDesc, data, false, 300);
-	        return new CommandAbout(viewModal, propsInfo);
+	        return new CommandAbout(viewModel, propsInfo);
 	    };
 	    return CommandAbout;
 	}());
@@ -58759,22 +59505,22 @@ var editor =
 	//# sourceMappingURL=command-about.js.map
 
 /***/ },
-/* 370 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var qtk_1 = __webpack_require__(4);
 	var CommandRemove = (function () {
-	    function CommandRemove(viewModal) {
-	        this._viewModal = viewModal;
+	    function CommandRemove(viewModel) {
+	        this._viewModel = viewModel;
 	    }
 	    CommandRemove.prototype.canExecute = function () {
-	        var viewModal = this._viewModal;
-	        var docList = viewModal.getDocList();
+	        var viewModel = this._viewModel;
+	        var docList = viewModel.getDocList();
 	        return docList && docList.length > 0;
 	    };
 	    CommandRemove.prototype.confirmRemove = function (items) {
-	        var viewModal = this._viewModal;
+	        var viewModel = this._viewModel;
 	        var fileNames = items.map(function (item) {
 	            return item.text;
 	        }).join(",");
@@ -58782,15 +59528,15 @@ var editor =
 	        qtk_1.InteractionRequest.confirm(info, function (ret) {
 	            if (info.confirmed) {
 	                items.forEach(function (item) {
-	                    viewModal.removeDoc(item.text);
+	                    viewModel.removeDoc(item.text);
 	                });
 	            }
 	        });
 	    };
 	    CommandRemove.prototype.execute = function (args) {
 	        var _this = this;
-	        var viewModal = this._viewModal;
-	        var docList = viewModal.getDocList();
+	        var viewModel = this._viewModel;
+	        var docList = viewModel.getDocList();
 	        var choiceInfo = qtk_1.ChoiceInfo.create("Remove...", true, 300, 300);
 	        docList.forEach(function (item) {
 	            choiceInfo.addOption(item);
@@ -58803,8 +59549,8 @@ var editor =
 	        });
 	        return true;
 	    };
-	    CommandRemove.create = function (viewModal) {
-	        return new CommandRemove(viewModal);
+	    CommandRemove.create = function (viewModel) {
+	        return new CommandRemove(viewModel);
 	    };
 	    return CommandRemove;
 	}());
@@ -58813,13 +59559,13 @@ var editor =
 	//# sourceMappingURL=command-remove.js.map
 
 /***/ },
-/* 371 */
+/* 375 */
 /***/ function(module, exports) {
 
 	"use strict";
 	var CommandContent = (function () {
-	    function CommandContent(viewModal, helpURL) {
-	        this._viewModal = viewModal;
+	    function CommandContent(viewModel, helpURL) {
+	        this._viewModel = viewModel;
 	        this._helpURL = helpURL;
 	    }
 	    CommandContent.prototype.canExecute = function () {
@@ -58830,8 +59576,8 @@ var editor =
 	        window.open(this._helpURL, "_blank");
 	        return true;
 	    };
-	    CommandContent.create = function (viewModal, helpURL) {
-	        return new CommandContent(viewModal, helpURL);
+	    CommandContent.create = function (viewModel, helpURL) {
+	        return new CommandContent(viewModel, helpURL);
 	    };
 	    return CommandContent;
 	}());
@@ -58840,7 +59586,7 @@ var editor =
 	//# sourceMappingURL=command-content.js.map
 
 /***/ },
-/* 372 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58851,9 +59597,9 @@ var editor =
 	};
 	var document_1 = __webpack_require__(3);
 	var qtk_1 = __webpack_require__(4);
-	var ParticlesViewModal = (function (_super) {
-	    __extends(ParticlesViewModal, _super);
-	    function ParticlesViewModal(data, type, storage) {
+	var ParticlesViewModel = (function (_super) {
+	    __extends(ParticlesViewModel, _super);
+	    function ParticlesViewModel(data, type, storage) {
 	        _super.call(this, data);
 	        this.type = type;
 	        this.storage = storage;
@@ -58867,72 +59613,72 @@ var editor =
 	            me.saveTemp();
 	        };
 	    }
-	    ParticlesViewModal.prototype.onDocReplaced = function () {
+	    ParticlesViewModel.prototype.onDocReplaced = function () {
 	    };
-	    ParticlesViewModal.prototype.getDocList = function () {
+	    ParticlesViewModel.prototype.getDocList = function () {
 	        return this.docList;
 	    };
-	    ParticlesViewModal.prototype.getDocName = function () {
+	    ParticlesViewModel.prototype.getDocName = function () {
 	        return this.fileName;
 	    };
-	    ParticlesViewModal.prototype.getPropsDesc = function () {
+	    ParticlesViewModel.prototype.getPropsDesc = function () {
 	        return this.doc.propsDesc;
 	    };
-	    ParticlesViewModal.prototype.saveDoc = function (fileName) {
+	    ParticlesViewModel.prototype.saveDoc = function (fileName) {
 	        var data = JSON.stringify(this.doc.toJson(), null, "\t");
 	        this.fileName = fileName;
 	        this.storage.set(fileName, data);
 	        this.updateDocList();
 	    };
-	    ParticlesViewModal.prototype.syncData = function (data) {
+	    ParticlesViewModel.prototype.syncData = function (data) {
 	        this.data = data;
 	        this.createEmitter();
 	        this.updateDocList();
 	        this.onDocReplaced();
 	    };
-	    ParticlesViewModal.prototype.createDoc = function (templateName) {
+	    ParticlesViewModel.prototype.createDoc = function (templateName) {
 	        this.fileName = null;
 	        this.doc.fromTemplate(templateName);
 	        this.syncData(this.doc.data);
 	    };
-	    ParticlesViewModal.prototype.loadData = function (json) {
+	    ParticlesViewModel.prototype.loadData = function (json) {
 	        this.doc.fromJson(json);
 	        this.syncData(this.doc.data);
 	    };
-	    ParticlesViewModal.prototype.openDoc = function (fileName) {
+	    ParticlesViewModel.prototype.openDoc = function (fileName) {
 	        this.fileName = fileName;
 	        var data = this.storage.get(fileName);
 	        var json = JSON.parse(data);
 	        this.loadData(json);
 	    };
-	    ParticlesViewModal.prototype.removeDoc = function (fileName) {
+	    ParticlesViewModel.prototype.removeDoc = function (fileName) {
 	        this.storage.remove(fileName);
 	        this.updateDocList();
 	    };
-	    ParticlesViewModal.prototype.getFormatList = function () {
+	    ParticlesViewModel.prototype.getFormatList = function () {
 	        return ["json"];
 	    };
-	    ParticlesViewModal.prototype.exportDoc = function (format) {
+	    ParticlesViewModel.prototype.exportDoc = function (format) {
 	        if (format.indexOf("json") >= 0) {
 	            return JSON.stringify(this.data, null, "\t");
 	        }
 	        return null;
 	    };
-	    ParticlesViewModal.prototype.setProp = function (path, value, converter, validationRule) {
+	    ParticlesViewModel.prototype.setProp = function (path, value, converter, validationRule) {
 	        var result = _super.prototype.setProp.call(this, path, value, converter, validationRule);
 	        this.createEmitter();
 	        return result;
 	    };
-	    ParticlesViewModal.prototype.getTemplateList = function () {
+	    ParticlesViewModel.prototype.getTemplateList = function () {
 	        return this.doc.getTemplateList();
 	    };
-	    ParticlesViewModal.prototype.updateDocList = function () {
+	    ParticlesViewModel.prototype.updateDocList = function () {
 	        this.docList = this.storage.getItems();
 	    };
-	    ParticlesViewModal.prototype.getPropTitleWidth = function () {
+	    ParticlesViewModel.prototype.getPropTitleWidth = function () {
 	        return "30%";
 	    };
-	    ParticlesViewModal.prototype.saveTemp = function () {
+	    ParticlesViewModel.prototype.saveTemp = function () {
 	        var docInfo = {
 	            fileName: this.fileName,
 	            doc: this.doc.toJson()
@@ -58941,7 +59687,7 @@ var editor =
 	        var key = "temp." + this.type;
 	        localStorage.setItem(key, data);
 	    };
-	    ParticlesViewModal.prototype.loadTemp = function () {
+	    ParticlesViewModel.prototype.loadTemp = function () {
 	        var key = "temp." + this.type;
 	        var str = localStorage.getItem(key);
 	        if (str) {
@@ -58953,14 +59699,14 @@ var editor =
 	            this.createDoc("default");
 	        }
 	    };
-	    return ParticlesViewModal;
-	}(qtk_1.ViewModal));
-	exports.ParticlesViewModal = ParticlesViewModal;
+	    return ParticlesViewModel;
+	}(qtk_1.ViewModel));
+	exports.ParticlesViewModel = ParticlesViewModel;
 	;
-	//# sourceMappingURL=particles-view-modal.js.map
+	//# sourceMappingURL=particles-view-model.js.map
 
 /***/ },
-/* 373 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58969,19 +59715,19 @@ var editor =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var proton = __webpack_require__(374);
-	__webpack_require__(375);
+	var proton = __webpack_require__(378);
+	__webpack_require__(379);
 	var qtk_1 = __webpack_require__(4);
-	var proton_wrapper_1 = __webpack_require__(378);
+	var proton_wrapper_1 = __webpack_require__(382);
 	var qtk_particles_editor_1 = __webpack_require__(2);
 	var qtk_particles_editor_2 = __webpack_require__(2);
 	var qtk_particles_editor_3 = __webpack_require__(2);
-	var ProtonViewModal = (function (_super) {
-	    __extends(ProtonViewModal, _super);
-	    function ProtonViewModal(storage) {
-	        _super.call(this, null, ProtonViewModal.TYPE, storage);
+	var ProtonViewModel = (function (_super) {
+	    __extends(ProtonViewModel, _super);
+	    function ProtonViewModel(storage) {
+	        _super.call(this, null, ProtonViewModel.TYPE, storage);
 	    }
-	    ProtonViewModal.prototype.onDocReplaced = function () {
+	    ProtonViewModel.prototype.onDocReplaced = function () {
 	        var globalCompositeOperation = this.data.globalCompositeOperation;
 	        if (globalCompositeOperation) {
 	            var context = this.canvas.getContext('2d');
@@ -58990,7 +59736,7 @@ var editor =
 	            }, 300);
 	        }
 	    };
-	    ProtonViewModal.prototype.registerConverters = function () {
+	    ProtonViewModel.prototype.registerConverters = function () {
 	        this.registerValueConverter("radius", qtk_1.RangeFixer.create(0, 1000, 0, 1000, true));
 	        this.registerValueConverter("life", qtk_1.RangeFixer.create(0, 1000, 0, 1000, true));
 	        this.registerValueConverter("mass", qtk_1.RangeFixer.create(0, 1000, 0, 1000, true));
@@ -59003,7 +59749,7 @@ var editor =
 	        this.registerValueConverter("v-thapath", qtk_1.RangeFixer.create(-1000, 1000, -1000, 1000, true));
 	        this.registerValueConverter("delay", qtk_1.NumberFixer.create(0, 10));
 	    };
-	    ProtonViewModal.prototype.registerCommands = function () {
+	    ProtonViewModel.prototype.registerCommands = function () {
 	        this.registerCommand("draw", qtk_particles_editor_2.CommandDraw.create(this.canvas));
 	        this.registerCommand("about", qtk_particles_editor_1.CommandAbout.create(this, "https://github.com/a-jie/Proton"));
 	        this.registerCommand("content", qtk_particles_editor_1.CommandContent.create(this, "http://proton.jpeer.at/index.html"));
@@ -59014,9 +59760,9 @@ var editor =
 	        this.registerCommand("save-as", qtk_particles_editor_2.CommandSave.create(this, true));
 	        this.registerCommand("export", qtk_particles_editor_2.CommandExport.create(this));
 	    };
-	    ProtonViewModal.prototype.createEmitter = function () {
+	    ProtonViewModel.prototype.createEmitter = function () {
 	        var data = this.data;
-	        var proton = ProtonViewModal.proton;
+	        var proton = ProtonViewModel.proton;
 	        if (!this.renderer) {
 	            var renderer = new Proton.Renderer('canvas', proton, this.canvas);
 	            this.renderer = renderer;
@@ -59029,28 +59775,28 @@ var editor =
 	        }
 	        this.protonEmitter = proton_wrapper_1.createParticlesEmitter(proton, data);
 	    };
-	    ProtonViewModal.update = function () {
-	        ProtonViewModal.proton.update();
-	        requestAnimationFrame(ProtonViewModal.update);
+	    ProtonViewModel.update = function () {
+	        ProtonViewModel.proton.update();
+	        requestAnimationFrame(ProtonViewModel.update);
 	    };
-	    ProtonViewModal.create = function (options) {
-	        if (!ProtonViewModal.proton) {
-	            ProtonViewModal.proton = new Proton();
-	            requestAnimationFrame(ProtonViewModal.update);
+	    ProtonViewModel.create = function (options) {
+	        if (!ProtonViewModel.proton) {
+	            ProtonViewModel.proton = new Proton();
+	            requestAnimationFrame(ProtonViewModel.update);
 	        }
-	        return new ProtonViewModal(options.storage);
+	        return new ProtonViewModel(options.storage);
 	    };
-	    ProtonViewModal.TYPE = "proton";
-	    ProtonViewModal.proton = null;
-	    return ProtonViewModal;
-	}(qtk_particles_editor_3.ParticlesViewModal));
-	exports.ProtonViewModal = ProtonViewModal;
+	    ProtonViewModel.TYPE = "proton";
+	    ProtonViewModel.proton = null;
+	    return ProtonViewModel;
+	}(qtk_particles_editor_3.ParticlesViewModel));
+	exports.ProtonViewModel = ProtonViewModel;
 	;
-	qtk_particles_editor_3.ParticlesViewModalFactory.register(ProtonViewModal.TYPE, ProtonViewModal.create);
-	//# sourceMappingURL=view-modal.js.map
+	qtk_particles_editor_3.ParticlesViewModelFactory.register(ProtonViewModel.TYPE, ProtonViewModel.create);
+	//# sourceMappingURL=view-model.js.map
 
 /***/ },
-/* 374 */
+/* 378 */
 /***/ function(module, exports) {
 
 	/*!
@@ -63221,19 +63967,19 @@ var editor =
 		}()); 
 
 /***/ },
-/* 375 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var default_1 = __webpack_require__(376);
-	var big_fire_1 = __webpack_require__(377);
+	var default_1 = __webpack_require__(380);
+	var big_fire_1 = __webpack_require__(381);
 	var qtk_particles_editor_1 = __webpack_require__(2);
 	qtk_particles_editor_1.Document.registerTemplate("default", default_1.defaultTemplate);
 	qtk_particles_editor_1.Document.registerTemplate("Big Fire", big_fire_1.bigFireTemplate);
 	//# sourceMappingURL=templates.js.map
 
 /***/ },
-/* 376 */
+/* 380 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -63275,7 +64021,7 @@ var editor =
 	//# sourceMappingURL=default.js.map
 
 /***/ },
-/* 377 */
+/* 381 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -63316,11 +64062,11 @@ var editor =
 	//# sourceMappingURL=big-fire.js.map
 
 /***/ },
-/* 378 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var proton = __webpack_require__(374);
+	var proton = __webpack_require__(378);
 	function createParticlesEmitter(proton, data) {
 	    var emitter = new Proton.Emitter();
 	    if (data.image) {
