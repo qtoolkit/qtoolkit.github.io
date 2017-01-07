@@ -114,18 +114,18 @@ var qtk =
 	exports.TreeView = tree_view_1.TreeView;
 	var application_1 = __webpack_require__(121);
 	exports.Application = application_1.Application;
-	var movable_1 = __webpack_require__(163);
+	var movable_1 = __webpack_require__(164);
 	exports.Movable = movable_1.Movable;
 	var theme_manager_1 = __webpack_require__(122);
 	exports.ThemeManager = theme_manager_1.ThemeManager;
-	var draggable_1 = __webpack_require__(164);
+	var draggable_1 = __webpack_require__(165);
 	exports.Draggable = draggable_1.Draggable;
-	var droppable_1 = __webpack_require__(165);
+	var droppable_1 = __webpack_require__(166);
 	exports.Droppable = droppable_1.Droppable;
-	var resizable_1 = __webpack_require__(166);
+	var resizable_1 = __webpack_require__(167);
 	exports.Resizable = resizable_1.Resizable;
 	exports.ResizableOptions = resizable_1.ResizableOptions;
-	var menu_1 = __webpack_require__(167);
+	var menu_1 = __webpack_require__(168);
 	exports.Menu = menu_1.Menu;
 	exports.MenuItem = menu_1.MenuItem;
 	var radio_button_1 = __webpack_require__(106);
@@ -134,63 +134,61 @@ var qtk =
 	exports.TreeItemData = tree_item_data_1.TreeItemData;
 	var check_button_1 = __webpack_require__(107);
 	exports.CheckButton = check_button_1.CheckButton;
-	var window_normal_1 = __webpack_require__(168);
+	var window_normal_1 = __webpack_require__(169);
 	exports.WindowNormal = window_normal_1.WindowNormal;
 	var widget_factory_1 = __webpack_require__(23);
 	exports.WidgetFactory = widget_factory_1.WidgetFactory;
-	var menu_bar_1 = __webpack_require__(169);
+	var menu_bar_1 = __webpack_require__(170);
 	exports.MenuBar = menu_bar_1.MenuBar;
 	exports.MenuBarItem = menu_bar_1.MenuBarItem;
-	var color_tile_1 = __webpack_require__(140);
+	var color_tile_1 = __webpack_require__(141);
 	exports.ColorTile = color_tile_1.ColorTile;
 	exports.ColorLine = color_tile_1.ColorLine;
 	var list_item_1 = __webpack_require__(114);
 	exports.ListItem = list_item_1.ListItem;
 	exports.ListItemStyle = list_item_1.ListItemStyle;
-	var chart_view_1 = __webpack_require__(170);
+	var chart_view_1 = __webpack_require__(171);
 	exports.ChartView = chart_view_1.ChartView;
 	var graphics_1 = __webpack_require__(25);
 	exports.RoundType = graphics_1.RoundType;
 	exports.Graphics = graphics_1.Graphics;
-	var accordion_1 = __webpack_require__(323);
+	var accordion_1 = __webpack_require__(324);
 	exports.Accordion = accordion_1.Accordion;
-	var service_locator_1 = __webpack_require__(124);
-	exports.ServiceLocator = service_locator_1.ServiceLocator;
-	var ruler_1 = __webpack_require__(326);
+	var ruler_1 = __webpack_require__(327);
 	exports.VRuler = ruler_1.VRuler;
 	exports.HRuler = ruler_1.HRuler;
-	var title_content_1 = __webpack_require__(324);
+	var title_content_1 = __webpack_require__(325);
 	exports.TitleContent = title_content_1.TitleContent;
-	var title_label_1 = __webpack_require__(142);
+	var title_label_1 = __webpack_require__(143);
 	exports.TitleLabel = title_label_1.TitleLabel;
-	var title_range_1 = __webpack_require__(144);
+	var title_range_1 = __webpack_require__(145);
 	exports.TitleRange = title_range_1.TitleRange;
-	var title_vector_1 = __webpack_require__(146);
+	var title_vector_1 = __webpack_require__(147);
 	exports.TitleVector = title_vector_1.TitleVector;
-	var title_edit_1 = __webpack_require__(141);
+	var title_edit_1 = __webpack_require__(142);
 	exports.TitleEdit = title_edit_1.TitleEdit;
-	var title_slider_1 = __webpack_require__(148);
+	var title_slider_1 = __webpack_require__(149);
 	exports.TitleSlider = title_slider_1.TitleSlider;
-	var property_page_1 = __webpack_require__(136);
+	var property_page_1 = __webpack_require__(137);
 	exports.PropertyPage = property_page_1.PropertyPage;
-	var property_dialog_1 = __webpack_require__(135);
+	var property_dialog_1 = __webpack_require__(136);
 	exports.PropertyDialog = property_dialog_1.PropertyDialog;
-	var range_edit_1 = __webpack_require__(145);
+	var range_edit_1 = __webpack_require__(146);
 	exports.RangeEdit = range_edit_1.RangeEdit;
-	var vector_edit_1 = __webpack_require__(147);
+	var vector_edit_1 = __webpack_require__(148);
 	exports.VectorEdit = vector_edit_1.VectorEdit;
-	var choosable_edit_1 = __webpack_require__(151);
+	var choosable_edit_1 = __webpack_require__(152);
 	exports.ChoosableEdit = choosable_edit_1.ChoosableEdit;
-	var title_text_area_1 = __webpack_require__(149);
+	var title_text_area_1 = __webpack_require__(150);
 	exports.TitleTextArea = title_text_area_1.TitleTextArea;
-	var property_sheets_1 = __webpack_require__(327);
+	var property_sheets_1 = __webpack_require__(328);
 	exports.PropertySheets = property_sheets_1.PropertySheets;
 	var progress_bar_1 = __webpack_require__(96);
 	exports.ProgressBarType = progress_bar_1.ProgressBarType;
 	exports.ProgressBar = progress_bar_1.ProgressBar;
-	var title_choosable_edit_1 = __webpack_require__(150);
+	var title_choosable_edit_1 = __webpack_require__(151);
 	exports.TitleChoosableEdit = title_choosable_edit_1.TitleChoosableEdit;
-	var dock_layouter_1 = __webpack_require__(131);
+	var dock_layouter_1 = __webpack_require__(132);
 	exports.DockLayouter = dock_layouter_1.DockLayouter;
 	exports.DockLayouterParam = dock_layouter_1.DockLayouterParam;
 	var grid_layouter_1 = __webpack_require__(117);
@@ -202,7 +200,7 @@ var qtk =
 	var simple_layouter_1 = __webpack_require__(115);
 	exports.SimpleLayouter = simple_layouter_1.SimpleLayouter;
 	exports.SimpleLayouterParam = simple_layouter_1.SimpleLayouterParam;
-	var linear_layouter_1 = __webpack_require__(132);
+	var linear_layouter_1 = __webpack_require__(133);
 	exports.LinearLayouter = linear_layouter_1.LinearLayouter;
 	exports.LinearLayouterParam = linear_layouter_1.LinearLayouterParam;
 	var widget_1 = __webpack_require__(19);
@@ -216,11 +214,10 @@ var qtk =
 	exports.AlignH = consts_1.AlignH;
 	exports.AlignV = consts_1.AlignV;
 	exports.Orientation = consts_1.Orientation;
-	exports.Services = consts_1.Services;
-	var title_combo_box_1 = __webpack_require__(153);
+	var title_combo_box_1 = __webpack_require__(154);
 	exports.TitleComboBox = title_combo_box_1.TitleComboBox;
 	exports.TitleComboBoxEditable = title_combo_box_1.TitleComboBoxEditable;
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	exports.ButtonOption = message_box_1.ButtonOption;
 	exports.ButtonsOptions = message_box_1.ButtonsOptions;
 	exports.TitleOptions = message_box_1.TitleOptions;
@@ -231,41 +228,41 @@ var qtk =
 	exports.ScrollView = scroll_view_1.ScrollView;
 	var device_info_1 = __webpack_require__(123);
 	exports.DeviceInfo = device_info_1.DeviceInfo;
-	var view_model_1 = __webpack_require__(154);
+	var view_model_1 = __webpack_require__(155);
 	exports.ViewModel = view_model_1.ViewModel;
 	var recyclable_creator_1 = __webpack_require__(83);
 	exports.RecyclableCreator = recyclable_creator_1.RecyclableCreator;
-	var delegate_command_1 = __webpack_require__(328);
+	var delegate_command_1 = __webpack_require__(329);
 	exports.DelegateCommand = delegate_command_1.DelegateCommand;
-	var collection_view_model_1 = __webpack_require__(329);
+	var collection_view_model_1 = __webpack_require__(330);
 	exports.CollectionViewModel = collection_view_model_1.CollectionViewModel;
-	var delegate_value_converter_1 = __webpack_require__(330);
+	var delegate_value_converter_1 = __webpack_require__(331);
 	exports.DelegateValueConverter = delegate_value_converter_1.DelegateValueConverter;
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	exports.WidgetRecyclableCreator = widget_recyclable_creator_1.WidgetRecyclableCreator;
-	var ivalidation_rule_1 = __webpack_require__(158);
+	var ivalidation_rule_1 = __webpack_require__(159);
 	exports.ValidationResult = ivalidation_rule_1.ValidationResult;
-	var delegate_validation_rule_1 = __webpack_require__(331);
+	var delegate_validation_rule_1 = __webpack_require__(332);
 	exports.DelegateValidationRule = delegate_validation_rule_1.DelegateValidationRule;
-	var binding_rule_1 = __webpack_require__(79);
+	var binding_rule_1 = __webpack_require__(80);
 	exports.BindingRule = binding_rule_1.BindingRule;
 	exports.BindingDataSource = binding_rule_1.BindingDataSource;
 	exports.BindingCommandSource = binding_rule_1.BindingCommandSource;
 	exports.BindingRuleItem = binding_rule_1.BindingRuleItem;
-	var iview_model_1 = __webpack_require__(81);
+	var iview_model_1 = __webpack_require__(79);
 	exports.BindingMode = iview_model_1.BindingMode;
-	var props_desc_1 = __webpack_require__(152);
+	var props_desc_1 = __webpack_require__(153);
 	exports.PagePropsDesc = props_desc_1.PagePropsDesc;
 	exports.PropsDesc = props_desc_1.PropsDesc;
 	exports.PropDesc = props_desc_1.PropDesc;
 	exports.NumberPropDesc = props_desc_1.NumberPropDesc;
 	exports.SliderPropDesc = props_desc_1.SliderPropDesc;
-	var props_desc_2 = __webpack_require__(152);
+	var props_desc_2 = __webpack_require__(153);
 	exports.TextPropDesc = props_desc_2.TextPropDesc;
 	exports.ReadonlyTextPropDesc = props_desc_2.ReadonlyTextPropDesc;
 	exports.OptionsPropDesc = props_desc_2.OptionsPropDesc;
 	exports.RangePropDesc = props_desc_2.RangePropDesc;
-	var props_desc_3 = __webpack_require__(152);
+	var props_desc_3 = __webpack_require__(153);
 	exports.Vector2PropDesc = props_desc_3.Vector2PropDesc;
 	exports.Vector3PropDesc = props_desc_3.Vector3PropDesc;
 	exports.LinePropDesc = props_desc_3.LinePropDesc;
@@ -274,63 +271,65 @@ var qtk =
 	exports.TWEEN = TWEEN;
 	var Events = __webpack_require__(6);
 	exports.Events = Events;
-	var Assets = __webpack_require__(11);
-	exports.Assets = Assets;
 	var inputEventAdapter = __webpack_require__(15);
 	exports.inputEventAdapter = inputEventAdapter;
-	var toast_info_1 = __webpack_require__(332);
+	var assets_1 = __webpack_require__(11);
+	exports.AssetManager = assets_1.AssetManager;
+	exports.AssetGroup = assets_1.AssetGroup;
+	exports.AssetItem = assets_1.AssetItem;
+	var toast_info_1 = __webpack_require__(333);
 	exports.ToastInfo = toast_info_1.ToastInfo;
-	var input_info_1 = __webpack_require__(333);
+	var input_info_1 = __webpack_require__(334);
 	exports.InputInfo = input_info_1.InputInfo;
-	var props_info_1 = __webpack_require__(334);
+	var props_info_1 = __webpack_require__(335);
 	exports.PropsInfo = props_info_1.PropsInfo;
-	var choice_info_1 = __webpack_require__(335);
+	var choice_info_1 = __webpack_require__(336);
 	exports.ChoiceInfo = choice_info_1.ChoiceInfo;
-	var progress_info_1 = __webpack_require__(336);
+	var progress_info_1 = __webpack_require__(337);
 	exports.ProgressInfo = progress_info_1.ProgressInfo;
-	var confirmation_info_1 = __webpack_require__(337);
+	var confirmation_info_1 = __webpack_require__(338);
 	exports.ConfirmationInfo = confirmation_info_1.ConfirmationInfo;
-	var notification_info_1 = __webpack_require__(338);
+	var notification_info_1 = __webpack_require__(339);
 	exports.NotificationInfo = notification_info_1.NotificationInfo;
-	var interaction_types_1 = __webpack_require__(127);
+	var interaction_types_1 = __webpack_require__(128);
 	exports.InteractionTypes = interaction_types_1.InteractionTypes;
-	var interaction_request_1 = __webpack_require__(126);
+	var interaction_request_1 = __webpack_require__(127);
 	exports.InteractionRequest = interaction_request_1.InteractionRequest;
-	var interaction_service_1 = __webpack_require__(128);
+	var interaction_service_1 = __webpack_require__(129);
 	exports.InteractionService = interaction_service_1.InteractionService;
-	var items_storage_1 = __webpack_require__(339);
+	var items_storage_1 = __webpack_require__(340);
 	exports.ItemsStorage = items_storage_1.ItemsStorage;
-	var table_row_1 = __webpack_require__(340);
+	var table_row_1 = __webpack_require__(341);
 	exports.TableRow = table_row_1.TableRow;
-	var table_client_1 = __webpack_require__(341);
+	var table_client_1 = __webpack_require__(342);
 	exports.TableClient = table_client_1.TableClient;
-	var table_index_1 = __webpack_require__(343);
+	var table_index_1 = __webpack_require__(344);
 	exports.TableIndex = table_index_1.TableIndex;
-	var table_header_1 = __webpack_require__(345);
+	var table_header_1 = __webpack_require__(346);
 	exports.TableHeader = table_header_1.TableHeader;
-	var table_1 = __webpack_require__(346);
+	var table_1 = __webpack_require__(347);
 	exports.Table = table_1.Table;
 	exports.TableColInfo = table_1.TableColInfo;
-	var table_index_item_1 = __webpack_require__(347);
+	var table_index_item_1 = __webpack_require__(348);
 	exports.TableIndexItem = table_index_item_1.TableIndexItem;
-	var table_header_item_1 = __webpack_require__(348);
+	var table_header_item_1 = __webpack_require__(349);
 	exports.TableHeaderItem = table_header_item_1.TableHeaderItem;
-	var delegate_filter_1 = __webpack_require__(349);
+	var delegate_filter_1 = __webpack_require__(350);
 	exports.DelegateFilter = delegate_filter_1.DelegateFilter;
-	var delegate_comparator_1 = __webpack_require__(350);
+	var delegate_comparator_1 = __webpack_require__(351);
 	exports.DelegateComparator = delegate_comparator_1.DelegateComparator;
-	var comparators_1 = __webpack_require__(351);
+	var comparators_1 = __webpack_require__(352);
 	exports.NumberComparator = comparators_1.NumberComparator;
 	exports.StringComparator = comparators_1.StringComparator;
 	exports.RevertComparator = comparators_1.RevertComparator;
 	exports.ObjectPropComparator = comparators_1.ObjectPropComparator;
-	var range_fixer_1 = __webpack_require__(352);
+	var range_fixer_1 = __webpack_require__(353);
 	exports.RangeFixer = range_fixer_1.RangeFixer;
-	var number_fixer_1 = __webpack_require__(353);
+	var number_fixer_1 = __webpack_require__(354);
 	exports.NumberFixer = number_fixer_1.NumberFixer;
-	var vector2_fixer_1 = __webpack_require__(354);
+	var vector2_fixer_1 = __webpack_require__(355);
 	exports.Vector2Fixer = vector2_fixer_1.Vector2Fixer;
-	var vector3_fixer_1 = __webpack_require__(355);
+	var vector3_fixer_1 = __webpack_require__(356);
 	exports.Vector3Fixer = vector3_fixer_1.Vector3Fixer;
 
 
@@ -1904,10 +1903,12 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+	//force to use polyfill
+	window.fetch = null;
 	__webpack_require__(8);
 	var path = __webpack_require__(9);
 	var emitter_1 = __webpack_require__(4);
-	var Assets = __webpack_require__(11);
+	var assets_1 = __webpack_require__(11);
 	var Events = __webpack_require__(6);
 	(function (ImageDrawType) {
 	    /**
@@ -2053,7 +2054,7 @@ var qtk =
 	    });
 	    ImageTile.prototype.createNormal = function (src) {
 	        var _this = this;
-	        Assets.loadImage(src).then(function (img) {
+	        assets_1.AssetManager.loadImage(src).then(function (img) {
 	            _this.init(img, 0, 0, img.width, img.height);
 	        }).catch(function (err) {
 	            _this.init(null, 0, 0, 0, 0);
@@ -2066,7 +2067,7 @@ var qtk =
 	        var y = parseInt(xywh[2]);
 	        var w = parseInt(xywh[3]);
 	        var h = parseInt(xywh[4]);
-	        Assets.loadImage(base).then(function (img) {
+	        assets_1.AssetManager.loadImage(base).then(function (img) {
 	            _this.init(img, x, y, w, h);
 	        }).catch(function (err) {
 	            _this.init(null, 0, 0, 0, 0);
@@ -2078,7 +2079,7 @@ var qtk =
 	        var rows = parseInt(rowcolIndex[1]);
 	        var cols = parseInt(rowcolIndex[2]);
 	        var index = parseInt(rowcolIndex[3]);
-	        Assets.loadImage(base).then(function (img) {
+	        assets_1.AssetManager.loadImage(base).then(function (img) {
 	            var w = img.width / cols;
 	            var h = img.height / rows;
 	            var r = (index / cols) >> 0;
@@ -2092,10 +2093,10 @@ var qtk =
 	    };
 	    ImageTile.prototype.createTexturePacker = function (jsonURL, name) {
 	        var _this = this;
-	        Assets.loadJSON(jsonURL).then(function (json) {
+	        assets_1.AssetManager.loadJson(jsonURL).then(function (json) {
 	            var info = json.frames[name];
 	            var imgSRC = path.dirname(jsonURL) + "/" + (json.file || json.meta.image);
-	            Assets.loadImage(imgSRC).then(function (img) {
+	            assets_1.AssetManager.loadImage(imgSRC).then(function (img) {
 	                var rect = info.frame || info;
 	                var x = rect.x;
 	                var y = rect.y;
@@ -2335,6 +2336,28 @@ var qtk =
 	    arrayBuffer: 'ArrayBuffer' in self
 	  }
 
+	  if (support.arrayBuffer) {
+	    var viewClasses = [
+	      '[object Int8Array]',
+	      '[object Uint8Array]',
+	      '[object Uint8ClampedArray]',
+	      '[object Int16Array]',
+	      '[object Uint16Array]',
+	      '[object Int32Array]',
+	      '[object Uint32Array]',
+	      '[object Float32Array]',
+	      '[object Float64Array]'
+	    ]
+
+	    var isDataView = function(obj) {
+	      return obj && DataView.prototype.isPrototypeOf(obj)
+	    }
+
+	    var isArrayBufferView = ArrayBuffer.isView || function(obj) {
+	      return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1
+	    }
+	  }
+
 	  function normalizeName(name) {
 	    if (typeof name !== 'string') {
 	      name = String(name)
@@ -2467,14 +2490,36 @@ var qtk =
 
 	  function readBlobAsArrayBuffer(blob) {
 	    var reader = new FileReader()
+	    var promise = fileReaderReady(reader)
 	    reader.readAsArrayBuffer(blob)
-	    return fileReaderReady(reader)
+	    return promise
 	  }
 
 	  function readBlobAsText(blob) {
 	    var reader = new FileReader()
+	    var promise = fileReaderReady(reader)
 	    reader.readAsText(blob)
-	    return fileReaderReady(reader)
+	    return promise
+	  }
+
+	  function readArrayBufferAsText(buf) {
+	    var view = new Uint8Array(buf)
+	    var chars = new Array(view.length)
+
+	    for (var i = 0; i < view.length; i++) {
+	      chars[i] = String.fromCharCode(view[i])
+	    }
+	    return chars.join('')
+	  }
+
+	  function bufferClone(buf) {
+	    if (buf.slice) {
+	      return buf.slice(0)
+	    } else {
+	      var view = new Uint8Array(buf.byteLength)
+	      view.set(new Uint8Array(buf))
+	      return view.buffer
+	    }
 	  }
 
 	  function Body() {
@@ -2482,7 +2527,9 @@ var qtk =
 
 	    this._initBody = function(body) {
 	      this._bodyInit = body
-	      if (typeof body === 'string') {
+	      if (!body) {
+	        this._bodyText = ''
+	      } else if (typeof body === 'string') {
 	        this._bodyText = body
 	      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
 	        this._bodyBlob = body
@@ -2490,11 +2537,12 @@ var qtk =
 	        this._bodyFormData = body
 	      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
 	        this._bodyText = body.toString()
-	      } else if (!body) {
-	        this._bodyText = ''
-	      } else if (support.arrayBuffer && ArrayBuffer.prototype.isPrototypeOf(body)) {
-	        // Only support ArrayBuffers for POST method.
-	        // Receiving ArrayBuffers happens via Blobs, instead.
+	      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+	        this._bodyArrayBuffer = bufferClone(body.buffer)
+	        // IE 10-11 can't handle a DataView body.
+	        this._bodyInit = new Blob([this._bodyArrayBuffer])
+	      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
+	        this._bodyArrayBuffer = bufferClone(body)
 	      } else {
 	        throw new Error('unsupported BodyInit type')
 	      }
@@ -2519,6 +2567,8 @@ var qtk =
 
 	        if (this._bodyBlob) {
 	          return Promise.resolve(this._bodyBlob)
+	        } else if (this._bodyArrayBuffer) {
+	          return Promise.resolve(new Blob([this._bodyArrayBuffer]))
 	        } else if (this._bodyFormData) {
 	          throw new Error('could not read FormData body as blob')
 	        } else {
@@ -2527,27 +2577,28 @@ var qtk =
 	      }
 
 	      this.arrayBuffer = function() {
-	        return this.blob().then(readBlobAsArrayBuffer)
-	      }
-
-	      this.text = function() {
-	        var rejected = consumed(this)
-	        if (rejected) {
-	          return rejected
-	        }
-
-	        if (this._bodyBlob) {
-	          return readBlobAsText(this._bodyBlob)
-	        } else if (this._bodyFormData) {
-	          throw new Error('could not read FormData body as text')
+	        if (this._bodyArrayBuffer) {
+	          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)
 	        } else {
-	          return Promise.resolve(this._bodyText)
+	          return this.blob().then(readBlobAsArrayBuffer)
 	        }
 	      }
-	    } else {
-	      this.text = function() {
-	        var rejected = consumed(this)
-	        return rejected ? rejected : Promise.resolve(this._bodyText)
+	    }
+
+	    this.text = function() {
+	      var rejected = consumed(this)
+	      if (rejected) {
+	        return rejected
+	      }
+
+	      if (this._bodyBlob) {
+	        return readBlobAsText(this._bodyBlob)
+	      } else if (this._bodyArrayBuffer) {
+	        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))
+	      } else if (this._bodyFormData) {
+	        throw new Error('could not read FormData body as text')
+	      } else {
+	        return Promise.resolve(this._bodyText)
 	      }
 	    }
 
@@ -2575,7 +2626,10 @@ var qtk =
 	  function Request(input, options) {
 	    options = options || {}
 	    var body = options.body
-	    if (Request.prototype.isPrototypeOf(input)) {
+
+	    if (typeof input === 'string') {
+	      this.url = input
+	    } else {
 	      if (input.bodyUsed) {
 	        throw new TypeError('Already read')
 	      }
@@ -2586,12 +2640,10 @@ var qtk =
 	      }
 	      this.method = input.method
 	      this.mode = input.mode
-	      if (!body) {
+	      if (!body && input._bodyInit != null) {
 	        body = input._bodyInit
 	        input.bodyUsed = true
 	      }
-	    } else {
-	      this.url = input
 	    }
 
 	    this.credentials = options.credentials || this.credentials || 'omit'
@@ -2609,7 +2661,7 @@ var qtk =
 	  }
 
 	  Request.prototype.clone = function() {
-	    return new Request(this)
+	    return new Request(this, { body: this._bodyInit })
 	  }
 
 	  function decode(body) {
@@ -2625,16 +2677,17 @@ var qtk =
 	    return form
 	  }
 
-	  function headers(xhr) {
-	    var head = new Headers()
-	    var pairs = (xhr.getAllResponseHeaders() || '').trim().split('\n')
-	    pairs.forEach(function(header) {
-	      var split = header.trim().split(':')
-	      var key = split.shift().trim()
-	      var value = split.join(':').trim()
-	      head.append(key, value)
+	  function parseHeaders(rawHeaders) {
+	    var headers = new Headers()
+	    rawHeaders.split('\r\n').forEach(function(line) {
+	      var parts = line.split(':')
+	      var key = parts.shift().trim()
+	      if (key) {
+	        var value = parts.join(':').trim()
+	        headers.append(key, value)
+	      }
 	    })
-	    return head
+	    return headers
 	  }
 
 	  Body.call(Request.prototype)
@@ -2645,10 +2698,10 @@ var qtk =
 	    }
 
 	    this.type = 'default'
-	    this.status = options.status
+	    this.status = 'status' in options ? options.status : 200
 	    this.ok = this.status >= 200 && this.status < 300
-	    this.statusText = options.statusText
-	    this.headers = options.headers instanceof Headers ? options.headers : new Headers(options.headers)
+	    this.statusText = 'statusText' in options ? options.statusText : 'OK'
+	    this.headers = new Headers(options.headers)
 	    this.url = options.url || ''
 	    this._initBody(bodyInit)
 	  }
@@ -2686,35 +2739,16 @@ var qtk =
 
 	  self.fetch = function(input, init) {
 	    return new Promise(function(resolve, reject) {
-	      var request
-	      if (Request.prototype.isPrototypeOf(input) && !init) {
-	        request = input
-	      } else {
-	        request = new Request(input, init)
-	      }
-
+	      var request = new Request(input, init)
 	      var xhr = new XMLHttpRequest()
-
-	      function responseURL() {
-	        if ('responseURL' in xhr) {
-	          return xhr.responseURL
-	        }
-
-	        // Avoid security warnings on getResponseHeader when not allowed by CORS
-	        if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
-	          return xhr.getResponseHeader('X-Request-URL')
-	        }
-
-	        return
-	      }
 
 	      xhr.onload = function() {
 	        var options = {
 	          status: xhr.status,
 	          statusText: xhr.statusText,
-	          headers: headers(xhr),
-	          url: responseURL()
+	          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
 	        }
+	        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL')
 	        var body = 'response' in xhr ? xhr.response : xhr.responseText
 	        resolve(new Response(body, options))
 	      }
@@ -3162,11 +3196,6 @@ var qtk =
 	var path = __webpack_require__(9);
 	var Events = __webpack_require__(6);
 	var emitter_1 = __webpack_require__(4);
-	exports.AUDIO = "audio";
-	exports.IMAGE = "image";
-	exports.BLOB = "blob";
-	exports.JSON = "json";
-	exports.TEXT = "text";
 	;
 	var assetsCache = {};
 	function load(url, type) {
@@ -3176,10 +3205,10 @@ var qtk =
 	            if (response.status !== 200) {
 	                return Promise.reject(null);
 	            }
-	            if (type === exports.JSON) {
+	            if (type === AssetType.JSON) {
 	                return response.json();
 	            }
-	            else if (type === exports.BLOB) {
+	            else if (type === AssetType.BLOB) {
 	                return response.blob();
 	            }
 	            else {
@@ -3193,156 +3222,206 @@ var qtk =
 	    return item;
 	}
 	/**
-	 * Load JSON Data and Cache It.
-	 * @param url URL Of JSON.
-	 * @returns Promise
+	 * @enum AssetType
+	 * 资源类型。
 	 */
-	function loadJSON(url) {
-	    return load(url, exports.JSON);
-	}
-	exports.loadJSON = loadJSON;
+	(function (AssetType) {
+	    /**
+	     * @property {number} [AUDIO=1]
+	     * 音频资源。
+	     */
+	    AssetType[AssetType["AUDIO"] = 1] = "AUDIO";
+	    /**
+	     * @property {number} [IMAGE]
+	     * 图像资源。
+	     */
+	    AssetType[AssetType["IMAGE"] = 2] = "IMAGE";
+	    /**
+	     * @property {number} [BLOB]
+	     * 二进制资源。
+	     */
+	    AssetType[AssetType["BLOB"] = 3] = "BLOB";
+	    /**
+	     * @property {number} [JSON]
+	     * JSON资源。
+	     */
+	    AssetType[AssetType["JSON"] = 4] = "JSON";
+	    /**
+	     * @property {number} [SCRIPT]
+	     * SCRIPT资源。
+	     */
+	    AssetType[AssetType["SCRIPT"] = 5] = "SCRIPT";
+	    /**
+	     * @property {number} [TEXT]
+	     * 文本资源。
+	     */
+	    AssetType[AssetType["TEXT"] = 6] = "TEXT";
+	})(exports.AssetType || (exports.AssetType = {}));
+	var AssetType = exports.AssetType;
+	;
 	/**
-	 * Load Text Data and Cache It.
-	 * @param url URL Of Text.
-	 * @returns Promise
+	 * @class AssetManager
+	 * 资源管理类，用于加载各种资源。
 	 */
-	function loadText(url) {
-	    return load(url, exports.TEXT);
-	}
-	exports.loadText = loadText;
-	/**
-	 * Load Blob Data and Cache It.
-	 * @param url URL Of Blob.
-	 * @returns Promise
-	 */
-	function loadBlob(url) {
-	    return load(url, exports.BLOB);
-	}
-	exports.loadBlob = loadBlob;
-	/**
-	 * Load Image and Cache It.
-	 * @param url URL Of Image.
-	 * @returns Promise
-	 */
-	function loadImage(url) {
-	    var item = assetsCache[url];
-	    if (!item) {
-	        item = new Promise(function (resolve, reject) {
-	            var image = new Image();
-	            image.onload = function () {
-	                resolve(image);
+	var AssetManager = (function () {
+	    function AssetManager() {
+	    }
+	    /**
+	     * @method loadJson
+	     * 加载JSON资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadJson = function (url) {
+	        return load(url, AssetType.JSON);
+	    };
+	    /**
+	     * @method loadText
+	     * 加载文本数据资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadText = function (url) {
+	        return load(url, AssetType.TEXT);
+	    };
+	    /**
+	     * @method loadBlob
+	     * 加载二进制数据资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadBlob = function (url) {
+	        return load(url, AssetType.BLOB);
+	    };
+	    /**
+	     * @method loadImage
+	     * 加载图片资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadImage = function (url) {
+	        var item = assetsCache[url];
+	        if (!item) {
+	            item = new Promise(function (resolve, reject) {
+	                var image = new Image();
+	                image.onload = function () {
+	                    resolve(image);
+	                };
+	                image.onerror = function (err) {
+	                    reject(err);
+	                };
+	                image.src = url;
+	            });
+	        }
+	        assetsCache[url] = item;
+	        return item;
+	    };
+	    /**
+	     * @method loadScript
+	     * 加载脚本资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadScript = function (url) {
+	        var item = new Promise(function (resolve, reject) {
+	            var node = document.head ? document.head : document.body;
+	            var script = document.createElement("script");
+	            script.onload = function () {
+	                resolve(script);
 	            };
-	            image.onerror = function (err) {
+	            script.onerror = function (err) {
 	                reject(err);
 	            };
-	            image.src = url;
+	            script.src = url;
+	            node.appendChild(script);
 	        });
-	    }
-	    assetsCache[url] = item;
-	    return item;
-	}
-	exports.loadImage = loadImage;
+	        return item;
+	    };
+	    /**
+	     * @method loadAudio
+	     * 加载音频资源。
+	     * @static
+	     * @param {String} url 资源URL。
+	     * @return {Promise}
+	     */
+	    AssetManager.loadAudio = function (url) {
+	        var item = assetsCache[url];
+	        if (!item) {
+	            item = new Promise(function (resolve, reject) {
+	                var audio = new Audio();
+	                audio.onload = function () {
+	                    resolve(audio);
+	                };
+	                audio.onerror = function (err) {
+	                    reject(err);
+	                };
+	                audio.src = url;
+	            });
+	        }
+	        assetsCache[url] = item;
+	        return item;
+	    };
+	    /**
+	     * @method clear
+	     * 清除指定URL资源的缓存。
+	     * @static
+	     * @param {String} url 资源URL。
+	     */
+	    AssetManager.clear = function (url) {
+	        delete assetsCache[url];
+	    };
+	    return AssetManager;
+	}());
+	exports.AssetManager = AssetManager;
 	/**
-	 * Load Script
-	 * @param url URL Of Script.
-	 * @returns Promise
+	 * @class AssetItem
+	 * 表示一个资源项, 用于预加载资源。
+	 *
 	 */
-	function loadScript(url) {
-	    var item = new Promise(function (resolve, reject) {
-	        var node = document.head ? document.head : document.body;
-	        var script = document.createElement("script");
-	        script.onload = function () {
-	            resolve(script);
-	        };
-	        script.onerror = function (err) {
-	            reject(err);
-	        };
-	        script.src = url;
-	        node.appendChild(script);
-	    });
-	    return item;
-	}
-	exports.loadScript = loadScript;
-	/**
-	 * Load Audio and Cache It.
-	 * @param url URL Of Audio.
-	 * @returns Promise
-	 */
-	function loadAudio(url) {
-	    var item = assetsCache[url];
-	    if (!item) {
-	        item = new Promise(function (resolve, reject) {
-	            var audio = new Audio();
-	            audio.onload = function () {
-	                resolve(audio);
-	            };
-	            audio.onerror = function (err) {
-	                reject(err);
-	            };
-	            audio.src = url;
-	        });
-	    }
-	    assetsCache[url] = item;
-	    return item;
-	}
-	exports.loadAudio = loadAudio;
-	/**
-	 * Clear asset cache
-	 * @param url URL Of asset.
-	 */
-	function clear(url) {
-	    delete assetsCache[url];
-	}
-	exports.clear = clear;
-	/**
-	 * Present one asset.
-	 */
-	var Item = (function () {
-	    function Item(src, type) {
+	var AssetItem = (function () {
+	    function AssetItem(src, type) {
 	        if (!type) {
 	            var name = path.extname(src).toLowerCase();
 	            if (name === ".json") {
-	                type = exports.JSON;
+	                type = AssetType.JSON;
 	            }
 	            else if (name === ".jpg" || name === ".png" || name === ".svg") {
-	                type = exports.IMAGE;
+	                type = AssetType.IMAGE;
 	            }
-	            else if (type === ".txt") {
-	                type = exports.TEXT;
+	            else if (name === ".txt") {
+	                type = AssetType.TEXT;
+	            }
+	            else if (name === ".js") {
+	                type = AssetType.SCRIPT;
 	            }
 	            else {
-	                type = exports.BLOB;
+	                type = AssetType.BLOB;
 	            }
 	        }
 	        this.src = src;
 	        this.type = type;
 	    }
-	    Item.create = function (src, type) {
-	        return new Item(src, type);
+	    AssetItem.create = function (src, type) {
+	        return new AssetItem(src, type);
 	    };
-	    return Item;
+	    return AssetItem;
 	}());
-	exports.Item = Item;
+	exports.AssetItem = AssetItem;
 	;
 	/**
-	 * Assets group to preload
-	 * Example:
-	 * ```
-	 *  var items = [
-	 *    {type:qtk.Assets.TEXT, src:"http://localhost:9876/base/www/test.txt"},
-	 *    {type:qtk.Assets.JSON, src:"http://localhost:9876/base/www/test.json"},
-	 *    {type:qtk.Assets.IMAGE, src:"http://localhost:9876/base/www/test.jpg"},
-	 *    {type:qtk.Assets.BLOB, src:"http://localhost:9876/base/www/test.blob"}
-	 * ];
-	 * var assets = new qtk.Assets.Group(items);
-	 * assets.onProgress(function(info) {
-	 *   console.log(info.loaded + "/" + info.total);
-	 * });
-	 * ```
+	 * @class AssetGroup
+	 *
+	 * 表示一个资源分组, 用于预加载资源。
+	 *
 	 */
-	var Group = (function (_super) {
-	    __extends(Group, _super);
-	    function Group(items, onProgress) {
+	var AssetGroup = (function (_super) {
+	    __extends(AssetGroup, _super);
+	    function AssetGroup(items, onProgress) {
 	        _super.call(this);
 	        this.event = {
 	            total: 0,
@@ -3360,46 +3439,57 @@ var qtk =
 	        items.forEach(this.loadOne.bind(this));
 	    }
 	    /**
-	     * Register of a progress callback function
+	     * 注册加载进度的回调函数。
 	     */
-	    Group.prototype.onProgress = function (callback) {
+	    AssetGroup.prototype.onProgress = function (callback) {
 	        this.on(Events.PROGRESS, callback);
 	    };
-	    Group.prototype.addLoaded = function () {
+	    AssetGroup.prototype.addLoaded = function () {
 	        this.loaded++;
 	        this.event.loaded = this.loaded;
 	        this.dispatchEvent(this.event);
 	    };
-	    Group.prototype.loadOne = function (item) {
+	    AssetGroup.prototype.loadOne = function (item) {
 	        var src = item.src;
 	        var type = item.type;
 	        var addLoaded = this.addLoaded.bind(this);
 	        var name = path.extname(src).toLowerCase();
-	        if (type === exports.JSON || (!type && name === '.json')) {
-	            loadJSON(src).then(addLoaded, addLoaded);
+	        if (type === AssetType.JSON || (!type && name === '.json')) {
+	            AssetManager.loadJson(src).then(addLoaded, addLoaded);
 	        }
-	        else if (type === exports.IMAGE || (!type && (name === ".jpg" || name === ".png" || name === ".svg"))) {
-	            loadImage(src).then(addLoaded, addLoaded);
+	        else if (type === AssetType.IMAGE || (!type && (name === ".jpg" || name === ".png" || name === ".svg"))) {
+	            AssetManager.loadImage(src).then(addLoaded, addLoaded);
 	        }
-	        else if (type === exports.BLOB) {
-	            loadBlob(src).then(addLoaded, addLoaded);
+	        else if (type === AssetType.BLOB) {
+	            AssetManager.loadBlob(src).then(addLoaded, addLoaded);
+	        }
+	        else if (type === AssetType.SCRIPT) {
+	            AssetManager.loadScript(src).then(addLoaded, addLoaded);
 	        }
 	        else {
-	            loadText(src).then(addLoaded, addLoaded);
+	            AssetManager.loadText(src).then(addLoaded, addLoaded);
 	        }
 	    };
-	    Group.create = function (items, onProgress) {
-	        return new Group(items, onProgress);
+	    AssetGroup.create = function (items, onProgress) {
+	        return new AssetGroup(items, onProgress);
 	    };
-	    Group.preload = function (assetsURLS, onProgress) {
+	    /**
+	     * @method preload
+	     * 预加载指定的资源。
+	     * @static
+	     * @param {Array<string>} assetsURLS 资源URL列表。
+	     * @param {Function} onProgress 资源进度回调函数。
+	     * @return {AssetGroup} 资源分组对象。
+	     */
+	    AssetGroup.preload = function (assetsURLS, onProgress) {
 	        var arr = assetsURLS.map(function (iter) {
-	            return Item.create(iter);
+	            return AssetItem.create(iter);
 	        });
-	        return Group.create(arr, onProgress);
+	        return AssetGroup.create(arr, onProgress);
 	    };
-	    return Group;
+	    return AssetGroup;
 	}(emitter_1.Emitter));
-	exports.Group = Group;
+	exports.AssetGroup = AssetGroup;
 
 
 /***/ },
@@ -3548,6 +3638,8 @@ var qtk =
 	var event_detail_1 = __webpack_require__(14);
 	var inputEventAdapter = __webpack_require__(15);
 	/**
+	 *
+	 * @class Canvas
 	 * Canvas是对HTMLCanvasElement的包装，主要解决两个问题：
 	 *
 	 * 1.对指针事件坐标的转换，让绝对坐标变成相对与Canvas左上角的坐标。
@@ -3559,7 +3651,6 @@ var qtk =
 	    __extends(Canvas, _super);
 	    function Canvas(x, y, w, h, devicePixelRatio, offline) {
 	        _super.call(this);
-	        this._id = "canvas";
 	        this._x = x || 0;
 	        this._y = y || 0;
 	        this._w = w || 0;
@@ -3584,26 +3675,11 @@ var qtk =
 	            e.dispose();
 	        };
 	    }
-	    Canvas.prototype.transformXY = function (detail) {
-	        detail.x -= this.x;
-	        detail.y -= this.y;
-	        detail.pointerDownX -= this.x;
-	        detail.pointerDownY -= this.y;
-	    };
-	    Object.defineProperty(Canvas.prototype, "id", {
-	        get: function () {
-	            return this._id;
-	        },
-	        set: function (value) {
-	            this._id = value;
-	            if (this.canvas) {
-	                this.canvas.id = value;
-	            }
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
 	    Object.defineProperty(Canvas.prototype, "x", {
+	        /**
+	         * @property {number} x
+	         * X 坐标
+	         */
 	        get: function () {
 	            return this._x;
 	        },
@@ -3615,6 +3691,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Canvas.prototype, "y", {
+	        /**
+	         * @property {number} y
+	         * Y 坐标
+	         */
 	        get: function () {
 	            return this._y;
 	        },
@@ -3625,23 +3705,28 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Canvas.prototype, "w", {
-	        get: function () {
-	            return this._w;
-	        },
+	    Object.defineProperty(Canvas.prototype, "z", {
+	        /**
+	         * @property {number} z
+	         * Z 坐标
+	         */
 	        set: function (value) {
-	            this._w = value;
-	            this.resizeCanvas(this.canvas);
+	            this._z = value;
+	            this.canvas.style.zIndex = value;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Canvas.prototype, "h", {
+	    Object.defineProperty(Canvas.prototype, "w", {
 	        get: function () {
-	            return this._h;
+	            return this._w;
 	        },
+	        /**
+	         * @property {number} w
+	         * 宽度
+	         */
 	        set: function (value) {
-	            this._h = value;
+	            this._w = value;
 	            this.resizeCanvas(this.canvas);
 	        },
 	        enumerable: true,
@@ -3657,6 +3742,21 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
+	    Object.defineProperty(Canvas.prototype, "h", {
+	        /**
+	         * @property {number} h
+	         * 高度
+	         */
+	        get: function () {
+	            return this._h;
+	        },
+	        set: function (value) {
+	            this._h = value;
+	            this.resizeCanvas(this.canvas);
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    Object.defineProperty(Canvas.prototype, "height", {
 	        get: function () {
 	            return this._h;
@@ -3667,17 +3767,56 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
+	    Object.defineProperty(Canvas.prototype, "id", {
+	        get: function () {
+	            return this._id;
+	        },
+	        /**
+	         * @property {string} id
+	         * ID
+	         */
+	        set: function (value) {
+	            this._id = value;
+	            if (this.canvas) {
+	                this.canvas.id = value;
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * @method grabKey
+	     * Grab Key事件。
+	     */
 	    Canvas.prototype.grabKey = function () {
 	        inputEventAdapter.grabKey(this.canvas);
 	    };
+	    /**
+	     * @method ungrabKey
+	     * ungrabKey Key事件。
+	     */
 	    Canvas.prototype.ungrabKey = function () {
 	        inputEventAdapter.ungrabKey(this.canvas);
 	    };
+	    /**
+	     * @method grab
+	     * grab事件。
+	     */
 	    Canvas.prototype.grab = function () {
 	        inputEventAdapter.grab(this.canvas);
 	    };
+	    /**
+	     * @method ungrab
+	     * ungrab事件。
+	     */
 	    Canvas.prototype.ungrab = function () {
 	        inputEventAdapter.ungrab(this.canvas);
+	    };
+	    Canvas.prototype.transformXY = function (detail) {
+	        detail.x -= this.x;
+	        detail.y -= this.y;
+	        detail.pointerDownX -= this.x;
+	        detail.pointerDownY -= this.y;
 	    };
 	    Canvas.prototype.moveCanvas = function (canvas) {
 	        if (canvas) {
@@ -3698,14 +3837,6 @@ var qtk =
 	            canvas.style.height = h + "px";
 	        }
 	    };
-	    Object.defineProperty(Canvas.prototype, "z", {
-	        set: function (value) {
-	            this._z = value;
-	            this.canvas.style.zIndex = value;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
 	    Canvas.prototype.dispose = function () {
 	        var canvas = this.canvas;
 	        if (!this._offline) {
@@ -3749,6 +3880,10 @@ var qtk =
 	            this.canvas = this.createCanvas();
 	        }
 	    };
+	    /**
+	     * @method getContext
+	     * 获取Canvas的绘图Context。
+	     */
 	    Canvas.prototype.getContext = function (type) {
 	        if (!this.canvas) {
 	            this.canvas = this.createCanvas();
@@ -3758,6 +3893,17 @@ var qtk =
 	        ctx.scale(this._devicePixelRatio, this._devicePixelRatio);
 	        return ctx;
 	    };
+	    /**
+	     * @method create
+	     * @static
+	     * 创建一个Canvas对象。
+	     * @param {number} x X坐标。
+	     * @param {number} y Y坐标。
+	     * @param {number} w 宽度。
+	     * @param {number} h 高度。
+	     * @param {number} devicePixelRatio 屏幕密度。
+	     * @param {boolean} offline 是否是离线Canvas。
+	     */
 	    Canvas.create = function (x, y, w, h, devicePixelRatio, offline) {
 	        return new Canvas(x, y, w, h, devicePixelRatio, offline);
 	    };
@@ -4679,39 +4825,119 @@ var qtk =
 	var image_tile_1 = __webpack_require__(7);
 	var behavior_1 = __webpack_require__(77);
 	var layouter_1 = __webpack_require__(78);
-	var binding_rule_1 = __webpack_require__(79);
-	var iview_model_1 = __webpack_require__(81);
+	var iview_model_1 = __webpack_require__(79);
+	var binding_rule_1 = __webpack_require__(80);
+	/**
+	 * @enum WidgetMode
+	 * 控件当前的运行模式。
+	 */
 	(function (WidgetMode) {
+	    /**
+	     * @property {number}
+	     * 运行模式
+	     */
 	    WidgetMode[WidgetMode["RUNTIME"] = 0] = "RUNTIME";
+	    /**
+	     * @property {number}
+	     * 设计模式
+	     */
 	    WidgetMode[WidgetMode["DESIGN"] = 1] = "DESIGN";
 	})(exports.WidgetMode || (exports.WidgetMode = {}));
 	var WidgetMode = exports.WidgetMode;
 	;
+	/**
+	 * @enum WidgetState
+	 * 控件的状态
+	 */
 	(function (WidgetState) {
+	    /**
+	     * @property {number}
+	     * 正常状态。
+	     */
 	    WidgetState[WidgetState["NORMAL"] = 0] = "NORMAL";
+	    /**
+	     * @property {number}
+	     * Pointer在控件上。
+	     */
 	    WidgetState[WidgetState["OVER"] = 1] = "OVER";
+	    /**
+	     * @property {number}
+	     * Pointer按下的状态。
+	     */
 	    WidgetState[WidgetState["ACTIVE"] = 2] = "ACTIVE";
+	    /**
+	     * @property {number}
+	     * 禁用状态。
+	     */
 	    WidgetState[WidgetState["DISABLE"] = 3] = "DISABLE";
+	    /**
+	     * @property {number}
+	     * 选中状态。只对部分设备有效。
+	     */
 	    WidgetState[WidgetState["SELECTED"] = 4] = "SELECTED";
 	})(exports.WidgetState || (exports.WidgetState = {}));
 	var WidgetState = exports.WidgetState;
 	;
+	/**
+	 * @enum HitTestResult
+	 * 点击测试结果。
+	 */
 	(function (HitTestResult) {
+	    /**
+	     * @property {number}
+	     * 点击在控件之外。
+	     */
 	    HitTestResult[HitTestResult["NONE"] = 0] = "NONE";
+	    /**
+	     * @property {number}
+	     * 点击在控件左上角。
+	     */
 	    HitTestResult[HitTestResult["TL"] = 1] = "TL";
+	    /**
+	     * @property {number}
+	     * 点击在控件上面中间。
+	     */
 	    HitTestResult[HitTestResult["TM"] = 2] = "TM";
+	    /**
+	     * @property {number}
+	     * 点击在控件右上角。
+	     */
 	    HitTestResult[HitTestResult["TR"] = 3] = "TR";
+	    /**
+	     * @property {number}
+	     * 点击在控件左边中间。
+	     */
 	    HitTestResult[HitTestResult["ML"] = 4] = "ML";
+	    /**
+	     * @property {number}
+	     * 点击在控件中间区域。
+	     */
 	    HitTestResult[HitTestResult["MM"] = 5] = "MM";
+	    /**
+	     * @property {number}
+	     * 点击在控件右边中间。
+	     */
 	    HitTestResult[HitTestResult["MR"] = 6] = "MR";
-	    HitTestResult[HitTestResult["RL"] = 7] = "RL";
-	    HitTestResult[HitTestResult["RM"] = 8] = "RM";
-	    HitTestResult[HitTestResult["RR"] = 9] = "RR";
+	    /**
+	     * @property {number}
+	     * 点击在控件左下角。
+	     */
+	    HitTestResult[HitTestResult["BL"] = 7] = "BL";
+	    /**
+	     * @property {number}
+	     * 点击在控件下面中间。
+	     */
+	    HitTestResult[HitTestResult["BM"] = 8] = "BM";
+	    /**
+	     * @property {number}
+	     * 点击在控件右下角。
+	     */
+	    HitTestResult[HitTestResult["BR"] = 9] = "BR";
 	})(exports.HitTestResult || (exports.HitTestResult = {}));
 	var HitTestResult = exports.HitTestResult;
 	;
-	var states = ["normal", "over", "active", "disable", "selected"];
 	/**
+	 * @class Widget
 	 * Widget是所有控件的基类。
 	 */
 	var Widget = (function (_super) {
@@ -4732,6 +4958,7 @@ var qtk =
 	        this.type = type;
 	    }
 	    /**
+	     * @method set
 	     * 同时设置多个属性。
 	     */
 	    Widget.prototype.set = function (props) {
@@ -4745,21 +4972,21 @@ var qtk =
 	        }
 	        return this;
 	    };
-	    /**
-	     * 同时获取多个属性。
-	     */
 	    Widget.prototype.get = function (props) {
 	        if (props) {
 	            for (var key in props) {
-	                props[key] = this[key];
+	                var value = this[key];
+	                if (value !== undefined) {
+	                    props[key] = value;
+	                }
 	            }
 	        }
-	        return props;
+	        return this;
 	    };
 	    /**
 	     * 把全局的坐标转换成相对于当前控件左上角的坐标。
-	     * @param p 全局坐标。
-	     * @returns 相对于当前控件左上角的坐标。
+	     * @param {Pointer} p 全局坐标。
+	     * @return {Pointer} 相对于当前控件左上角的坐标。
 	     */
 	    Widget.prototype.toLocalPoint = function (p) {
 	        p.x -= this.x;
@@ -4774,8 +5001,8 @@ var qtk =
 	    };
 	    /**
 	     * 把Pointer事件的坐标转换成相对于当前控件左上角的坐标。
-	     * @param p Pointer事件的坐标。
-	     * @returns 相对于当前控件左上角的坐标。
+	     * @param {Pointer} p Pointer事件的坐标。
+	     * @return {Pointer} 相对于当前控件左上角的坐标。
 	     */
 	    Widget.prototype.eventPointToLocal = function (p) {
 	        if (this._canvas) {
@@ -4796,8 +5023,8 @@ var qtk =
 	    };
 	    /**
 	     * 把相对于当前控件左上角的坐标转换成全局坐标。
-	     * @param p 相对于当前控件左上角的坐标。
-	     * @returns 全局坐标。
+	     * @param {Point} p 相对于当前控件左上角的坐标。
+	     * @return {Point} 全局坐标。
 	     */
 	    Widget.prototype.toGlobalPoint = function (p) {
 	        p.x += this.x;
@@ -4812,8 +5039,8 @@ var qtk =
 	    };
 	    /**
 	     * 把相对于当前控件左上角的坐标转换成屏幕上的坐标。
-	     * @param p 相对于当前控件左上角的坐标。
-	     * @returns 屏幕上的坐标。
+	     * @param {Point} p 相对于当前控件左上角的坐标。
+	     * @return {Point}  屏幕上的坐标。
 	     */
 	    Widget.prototype.toViewPoint = function (p) {
 	        p.x += this.x;
@@ -4838,9 +5065,6 @@ var qtk =
 	            this.app = this.parent.app;
 	        }
 	    };
-	    /**
-	     * 初始化。在窗口打开后，对窗口上所有控件调用，或者在窗口打开后，对新创建的控件调用。
-	     */
 	    Widget.prototype.init = function () {
 	        this.onInit();
 	        this.children.forEach(function (child) {
@@ -4851,7 +5075,7 @@ var qtk =
 	    Widget.prototype.onDeinit = function () {
 	        this._inited = false;
 	    };
-	    /**
+	    /*
 	     * ~初始化。在窗口关闭后，对窗口上所有控件调用，或者对被移出的控件调用。
 	     */
 	    Widget.prototype.deinit = function () {
@@ -4859,38 +5083,6 @@ var qtk =
 	            child.deinit();
 	        });
 	        this.onDeinit();
-	    };
-	    /**
-	     * 分发一个事件到当前控件及其子控件。
-	     */
-	    Widget.prototype.dispatchEventToAll = function (evt) {
-	        this.dispatchEvent(evt);
-	        this.children.forEach(function (child) {
-	            child.dispatchEvent(evt);
-	        });
-	    };
-	    /**
-	     * 测试点是否落在当前控件中。
-	     * @param x X坐标，相对于全局原点的坐标。
-	     * @param y Y坐标，相对于全局原点的坐标。
-	     * @param ctx 矩阵变换上下文。ctx包含了从顶级父控件到当前控件的变化。
-	     * @returns 测试结果HitTestResult。
-	     */
-	    Widget.prototype.hitTest = function (x, y, ctx) {
-	        return this.doHitTest(x, y, rect_1.Rect.rect.init(0, 0, this.w, this.h), ctx);
-	    };
-	    Widget.prototype.doHitTest = function (x, y, r, ctx) {
-	        var m = ctx.invert();
-	        if (m) {
-	            var p = m.transformPoint(x, y);
-	            if (p.x >= r.x && p.x <= (r.x + r.w) && p.y >= r.y && p.y <= (r.y + r.h)) {
-	                return HitTestResult.MM;
-	            }
-	        }
-	        return HitTestResult.NONE;
-	    };
-	    Widget.prototype.selfHitTest = function (x, y, ctx) {
-	        return this.hitTest(x, y, ctx);
 	    };
 	    Widget.prototype.dispatchPointerDown = function (evt, ctx) {
 	        if (!this._enable || !this._sensitive) {
@@ -5138,6 +5330,14 @@ var qtk =
 	        this.requestRedraw();
 	        return tween;
 	    };
+	    /**
+	     * @method scaleTo
+	     * 设置控件的缩放比例到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} sx 宽度缩放比例。
+	     * @param {number} sy 高度缩放比例。
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.scaleTo = function (sx, sy, duration) {
 	        this.requestRedraw();
 	        if (duration > 0) {
@@ -5151,6 +5351,13 @@ var qtk =
 	            return null;
 	        }
 	    };
+	    /**
+	     * @method opacityTo
+	     * 设置控件的透明度到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} opacity 不透明度[0-1]
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.opacityTo = function (opacity, duration) {
 	        this.requestRedraw();
 	        if (duration > 0) {
@@ -5164,6 +5371,13 @@ var qtk =
 	            return null;
 	        }
 	    };
+	    /**
+	     * @method rotateTo
+	     * 设置控件的旋转角度到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} rotation 旋转角度，单位为弧度。
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.rotateTo = function (rotation, duration) {
 	        this.requestRedraw();
 	        if (duration > 0) {
@@ -5176,6 +5390,14 @@ var qtk =
 	            return null;
 	        }
 	    };
+	    /**
+	     * @method moveTo
+	     * 设置控件的位置到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} x X 坐标。
+	     * @param {number} y Y 坐标。
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.moveTo = function (x, y, duration) {
 	        this.requestRedraw();
 	        if (duration > 0) {
@@ -5189,6 +5411,16 @@ var qtk =
 	            return null;
 	        }
 	    };
+	    /**
+	     * @method moveResizeTo
+	     * 设置控件的位置和大小到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} x X 坐标。
+	     * @param {number} y Y 坐标。
+	     * @param {number} w 宽度。
+	     * @param {number} h 高度。
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.moveResizeTo = function (x, y, w, h, duration) {
 	        if (duration > 0) {
 	            var tween = new TWEEN.Tween(this);
@@ -5203,6 +5435,14 @@ var qtk =
 	            return null;
 	        }
 	    };
+	    /**
+	     * @method resizeTo
+	     * 设置控件的大小到指定的值。如果duration > 0则启用动画，并返回TWEEN.Tween，否则返回null。
+	     * @param {number} w 宽度。
+	     * @param {number} h 高度。
+	     * @param {number} duration 动画时间。
+	     * @return {TWEEN.Tween}
+	     */
 	    Widget.prototype.resizeTo = function (w, h, duration) {
 	        if (duration > 0) {
 	            var tween = new TWEEN.Tween(this);
@@ -5238,7 +5478,7 @@ var qtk =
 	        }
 	        return this;
 	    };
-	    /**
+	    /*
 	     * 根据当前的childrenLayouter创建子控件的布局参数。
 	     */
 	    Widget.prototype.createChildLayoutParam = function (options) {
@@ -5257,7 +5497,8 @@ var qtk =
 	            return this._childrenLayouter;
 	        },
 	        /**
-	         * 设置childrenLayouter。
+	         * @property {Layouter} childrenLayouter
+	         * 用于子控件布局的Layouter。
 	         */
 	        set: function (layouter) {
 	            if (typeof layouter === "string") {
@@ -5275,7 +5516,8 @@ var qtk =
 	            return this._layoutParam;
 	        },
 	        /**
-	         * 布局参数是父控件在布局当前控件时使用的。
+	         * @property {Object} layoutParam
+	         * 布局参数是父控件在布局当前控件时使用的参数。
 	         */
 	        set: function (param) {
 	            this._layoutParam = param;
@@ -5287,9 +5529,21 @@ var qtk =
 	        configurable: true
 	    });
 	    ///////////////////////////////////////////
+	    /**
+	     * @method indexOfChild
+	     * 获取指定子控件的位置序数。
+	     * @param {Widget} child 子控件
+	     * @return {number} 位置序数。
+	     */
 	    Widget.prototype.indexOfChild = function (child) {
 	        return this.children.indexOf(child);
 	    };
+	    /**
+	     * @method findChild
+	     * 查找满足指定条件的子控件。
+	     * @param {Function} func 比较函数。
+	     * @return {Widget} 如果找到，返回该子控件，否则返回null。
+	     */
 	    Widget.prototype.findChild = function (func) {
 	        var i = 0;
 	        var arr = this._children;
@@ -5302,26 +5556,28 @@ var qtk =
 	        }
 	        return null;
 	    };
+	    /**
+	     * @method findChildByName
+	     * 按名称查找子控件。
+	     * @param {string} name 子控件的名称。
+	     * @return {Widget} 如果找到，返回该子控件，否则返回null。
+	     */
 	    Widget.prototype.findChildByName = function (name) {
 	        var ret = this.findChild(function (child) {
 	            return child.name === name;
 	        });
 	        return ret;
 	    };
+	    /**
+	     * @method findChildByID
+	     * 按ID查找子控件。
+	     * @param {string} id 子控件的ID。
+	     * @return {Widget} 如果找到，返回该子控件，否则返回null。
+	     */
 	    Widget.prototype.findChildByID = function (id) {
 	        var ret = this.findChild(function (child) {
 	            return child.id === id;
 	        });
-	        return ret;
-	    };
-	    Widget.prototype.find = function (path) {
-	        var items = path.split("/");
-	        var n = items.length;
-	        var ret = this;
-	        for (var i = 0; i < n; i++) {
-	            var name = items[i];
-	            ret = ret.findChildByName(name);
-	        }
 	        return ret;
 	    };
 	    Widget.prototype.drawColorBackground = function (ctx, style) {
@@ -5354,20 +5610,15 @@ var qtk =
 	        return this;
 	    };
 	    /**
+	     * @method getLocaleText
 	     * 获取本地化后的文本。
 	     */
 	    Widget.prototype.getLocaleText = function () {
 	        return this.text;
 	    };
-	    /**
-	     * 获取前景图片区域。
-	     */
 	    Widget.prototype.getFgImageRect = function (style) {
 	        return rect_1.Rect.rect.init(this.leftPadding, this.topPadding, this.clientW, this.clientH);
 	    };
-	    /**
-	     * 绘制前景图片，子控件根据需要重载。
-	     */
 	    Widget.prototype.drawImage = function (ctx, style) {
 	        if (style.foreGroundImage) {
 	            var r = this.getFgImageRect(style);
@@ -5375,9 +5626,6 @@ var qtk =
 	        }
 	        return this;
 	    };
-	    /**
-	     * 获取文本显示区域。
-	     */
 	    Widget.prototype.getTextRect = function (style) {
 	        return rect_1.Rect.rect.init(this.leftPadding, this.topPadding, this.clientW, this.clientH);
 	    };
@@ -5404,17 +5652,17 @@ var qtk =
 	            ctx.addRect(-5, -5, this.w + 10, this.h + 10);
 	        }
 	    };
-	    /**
-	     * 计算脏矩形。
-	     */
 	    Widget.prototype.computeDirtyRect = function (ctx) {
 	        ctx.save();
 	        this.applyTransform(ctx);
 	        this.computeDirtyRectSelf(ctx);
+	        this.computeChildrenDirtyRect(ctx);
+	        ctx.restore();
+	    };
+	    Widget.prototype.computeChildrenDirtyRect = function (ctx) {
 	        this.children.forEach(function (child) {
 	            child.computeDirtyRect(ctx);
 	        });
-	        ctx.restore();
 	    };
 	    Widget.prototype.doDraw = function (ctx, style) {
 	        if (style) {
@@ -5445,19 +5693,29 @@ var qtk =
 	        return;
 	    };
 	    Widget.prototype.stateToString = function (state) {
-	        return states[state];
+	        return WidgetState[state].toLowerCase();
 	    };
-	    ;
 	    Object.defineProperty(Widget.prototype, "styleType", {
 	        get: function () {
 	            return this._styleType;
 	        },
+	        /**
+	         * @property {string} styleType
+	         * 用于从主题中获取style数据。
+	         */
 	        set: function (styleType) {
 	            this._styleType = styleType;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
+	    /**
+	     * @method setStyle
+	     * 设置控件的Style。
+	     * @param {WidgetState} state 状态。
+	     * @param {Style} style 控件的Style。
+	     * return {Widget} 控件本身。
+	     */
 	    Widget.prototype.setStyle = function (state, style) {
 	        if (!this._styles) {
 	            this._styles = {};
@@ -5500,6 +5758,11 @@ var qtk =
 	        });
 	        return this;
 	    };
+	    /**
+	     * @method removeAllChildren
+	     * 移出并销毁所有的子控件。
+	     * return {Widget} 控件本身。
+	     */
 	    Widget.prototype.removeAllChildren = function () {
 	        this.children.forEach(function (child) {
 	            child.deinit();
@@ -5512,6 +5775,14 @@ var qtk =
 	    };
 	    Widget.prototype.onRemoveChild = function (child) {
 	    };
+	    /**
+	     * @method removeChild
+	     * 移出子控件。批量删除时，请使用快速模式，并在完成时调用relayoutChildren。
+	     * @param {Widget} child 子控件。
+	     * @param {boolean} fastMode 快速模式下，不重新布局子控件。
+	     * @param {boolean} destroy 是否销毁子控件。
+	     * return {Widget} 控件本身。
+	     */
 	    Widget.prototype.removeChild = function (child, fastMode, destroy) {
 	        var arr = this._children;
 	        var index = arr.indexOf(child);
@@ -5530,6 +5801,13 @@ var qtk =
 	    };
 	    Widget.prototype.onAddChild = function (child) {
 	    };
+	    /**
+	     * @method addChild
+	     * 增加子控件。批量增加时，请使用快速模式，并在完成时调用relayoutChildren。
+	     * @param {Widget} child 子控件。
+	     * @param {boolean} fastMode 快速模式下，不重新布局子控件。
+	     * return {Widget} 控件本身。
+	     */
 	    Widget.prototype.addChild = function (child, fastMode) {
 	        var arr = this._children;
 	        arr.push(child);
@@ -5545,6 +5823,10 @@ var qtk =
 	        this.onAddChild(child);
 	        return this;
 	    };
+	    /**
+	     * @method dispose
+	     * 销毁控件及其全部子控件。
+	     */
 	    Widget.prototype.dispose = function () {
 	        this.dispatchEvent({ type: Events.DISPOSE });
 	        if (this._canvas) {
@@ -5567,6 +5849,10 @@ var qtk =
 	            this.recycle();
 	        }
 	    };
+	    /**
+	     * @method requestRedraw
+	     * 请求重绘。
+	     */
 	    Widget.prototype.requestRedraw = function () {
 	        var app = this._app;
 	        this._dirty = true;
@@ -5623,7 +5909,21 @@ var qtk =
 	            this.computeDirtyRect(dirtyRectContext);
 	            var dirtyRect = dirtyRectContext.getRect();
 	            var r = lastDirtyRect.merge(dirtyRect);
+	            if (r.x < 0)
+	                r.x = 0;
+	            if (r.y < 0)
+	                r.y = 0;
+	            if ((r.x + r.w) > this.w) {
+	                r.w = this.w - r.x;
+	            }
+	            if ((r.y + r.h) > this.h) {
+	                r.h = this.h - r.y;
+	            }
 	            if (r.w > 0 && r.h > 0) {
+	                r.x = r.x >> 0;
+	                r.y = r.y >> 0;
+	                r.w = (r.w + 1) >> 0;
+	                r.h = (r.h + 2) >> 0;
 	                ctx.save();
 	                ctx.beginPath();
 	                ctx.clearRect(r.x, r.y, r.w, r.h);
@@ -5688,6 +5988,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "x", {
+	        /**
+	         * @property {number} x
+	         * 控件的X坐标。
+	         */
 	        get: function () {
 	            return this._x;
 	        },
@@ -5698,6 +6002,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "y", {
+	        /**
+	         * @property {number} y
+	         * 控件的Y坐标。
+	         */
 	        get: function () {
 	            return this._y;
 	        },
@@ -5708,6 +6016,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "z", {
+	        /**
+	         * @property {number} z
+	         * 控件的位置序数。
+	         */
 	        get: function () {
 	            return this._z;
 	        },
@@ -5721,6 +6033,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "desireWidth", {
+	        /**
+	         * @property {number} w
+	         * 控件的宽度。
+	         */
 	        get: function () {
 	            return this._w;
 	        },
@@ -5762,6 +6078,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "height", {
+	        /**
+	         * @property {number} h
+	         * 控件的高度。
+	         */
 	        get: function () {
 	            return this._h;
 	        },
@@ -5782,6 +6102,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "state", {
+	        /**
+	         * @property {WidgetState} state
+	         * 控件的状态。
+	         */
 	        get: function () {
 	            return this._state;
 	        },
@@ -5794,6 +6118,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "value", {
+	        /**
+	         * @property {any} value
+	         * 控件的值。不同的控件，值的定义不一样。
+	         */
 	        get: function () {
 	            return this._value;
 	        },
@@ -5804,6 +6132,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "selected", {
+	        /**
+	         * @property {boolean} selected
+	         * 控件是否被选中。
+	         */
 	        get: function () {
 	            return this._selected;
 	        },
@@ -5824,6 +6156,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "enable", {
+	        /**
+	         * @property {boolean} enable
+	         * 控件是否处于enable状态。
+	         */
 	        get: function () {
 	            if (this.isEnableFunc) {
 	                return this.isEnableFunc();
@@ -5836,7 +6172,22 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
+	    Object.defineProperty(Widget.prototype, "inputable", {
+	        /**
+	         * @property {boolean} inputable
+	         * [只读] 控件是否可输入，也就是是否可以通过界面修改它的值。
+	         */
+	        get: function () {
+	            return false;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    Object.defineProperty(Widget.prototype, "visible", {
+	        /**
+	         * @property {boolean} visible
+	         * 控件是否可见。
+	         */
 	        get: function () {
 	            return this._visible;
 	        },
@@ -5849,22 +6200,16 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Widget.prototype, "inputable", {
-	        /**
-	         * 用户是否可以通过本控件输入/选择数据。
-	         */
-	        get: function () {
-	            return false;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
 	    Widget.prototype.setVisible = function (value) {
 	        this.setProp("visible", value, true);
 	        this.dispatchEvent({ type: value ? Events.SHOW : Events.HIDE });
 	        this.requestRedraw();
 	    };
 	    Object.defineProperty(Widget.prototype, "opacity", {
+	        /**
+	         * @property {number} opacity
+	         * 控件的不透明度(0-1)。
+	         */
 	        get: function () {
 	            return this._opacity;
 	        },
@@ -5875,6 +6220,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "scaleX", {
+	        /**
+	         * @property {number} scaleX
+	         * 控件的宽度缩放比例。
+	         */
 	        get: function () {
 	            return this._scaleX;
 	        },
@@ -5885,6 +6234,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "scaleY", {
+	        /**
+	         * @property {number} scaleY
+	         * 控件的高度缩放比例。
+	         */
 	        get: function () {
 	            return this._scaleY;
 	        },
@@ -5895,6 +6248,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "rotation", {
+	        /**
+	         * @property {number} rotation
+	         * 控件的旋转角度。
+	         */
 	        get: function () {
 	            return this._rotation;
 	        },
@@ -5904,17 +6261,11 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Widget.prototype, "focusable", {
-	        get: function () {
-	            return this._focusable;
-	        },
-	        set: function (value) {
-	            this.setProp("focusable", value, true);
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
 	    Object.defineProperty(Widget.prototype, "sensitive", {
+	        /**
+	         * @property {number} sensitive
+	         * 控件是否接受用户事件。
+	         */
 	        get: function () {
 	            return this._sensitive;
 	        },
@@ -5925,6 +6276,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "pivotX", {
+	        /**
+	         * @property {number} pivotX
+	         * 控件的X轴点，也就旋转点的X坐标。
+	         */
 	        get: function () {
 	            return this._pivotX;
 	        },
@@ -5935,6 +6290,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "pivotY", {
+	        /**
+	         * @property {number} pivotY
+	         * 控件的Y轴点，也就旋转点的Y坐标。
+	         */
 	        get: function () {
 	            return this._pivotY;
 	        },
@@ -5945,6 +6304,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "tips", {
+	        /**
+	         * @property {string} tips
+	         * 控件的提示文本。
+	         */
 	        get: function () {
 	            return this._tips;
 	        },
@@ -5955,6 +6318,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "text", {
+	        /**
+	         * @property {string} text
+	         * 控件的文本。
+	         */
 	        get: function () {
 	            return this._text;
 	        },
@@ -5965,6 +6332,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "name", {
+	        /**
+	         * @property {string} name
+	         * 控件的名称。
+	         */
 	        get: function () {
 	            return this._name;
 	        },
@@ -5975,6 +6346,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "type", {
+	        /**
+	         * @property {string} type
+	         * 控件的类型。
+	         */
 	        get: function () {
 	            return this._type;
 	        },
@@ -5985,23 +6360,21 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "id", {
+	        /**
+	         * @property {string} id
+	         * 控件的ID。
+	         */
 	        get: function () {
 	            return this._id;
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Widget.prototype, "tag", {
-	        get: function () {
-	            return this._tag;
-	        },
-	        set: function (value) {
-	            this.setProp("tag", value, true);
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
 	    Object.defineProperty(Widget.prototype, "userData", {
+	        /**
+	         * @property {any} userData
+	         * 控件的应用数据。
+	         */
 	        get: function () {
 	            return this._userData;
 	        },
@@ -6032,6 +6405,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "parent", {
+	        /**
+	         * @property {Widget} parent
+	         * 控件的父控件。
+	         */
 	        get: function () {
 	            return this._parent;
 	        },
@@ -6042,6 +6419,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "app", {
+	        /**
+	         * @property {IApplication} app
+	         * 应用程序。
+	         */
 	        get: function () {
 	            return this._app;
 	        },
@@ -6059,6 +6440,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "win", {
+	        /**
+	         * @property {Window} win
+	         * 控件所在的窗口。
+	         */
 	        get: function () {
 	            for (var iter = this; iter !== null; iter = iter._parent) {
 	                if (iter._isWindow) {
@@ -6071,6 +6456,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "children", {
+	        /**
+	         * @property {Array<Widget>} children
+	         * 控件的全部子控件。
+	         */
 	        get: function () {
 	            return this._children;
 	        },
@@ -6088,6 +6477,10 @@ var qtk =
 	        return this._isWindow;
 	    };
 	    Object.defineProperty(Widget.prototype, "leftPadding", {
+	        /**
+	         * @property {number} leftPadding
+	         * 控件的左边界。
+	         */
 	        get: function () {
 	            return this._lp;
 	        },
@@ -6098,6 +6491,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "rightPadding", {
+	        /**
+	         * @property {number} rightPadding
+	         * 控件的右边界。
+	         */
 	        get: function () {
 	            return this._rp;
 	        },
@@ -6108,6 +6505,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "topPadding", {
+	        /**
+	         * @property {number} topPadding
+	         * 控件的上边界。
+	         */
 	        get: function () {
 	            return this._tp;
 	        },
@@ -6118,6 +6519,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "bottomPadding", {
+	        /**
+	         * @property {number} bottomPadding
+	         * 控件的下边界。
+	         */
 	        get: function () {
 	            return this._bp;
 	        },
@@ -6128,6 +6533,10 @@ var qtk =
 	        configurable: true
 	    });
 	    Object.defineProperty(Widget.prototype, "padding", {
+	        /**
+	         * @property {number} padding
+	         * 控件的边界。
+	         */
 	        get: function () {
 	            return this._tp;
 	        },
@@ -6157,14 +6566,21 @@ var qtk =
 	    Widget.prototype.setText = function (text, notify) {
 	        return this.setProp("text", text, notify);
 	    };
-	    Widget.prototype.useBehavior = function (type, options) {
+	    /**
+	     * @method useBehavior
+	     * 启用指定名称的Behavior
+	     * @param {string} name Behavior的名称。
+	     * @param {any} options 选项。
+	     * @return {Behavior}
+	     */
+	    Widget.prototype.useBehavior = function (name, options) {
 	        var behavior;
-	        if (!this._behaviors[type]) {
-	            behavior = behavior_1.BehaviorFactory.create(type, this, options);
-	            this._behaviors[type] = behavior;
+	        if (!this._behaviors[name]) {
+	            behavior = behavior_1.BehaviorFactory.create(name, this, options);
+	            this._behaviors[name] = behavior;
 	        }
 	        else {
-	            behavior = this._behaviors[type];
+	            behavior = this._behaviors[name];
 	            behavior.setOptions(options);
 	        }
 	        return behavior;
@@ -6239,6 +6655,11 @@ var qtk =
 	    };
 	    Widget.prototype.onFromJson = function (json) {
 	    };
+	    /**
+	     * @method fromJson
+	     * 用JSON数据初始化当前控件。
+	     * @param {any} json 数据。
+	     */
 	    Widget.prototype.fromJson = function (json) {
 	        var _this = this;
 	        var defProps = this.getDefProps();
@@ -6279,6 +6700,11 @@ var qtk =
 	        this.onFromJson(json);
 	        return this;
 	    };
+	    /**
+	     * @method clone
+	     * CLONE当前控件。
+	     * @return {Widget} 新对象。
+	     */
 	    Widget.prototype.clone = function () {
 	        var json = this.toJson();
 	        var widget = widget_factory_1.WidgetFactory.createWithJson(json);
@@ -6286,6 +6712,11 @@ var qtk =
 	    };
 	    Widget.prototype.onToJson = function (json) {
 	    };
+	    /**
+	     * @method toJson
+	     * 序列化当前的控件到JSON数据。
+	     * @return {any} JSON数据。
+	     */
 	    Widget.prototype.toJson = function () {
 	        var json = {};
 	        json.type = this._type;
@@ -6326,6 +6757,10 @@ var qtk =
 	        get: function () {
 	            return this._templateItem;
 	        },
+	        /**
+	         * @property {Widget} templateItem
+	         * 模板项。用于在数据绑定时，自动生成子控件的模板。
+	         */
 	        set: function (value) {
 	            this._templateItem = value;
 	            this._templateItemJson = value ? value.toJson() : null;
@@ -6357,6 +6792,7 @@ var qtk =
 	            return this._dataBindingRule;
 	        },
 	        /**
+	         * @property {any} dataBindingRule
 	         * 数据绑定规则。
 	         */
 	        set: function (dataBindingRule) {
@@ -6366,6 +6802,7 @@ var qtk =
 	        configurable: true
 	    });
 	    /**
+	     * @method updateExplicit
 	     * 显式的更新ViewModel。
 	     */
 	    Widget.prototype.updateExplicit = function () {
@@ -6375,6 +6812,7 @@ var qtk =
 	        this.children.forEach(function (child) {
 	            child.updateExplicit();
 	        });
+	        return this;
 	    };
 	    Widget.prototype.removeBinding = function () {
 	        var viewModel = this._viewModel;
@@ -6390,7 +6828,10 @@ var qtk =
 	    Widget.prototype.onAfterBindData = function () {
 	    };
 	    /**
+	     * @method bindData
 	     * 绑定数据。
+	     * @param {IViewModel} viewModel View Model。
+	     * @return {Widget} 控件本身。
 	     */
 	    Widget.prototype.bindData = function (viewModel) {
 	        var _this = this;
@@ -6424,17 +6865,17 @@ var qtk =
 	                return enable;
 	            };
 	        }
-	        this.bindChildren(viewModel);
+	        this.bindDataToChildren(viewModel);
 	        if (viewModel.isCollection && this._templateItemJson) {
 	            var collectionViewModel = viewModel;
 	            collectionViewModel.onItemsChange(function (evt) {
-	                _this.bindChildren(viewModel);
+	                _this.bindDataToChildren(viewModel);
 	            });
 	        }
 	        this.onAfterBindData();
 	        return this;
 	    };
-	    Widget.prototype.bindChildren = function (viewModel) {
+	    Widget.prototype.bindDataToChildren = function (viewModel) {
 	        if (viewModel.isCollection) {
 	            if (this._templateItemJson) {
 	                //对于集合viewModel，如果有模板项存在，则动态生成子控件。
@@ -6463,6 +6904,9 @@ var qtk =
 	            });
 	        }
 	    };
+	    /*
+	     * 绑定命令，注册相应的事件处理函数。
+	     */
 	    Widget.prototype.onBindCommand = function (viewModel, dataBindingRule) {
 	        var _this = this;
 	        dataBindingRule.forEach(function (prop, item) {
@@ -6529,14 +6973,12 @@ var qtk =
 	            }
 	        });
 	    };
+	    /*
+	     * 把界面数据更新到模型。
+	     */
 	    Widget.prototype.updateValueToSource = function (value, dataSource, oldValue) {
 	        var result = this._viewModel.setPropEx(dataSource, value, oldValue);
-	        if (result.code) {
-	            this.onInvalidInput(result.message);
-	        }
-	        else {
-	            this.onInvalidInput(null);
-	        }
+	        this.onInvalidInput(result.code ? result.message : null);
 	    };
 	    /*
 	     * 监控控件单个属性的变化。
@@ -6575,6 +7017,22 @@ var qtk =
 	            }
 	        });
 	    };
+	    Widget.prototype.hitTest = function (x, y, ctx) {
+	        return this.doHitTest(x, y, rect_1.Rect.rect.init(0, 0, this.w, this.h), ctx);
+	    };
+	    Widget.prototype.doHitTest = function (x, y, r, ctx) {
+	        var m = ctx.invert();
+	        if (m) {
+	            var p = m.transformPoint(x, y);
+	            if (p.x >= r.x && p.x <= (r.x + r.w) && p.y >= r.y && p.y <= (r.y + r.h)) {
+	                return HitTestResult.MM;
+	            }
+	        }
+	        return HitTestResult.NONE;
+	    };
+	    Widget.prototype.selfHitTest = function (x, y, ctx) {
+	        return this.hitTest(x, y, ctx);
+	    };
 	    Widget.defProps = {
 	        _x: 0,
 	        _y: 0,
@@ -6592,12 +7050,10 @@ var qtk =
 	        _pivotX: 0.5,
 	        _pivotY: 0.5,
 	        _rotation: 0,
-	        _focusable: false,
 	        _sensitive: true,
 	        _tips: null,
 	        _text: null,
 	        _name: null,
-	        _tag: null,
 	        _hitTestResult: 0,
 	        _isWindow: false,
 	        _mode: 0,
@@ -17133,6 +17589,71 @@ var qtk =
 
 /***/ },
 /* 79 */
+/***/ function(module, exports) {
+
+	"use strict";
+	;
+	;
+	/**
+	 * 数据绑定模式。
+	 */
+	(function (BindingMode) {
+	    /**
+	     * 双向数据绑定。
+	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时自动更新界面。
+	     */
+	    BindingMode[BindingMode["TWO_WAY"] = 0] = "TWO_WAY";
+	    /**
+	     * 单向数据绑定。
+	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时自动更新界面。
+	     */
+	    BindingMode[BindingMode["ONE_WAY"] = 1] = "ONE_WAY";
+	    /**
+	     * 只在初始化时绑定。
+	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时不更新界面。
+	     */
+	    BindingMode[BindingMode["ONE_TIME"] = 2] = "ONE_TIME";
+	    /**
+	     * 单向数据绑定。
+	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时不更新界面。
+	     */
+	    BindingMode[BindingMode["ONE_WAY_TO_SOURCE"] = 3] = "ONE_WAY_TO_SOURCE";
+	})(exports.BindingMode || (exports.BindingMode = {}));
+	var BindingMode = exports.BindingMode;
+	;
+	var BindingModeNames = ["two-way", "one-way", "one-time", "one-way-to-source"];
+	function toBindingMode(name) {
+	    return Math.max(0, BindingModeNames.indexOf(name));
+	}
+	exports.toBindingMode = toBindingMode;
+	/**
+	 * 更新ViewModel的时机。
+	 */
+	(function (UpdateTiming) {
+	    /**
+	     * 有变化时立即更新(如编辑器正在输入)。
+	     */
+	    UpdateTiming[UpdateTiming["CHANGING"] = 0] = "CHANGING";
+	    /**
+	     * 变化完成时才更新(如编辑器失去焦点时)。
+	     */
+	    UpdateTiming[UpdateTiming["CHANGED"] = 1] = "CHANGED";
+	    /**
+	     * 手动更新。
+	     */
+	    UpdateTiming[UpdateTiming["EXPLICIT"] = 2] = "EXPLICIT";
+	})(exports.UpdateTiming || (exports.UpdateTiming = {}));
+	var UpdateTiming = exports.UpdateTiming;
+	;
+	var UpdateTimingNames = ["changing", "changed", "explicit"];
+	function toUpdateTiming(name) {
+	    return Math.max(0, UpdateTimingNames.indexOf(name));
+	}
+	exports.toUpdateTiming = toUpdateTiming;
+
+
+/***/ },
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17141,9 +17662,9 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var json_serializer_1 = __webpack_require__(80);
-	var iview_model_1 = __webpack_require__(81);
-	var iview_model_2 = __webpack_require__(81);
+	var json_serializer_1 = __webpack_require__(81);
+	var iview_model_1 = __webpack_require__(79);
+	var iview_model_2 = __webpack_require__(79);
 	;
 	/**
 	 * 数据源。如果指定了value，直接从value获取数据。否则通过path从ViewModel中获取数据。
@@ -17296,7 +17817,7 @@ var qtk =
 
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17324,71 +17845,6 @@ var qtk =
 	    return JsonSerializer;
 	}());
 	exports.JsonSerializer = JsonSerializer;
-
-
-/***/ },
-/* 81 */
-/***/ function(module, exports) {
-
-	"use strict";
-	;
-	;
-	/**
-	 * 数据绑定模式。
-	 */
-	(function (BindingMode) {
-	    /**
-	     * 双向数据绑定。
-	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时自动更新界面。
-	     */
-	    BindingMode[BindingMode["TWO_WAY"] = 0] = "TWO_WAY";
-	    /**
-	     * 单向数据绑定。
-	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时自动更新界面。
-	     */
-	    BindingMode[BindingMode["ONE_WAY"] = 1] = "ONE_WAY";
-	    /**
-	     * 只在初始化时绑定。
-	     * 界面数据变化时不更新ViewModel，ViewModel数据有变化时不更新界面。
-	     */
-	    BindingMode[BindingMode["ONE_TIME"] = 2] = "ONE_TIME";
-	    /**
-	     * 单向数据绑定。
-	     * 界面数据变化时自动更新ViewModel，ViewModel数据有变化时不更新界面。
-	     */
-	    BindingMode[BindingMode["ONE_WAY_TO_SOURCE"] = 3] = "ONE_WAY_TO_SOURCE";
-	})(exports.BindingMode || (exports.BindingMode = {}));
-	var BindingMode = exports.BindingMode;
-	;
-	var BindingModeNames = ["two-way", "one-way", "one-time", "one-way-to-source"];
-	function toBindingMode(name) {
-	    return Math.max(0, BindingModeNames.indexOf(name));
-	}
-	exports.toBindingMode = toBindingMode;
-	/**
-	 * 更新ViewModel的时机。
-	 */
-	(function (UpdateTiming) {
-	    /**
-	     * 有变化时立即更新(如编辑器正在输入)。
-	     */
-	    UpdateTiming[UpdateTiming["CHANGING"] = 0] = "CHANGING";
-	    /**
-	     * 变化完成时才更新(如编辑器失去焦点时)。
-	     */
-	    UpdateTiming[UpdateTiming["CHANGED"] = 1] = "CHANGED";
-	    /**
-	     * 手动更新。
-	     */
-	    UpdateTiming[UpdateTiming["EXPLICIT"] = 2] = "EXPLICIT";
-	})(exports.UpdateTiming || (exports.UpdateTiming = {}));
-	var UpdateTiming = exports.UpdateTiming;
-	;
-	var UpdateTimingNames = ["changing", "changed", "explicit"];
-	function toUpdateTiming(name) {
-	    return Math.max(0, UpdateTimingNames.indexOf(name));
-	}
-	exports.toUpdateTiming = toUpdateTiming;
 
 
 /***/ },
@@ -18136,6 +18592,7 @@ var qtk =
 	    __extends(Dialog, _super);
 	    function Dialog(type) {
 	        _super.call(this, type || Dialog.TYPE);
+	        this._windowType = window_1.WindowType.POPUP;
 	    }
 	    Dialog.create = function (options) {
 	        return Dialog.recycleBin.create(options);
@@ -18162,6 +18619,12 @@ var qtk =
 	var point_1 = __webpack_require__(2);
 	var widget_1 = __webpack_require__(19);
 	var Events = __webpack_require__(6);
+	(function (WindowType) {
+	    WindowType[WindowType["NORMAL"] = 0] = "NORMAL";
+	    WindowType[WindowType["POPUP"] = 1] = "POPUP";
+	})(exports.WindowType || (exports.WindowType = {}));
+	var WindowType = exports.WindowType;
+	;
 	/**
 	 * 窗口的基类。
 	 */
@@ -18171,6 +18634,13 @@ var qtk =
 	        _super.call(this, type);
 	        this._windowEvent = Events.WindowEvent.create();
 	    }
+	    Object.defineProperty(Window.prototype, "windowType", {
+	        get: function () {
+	            return this._windowType;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    Object.defineProperty(Window.prototype, "grabbed", {
 	        get: function () {
 	            return this._grabbed;
@@ -21298,14 +21768,6 @@ var qtk =
 	})(exports.Align || (exports.Align = {}));
 	var Align = exports.Align;
 	;
-	var Services = (function () {
-	    function Services() {
-	    }
-	    Services.THEME_MANAGER = "qtk-theme-manager";
-	    return Services;
-	}());
-	exports.Services = Services;
-	;
 
 
 /***/ },
@@ -22487,7 +22949,7 @@ var qtk =
 	        var scrollable = false;
 	        var itemH = this.itemH;
 	        var options = this._options;
-	        var dialog = dialog_1.Dialog.create();
+	        var dialog = dialog_1.Dialog.create({ app: this.app, hasOwnCanvas: true });
 	        var n = this._options.length || 1;
 	        var h = n * itemH + padding + padding;
 	        var halfH = vp.h >> 1;
@@ -22503,7 +22965,7 @@ var qtk =
 	                scrollable = true;
 	            }
 	        }
-	        dialog.set({ x: x, y: y, w: w, h: h, hasOwnCanvas: true, app: this.app });
+	        dialog.set({ x: x, y: y, w: w, h: h });
 	        dialog.styleType = "widget.transparent";
 	        dialog.childrenLayouter = simple_layouter_1.SimpleLayouter.create();
 	        var listView = list_view_1.ListView.create();
@@ -24032,21 +24494,22 @@ var qtk =
 	};
 	var path = __webpack_require__(9);
 	var TWEEN = __webpack_require__(20);
-	var Assets = __webpack_require__(11);
 	var Events = __webpack_require__(6);
-	var consts_1 = __webpack_require__(105);
+	var assets_1 = __webpack_require__(11);
 	var main_loop_1 = __webpack_require__(89);
 	var emitter_1 = __webpack_require__(4);
 	var view_port_1 = __webpack_require__(87);
 	var image_tile_1 = __webpack_require__(7);
 	var theme_manager_1 = __webpack_require__(122);
 	var device_info_1 = __webpack_require__(123);
-	var service_locator_1 = __webpack_require__(124);
-	var window_manager_1 = __webpack_require__(125);
+	var window_manager_mobile_1 = __webpack_require__(124);
+	var window_manager_desktop_1 = __webpack_require__(126);
 	var inputEventAdapter = __webpack_require__(15);
-	var interaction_request_1 = __webpack_require__(126);
-	var interaction_service_1 = __webpack_require__(128);
+	var interaction_request_1 = __webpack_require__(127);
+	var interaction_service_1 = __webpack_require__(129);
 	/**
+	 * @class Application
+	 * @extends IApplication
 	 * 代表整个应用程序，可以通过Application获取各种服务。
 	 *
 	 */
@@ -24054,45 +24517,27 @@ var qtk =
 	    __extends(Application, _super);
 	    function Application(name) {
 	        _super.call(this);
-	        this.name = name;
-	        this._options = {};
-	        this.servicesManager = new service_locator_1.ServiceLocator();
-	        var options = this._options;
-	        var str = window.location.search.substr(1);
-	        var arr = str.split('&');
-	        arr.forEach(function (iter) {
-	            var keyValue = iter.split("=");
-	            options[keyValue[0]] = keyValue[1];
-	        });
+	        this._name = name;
+	        this.parseURLParams();
 	        if (!Application.instance) {
 	            Application.instance = this;
 	        }
 	    }
-	    Object.defineProperty(Application.prototype, "assets", {
+	    Object.defineProperty(Application.prototype, "name", {
+	        /**
+	         * @property {String} name 应用程序的名字。
+	         */
 	        get: function () {
-	            return Assets;
+	            return this._name;
 	        },
+	        set: function (value) { },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Object.defineProperty(Application.prototype, "isReady", {
-	        get: function () {
-	            return this._isReady;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(Application.prototype, "mainLoop", {
-	        get: function () {
-	            return this._mainLoop;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Application.prototype.getMainLoop = function () {
-	        return this._mainLoop;
-	    };
 	    Object.defineProperty(Application.prototype, "options", {
+	        /**
+	         * @property {Object} options 应用程序的参数。
+	         */
 	        get: function () {
 	            return this._options;
 	        },
@@ -24101,11 +24546,41 @@ var qtk =
 	        enumerable: true,
 	        configurable: true
 	    });
-	    Application.prototype.loadScript = function (src) {
-	        Assets.loadScript(src);
+	    /**
+	     * 获取窗口管理器。
+	     */
+	    Application.prototype.getWindowManager = function () {
+	        return this._windwManager;
 	    };
+	    /**
+	     * 获取主循环。
+	     */
+	    Application.prototype.getMainLoop = function () {
+	        return this._mainLoop;
+	    };
+	    /**
+	     * 加载指定的脚本。
+	     * @param {string} src 脚本URL。
+	     */
+	    Application.prototype.loadScript = function (src) {
+	        assets_1.AssetManager.loadScript(src);
+	    };
+	    /**
+	     * 预加载指定的资源。
+	     * @param {Array<string>} assetsURLS 资源URL列表。
+	     * @param {Function} onDone 加载完成时的回调函数。
+	     * @param {Function} onProgress 每加载一个资源时的回调函数。
+	     *
+	     * 示例：
+	     *
+	     *     @example
+	     *     app.preload(assetsURLs, function onLoad() {
+	     *        app.init({sysThemeDataURL:themeURL, appThemeDataURL:appThemeURL});
+	     *        app.run();
+	     *     });
+	     */
 	    Application.prototype.preload = function (assetsURLS, onDone, onProgress) {
-	        Assets.Group.preload(assetsURLS, function (evt) {
+	        assets_1.AssetGroup.preload(assetsURLS, function (evt) {
 	            if (evt.loaded === evt.total) {
 	                if (onDone) {
 	                    onDone(evt);
@@ -24117,84 +24592,82 @@ var qtk =
 	        });
 	        return this;
 	    };
-	    Application.prototype.initOptions = function (args) {
-	        var options = this._options;
-	        for (var key in args) {
-	            options[key] = args[key];
-	        }
-	    };
+	    /**
+	     * 开始运行。
+	     */
 	    Application.prototype.run = function () {
 	        this.dispatchEvent({ type: Events.RUN });
 	        this._mainLoop.requestRedraw();
 	    };
+	    /**
+	     * 初始化。
+	     */
 	    Application.prototype.init = function (args) {
 	        var _this = this;
 	        this.initOptions(args);
 	        var themeManager = new theme_manager_1.ThemeManager();
-	        var sysThemeDataURL = this._options.sysThemeDataURL;
-	        var appThemeDataURL = this._options.appThemeDataURL;
 	        interaction_request_1.InteractionRequest.init(interaction_service_1.InteractionService.init());
-	        if (sysThemeDataURL) {
-	            Assets.loadJSON(sysThemeDataURL).then(function (json) {
-	                var baseURL = path.dirname(sysThemeDataURL);
-	                themeManager.load(json, baseURL);
-	                return appThemeDataURL;
-	            }).then(function (url) {
-	                if (url) {
-	                    Assets.loadJSON(url).then(function (json) {
-	                        var baseURL = path.dirname(url);
-	                        themeManager.load(json, baseURL);
-	                        _this.dispatchEventAsync({ type: Events.READY });
-	                        _this._isReady = true;
-	                        _this.onReady(_this);
-	                    });
-	                }
-	                else {
-	                    _this.dispatchEventAsync({ type: Events.READY });
-	                    _this._isReady = true;
-	                    _this.onReady(_this);
-	                }
-	            });
+	        var sysThemePath = path.dirname(this._options.sysThemeDataURL);
+	        var appThemePath = path.dirname(this._options.appThemeDataURL);
+	        if (sysThemeJson) {
+	            themeManager.load(sysThemeJson, sysThemePath);
 	        }
-	        this.registerService(consts_1.Services.THEME_MANAGER, themeManager);
+	        if (appThemeJson) {
+	            themeManager.load(appThemeJson, appThemePath);
+	        }
+	        this._themeManager = themeManager;
 	        this._viewPort = view_port_1.ViewPort.create(0, 0, 0);
 	        this._mainLoop = main_loop_1.MainLoop.create();
 	        device_info_1.DeviceInfo.init(navigator.language, navigator.userAgent);
 	        inputEventAdapter.init(document, window, device_info_1.DeviceInfo.isPointerSupported, device_info_1.DeviceInfo.isMSPointerSupported, device_info_1.DeviceInfo.isTouchSupported);
 	        if (device_info_1.DeviceInfo.isMacOS) {
-	            var density = this.viewPort.density;
+	            var density = this._viewPort.density;
 	            image_tile_1.ImageTile.init(density, 1 / density, function (img) {
-	                _this.mainLoop.requestRedraw();
+	                _this._mainLoop.requestRedraw();
 	            });
 	        }
 	        this._mainLoop.on(Events.PRETICK, function (evt) {
 	            var time = evt.deltaTime;
 	            TWEEN.update(time);
 	        });
+	        var vp = this._viewPort;
 	        if (device_info_1.DeviceInfo.isMobile || this.options.isMobile) {
-	            this._windwManager = window_manager_1.WindowManager.create({ app: this });
+	            this._windwManager = window_manager_mobile_1.WindowManagerMobile.create({ app: this, x: 0, y: 0, w: vp.w, h: vp.h });
 	        }
+	        else {
+	            this._windwManager = window_manager_desktop_1.WindowManagerDesktop.create({ app: this, x: 0, y: 0, w: vp.w, h: vp.h });
+	        }
+	        this.dispatchEventAsync({ type: Events.READY });
+	        this.onReady(this);
 	        return this;
 	    };
-	    Application.prototype.getService = function (name) {
-	        return this.servicesManager.get(name);
-	    };
-	    Application.prototype.registerService = function (name, service) {
-	        this.servicesManager.register(name, service);
-	        return this;
-	    };
+	    /**
+	     * 获取主题管理器。
+	     */
 	    Application.prototype.getThemeManager = function () {
-	        return this.getService(consts_1.Services.THEME_MANAGER);
+	        return this._themeManager;
 	    };
-	    Object.defineProperty(Application.prototype, "viewPort", {
-	        get: function () {
-	            return this._viewPort;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
+	    /**
+	     * 获取ViewPort。
+	     */
 	    Application.prototype.getViewPort = function () {
 	        return this._viewPort;
+	    };
+	    Application.prototype.initOptions = function (args) {
+	        var options = this._options;
+	        for (var key in args) {
+	            options[key] = args[key];
+	        }
+	    };
+	    Application.prototype.parseURLParams = function () {
+	        this._options = {};
+	        var options = this._options;
+	        var str = window.location.search.substr(1);
+	        var arr = str.split('&');
+	        arr.forEach(function (iter) {
+	            var keyValue = iter.split("=");
+	            options[keyValue[0]] = keyValue[1];
+	        });
 	    };
 	    /**
 	     * 子类可以重载此函数，做App的初始化工作。
@@ -24309,10 +24782,11 @@ var qtk =
 /* 123 */
 /***/ function(module, exports) {
 
+	"use strict";
 	/**
+	 * @class DeviceInfo
 	 * 设备信息。可以获取语言，操作系统和浏览器等相关信息(单例对象，直接调用)。
 	 */
-	"use strict";
 	var DeviceInfo = (function () {
 	    function DeviceInfo() {
 	    }
@@ -24341,27 +24815,127 @@ var qtk =
 
 /***/ },
 /* 124 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var window_1 = __webpack_require__(93);
+	var window_manager_1 = __webpack_require__(125);
+	var widget_factory_1 = __webpack_require__(23);
+	var widget_recyclable_creator_1 = __webpack_require__(82);
 	/**
-	 * 管理各种服务。
+	 * 移动应用程序的窗口管理器，所有窗口共享一个Canvas，NormalWindow总是最大化显示。
 	 */
-	var ServiceLocator = (function () {
-	    function ServiceLocator() {
-	        this.services = {};
+	var WindowManagerMobile = (function (_super) {
+	    __extends(WindowManagerMobile, _super);
+	    function WindowManagerMobile() {
+	        _super.call(this, WindowManagerMobile.TYPE);
 	    }
-	    ServiceLocator.prototype.register = function (name, service) {
-	        this.services[name] = service;
+	    Object.defineProperty(WindowManagerMobile.prototype, "target", {
+	        get: function () {
+	            var n = this._windows.length;
+	            var win = n > 0 ? this._windows[n - 1] : null;
+	            return win;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    WindowManagerMobile.prototype.dispatchPointerDown = function (evt, ctx) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchPointerDown(evt, ctx);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchPointerMove = function (evt, ctx) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchPointerMove(evt, ctx);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchPointerUp = function (evt) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchPointerUp(evt);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchKeyDown = function (evt) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchKeyDown(evt);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchClick = function (evt) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchClick(evt);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchDblClick = function (evt) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchDblClick(evt);
+	        }
+	    };
+	    WindowManagerMobile.prototype.dispatchWheel = function (evt) {
+	        var target = this.target;
+	        if (target) {
+	            target.dispatchWheel(evt);
+	        }
+	    };
+	    WindowManagerMobile.prototype.computeChildrenDirtyRect = function (ctx) {
+	        var windows = this._windows;
+	        var n = windows.length;
+	        var start = this.getVisibleWinStartIndex();
+	        for (var i = start; i < n; i++) {
+	            var win = windows[i];
+	            win.computeDirtyRect(ctx);
+	        }
+	    };
+	    WindowManagerMobile.prototype.getVisibleWinStartIndex = function () {
+	        var windows = this._windows;
+	        var n = windows.length;
+	        var start = 0;
+	        for (var i = n - 1; i >= 0; i--) {
+	            var win = windows[i];
+	            if (win.windowType === window_1.WindowType.NORMAL) {
+	                start = i;
+	                break;
+	            }
+	        }
+	        return start;
+	    };
+	    WindowManagerMobile.prototype.draw = function (ctx) {
+	        var windows = this._windows;
+	        var n = windows.length;
+	        var start = this.getVisibleWinStartIndex();
+	        for (var i = start; i < n; i++) {
+	            var win = windows[i];
+	            win.draw(ctx);
+	        }
+	        this._dirty = false;
 	        return this;
 	    };
-	    ServiceLocator.prototype.get = function (name) {
-	        return this.services[name];
+	    WindowManagerMobile.prototype.onWindowCreated = function (evt) {
+	        var win = evt.widget;
+	        win.hasOwnCanvas = false;
+	        if (win.windowType === window_1.WindowType.NORMAL) {
+	            win.moveResizeTo(0, 0, this.w, this.h);
+	        }
 	    };
-	    return ServiceLocator;
-	}());
-	exports.ServiceLocator = ServiceLocator;
+	    WindowManagerMobile.create = function (options) {
+	        return WindowManagerMobile.recycleBin.create(options);
+	    };
+	    WindowManagerMobile.TYPE = "window-manager-mobile";
+	    WindowManagerMobile.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(WindowManagerMobile);
+	    return WindowManagerMobile;
+	}(window_manager_1.WindowManager));
+	exports.WindowManagerMobile = WindowManagerMobile;
 	;
+	widget_factory_1.WidgetFactory.register(WindowManagerMobile.TYPE, WindowManagerMobile.create);
 
 
 /***/ },
@@ -24376,45 +24950,61 @@ var qtk =
 	};
 	var widget_1 = __webpack_require__(19);
 	var Events = __webpack_require__(6);
-	var widget_factory_1 = __webpack_require__(23);
-	var widget_recyclable_creator_1 = __webpack_require__(82);
+	/**
+	 * 实现窗口管理器的基本功能。
+	 */
 	var WindowManager = (function (_super) {
 	    __extends(WindowManager, _super);
 	    function WindowManager() {
-	        _super.call(this, WindowManager.TYPE);
+	        _super.apply(this, arguments);
 	    }
+	    Object.defineProperty(WindowManager.prototype, "windows", {
+	        /**
+	         * 窗口列表。
+	         */
+	        get: function () {
+	            return this._windows;
+	        },
+	        set: function (value) {
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    WindowManager.prototype.addWindow = function (win) {
+	        this._windows.push(win);
+	    };
+	    WindowManager.prototype.removeWindow = function (win) {
+	        this._windows.remove(win);
+	    };
 	    WindowManager.prototype.onWindowCreate = function (evt) {
-	        console.log("onWindowCreate");
+	        var win = evt.widget;
+	        this.addWindow(win);
 	    };
 	    WindowManager.prototype.onWindowCreated = function (evt) {
-	        console.log("onWindowCreated");
 	    };
 	    WindowManager.prototype.onWindowOpen = function (evt) {
-	        console.log("onWindowOpen");
 	    };
 	    WindowManager.prototype.onWindowClose = function (evt) {
-	        console.log("onWindowClose");
+	        var win = evt.widget;
+	        this.removeWindow(win);
 	    };
+	    /**
+	     * 向APP注册窗口的事件。
+	     */
 	    WindowManager.prototype.onCreated = function () {
 	        var _this = this;
 	        _super.prototype.onCreated.call(this);
-	        var app = this.app;
 	        this.createCanvas();
+	        this._windows = [];
+	        var app = this.app;
 	        app.on(Events.WINDOW_OPEN, function (evt) { return _this.onWindowOpen(evt); });
 	        app.on(Events.WINDOW_CLOSE, function (evt) { return _this.onWindowClose(evt); });
 	        app.on(Events.WINDOW_CREATE, function (evt) { return _this.onWindowCreate(evt); });
 	        app.on(Events.WINDOW_CREATED, function (evt) { return _this.onWindowCreated(evt); });
 	    };
-	    WindowManager.create = function (options) {
-	        return WindowManager.recycleBin.create(options);
-	    };
-	    WindowManager.TYPE = "window-manager";
-	    WindowManager.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(WindowManager);
 	    return WindowManager;
 	}(widget_1.Widget));
 	exports.WindowManager = WindowManager;
-	;
-	widget_factory_1.WidgetFactory.register(WindowManager.TYPE, WindowManager.create);
 
 
 /***/ },
@@ -24422,7 +25012,51 @@ var qtk =
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var interaction_types_1 = __webpack_require__(127);
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var window_1 = __webpack_require__(93);
+	var window_manager_1 = __webpack_require__(125);
+	var widget_factory_1 = __webpack_require__(23);
+	var widget_recyclable_creator_1 = __webpack_require__(82);
+	/**
+	 * 桌面应用程序的窗口管理器。
+	 */
+	var WindowManagerDesktop = (function (_super) {
+	    __extends(WindowManagerDesktop, _super);
+	    function WindowManagerDesktop() {
+	        _super.call(this, WindowManagerDesktop.TYPE);
+	    }
+	    WindowManagerDesktop.prototype.createCanvas = function () {
+	        return this;
+	    };
+	    WindowManagerDesktop.prototype.onWindowCreated = function (evt) {
+	        var win = evt.widget;
+	        win.hasOwnCanvas = true;
+	        if (win.windowType === window_1.WindowType.NORMAL && !win.w && !win.h) {
+	            win.moveResizeTo(0, 0, this.w, this.h);
+	        }
+	    };
+	    WindowManagerDesktop.create = function (options) {
+	        return WindowManagerDesktop.recycleBin.create(options);
+	    };
+	    WindowManagerDesktop.TYPE = "window-manager-desktop";
+	    WindowManagerDesktop.recycleBin = widget_recyclable_creator_1.WidgetRecyclableCreator.create(WindowManagerDesktop);
+	    return WindowManagerDesktop;
+	}(window_manager_1.WindowManager));
+	exports.WindowManagerDesktop = WindowManagerDesktop;
+	;
+	widget_factory_1.WidgetFactory.register(WindowManagerDesktop.TYPE, WindowManagerDesktop.create);
+
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var interaction_types_1 = __webpack_require__(128);
 	var InteractionRequest = (function () {
 	    function InteractionRequest(service) {
 	        this.service = service;
@@ -24485,7 +25119,7 @@ var qtk =
 
 
 /***/ },
-/* 127 */
+/* 128 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -24506,20 +25140,20 @@ var qtk =
 
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var emitter_1 = __webpack_require__(4);
 	var Events = __webpack_require__(6);
-	var toast_dialog_1 = __webpack_require__(129);
-	var input_dialog_1 = __webpack_require__(133);
-	var props_dialog_1 = __webpack_require__(134);
-	var choice_dialog_1 = __webpack_require__(159);
-	var progress_dialog_1 = __webpack_require__(160);
-	var confirmation_dialog_1 = __webpack_require__(161);
-	var notification_dialog_1 = __webpack_require__(162);
-	var interaction_types_1 = __webpack_require__(127);
+	var toast_dialog_1 = __webpack_require__(130);
+	var input_dialog_1 = __webpack_require__(134);
+	var props_dialog_1 = __webpack_require__(135);
+	var choice_dialog_1 = __webpack_require__(160);
+	var progress_dialog_1 = __webpack_require__(161);
+	var confirmation_dialog_1 = __webpack_require__(162);
+	var notification_dialog_1 = __webpack_require__(163);
+	var interaction_types_1 = __webpack_require__(128);
 	var InteractionService = (function () {
 	    function InteractionService() {
 	        this._emitter = new emitter_1.Emitter();
@@ -24594,11 +25228,11 @@ var qtk =
 
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var ToastDialog = (function () {
 	    function ToastDialog() {
 	    }
@@ -24612,7 +25246,7 @@ var qtk =
 
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24636,8 +25270,8 @@ var qtk =
 	var consts_1 = __webpack_require__(105);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var list_item_1 = __webpack_require__(114);
-	var dock_layouter_1 = __webpack_require__(131);
-	var linear_layouter_1 = __webpack_require__(132);
+	var dock_layouter_1 = __webpack_require__(132);
+	var linear_layouter_1 = __webpack_require__(133);
 	var grid_layouter_1 = __webpack_require__(117);
 	var simple_layouter_1 = __webpack_require__(115);
 	var TitleOptions = (function () {
@@ -24989,7 +25623,7 @@ var qtk =
 
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25140,7 +25774,7 @@ var qtk =
 
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25351,11 +25985,11 @@ var qtk =
 
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var InputDialog = (function () {
 	    function InputDialog() {
 	    }
@@ -25372,11 +26006,11 @@ var qtk =
 
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var property_dialog_1 = __webpack_require__(135);
+	var property_dialog_1 = __webpack_require__(136);
 	var PropsDialog = (function () {
 	    function PropsDialog() {
 	    }
@@ -25394,7 +26028,7 @@ var qtk =
 
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25404,11 +26038,11 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var application_1 = __webpack_require__(121);
-	var property_page_1 = __webpack_require__(136);
-	var view_model_1 = __webpack_require__(154);
+	var property_page_1 = __webpack_require__(137);
+	var view_model_1 = __webpack_require__(155);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var widget_factory_1 = __webpack_require__(23);
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var simple_layouter_1 = __webpack_require__(115);
 	/**
 	 * 属性对话框。
@@ -25463,7 +26097,7 @@ var qtk =
 
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25473,24 +26107,24 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Events = __webpack_require__(6);
-	var title_link_1 = __webpack_require__(137);
-	var title_line_1 = __webpack_require__(139);
-	var title_edit_1 = __webpack_require__(141);
-	var title_label_1 = __webpack_require__(142);
-	var title_check_button_1 = __webpack_require__(143);
-	var title_range_1 = __webpack_require__(144);
-	var title_vector_1 = __webpack_require__(146);
+	var title_link_1 = __webpack_require__(138);
+	var title_line_1 = __webpack_require__(140);
+	var title_edit_1 = __webpack_require__(142);
+	var title_label_1 = __webpack_require__(143);
+	var title_check_button_1 = __webpack_require__(144);
+	var title_range_1 = __webpack_require__(145);
+	var title_vector_1 = __webpack_require__(147);
 	var widget_1 = __webpack_require__(19);
-	var title_slider_1 = __webpack_require__(148);
-	var title_text_area_1 = __webpack_require__(149);
+	var title_slider_1 = __webpack_require__(149);
+	var title_text_area_1 = __webpack_require__(150);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
-	var title_choosable_edit_1 = __webpack_require__(150);
-	var props_desc_1 = __webpack_require__(152);
-	var title_combo_box_1 = __webpack_require__(153);
-	var props_desc_2 = __webpack_require__(152);
-	var props_desc_3 = __webpack_require__(152);
-	var props_desc_4 = __webpack_require__(152);
+	var title_choosable_edit_1 = __webpack_require__(151);
+	var props_desc_1 = __webpack_require__(153);
+	var title_combo_box_1 = __webpack_require__(154);
+	var props_desc_2 = __webpack_require__(153);
+	var props_desc_3 = __webpack_require__(153);
+	var props_desc_4 = __webpack_require__(153);
 	/**
 	 * 属性编辑页，包装了各种TitleValue。
 	 */
@@ -25872,7 +26506,7 @@ var qtk =
 
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25883,7 +26517,7 @@ var qtk =
 	};
 	var Events = __webpack_require__(6);
 	var label_1 = __webpack_require__(18);
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleLink = (function (_super) {
@@ -25918,7 +26552,7 @@ var qtk =
 
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25930,7 +26564,7 @@ var qtk =
 	var Events = __webpack_require__(6);
 	var label_1 = __webpack_require__(18);
 	var widget_1 = __webpack_require__(19);
-	var linear_layouter_1 = __webpack_require__(132);
+	var linear_layouter_1 = __webpack_require__(133);
 	var TitleValue = (function (_super) {
 	    __extends(TitleValue, _super);
 	    function TitleValue(type) {
@@ -26054,7 +26688,7 @@ var qtk =
 
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26063,8 +26697,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(138);
-	var color_tile_1 = __webpack_require__(140);
+	var title_value_1 = __webpack_require__(139);
+	var color_tile_1 = __webpack_require__(141);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleLine = (function (_super) {
@@ -26088,7 +26722,7 @@ var qtk =
 
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26348,7 +26982,7 @@ var qtk =
 
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26358,7 +26992,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var edit_1 = __webpack_require__(17);
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleEdit = (function (_super) {
@@ -26431,7 +27065,7 @@ var qtk =
 
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26441,7 +27075,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var label_1 = __webpack_require__(18);
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleLabel = (function (_super) {
@@ -26465,7 +27099,7 @@ var qtk =
 
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26474,7 +27108,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var check_button_1 = __webpack_require__(107);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
@@ -26499,7 +27133,7 @@ var qtk =
 
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26508,8 +27142,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var range_edit_1 = __webpack_require__(145);
-	var title_value_1 = __webpack_require__(138);
+	var range_edit_1 = __webpack_require__(146);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleRange = (function (_super) {
@@ -26533,7 +27167,7 @@ var qtk =
 
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26669,7 +27303,7 @@ var qtk =
 
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26678,8 +27312,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var vector_edit_1 = __webpack_require__(147);
-	var title_value_1 = __webpack_require__(138);
+	var vector_edit_1 = __webpack_require__(148);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleVector = (function (_super) {
@@ -26720,7 +27354,7 @@ var qtk =
 
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26964,7 +27598,7 @@ var qtk =
 
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26974,7 +27608,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var slider_1 = __webpack_require__(95);
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleSlider = (function (_super) {
@@ -26998,7 +27632,7 @@ var qtk =
 
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27008,7 +27642,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var edit_1 = __webpack_require__(17);
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleTextArea = (function (_super) {
@@ -27050,7 +27684,7 @@ var qtk =
 
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27059,8 +27693,8 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(138);
-	var choosable_edit_1 = __webpack_require__(151);
+	var title_value_1 = __webpack_require__(139);
+	var choosable_edit_1 = __webpack_require__(152);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var TitleChoosableEdit = (function (_super) {
@@ -27109,7 +27743,7 @@ var qtk =
 
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27208,7 +27842,7 @@ var qtk =
 
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27590,7 +28224,7 @@ var qtk =
 
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27599,7 +28233,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var title_value_1 = __webpack_require__(138);
+	var title_value_1 = __webpack_require__(139);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	var combo_box_1 = __webpack_require__(111);
@@ -27672,7 +28306,7 @@ var qtk =
 
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27681,7 +28315,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var view_model_default_1 = __webpack_require__(155);
+	var view_model_default_1 = __webpack_require__(156);
 	/**
 	 * IViewModel的基本实现。如果不能满足要求，可以重载部分函数。
 	 */
@@ -27701,7 +28335,7 @@ var qtk =
 
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27710,11 +28344,11 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var pointer = __webpack_require__(156);
+	var pointer = __webpack_require__(157);
 	var emitter_1 = __webpack_require__(4);
 	var Events = __webpack_require__(6);
-	var ivalidation_rule_1 = __webpack_require__(158);
-	var iview_model_1 = __webpack_require__(81);
+	var ivalidation_rule_1 = __webpack_require__(159);
+	var iview_model_1 = __webpack_require__(79);
 	var ViewModelDefault = (function (_super) {
 	    __extends(ViewModelDefault, _super);
 	    function ViewModelDefault(data) {
@@ -27871,12 +28505,12 @@ var qtk =
 
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var each = __webpack_require__(157);
+	var each = __webpack_require__(158);
 	module.exports = api;
 
 
@@ -28088,7 +28722,7 @@ var qtk =
 
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports) {
 
 	
@@ -28116,7 +28750,7 @@ var qtk =
 
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28149,11 +28783,11 @@ var qtk =
 
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var ChoiceDialog = (function () {
 	    function ChoiceDialog() {
 	    }
@@ -28170,11 +28804,11 @@ var qtk =
 
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var ProgressDialog = (function () {
 	    function ProgressDialog() {
 	    }
@@ -28190,11 +28824,11 @@ var qtk =
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var ConfirmationDialog = (function () {
 	    function ConfirmationDialog() {
 	    }
@@ -28214,11 +28848,11 @@ var qtk =
 
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var message_box_1 = __webpack_require__(130);
+	var message_box_1 = __webpack_require__(131);
 	var NotificationDialog = (function () {
 	    function NotificationDialog() {
 	    }
@@ -28234,7 +28868,7 @@ var qtk =
 
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28369,7 +29003,7 @@ var qtk =
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28454,7 +29088,7 @@ var qtk =
 
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28505,7 +29139,7 @@ var qtk =
 
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28708,7 +29342,7 @@ var qtk =
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29074,7 +29708,7 @@ var qtk =
 
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29090,6 +29724,7 @@ var qtk =
 	    __extends(WindowNormal, _super);
 	    function WindowNormal() {
 	        _super.call(this, WindowNormal.TYPE);
+	        this._windowType = window_1.WindowType.NORMAL;
 	    }
 	    WindowNormal.create = function (options) {
 	        return WindowNormal.recycleBin.create(options);
@@ -29104,7 +29739,7 @@ var qtk =
 
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29113,14 +29748,14 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var menu_1 = __webpack_require__(167);
+	var menu_1 = __webpack_require__(168);
 	var point_1 = __webpack_require__(2);
 	var Events = __webpack_require__(6);
 	var widget_1 = __webpack_require__(19);
 	var widget_factory_1 = __webpack_require__(23);
 	var image_tile_1 = __webpack_require__(7);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
-	var linear_layouter_1 = __webpack_require__(132);
+	var linear_layouter_1 = __webpack_require__(133);
 	var MenuBar = (function (_super) {
 	    __extends(MenuBar, _super);
 	    function MenuBar() {
@@ -29329,7 +29964,7 @@ var qtk =
 
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29338,7 +29973,7 @@ var qtk =
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	__webpack_require__(171);
+	__webpack_require__(172);
 	var point_1 = __webpack_require__(2);
 	var Events = __webpack_require__(6);
 	var widget_1 = __webpack_require__(19);
@@ -29468,16 +30103,15 @@ var qtk =
 
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * @namespace Chart
 	 */
-	var Chart = __webpack_require__(172)();
+	var Chart = __webpack_require__(173)();
 
-	__webpack_require__(173)(Chart);
-	__webpack_require__(179)(Chart);
+	__webpack_require__(174)(Chart);
 	__webpack_require__(180)(Chart);
 	__webpack_require__(181)(Chart);
 	__webpack_require__(182)(Chart);
@@ -29491,41 +30125,42 @@ var qtk =
 	__webpack_require__(190)(Chart);
 	__webpack_require__(191)(Chart);
 	__webpack_require__(192)(Chart);
-
 	__webpack_require__(193)(Chart);
+
 	__webpack_require__(194)(Chart);
 	__webpack_require__(195)(Chart);
 	__webpack_require__(196)(Chart);
-
 	__webpack_require__(197)(Chart);
+
 	__webpack_require__(198)(Chart);
 	__webpack_require__(199)(Chart);
 	__webpack_require__(200)(Chart);
 	__webpack_require__(201)(Chart);
 	__webpack_require__(202)(Chart);
+	__webpack_require__(203)(Chart);
 
 	// Controllers must be loaded after elements
 	// See Chart.core.datasetController.dataElementType
-	__webpack_require__(310)(Chart);
 	__webpack_require__(311)(Chart);
 	__webpack_require__(312)(Chart);
 	__webpack_require__(313)(Chart);
 	__webpack_require__(314)(Chart);
 	__webpack_require__(315)(Chart);
-
 	__webpack_require__(316)(Chart);
+
 	__webpack_require__(317)(Chart);
 	__webpack_require__(318)(Chart);
 	__webpack_require__(319)(Chart);
 	__webpack_require__(320)(Chart);
 	__webpack_require__(321)(Chart);
 	__webpack_require__(322)(Chart);
+	__webpack_require__(323)(Chart);
 
 	window.Chart = module.exports = Chart;
 
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29587,14 +30222,14 @@ var qtk =
 
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	/* global document: false */
 	'use strict';
 
-	var color = __webpack_require__(174);
+	var color = __webpack_require__(175);
 
 	module.exports = function(Chart) {
 		// Global Chart helpers object for utility methods and classes
@@ -30626,12 +31261,12 @@ var qtk =
 
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var convert = __webpack_require__(175);
-	var string = __webpack_require__(177);
+	var convert = __webpack_require__(176);
+	var string = __webpack_require__(178);
 
 	var Color = function (obj) {
 		if (obj instanceof Color) {
@@ -31115,10 +31750,10 @@ var qtk =
 
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var conversions = __webpack_require__(176);
+	var conversions = __webpack_require__(177);
 
 	var convert = function() {
 	   return new Converter();
@@ -31212,7 +31847,7 @@ var qtk =
 	module.exports = convert;
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports) {
 
 	/* MIT license */
@@ -31916,11 +32551,11 @@ var qtk =
 
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var colorNames = __webpack_require__(178);
+	var colorNames = __webpack_require__(179);
 
 	module.exports = {
 	   getRgba: getRgba,
@@ -32143,7 +32778,7 @@ var qtk =
 
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32298,7 +32933,7 @@ var qtk =
 	};
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32408,7 +33043,7 @@ var qtk =
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32510,7 +33145,7 @@ var qtk =
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports) {
 
 	/* global window: false */
@@ -32647,7 +33282,7 @@ var qtk =
 
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33428,7 +34063,7 @@ var qtk =
 
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33743,7 +34378,7 @@ var qtk =
 
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34070,7 +34705,7 @@ var qtk =
 
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34116,7 +34751,7 @@ var qtk =
 
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34251,7 +34886,7 @@ var qtk =
 
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34459,7 +35094,7 @@ var qtk =
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35216,7 +35851,7 @@ var qtk =
 
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35429,7 +36064,7 @@ var qtk =
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35934,7 +36569,7 @@ var qtk =
 
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36211,7 +36846,7 @@ var qtk =
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37074,7 +37709,7 @@ var qtk =
 
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37184,7 +37819,7 @@ var qtk =
 
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37374,7 +38009,7 @@ var qtk =
 
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37458,7 +38093,7 @@ var qtk =
 
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37640,7 +38275,7 @@ var qtk =
 
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37744,7 +38379,7 @@ var qtk =
 
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37879,7 +38514,7 @@ var qtk =
 
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38053,7 +38688,7 @@ var qtk =
 
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38285,7 +38920,7 @@ var qtk =
 
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38707,13 +39342,13 @@ var qtk =
 
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	'use strict';
 
-	var moment = __webpack_require__(203);
+	var moment = __webpack_require__(204);
 	moment = typeof(moment) === 'function' ? moment : window.moment;
 
 	module.exports = function(Chart) {
@@ -39173,7 +39808,7 @@ var qtk =
 
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -40972,7 +41607,7 @@ var qtk =
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(205)("./" + name);
+	                __webpack_require__(206)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -43410,10 +44045,10 @@ var qtk =
 	    return _moment;
 
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(204)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(205)(module)))
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -43429,218 +44064,218 @@ var qtk =
 
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 206,
-		"./af.js": 206,
-		"./ar": 207,
-		"./ar-ly": 208,
-		"./ar-ly.js": 208,
-		"./ar-ma": 209,
-		"./ar-ma.js": 209,
-		"./ar-sa": 210,
-		"./ar-sa.js": 210,
-		"./ar-tn": 211,
-		"./ar-tn.js": 211,
-		"./ar.js": 207,
-		"./az": 212,
-		"./az.js": 212,
-		"./be": 213,
-		"./be.js": 213,
-		"./bg": 214,
-		"./bg.js": 214,
-		"./bn": 215,
-		"./bn.js": 215,
-		"./bo": 216,
-		"./bo.js": 216,
-		"./br": 217,
-		"./br.js": 217,
-		"./bs": 218,
-		"./bs.js": 218,
-		"./ca": 219,
-		"./ca.js": 219,
-		"./cs": 220,
-		"./cs.js": 220,
-		"./cv": 221,
-		"./cv.js": 221,
-		"./cy": 222,
-		"./cy.js": 222,
-		"./da": 223,
-		"./da.js": 223,
-		"./de": 224,
-		"./de-at": 225,
-		"./de-at.js": 225,
-		"./de.js": 224,
-		"./dv": 226,
-		"./dv.js": 226,
-		"./el": 227,
-		"./el.js": 227,
-		"./en-au": 228,
-		"./en-au.js": 228,
-		"./en-ca": 229,
-		"./en-ca.js": 229,
-		"./en-gb": 230,
-		"./en-gb.js": 230,
-		"./en-ie": 231,
-		"./en-ie.js": 231,
-		"./en-nz": 232,
-		"./en-nz.js": 232,
-		"./eo": 233,
-		"./eo.js": 233,
-		"./es": 234,
-		"./es-do": 235,
-		"./es-do.js": 235,
-		"./es.js": 234,
-		"./et": 236,
-		"./et.js": 236,
-		"./eu": 237,
-		"./eu.js": 237,
-		"./fa": 238,
-		"./fa.js": 238,
-		"./fi": 239,
-		"./fi.js": 239,
-		"./fo": 240,
-		"./fo.js": 240,
-		"./fr": 241,
-		"./fr-ca": 242,
-		"./fr-ca.js": 242,
-		"./fr-ch": 243,
-		"./fr-ch.js": 243,
-		"./fr.js": 241,
-		"./fy": 244,
-		"./fy.js": 244,
-		"./gd": 245,
-		"./gd.js": 245,
-		"./gl": 246,
-		"./gl.js": 246,
-		"./he": 247,
-		"./he.js": 247,
-		"./hi": 248,
-		"./hi.js": 248,
-		"./hr": 249,
-		"./hr.js": 249,
-		"./hu": 250,
-		"./hu.js": 250,
-		"./hy-am": 251,
-		"./hy-am.js": 251,
-		"./id": 252,
-		"./id.js": 252,
-		"./is": 253,
-		"./is.js": 253,
-		"./it": 254,
-		"./it.js": 254,
-		"./ja": 255,
-		"./ja.js": 255,
-		"./jv": 256,
-		"./jv.js": 256,
-		"./ka": 257,
-		"./ka.js": 257,
-		"./kk": 258,
-		"./kk.js": 258,
-		"./km": 259,
-		"./km.js": 259,
-		"./ko": 260,
-		"./ko.js": 260,
-		"./ky": 261,
-		"./ky.js": 261,
-		"./lb": 262,
-		"./lb.js": 262,
-		"./lo": 263,
-		"./lo.js": 263,
-		"./lt": 264,
-		"./lt.js": 264,
-		"./lv": 265,
-		"./lv.js": 265,
-		"./me": 266,
-		"./me.js": 266,
-		"./mi": 267,
-		"./mi.js": 267,
-		"./mk": 268,
-		"./mk.js": 268,
-		"./ml": 269,
-		"./ml.js": 269,
-		"./mr": 270,
-		"./mr.js": 270,
-		"./ms": 271,
-		"./ms-my": 272,
-		"./ms-my.js": 272,
-		"./ms.js": 271,
-		"./my": 273,
-		"./my.js": 273,
-		"./nb": 274,
-		"./nb.js": 274,
-		"./ne": 275,
-		"./ne.js": 275,
-		"./nl": 276,
-		"./nl.js": 276,
-		"./nn": 277,
-		"./nn.js": 277,
-		"./pa-in": 278,
-		"./pa-in.js": 278,
-		"./pl": 279,
-		"./pl.js": 279,
-		"./pt": 280,
-		"./pt-br": 281,
-		"./pt-br.js": 281,
-		"./pt.js": 280,
-		"./ro": 282,
-		"./ro.js": 282,
-		"./ru": 283,
-		"./ru.js": 283,
-		"./se": 284,
-		"./se.js": 284,
-		"./si": 285,
-		"./si.js": 285,
-		"./sk": 286,
-		"./sk.js": 286,
-		"./sl": 287,
-		"./sl.js": 287,
-		"./sq": 288,
-		"./sq.js": 288,
-		"./sr": 289,
-		"./sr-cyrl": 290,
-		"./sr-cyrl.js": 290,
-		"./sr.js": 289,
-		"./ss": 291,
-		"./ss.js": 291,
-		"./sv": 292,
-		"./sv.js": 292,
-		"./sw": 293,
-		"./sw.js": 293,
-		"./ta": 294,
-		"./ta.js": 294,
-		"./te": 295,
-		"./te.js": 295,
-		"./th": 296,
-		"./th.js": 296,
-		"./tl-ph": 297,
-		"./tl-ph.js": 297,
-		"./tlh": 298,
-		"./tlh.js": 298,
-		"./tr": 299,
-		"./tr.js": 299,
-		"./tzl": 300,
-		"./tzl.js": 300,
-		"./tzm": 301,
-		"./tzm-latn": 302,
-		"./tzm-latn.js": 302,
-		"./tzm.js": 301,
-		"./uk": 303,
-		"./uk.js": 303,
-		"./uz": 304,
-		"./uz.js": 304,
-		"./vi": 305,
-		"./vi.js": 305,
-		"./x-pseudo": 306,
-		"./x-pseudo.js": 306,
-		"./zh-cn": 307,
-		"./zh-cn.js": 307,
-		"./zh-hk": 308,
-		"./zh-hk.js": 308,
-		"./zh-tw": 309,
-		"./zh-tw.js": 309
+		"./af": 207,
+		"./af.js": 207,
+		"./ar": 208,
+		"./ar-ly": 209,
+		"./ar-ly.js": 209,
+		"./ar-ma": 210,
+		"./ar-ma.js": 210,
+		"./ar-sa": 211,
+		"./ar-sa.js": 211,
+		"./ar-tn": 212,
+		"./ar-tn.js": 212,
+		"./ar.js": 208,
+		"./az": 213,
+		"./az.js": 213,
+		"./be": 214,
+		"./be.js": 214,
+		"./bg": 215,
+		"./bg.js": 215,
+		"./bn": 216,
+		"./bn.js": 216,
+		"./bo": 217,
+		"./bo.js": 217,
+		"./br": 218,
+		"./br.js": 218,
+		"./bs": 219,
+		"./bs.js": 219,
+		"./ca": 220,
+		"./ca.js": 220,
+		"./cs": 221,
+		"./cs.js": 221,
+		"./cv": 222,
+		"./cv.js": 222,
+		"./cy": 223,
+		"./cy.js": 223,
+		"./da": 224,
+		"./da.js": 224,
+		"./de": 225,
+		"./de-at": 226,
+		"./de-at.js": 226,
+		"./de.js": 225,
+		"./dv": 227,
+		"./dv.js": 227,
+		"./el": 228,
+		"./el.js": 228,
+		"./en-au": 229,
+		"./en-au.js": 229,
+		"./en-ca": 230,
+		"./en-ca.js": 230,
+		"./en-gb": 231,
+		"./en-gb.js": 231,
+		"./en-ie": 232,
+		"./en-ie.js": 232,
+		"./en-nz": 233,
+		"./en-nz.js": 233,
+		"./eo": 234,
+		"./eo.js": 234,
+		"./es": 235,
+		"./es-do": 236,
+		"./es-do.js": 236,
+		"./es.js": 235,
+		"./et": 237,
+		"./et.js": 237,
+		"./eu": 238,
+		"./eu.js": 238,
+		"./fa": 239,
+		"./fa.js": 239,
+		"./fi": 240,
+		"./fi.js": 240,
+		"./fo": 241,
+		"./fo.js": 241,
+		"./fr": 242,
+		"./fr-ca": 243,
+		"./fr-ca.js": 243,
+		"./fr-ch": 244,
+		"./fr-ch.js": 244,
+		"./fr.js": 242,
+		"./fy": 245,
+		"./fy.js": 245,
+		"./gd": 246,
+		"./gd.js": 246,
+		"./gl": 247,
+		"./gl.js": 247,
+		"./he": 248,
+		"./he.js": 248,
+		"./hi": 249,
+		"./hi.js": 249,
+		"./hr": 250,
+		"./hr.js": 250,
+		"./hu": 251,
+		"./hu.js": 251,
+		"./hy-am": 252,
+		"./hy-am.js": 252,
+		"./id": 253,
+		"./id.js": 253,
+		"./is": 254,
+		"./is.js": 254,
+		"./it": 255,
+		"./it.js": 255,
+		"./ja": 256,
+		"./ja.js": 256,
+		"./jv": 257,
+		"./jv.js": 257,
+		"./ka": 258,
+		"./ka.js": 258,
+		"./kk": 259,
+		"./kk.js": 259,
+		"./km": 260,
+		"./km.js": 260,
+		"./ko": 261,
+		"./ko.js": 261,
+		"./ky": 262,
+		"./ky.js": 262,
+		"./lb": 263,
+		"./lb.js": 263,
+		"./lo": 264,
+		"./lo.js": 264,
+		"./lt": 265,
+		"./lt.js": 265,
+		"./lv": 266,
+		"./lv.js": 266,
+		"./me": 267,
+		"./me.js": 267,
+		"./mi": 268,
+		"./mi.js": 268,
+		"./mk": 269,
+		"./mk.js": 269,
+		"./ml": 270,
+		"./ml.js": 270,
+		"./mr": 271,
+		"./mr.js": 271,
+		"./ms": 272,
+		"./ms-my": 273,
+		"./ms-my.js": 273,
+		"./ms.js": 272,
+		"./my": 274,
+		"./my.js": 274,
+		"./nb": 275,
+		"./nb.js": 275,
+		"./ne": 276,
+		"./ne.js": 276,
+		"./nl": 277,
+		"./nl.js": 277,
+		"./nn": 278,
+		"./nn.js": 278,
+		"./pa-in": 279,
+		"./pa-in.js": 279,
+		"./pl": 280,
+		"./pl.js": 280,
+		"./pt": 281,
+		"./pt-br": 282,
+		"./pt-br.js": 282,
+		"./pt.js": 281,
+		"./ro": 283,
+		"./ro.js": 283,
+		"./ru": 284,
+		"./ru.js": 284,
+		"./se": 285,
+		"./se.js": 285,
+		"./si": 286,
+		"./si.js": 286,
+		"./sk": 287,
+		"./sk.js": 287,
+		"./sl": 288,
+		"./sl.js": 288,
+		"./sq": 289,
+		"./sq.js": 289,
+		"./sr": 290,
+		"./sr-cyrl": 291,
+		"./sr-cyrl.js": 291,
+		"./sr.js": 290,
+		"./ss": 292,
+		"./ss.js": 292,
+		"./sv": 293,
+		"./sv.js": 293,
+		"./sw": 294,
+		"./sw.js": 294,
+		"./ta": 295,
+		"./ta.js": 295,
+		"./te": 296,
+		"./te.js": 296,
+		"./th": 297,
+		"./th.js": 297,
+		"./tl-ph": 298,
+		"./tl-ph.js": 298,
+		"./tlh": 299,
+		"./tlh.js": 299,
+		"./tr": 300,
+		"./tr.js": 300,
+		"./tzl": 301,
+		"./tzl.js": 301,
+		"./tzm": 302,
+		"./tzm-latn": 303,
+		"./tzm-latn.js": 303,
+		"./tzm.js": 302,
+		"./uk": 304,
+		"./uk.js": 304,
+		"./uz": 305,
+		"./uz.js": 305,
+		"./vi": 306,
+		"./vi.js": 306,
+		"./x-pseudo": 307,
+		"./x-pseudo.js": 307,
+		"./zh-cn": 308,
+		"./zh-cn.js": 308,
+		"./zh-hk": 309,
+		"./zh-hk.js": 309,
+		"./zh-tw": 310,
+		"./zh-tw.js": 310
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -43653,11 +44288,11 @@ var qtk =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 205;
+	webpackContext.id = 206;
 
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43665,7 +44300,7 @@ var qtk =
 	//! author : Werner Mollentze : https://github.com/wernerm
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43734,7 +44369,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43744,7 +44379,7 @@ var qtk =
 	//! author : forabi https://github.com/forabi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43875,7 +44510,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43883,7 +44518,7 @@ var qtk =
 	//! author : Ali Hmer: https://github.com/kikoanis
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44001,7 +44636,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44010,7 +44645,7 @@ var qtk =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44065,7 +44700,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44073,7 +44708,7 @@ var qtk =
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44173,7 +44808,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44181,7 +44816,7 @@ var qtk =
 	//! author : Nader Toukabri : https://github.com/naderio
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44236,7 +44871,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44244,7 +44879,7 @@ var qtk =
 	//! author : topchiyev : https://github.com/topchiyev
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44345,7 +44980,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44355,7 +44990,7 @@ var qtk =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44483,7 +45118,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44491,7 +45126,7 @@ var qtk =
 	//! author : Krasen Borisov : https://github.com/kraz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44577,7 +45212,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44585,7 +45220,7 @@ var qtk =
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44700,7 +45335,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44708,7 +45343,7 @@ var qtk =
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44823,7 +45458,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44831,7 +45466,7 @@ var qtk =
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44935,7 +45570,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44944,7 +45579,7 @@ var qtk =
 	//! based on (hr) translation by Bojan Marković
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45082,7 +45717,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45090,7 +45725,7 @@ var qtk =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45167,7 +45802,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45175,7 +45810,7 @@ var qtk =
 	//! author : petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45343,7 +45978,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45351,7 +45986,7 @@ var qtk =
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45410,7 +46045,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45419,7 +46054,7 @@ var qtk =
 	//! author : https://github.com/ryangreaves
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45495,7 +46130,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45503,7 +46138,7 @@ var qtk =
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45559,7 +46194,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45569,7 +46204,7 @@ var qtk =
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45641,7 +46276,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45652,7 +46287,7 @@ var qtk =
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45724,7 +46359,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45732,7 +46367,7 @@ var qtk =
 	//! author : Jawish Hameed : https://github.com/jawish
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45827,7 +46462,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45835,7 +46470,7 @@ var qtk =
 	//! author : Aggelos Karalias : https://github.com/mehiel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45929,7 +46564,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45937,7 +46572,7 @@ var qtk =
 	//! author : Jared Morse : https://github.com/jarcoal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46000,7 +46635,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46008,7 +46643,7 @@ var qtk =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46067,7 +46702,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46075,7 +46710,7 @@ var qtk =
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46138,7 +46773,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46146,7 +46781,7 @@ var qtk =
 	//! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46209,7 +46844,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46217,7 +46852,7 @@ var qtk =
 	//! author : Luke McGregor : https://github.com/lukemcgregor
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46280,7 +46915,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46290,7 +46925,7 @@ var qtk =
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46357,7 +46992,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46365,7 +47000,7 @@ var qtk =
 	//! author : Julio Napurí : https://github.com/julionc
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46442,14 +47077,14 @@ var qtk =
 	}));
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : Spanish (Dominican Republic) [es-do]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46526,7 +47161,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46535,7 +47170,7 @@ var qtk =
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46610,7 +47245,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46618,7 +47253,7 @@ var qtk =
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46680,7 +47315,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46688,7 +47323,7 @@ var qtk =
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46790,7 +47425,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46798,7 +47433,7 @@ var qtk =
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46901,7 +47536,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46909,7 +47544,7 @@ var qtk =
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46965,7 +47600,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46973,7 +47608,7 @@ var qtk =
 	//! author : John Fischer : https://github.com/jfroffice
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47033,7 +47668,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47041,7 +47676,7 @@ var qtk =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47097,7 +47732,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47105,7 +47740,7 @@ var qtk =
 	//! author : Gaspard Bucher : https://github.com/gaspard
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47165,7 +47800,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47173,7 +47808,7 @@ var qtk =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47242,7 +47877,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47250,7 +47885,7 @@ var qtk =
 	//! author : Jon Ashdown : https://github.com/jonashdown
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47322,7 +47957,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47330,7 +47965,7 @@ var qtk =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47403,7 +48038,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47413,7 +48048,7 @@ var qtk =
 	//! author : Tal Ater : https://github.com/TalAter
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47506,7 +48141,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47514,7 +48149,7 @@ var qtk =
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47634,7 +48269,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47642,7 +48277,7 @@ var qtk =
 	//! author : Bojan Marković : https://github.com/bmarkovic
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47783,7 +48418,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47791,7 +48426,7 @@ var qtk =
 	//! author : Adam Brunner : https://github.com/adambrunner
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47896,7 +48531,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47904,7 +48539,7 @@ var qtk =
 	//! author : Armendarabyan : https://github.com/armendarabyan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47995,7 +48630,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48004,7 +48639,7 @@ var qtk =
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48082,7 +48717,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48090,7 +48725,7 @@ var qtk =
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48213,7 +48848,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48222,7 +48857,7 @@ var qtk =
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48287,7 +48922,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48295,7 +48930,7 @@ var qtk =
 	//! author : LI Long : https://github.com/baryon
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48367,7 +49002,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48376,7 +49011,7 @@ var qtk =
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48454,7 +49089,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48462,7 +49097,7 @@ var qtk =
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48547,7 +49182,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48555,7 +49190,7 @@ var qtk =
 	//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48638,7 +49273,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48646,7 +49281,7 @@ var qtk =
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48700,7 +49335,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48709,7 +49344,7 @@ var qtk =
 	//! author : Jeeeyul Lee <jeeeyul@gmail.com>
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48769,7 +49404,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48777,7 +49412,7 @@ var qtk =
 	//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48861,7 +49496,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48870,7 +49505,7 @@ var qtk =
 	//! author : David Raison : https://github.com/kwisatz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49002,7 +49637,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49010,7 +49645,7 @@ var qtk =
 	//! author : Ryan Hart : https://github.com/ryanhart2
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49076,7 +49711,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49084,7 +49719,7 @@ var qtk =
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49197,7 +49832,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49206,7 +49841,7 @@ var qtk =
 	//! author : Jānis Elmeris : https://github.com/JanisE
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49298,7 +49933,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49306,7 +49941,7 @@ var qtk =
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49413,7 +50048,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49421,7 +50056,7 @@ var qtk =
 	//! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49481,7 +50116,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49489,7 +50124,7 @@ var qtk =
 	//! author : Borislav Mickov : https://github.com/B0k0
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49575,7 +50210,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49583,7 +50218,7 @@ var qtk =
 	//! author : Floyd Pink : https://github.com/floydpink
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49660,7 +50295,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49669,7 +50304,7 @@ var qtk =
 	//! author : Vivek Athalye : https://github.com/vnathalye
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49823,7 +50458,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49831,7 +50466,7 @@ var qtk =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49909,7 +50544,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49918,7 +50553,7 @@ var qtk =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49996,7 +50631,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50006,7 +50641,7 @@ var qtk =
 	//! author : Tin Aung Lin : https://github.com/thanyawzinmin
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50095,7 +50730,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50104,7 +50739,7 @@ var qtk =
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50162,7 +50797,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 275 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50170,7 +50805,7 @@ var qtk =
 	//! author : suvash : https://github.com/suvash
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50289,7 +50924,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 276 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50298,7 +50933,7 @@ var qtk =
 	//! author : Jacob Middag : https://github.com/middagj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50379,7 +51014,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 277 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50387,7 +51022,7 @@ var qtk =
 	//! author : https://github.com/mechuwind
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50443,7 +51078,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 278 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50451,7 +51086,7 @@ var qtk =
 	//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50571,7 +51206,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 279 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50579,7 +51214,7 @@ var qtk =
 	//! author : Rafal Hirsz : https://github.com/evoL
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50680,7 +51315,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 280 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50688,7 +51323,7 @@ var qtk =
 	//! author : Jefferson : https://github.com/jalex79
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50749,7 +51384,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50757,7 +51392,7 @@ var qtk =
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50814,7 +51449,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50823,7 +51458,7 @@ var qtk =
 	//! author : Valentin Agachi : https://github.com/avaly
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50893,7 +51528,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50903,7 +51538,7 @@ var qtk =
 	//! author : Коренберг Марк : https://github.com/socketpair
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51080,7 +51715,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51088,7 +51723,7 @@ var qtk =
 	//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51145,7 +51780,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51153,7 +51788,7 @@ var qtk =
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51220,7 +51855,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 286 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51229,7 +51864,7 @@ var qtk =
 	//! based on work of petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51374,7 +52009,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 287 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51382,7 +52017,7 @@ var qtk =
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51540,7 +52175,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51550,7 +52185,7 @@ var qtk =
 	//! author : Oerd Cukalla : https://github.com/oerd
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51614,7 +52249,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51622,7 +52257,7 @@ var qtk =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51728,7 +52363,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51736,7 +52371,7 @@ var qtk =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51842,7 +52477,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51850,7 +52485,7 @@ var qtk =
 	//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51935,7 +52570,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -51943,7 +52578,7 @@ var qtk =
 	//! author : Jens Alm : https://github.com/ulmus
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52008,7 +52643,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52016,7 +52651,7 @@ var qtk =
 	//! author : Fahad Kassim : https://github.com/fadsel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52071,7 +52706,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52079,7 +52714,7 @@ var qtk =
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52204,7 +52839,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52212,7 +52847,7 @@ var qtk =
 	//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52297,7 +52932,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 296 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52305,7 +52940,7 @@ var qtk =
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52368,7 +53003,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 297 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52376,7 +53011,7 @@ var qtk =
 	//! author : Dan Hagman : https://github.com/hagmandan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52434,7 +53069,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52442,7 +53077,7 @@ var qtk =
 	//! author : Dominika Kruk : https://github.com/amaranthrose
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52558,7 +53193,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52567,7 +53202,7 @@ var qtk =
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52652,7 +53287,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 300 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52661,7 +53296,7 @@ var qtk =
 	//! author : Iustì Canun
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52747,7 +53382,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 301 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52755,7 +53390,7 @@ var qtk =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52809,7 +53444,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 302 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52817,7 +53452,7 @@ var qtk =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52871,7 +53506,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 303 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -52880,7 +53515,7 @@ var qtk =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53021,7 +53656,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 304 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53029,7 +53664,7 @@ var qtk =
 	//! author : Sardor Muminov : https://github.com/muminoff
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53083,7 +53718,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 305 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53091,7 +53726,7 @@ var qtk =
 	//! author : Bang Nguyen : https://github.com/bangnk
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53166,7 +53801,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 306 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53174,7 +53809,7 @@ var qtk =
 	//! author : Andrew Hood : https://github.com/andrewhood125
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53238,7 +53873,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 307 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53247,7 +53882,7 @@ var qtk =
 	//! author : Zeno Zeng : https://github.com/zenozeng
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53369,7 +54004,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53379,7 +54014,7 @@ var qtk =
 	//! author : Konstantin : https://github.com/skfd
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53478,7 +54113,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -53487,7 +54122,7 @@ var qtk =
 	//! author : Chris Lam : https://github.com/hehachris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(203)) :
+	    true ? factory(__webpack_require__(204)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -53586,7 +54221,7 @@ var qtk =
 	}));
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54142,7 +54777,7 @@ var qtk =
 
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54270,7 +54905,7 @@ var qtk =
 
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54579,7 +55214,7 @@ var qtk =
 
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -54922,7 +55557,7 @@ var qtk =
 
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55143,7 +55778,7 @@ var qtk =
 
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55330,7 +55965,7 @@ var qtk =
 
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55347,7 +55982,7 @@ var qtk =
 
 
 /***/ },
-/* 317 */
+/* 318 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55363,7 +55998,7 @@ var qtk =
 
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55380,7 +56015,7 @@ var qtk =
 
 
 /***/ },
-/* 319 */
+/* 320 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55397,7 +56032,7 @@ var qtk =
 
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55414,7 +56049,7 @@ var qtk =
 
 
 /***/ },
-/* 321 */
+/* 322 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55431,7 +56066,7 @@ var qtk =
 
 
 /***/ },
-/* 322 */
+/* 323 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -55484,7 +56119,7 @@ var qtk =
 
 
 /***/ },
-/* 323 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55496,8 +56131,8 @@ var qtk =
 	var widget_1 = __webpack_require__(19);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
-	var title_content_1 = __webpack_require__(324);
-	var collapsable_title_1 = __webpack_require__(325);
+	var title_content_1 = __webpack_require__(325);
+	var collapsable_title_1 = __webpack_require__(326);
 	/**
 	 * 手风琴控件。它有多个页面，在每一时刻只展开一个。
 	 */
@@ -55600,7 +56235,7 @@ var qtk =
 
 
 /***/ },
-/* 324 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55831,7 +56466,7 @@ var qtk =
 
 
 /***/ },
-/* 325 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -55917,7 +56552,7 @@ var qtk =
 
 
 /***/ },
-/* 326 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56226,7 +56861,7 @@ var qtk =
 
 
 /***/ },
-/* 327 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56237,9 +56872,9 @@ var qtk =
 	};
 	var scroll_view_1 = __webpack_require__(100);
 	var widget_factory_1 = __webpack_require__(23);
-	var title_content_1 = __webpack_require__(324);
+	var title_content_1 = __webpack_require__(325);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
-	var collapsable_title_1 = __webpack_require__(325);
+	var collapsable_title_1 = __webpack_require__(326);
 	/**
 	 * 管理多个页面，每个页面可以展开或折叠。
 	 */
@@ -56337,7 +56972,7 @@ var qtk =
 
 
 /***/ },
-/* 328 */
+/* 329 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56362,7 +56997,7 @@ var qtk =
 
 
 /***/ },
-/* 329 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -56372,10 +57007,10 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Events = __webpack_require__(6);
-	var delegate_command_1 = __webpack_require__(328);
-	var ivalidation_rule_1 = __webpack_require__(158);
-	var iview_model_1 = __webpack_require__(81);
-	var view_model_default_1 = __webpack_require__(155);
+	var delegate_command_1 = __webpack_require__(329);
+	var ivalidation_rule_1 = __webpack_require__(159);
+	var iview_model_1 = __webpack_require__(79);
+	var view_model_default_1 = __webpack_require__(156);
 	/**
 	 * 集合ViewModel。delProp/getProp/setProp操作当前的项。
 	 */
@@ -56773,7 +57408,7 @@ var qtk =
 
 
 /***/ },
-/* 330 */
+/* 331 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56798,7 +57433,7 @@ var qtk =
 
 
 /***/ },
-/* 331 */
+/* 332 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56819,7 +57454,7 @@ var qtk =
 
 
 /***/ },
-/* 332 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56839,7 +57474,7 @@ var qtk =
 
 
 /***/ },
-/* 333 */
+/* 334 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56864,7 +57499,7 @@ var qtk =
 
 
 /***/ },
-/* 334 */
+/* 335 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56885,7 +57520,7 @@ var qtk =
 
 
 /***/ },
-/* 335 */
+/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56925,7 +57560,7 @@ var qtk =
 
 
 /***/ },
-/* 336 */
+/* 337 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56945,7 +57580,7 @@ var qtk =
 
 
 /***/ },
-/* 337 */
+/* 338 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56965,7 +57600,7 @@ var qtk =
 
 
 /***/ },
-/* 338 */
+/* 339 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -56984,7 +57619,7 @@ var qtk =
 
 
 /***/ },
-/* 339 */
+/* 340 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57030,7 +57665,7 @@ var qtk =
 
 
 /***/ },
-/* 340 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57080,7 +57715,7 @@ var qtk =
 
 
 /***/ },
-/* 341 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57091,7 +57726,7 @@ var qtk =
 	};
 	var rect_1 = __webpack_require__(1);
 	var point_1 = __webpack_require__(2);
-	var range_1 = __webpack_require__(342);
+	var range_1 = __webpack_require__(343);
 	var list_view_1 = __webpack_require__(112);
 	var widget_1 = __webpack_require__(19);
 	var widget_factory_1 = __webpack_require__(23);
@@ -57344,7 +57979,7 @@ var qtk =
 
 
 /***/ },
-/* 342 */
+/* 343 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57371,7 +58006,7 @@ var qtk =
 
 
 /***/ },
-/* 343 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57381,7 +58016,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var widget_factory_1 = __webpack_require__(23);
-	var passive_scrollable_group_1 = __webpack_require__(344);
+	var passive_scrollable_group_1 = __webpack_require__(345);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	/**
 	 * 表格左边的行序数。
@@ -57404,7 +58039,7 @@ var qtk =
 
 
 /***/ },
-/* 344 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57541,7 +58176,7 @@ var qtk =
 
 
 /***/ },
-/* 345 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57551,7 +58186,7 @@ var qtk =
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var widget_factory_1 = __webpack_require__(23);
-	var passive_scrollable_group_1 = __webpack_require__(344);
+	var passive_scrollable_group_1 = __webpack_require__(345);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
 	/**
 	 * 表格头
@@ -57574,7 +58209,7 @@ var qtk =
 
 
 /***/ },
-/* 346 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57587,12 +58222,12 @@ var qtk =
 	var widget_1 = __webpack_require__(19);
 	var widget_factory_1 = __webpack_require__(23);
 	var widget_recyclable_creator_1 = __webpack_require__(82);
-	var table_row_1 = __webpack_require__(340);
-	var table_index_1 = __webpack_require__(343);
-	var table_client_1 = __webpack_require__(341);
-	var table_header_1 = __webpack_require__(345);
-	var table_index_item_1 = __webpack_require__(347);
-	var table_header_item_1 = __webpack_require__(348);
+	var table_row_1 = __webpack_require__(341);
+	var table_index_1 = __webpack_require__(344);
+	var table_client_1 = __webpack_require__(342);
+	var table_header_1 = __webpack_require__(346);
+	var table_index_item_1 = __webpack_require__(348);
+	var table_header_item_1 = __webpack_require__(349);
 	/**
 	 * 描述表格中某列的信息。
 	 */
@@ -57882,7 +58517,7 @@ var qtk =
 
 
 /***/ },
-/* 347 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57915,7 +58550,7 @@ var qtk =
 
 
 /***/ },
-/* 348 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58018,7 +58653,7 @@ var qtk =
 
 
 /***/ },
-/* 349 */
+/* 350 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58039,7 +58674,7 @@ var qtk =
 
 
 /***/ },
-/* 350 */
+/* 351 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58060,7 +58695,7 @@ var qtk =
 
 
 /***/ },
-/* 351 */
+/* 352 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58147,7 +58782,7 @@ var qtk =
 
 
 /***/ },
-/* 352 */
+/* 353 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58186,7 +58821,7 @@ var qtk =
 
 
 /***/ },
-/* 353 */
+/* 354 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58210,7 +58845,7 @@ var qtk =
 
 
 /***/ },
-/* 354 */
+/* 355 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58239,7 +58874,7 @@ var qtk =
 
 
 /***/ },
-/* 355 */
+/* 356 */
 /***/ function(module, exports) {
 
 	"use strict";
