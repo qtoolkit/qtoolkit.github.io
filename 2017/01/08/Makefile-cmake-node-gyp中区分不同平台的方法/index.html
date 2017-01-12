@@ -4,26 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello Hexo | QToolKit</title>
+    <title>Makefile/cmake/node-gyp中区分不同平台的方法 | QToolKit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jim">
     
 
-    
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="keywords" content="Makefile,cmake">
+    <meta name="description" content="最近用QTK开发一个下载(下载到开发板)工具，同时用到了Makefile/cmake和node-gyp，而且都要针对不同平台做不同的处理。这里做个记录，以备以后有需要时查阅。
+Makefile在Makefile中，可以用OS变量判断当前系统是否是Windows，然后用uname来判断当前系统是MacOS还是其它系统。
+123456789101112ifeq ($(OS),Windows_NT)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Hexo">
-<meta property="og:url" content="https://qtoolkit.github.io/2016/08/05/hello-world/index.html">
+<meta property="og:title" content="Makefile/cmake/node-gyp中区分不同平台的方法">
+<meta property="og:url" content="https://qtoolkit.github.io/2017/01/08/Makefile-cmake-node-gyp中区分不同平台的方法/index.html">
 <meta property="og:site_name" content="QToolKit">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-08-11T13:06:05.000Z">
+<meta property="og:description" content="最近用QTK开发一个下载(下载到开发板)工具，同时用到了Makefile/cmake和node-gyp，而且都要针对不同平台做不同的处理。这里做个记录，以备以后有需要时查阅。
+Makefile在Makefile中，可以用OS变量判断当前系统是否是Windows，然后用uname来判断当前系统是MacOS还是其它系统。
+123456789101112ifeq ($(OS),Windows_NT)">
+<meta property="og:updated_time" content="2017-01-08T10:04:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Hexo">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Makefile/cmake/node-gyp中区分不同平台的方法">
+<meta name="twitter:description" content="最近用QTK开发一个下载(下载到开发板)工具，同时用到了Makefile/cmake和node-gyp，而且都要针对不同平台做不同的处理。这里做个记录，以备以后有需要时查阅。
+Makefile在Makefile中，可以用OS变量判断当前系统是否是Windows，然后用uname来判断当前系统是MacOS还是其它系统。
+123456789101112ifeq ($(OS),Windows_NT)">
 
     
     <link rel="alternative" href="/atom.xml" title="QToolKit" type="application/atom+xml">
@@ -83,14 +86,14 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/08/05/hello-world/" title="Hello Hexo" itemprop="url">Hello Hexo</a>
+      <a href="/2017/01/08/Makefile-cmake-node-gyp中区分不同平台的方法/" title="Makefile/cmake/node-gyp中区分不同平台的方法" itemprop="url">Makefile/cmake/node-gyp中区分不同平台的方法</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jim" target="_blank" itemprop="author">Jim</a>
 		
   <p class="article-time">
-    <time datetime="2016-08-05T13:19:47.000Z" itemprop="datePublished"> Published 2016-08-05</time>
+    <time datetime="2017-01-08T09:31:13.000Z" itemprop="datePublished"> Published 2017-01-08</time>
     
   </p>
 </header>
@@ -99,24 +102,32 @@ Quick">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Makefile"><span class="toc-number">1.</span> <span class="toc-text">Makefile</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cmake"><span class="toc-number">2.</span> <span class="toc-text">cmake</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node-gyp"><span class="toc-number">3.</span> <span class="toc-text">node-gyp</span></a></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<p>最近用<a href="https://github.com/qtoolkit/qtk" target="_blank" rel="external">QTK</a>开发一个下载(下载到开发板)工具，同时用到了Makefile/cmake和node-gyp，而且都要针对不同平台做不同的处理。这里做个记录，以备以后有需要时查阅。</p>
+<h2 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h2><p>在Makefile中，可以用OS变量判断当前系统是否是Windows，然后用uname来判断当前系统是MacOS还是其它系统。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">ifeq ($(OS),Windows_NT)</div><div class="line">  PLATFORM=&quot;Windows&quot;</div><div class="line">else</div><div class="line">  ifeq ($(shell uname),Darwin)</div><div class="line">    PLATFORM=&quot;MacOS&quot;</div><div class="line">  else</div><div class="line">    PLATFORM=&quot;Unix-Like&quot;</div><div class="line">  endif</div><div class="line">endif</div><div class="line"></div><div class="line">all:</div><div class="line">    @echo $(PLATFORM)</div></pre></td></tr></table></figure>
+<h2 id="cmake"><a href="#cmake" class="headerlink" title="cmake"></a>cmake</h2><p>在cmake中，可以通过APPLE变量判断当前系统是否是MacOS，通过UNIX变量判断当前系统是否是UNIX，其它则认为是Windows。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">if(APPLE)</div><div class="line">//APPLE</div><div class="line">elseif(UNIX)</div><div class="line">//UNIX</div><div class="line">else()</div><div class="line">//Windows</div><div class="line">endif()</div></pre></td></tr></table></figure>
+<h2 id="node-gyp"><a href="#node-gyp" class="headerlink" title="node-gyp"></a>node-gyp</h2><p>在binding.gyp中，可以在conditions添加不同平台的处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&apos;conditions&apos;: [</div><div class="line">  [&apos;OS==&quot;mac&quot;&apos;, &#123;</div><div class="line">    &apos;xcode_settings&apos;: &#123;</div><div class="line">      &apos;GCC_ENABLE_CPP_EXCEPTIONS&apos;: &apos;YES&apos;</div><div class="line">    &#125;,</div><div class="line">    &quot;sources&quot;: [&quot;native/serial/src/impl/list_ports/list_ports_osx.cc&quot;,&quot;native/serial/src/impl/unix.cc&quot;]</div><div class="line">  &#125;,</div><div class="line">  &apos;OS==&quot;win&quot;&apos;, &#123;</div><div class="line">    &quot;sources&quot;: [&quot;native/serial/src/impl/list_ports/list_ports_win.cc&quot;,&quot;native/serial/src/impl/win.cc&quot;],</div><div class="line">    &apos;libraries&apos;: [</div><div class="line">    &apos;-lsetupapi.lib&apos;,</div><div class="line">    &apos;-lws2_32.lib&apos;</div><div class="line">  ]</div><div class="line">  &#125;]</div><div class="line">]</div></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Tools/">Tools</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Makefile/">Makefile</a><a href="/tags/cmake/">cmake</a>
+  </div>
 
 </div>
 
@@ -124,7 +135,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://qtoolkit.github.io/2016/08/05/hello-world/" data-title="Hello Hexo | QToolKit" data-tsina="null" class="share clearfix">
+	  <div data-url="https://qtoolkit.github.io/2017/01/08/Makefile-cmake-node-gyp中区分不同平台的方法/" data-title="Makefile/cmake/node-gyp中区分不同平台的方法 | QToolKit" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -137,19 +148,11 @@ Quick">
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/08/06/Javascript-Test-Framework/" title="Javascript Test Framework">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Javascript Test Framework</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/31/about/"  title="About QToolKit">
+<a href="/2016/09/26/QTK-Demos/"  title="QTK Demos">
  <strong>下一篇：</strong><br/> 
- <span>About QToolKit
+ <span>QTK Demos
 </span>
 </a>
 </div>
@@ -164,7 +167,7 @@ Quick">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Makefile"><span class="toc-number">1.</span> <span class="toc-text">Makefile</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cmake"><span class="toc-number">2.</span> <span class="toc-text">cmake</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node-gyp"><span class="toc-number">3.</span> <span class="toc-text">node-gyp</span></a></li></ol>
  
   </div>
 
